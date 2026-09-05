@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0f17">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Rain Station Board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2360a5fa'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%230b0f17'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="desktop">
+<header id="topbar">
+  <div class="brand"><span class="dot"></span>RAIN STATION BOARD <span class="sub">22 settlement gauges</span></div>
+  <div class="stats">
+    <div class="stat"><b id="s-ok">-</b><span>online</span></div>
+    <div class="stat l70"><b id="s-70">-</b><span>70%+</span></div>
+    <div class="stat l90"><b id="s-90">-</b><span>90%+</span></div>
+    <div class="stat lock"><b id="s-lock">-</b><span>locked</span></div>
+    <div class="stat rain"><b id="s-rain">-</b><span>raining</span></div>
+    <div class="stat over"><b id="s-over">-</b><span>overdue</span></div>
+    <div class="stat wx"><b id="s-wx">-</b><span>nws alerts</span></div>
+  </div>
+  <div class="right">
+    <button id="viewtoggle" class="chipbtn" title="switch layout">mobile</button>
+    <button id="sound" class="chipbtn" title="sound on new lock / 90% / overdue alerts">sound off</button>
+    <span id="updated" class="updated">loading</span>
+  </div>
+  <div id="overdue-banner" hidden></div>
+</header>
+
+<nav id="tabs">
+  <button data-tab="map" class="on">Map</button>
+  <button data-tab="board">Timeline</button>
+  <button data-tab="alerts">Alerts</button>
+</nav>
+
+<main id="main">
+  <section id="mapwrap" data-pane="map">
+    <div id="map"></div>
+    <div id="legend">
+      <div class="lgrow"><span class="lgt">markers: chance of rain today</span><span class="lg low">&lt;30</span><span class="lg moderate">30</span><span class="lg elevated">50</span><span class="lg high">70</span><span class="lg extreme">90+</span><span class="lg over">overdue</span></div>
+      <div class="lgrow"><span class="lgt">radar: how hard it is raining (left of now: observed, right: HRRR forecast)</span><span class="dbz"></span><span class="lgt2">light &rarr; heavy &rarr; storm core; zoom past 8 for the nearest radar site at 250 m</span></div>
+    </div>
+  </section>
+
+  <section id="timeline" data-pane="board">
+    <div class="tlhead">
+      <span>Each row is one sensor. Bars = chance of rain by hour (station time). Blue drops = hours the gauge actually recorded rain. White line = now. Amber line = the radar frame you are looking at.</span>
+    </div>
+    <div id="trows"></div>
+  </section>
+
+  <aside id="panel" data-pane="alerts">
+    <h3>Overdue: rain was expected, gauge still dry</h3>
+    <div id="goverdue" class="chips"></div>
+    <h3>Rain at the door: gauge dry, rain on top of it</h3>
+    <ul id="door" class="list"></ul>
+    <h3>Price movers (15 min)</h3>
+    <ul id="movers" class="list"></ul>
+    <h3>Weather alerts (NWS)</h3>
+    <ul id="wxalerts" class="list"></ul>
+    <h3>Alerts</h3>
+    <ul id="alerts" class="list"></ul>
+    <h3>Kalshi price vs forecast (biggest gaps)</h3>
+    <ul id="gaps" class="list"></ul>
+    <h3>Top risers (3h)</h3>
+    <ul id="risers" class="list"></ul>
+    <h3>Watch</h3>
+    <div class="groups">
+      <div><h4>90%+</h4><div id="g90" class="chips"></div></div>
+      <div><h4>80%+</h4><div id="g80" class="chips"></div></div>
+      <div><h4>70%+</h4><div id="g70" class="chips"></div></div>
+      <div><h4>Locked</h4><div id="glock" class="chips"></div></div>
+      <div><h4>Raining</h4><div id="grain" class="chips"></div></div>
+      <div><h4>Stale</h4><div id="gstale" class="chips"></div></div>
+    </div>
+  </aside>
+</main>
+
+<div id="radarctl">
+  <button id="play" class="chipbtn">pause</button>
+  <button id="live" class="chipbtn" title="jump to the newest frame">live</button>
+  <button id="us" class="chipbtn" title="back to the whole country">US</button>
+  <input id="scrub" type="range" min="0" max="0" value="0" title="24 hours observed (left of the middle) and 24 hours of HRRR forecast (right); arrow keys step, space plays">
+  <span id="frametime">radar</span><span id="sitetag" class="sitetag"></span>
+  <input id="opacity" type="range" min="0" max="100" value="75" title="radar opacity" class="op">
+  <div id="ticks" title="click an hour to jump the radar there; amber hours are the HRRR forecast"></div>
+</div>
+
+<footer id="strip"></footer>
+
+<div id="toast"></div>
+<div id="cardpanel" hidden></div>
+<div id="cammodal" hidden></div>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
