@@ -1,0 +1,2118 @@
+{
+"schema": "019a.candidates/1",
+"generated_utc": "2026-09-13T04:41:39.747000+00:00",
+"qty": 10.0,
+"fee_source": "0.07 * C * P * (1-P), ceil to the cent on the order total; matches wx_live_trader.order_fee (bot) and public descriptions; kalshi.com/fee-schedule unreachable (HTTP 429) 2026-09-12",
+"no_range_pct": [
+0,
+10
+],
+"yes_range_pct": [
+90,
+100
+],
+"book_written_utc": "2026-09-13T04:41:39.570702+00:00",
+"book_feed_status": "LIVE",
+"candidates": [],
+"stations": [
+{
+"icao": "KATL",
+"city": "ATL",
+"ticker": "KXRAIN-26SEP12-ATL",
+"contract": {
+"ticker": "KXRAIN-26SEP12-ATL",
+"contract_day": "2026-09-12",
+"station": "CLIATL",
+"icao": "KATL",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "THRESHOLD_OBSERVED",
+"p_yes_pct": 100,
+"p_day_pct": 67,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "WET",
+"wet_state": "LOCKED",
+"wet_inputs": [],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": 17,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"forecasts disagree: NWS peak 0%",
+"market is past the point of a forecast: THRESHOLD_OBSERVED"
+],
+"no": null,
+"yes": null,
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KAUS",
+"city": "AUS",
+"ticker": "KXRAIN-26SEP12-AUS",
+"contract": {
+"ticker": "KXRAIN-26SEP12-AUS",
+"contract_day": "2026-09-12",
+"station": "CLIAUS",
+"icao": "KAUS",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 4,
+"p_day_pct": 44,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"14% of the 6 mi ring has echo",
+"1 wet airport(s) nearby"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1800.8700000000001,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.03,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 0.29,
+"net_per": 0.029,
+"net_lo_per": -0.011,
+"net_hi_per": 0.069,
+"max_price_for_zero": null,
+"max_price_for_zero_point": 0.03,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 1,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KBOS",
+"city": "BOS",
+"ticker": "KXRAIN-26SEP12-BOS",
+"contract": {
+"ticker": "KXRAIN-26SEP12-BOS",
+"contract_day": "2026-09-12",
+"station": "CLIBOS",
+"icao": "KBOS",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 0,
+"p_day_pct": 2,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "QUIET",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.04,
+"best_size": 1367.59,
+"filled": 10.0,
+"avg": 0.04,
+"cost": 0.4,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.04,
+10.0
+]
+]
+},
+"gross_per": -0.04,
+"fee_total": 0.03,
+"fee_per": 0.003,
+"net_total": -0.43,
+"net_per": -0.043,
+"net_lo_per": -0.043,
+"net_hi_per": -0.003,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KORD",
+"city": "CHI",
+"ticker": "KXRAIN-26SEP12-CHI",
+"contract": {
+"ticker": "KXRAIN-26SEP12-CHI",
+"contract_day": "2026-09-12",
+"station": "CLIORD",
+"icao": "KORD",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 1,
+"p_day_pct": 10,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"100% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 828.3,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.0,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.01,
+"net_per": -0.001,
+"net_lo_per": -0.011,
+"net_hi_per": 0.039,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KDFW",
+"city": "DAL",
+"ticker": "KXRAIN-26SEP12-DAL",
+"contract": {
+"ticker": "KXRAIN-26SEP12-DAL",
+"contract_day": "2026-09-12",
+"station": "CLIDFW",
+"icao": "KDFW",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 0,
+"p_day_pct": 0,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"4% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1935.42,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": -0.01,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.11,
+"net_per": -0.011,
+"net_lo_per": -0.011,
+"net_hi_per": 0.029,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KDCA",
+"city": "DC",
+"ticker": "KXRAIN-26SEP12-DC",
+"contract": {
+"ticker": "KXRAIN-26SEP12-DC",
+"contract_day": "2026-09-12",
+"station": "CLIDCA",
+"icao": "KDCA",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 3,
+"p_day_pct": 66,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 16 m old",
+"radar 1 m old",
+"2% of the 6 mi ring has echo",
+"1 wet airport(s) nearby"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": 17,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)",
+"forecasts disagree: NWS peak 61%"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.03,
+"best_size": 20.0,
+"filled": 10.0,
+"avg": 0.03,
+"cost": 0.3,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.03,
+10.0
+]
+]
+},
+"gross_per": 0.0,
+"fee_total": 0.03,
+"fee_per": 0.003,
+"net_total": -0.03,
+"net_per": -0.003,
+"net_lo_per": -0.033,
+"net_hi_per": 0.037,
+"max_price_for_zero": null,
+"max_price_for_zero_point": 0.02,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 61,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KDEN",
+"city": "DEN",
+"ticker": "KXRAIN-26SEP12-DEN",
+"contract": {
+"ticker": "KXRAIN-26SEP12-DEN",
+"contract_day": "2026-09-12",
+"station": "CLIDEN",
+"icao": "KDEN",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T07:00:00+00:00",
+"minutes_left": 138,
+"close_time": "2026-09-13T07:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 1,
+"p_day_pct": 8,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"76% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1201.0,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.0,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.01,
+"net_per": -0.001,
+"net_lo_per": -0.011,
+"net_hi_per": 0.039,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 3,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KEWR",
+"city": "EWR",
+"ticker": "KXRAIN-26SEP12-EWR",
+"contract": {
+"ticker": "KXRAIN-26SEP12-EWR",
+"contract_day": "2026-09-12",
+"station": "CLIEWR",
+"icao": "KEWR",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 21,
+"p_day_pct": 21,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "UNKNOWN",
+"wet_state": "QUIET",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"gauge state unknown to the model (whole-day figure, no dry credit)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 531.76,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.2,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 1.99,
+"net_per": 0.199,
+"net_lo_per": 0.159,
+"net_hi_per": 0.239,
+"max_price_for_zero": 0.15,
+"max_price_for_zero_point": 0.19,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 18,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KHOU",
+"city": "HOU",
+"ticker": "KXRAIN-26SEP12-HOU",
+"contract": {
+"ticker": "KXRAIN-26SEP12-HOU",
+"contract_day": "2026-09-12",
+"station": "CLIHOU",
+"icao": "KHOU",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 3,
+"p_day_pct": 40,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "WET_IMMINENT",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"52% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is WET IMMINENT"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 121.19,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.02,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 0.19,
+"net_per": 0.019,
+"net_lo_per": -0.011,
+"net_hi_per": 0.059,
+"max_price_for_zero": null,
+"max_price_for_zero_point": 0.02,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KLAX",
+"city": "LAX",
+"ticker": "KXRAIN-26SEP12-LAX",
+"contract": {
+"ticker": "KXRAIN-26SEP12-LAX",
+"contract_day": "2026-09-12",
+"station": "CLILAX",
+"icao": "KLAX",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T08:00:00+00:00",
+"minutes_left": 198,
+"close_time": "2026-09-13T08:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 1,
+"p_day_pct": 10,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"8% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 2502.5,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.0,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.01,
+"net_per": -0.001,
+"net_lo_per": -0.011,
+"net_hi_per": 0.039,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KLAS",
+"city": "LV",
+"ticker": "KXRAIN-26SEP12-LV",
+"contract": {
+"ticker": "KXRAIN-26SEP12-LV",
+"contract_day": "2026-09-12",
+"station": "CLILAS",
+"icao": "KLAS",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T08:00:00+00:00",
+"minutes_left": 198,
+"close_time": "2026-09-13T08:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 0,
+"p_day_pct": 0,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "QUIET",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 3356.7,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": -0.01,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.11,
+"net_per": -0.011,
+"net_lo_per": -0.011,
+"net_hi_per": 0.029,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KMIA",
+"city": "MIA",
+"ticker": "KXRAIN-26SEP12-MIA",
+"contract": {
+"ticker": "KXRAIN-26SEP12-MIA",
+"contract_day": "2026-09-12",
+"station": "CLIMIA",
+"icao": "KMIA",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 3,
+"p_day_pct": 63,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"0% of the 6 mi ring has echo",
+"2 wet airport(s) nearby"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 300.74,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.02,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 0.19,
+"net_per": 0.019,
+"net_lo_per": -0.011,
+"net_hi_per": 0.059,
+"max_price_for_zero": null,
+"max_price_for_zero_point": 0.02,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 6,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KMSP",
+"city": "MIN",
+"ticker": "KXRAIN-26SEP12-MIN",
+"contract": {
+"ticker": "KXRAIN-26SEP12-MIN",
+"contract_day": "2026-09-12",
+"station": "CLIMSP",
+"icao": "KMSP",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 15,
+"p_day_pct": 77,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"100% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 368.49,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.14,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 1.39,
+"net_per": 0.139,
+"net_lo_per": 0.099,
+"net_hi_per": 0.179,
+"max_price_for_zero": 0.1,
+"max_price_for_zero_point": 0.14,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KMSY",
+"city": "NOLA",
+"ticker": "KXRAIN-26SEP12-NOLA",
+"contract": {
+"ticker": "KXRAIN-26SEP12-NOLA",
+"contract_day": "2026-09-12",
+"station": "CLIMSY",
+"icao": "KMSY",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 16,
+"p_day_pct": 79,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"1% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 2856.76,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.15,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 1.49,
+"net_per": 0.149,
+"net_lo_per": 0.109,
+"net_hi_per": 0.189,
+"max_price_for_zero": 0.11,
+"max_price_for_zero_point": 0.15,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KNYC",
+"city": "NYC",
+"ticker": "KXRAIN-26SEP12-NYC",
+"contract": {
+"ticker": "KXRAIN-26SEP12-NYC",
+"contract_day": "2026-09-12",
+"station": "CLINYC",
+"icao": "KNYC",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 0,
+"p_day_pct": 19,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "QUIET",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 249.6,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": -0.01,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.11,
+"net_per": -0.011,
+"net_lo_per": -0.011,
+"net_hi_per": 0.029,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 15,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KOKC",
+"city": "OKC",
+"ticker": "KXRAIN-26SEP12-OKC",
+"contract": {
+"ticker": "KXRAIN-26SEP12-OKC",
+"contract_day": "2026-09-12",
+"station": "CLIOKC",
+"icao": "KOKC",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 2,
+"p_day_pct": 27,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "QUIET",
+"wet_inputs": [
+"gauge report 21 m old",
+"radar 1 m old"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": 22,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1796.07,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.01,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 0.09,
+"net_per": 0.009,
+"net_lo_per": -0.011,
+"net_hi_per": 0.049,
+"max_price_for_zero": null,
+"max_price_for_zero_point": 0.01,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 16,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KPHL",
+"city": "PHIL",
+"ticker": "KXRAIN-26SEP12-PHIL",
+"contract": {
+"ticker": "KXRAIN-26SEP12-PHIL",
+"contract_day": "2026-09-12",
+"station": "CLIPHL",
+"icao": "KPHL",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 57,
+"p_day_pct": 57,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "UNKNOWN",
+"wet_state": "QUIET",
+"wet_inputs": [
+"gauge report 8 m old",
+"radar 1 m old"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"gauge state unknown to the model (whole-day figure, no dry credit)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 769.45,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.56,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 5.59,
+"net_per": 0.559,
+"net_lo_per": 0.519,
+"net_hi_per": 0.599,
+"max_price_for_zero": 0.51,
+"max_price_for_zero_point": 0.55,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 23,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KPHX",
+"city": "PHX",
+"ticker": "KXRAIN-26SEP12-PHX",
+"contract": {
+"ticker": "KXRAIN-26SEP12-PHX",
+"contract_day": "2026-09-12",
+"station": "CLIPHX",
+"icao": "KPHX",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T07:00:00+00:00",
+"minutes_left": 138,
+"close_time": "2026-09-13T07:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 1,
+"p_day_pct": 9,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 21 m old",
+"radar 1 m old",
+"28% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": 22,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1007.92,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.0,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.01,
+"net_per": -0.001,
+"net_lo_per": -0.011,
+"net_hi_per": 0.039,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 2,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KSAT",
+"city": "SATX",
+"ticker": "KXRAIN-26SEP12-SATX",
+"contract": {
+"ticker": "KXRAIN-26SEP12-SATX",
+"contract_day": "2026-09-12",
+"station": "CLISAT",
+"icao": "KSAT",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T06:00:00+00:00",
+"minutes_left": 78,
+"close_time": "2026-09-13T06:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 3,
+"p_day_pct": 36,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old",
+"95% of the 6 mi ring has echo"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1596.0,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.02,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 0.19,
+"net_per": 0.019,
+"net_lo_per": -0.011,
+"net_hi_per": 0.059,
+"max_price_for_zero": null,
+"max_price_for_zero_point": 0.02,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KSEA",
+"city": "SEA",
+"ticker": "KXRAIN-26SEP12-SEA",
+"contract": {
+"ticker": "KXRAIN-26SEP12-SEA",
+"contract_day": "2026-09-12",
+"station": "CLISEA",
+"icao": "KSEA",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T08:00:00+00:00",
+"minutes_left": 198,
+"close_time": "2026-09-13T08:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 0,
+"p_day_pct": 5,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "RAIN_NEARBY",
+"wet_inputs": [
+"gauge report 26 m old",
+"radar 1 m old",
+"4 wet airport(s) nearby"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": 27,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)",
+"forecasts disagree: NWS peak 71%"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": 0.57,
+"best_size": 2.0,
+"filled": 10.0,
+"avg": 0.578,
+"cost": 5.78,
+"partial": false,
+"levels_used": 2,
+"fills": [
+[
+0.57,
+2.0
+],
+[
+0.58,
+8.0
+]
+]
+},
+"gross_per": 0.422,
+"fee_total": 0.18,
+"fee_per": 0.018,
+"net_total": 4.04,
+"net_per": 0.404,
+"net_lo_per": 0.364,
+"net_hi_per": 0.404,
+"max_price_for_zero": 0.95,
+"max_price_for_zero_point": 0.99,
+"eligible": true,
+"reason": null
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.46,
+"best_size": 45.99999999999999,
+"filled": 10.0,
+"avg": 0.46,
+"cost": 4.6,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.46,
+10.0
+]
+]
+},
+"gross_per": -0.46,
+"fee_total": 0.18,
+"fee_per": 0.018,
+"net_total": -4.78,
+"net_per": -0.478,
+"net_lo_per": -0.478,
+"net_hi_per": -0.438,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 71,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KSFO",
+"city": "SFO",
+"ticker": "KXRAIN-26SEP12-SFO",
+"contract": {
+"ticker": "KXRAIN-26SEP12-SFO",
+"contract_day": "2026-09-12",
+"station": "CLISFO",
+"icao": "KSFO",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T08:00:00+00:00",
+"minutes_left": 198,
+"close_time": "2026-09-13T08:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 0,
+"p_day_pct": 0,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "QUIET",
+"wet_inputs": [
+"gauge report 41 m old",
+"radar 1 m old"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1689.64,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": -0.01,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": -0.11,
+"net_per": -0.011,
+"net_lo_per": -0.011,
+"net_hi_per": 0.029,
+"max_price_for_zero": null,
+"max_price_for_zero_point": null,
+"eligible": false,
+"reason": "not positive after fees"
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 0,
+"twc_day_pct": null
+}
+},
+{
+"icao": "KTTN",
+"city": "TTN",
+"ticker": "KXRAIN-26SEP12-TTN",
+"contract": {
+"ticker": "KXRAIN-26SEP12-TTN",
+"contract_day": "2026-09-12",
+"station": "CLITTN",
+"icao": "KTTN",
+"threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
+"deadline_utc": "2026-09-13T05:00:00+00:00",
+"minutes_left": 18,
+"close_time": "2026-09-13T05:00:00Z",
+"exchange_status": "active",
+"exchange_result": null
+},
+"settlement_state": "OPEN",
+"p_yes_pct": 3,
+"p_day_pct": 36,
+"model_id": "c55e83388cd6",
+"time_fix": true,
+"model_evidence": "DRY_AS_OF",
+"wet_state": "UNKNOWN",
+"wet_inputs": [
+"gauge report 101 m old",
+"radar 1 m old",
+"a live input is missing or stale"
+],
+"book_source": "websocket book",
+"book_age_s": 0,
+"book_status": "LIVE",
+"gauge_age_min": null,
+"radar_scan_age_min": 2,
+"radar_coverage_pct": 100.0,
+"conflicts": [
+"a live input is stale or missing"
+],
+"no": {
+"side": "no",
+"qty": 10.0,
+"executable": {
+"best": null,
+"best_size": 0.0,
+"filled": 0.0,
+"avg": null,
+"cost": 0.0,
+"partial": true,
+"levels_used": 0
+},
+"gross_per": null,
+"fee_total": null,
+"net_total": null,
+"net_per": null,
+"net_lo_per": null,
+"net_hi_per": null,
+"max_price_for_zero": null,
+"eligible": false,
+"reason": "no executable price"
+},
+"yes": {
+"side": "yes",
+"qty": 10.0,
+"executable": {
+"best": 0.01,
+"best_size": 1851.0,
+"filled": 10.0,
+"avg": 0.01,
+"cost": 0.1,
+"partial": false,
+"levels_used": 1,
+"fills": [
+[
+0.01,
+10.0
+]
+]
+},
+"gross_per": 0.02,
+"fee_total": 0.01,
+"fee_per": 0.001,
+"net_total": 0.19,
+"net_per": 0.019,
+"net_lo_per": -0.011,
+"net_hi_per": 0.119,
+"max_price_for_zero": null,
+"max_price_for_zero_point": 0.02,
+"eligible": true,
+"reason": null
+},
+"side": null,
+"rank": null,
+"key": null,
+"cells_closest_km": null,
+"other_forecasts": {
+"nws_peak_pct": 18,
+"twc_day_pct": null
+}
+}
+]
+}

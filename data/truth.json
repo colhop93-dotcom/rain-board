@@ -1,0 +1,131 @@
+{
+ "schema": "019a.truth/1",
+ "checked_utc": "2026-09-13T04:39:08.518205+00:00",
+ "files": [],
+ "stations": {
+  "KATL": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KAUS": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KBOS": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KORD": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KDFW": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KDCA": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 61% but the board's OWN calibrated physics says 3%"
+    }
+   ]
+  },
+  "KDEN": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KEWR": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KHOU": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLAX": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLAS": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMIA": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMSP": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMSY": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KNYC": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KOKC": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "gauge",
+     "severity": "med",
+     "detail": "weather.com reports 0.01 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
+    }
+   ]
+  },
+  "KPHL": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 23% but the board's OWN calibrated physics says 57%"
+    }
+   ]
+  },
+  "KPHX": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSAT": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSEA": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 71% but the board's OWN calibrated physics says 0%"
+    }
+   ]
+  },
+  "KSFO": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KTTN": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "stale",
+     "severity": "med",
+     "detail": "the station's own report is 99 min old"
+    }
+   ]
+  }
+ },
+ "summary": {
+  "n_open": 5,
+  "n_stations_bad": 5,
+  "worst": null,
+  "files_stale": 0
+ }
+}
