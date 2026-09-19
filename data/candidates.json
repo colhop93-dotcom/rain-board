@@ -1,6 +1,6 @@
 {
 "schema": "019a.candidates/1",
-"generated_utc": "2026-09-19T16:19:37.760500+00:00",
+"generated_utc": "2026-09-19T16:21:37.790342+00:00",
 "qty": 10.0,
 "fee_source": "0.07 * C * P * (1-P), ceil to the cent on the order total; matches wx_live_trader.order_fee (bot) and public descriptions; kalshi.com/fee-schedule unreachable (HTTP 429) 2026-09-12",
 "no_range_pct": [
@@ -11,7 +11,7 @@
 90,
 100
 ],
-"book_written_utc": "2026-09-19T16:19:36.854026+00:00",
+"book_written_utc": "2026-09-19T16:21:36.656944+00:00",
 "book_feed_status": "LIVE",
 "model": {
 "name": "v3",
@@ -34,7 +34,7 @@
 "icao": "KATL",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -50,14 +50,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 27 m old",
-"radar 4 m old"
+"gauge report 29 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "forecasts disagree: weather.com day 85%"
@@ -97,7 +97,7 @@
 "qty": 10.0,
 "executable": {
 "best": 0.65,
-"best_size": 10.0,
+"best_size": 13.0,
 "filled": 10.0,
 "avg": 0.65,
 "cost": 6.5,
@@ -142,7 +142,7 @@
 "icao": "KAUS",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -158,15 +158,15 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "RAIN_NEARBY",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old",
+"gauge report 28 m old",
+"radar 6 m old",
 "2% of the 6 mi ring has echo"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
@@ -198,7 +198,7 @@
 "qty": 10.0,
 "executable": {
 "best": 0.01,
-"best_size": 2097.91,
+"best_size": 2004.3999999999999,
 "filled": 10.0,
 "avg": 0.01,
 "cost": 0.1,
@@ -243,7 +243,7 @@
 "icao": "KBOS",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -259,14 +259,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 25 m old",
-"radar 4 m old"
+"gauge report 27 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -341,7 +341,7 @@
 "icao": "KORD",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -360,8 +360,8 @@
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
-"gauge_age_min": 30,
-"radar_scan_age_min": 5,
+"gauge_age_min": 32,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "market is past the point of a forecast: THRESHOLD_OBSERVED"
@@ -388,7 +388,7 @@
 "icao": "KCLL",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -404,7 +404,7 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "UNKNOWN",
 "wet_inputs": [
-"gauge report 26 m old",
+"gauge report 28 m old",
 "a live input is missing or stale"
 ],
 "book_source": "websocket book",
@@ -488,7 +488,7 @@
 "icao": "KCMH",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -504,7 +504,7 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "UNKNOWN",
 "wet_inputs": [
-"gauge report 2 m old",
+"gauge report 4 m old",
 "a live input is missing or stale"
 ],
 "book_source": "websocket book",
@@ -520,31 +520,31 @@
 "side": "no",
 "qty": 10.0,
 "executable": {
-"best": 0.41,
-"best_size": 7.0,
+"best": 0.37,
+"best_size": 2.0,
 "filled": 10.0,
-"avg": 0.413,
-"cost": 4.13,
+"avg": 0.378,
+"cost": 3.78,
 "partial": false,
 "levels_used": 2,
 "fills": [
 [
-0.41,
-7.0
+0.37,
+2.0
 ],
 [
-0.42,
-3.0
+0.38,
+8.0
 ]
 ]
 },
-"gross_per": 0.037,
+"gross_per": 0.072,
 "fee_total": 0.17,
 "fee_per": 0.017,
-"net_total": 0.2,
-"net_per": 0.02,
-"net_lo_per": -0.08,
-"net_hi_per": 0.12,
+"net_total": 0.55,
+"net_per": 0.055,
+"net_lo_per": -0.045,
+"net_hi_per": 0.155,
 "max_price_for_zero": 0.33,
 "max_price_for_zero_point": 0.43,
 "eligible": true,
@@ -554,31 +554,31 @@
 "side": "yes",
 "qty": 10.0,
 "executable": {
-"best": 0.6,
+"best": 0.64,
 "best_size": 3.0,
 "filled": 10.0,
-"avg": 0.607,
-"cost": 6.07,
+"avg": 0.647,
+"cost": 6.47,
 "partial": false,
 "levels_used": 2,
 "fills": [
 [
-0.6,
+0.64,
 3.0
 ],
 [
-0.61,
+0.65,
 7.0
 ]
 ]
 },
-"gross_per": -0.057,
-"fee_total": 0.17,
-"fee_per": 0.017,
-"net_total": -0.74,
-"net_per": -0.074,
-"net_lo_per": -0.174,
-"net_hi_per": 0.026,
+"gross_per": -0.097,
+"fee_total": 0.16,
+"fee_per": 0.016,
+"net_total": -1.13,
+"net_per": -0.113,
+"net_lo_per": -0.213,
+"net_hi_per": -0.013,
 "max_price_for_zero": 0.43,
 "max_price_for_zero_point": 0.53,
 "eligible": false,
@@ -604,7 +604,7 @@
 "icao": "KDFW",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -620,14 +620,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old"
+"gauge report 28 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -702,7 +702,7 @@
 "icao": "KDCA",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -718,8 +718,8 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "RAIN_NEARBY",
 "wet_inputs": [
-"gauge report 27 m old",
-"radar 4 m old",
+"gauge report 29 m old",
+"radar 6 m old",
 "4% of the 6 mi ring has echo",
 "1 wet airport(s) nearby"
 ],
@@ -727,7 +727,7 @@
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
@@ -812,7 +812,7 @@
 "icao": "KDEN",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T07:00:00+00:00",
-"minutes_left": 880,
+"minutes_left": 878,
 "close_time": "2026-09-20T07:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -828,72 +828,84 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "RAIN_NEARBY",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old",
+"gauge report 28 m old",
+"radar 6 m old",
 "2% of the 6 mi ring has echo"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
 "side": "no",
 "qty": 10.0,
 "executable": {
-"best": 0.32,
-"best_size": 59.0,
+"best": 0.34,
+"best_size": 8.0,
 "filled": 10.0,
-"avg": 0.32,
-"cost": 3.2,
+"avg": 0.342,
+"cost": 3.42,
 "partial": false,
-"levels_used": 1,
+"levels_used": 2,
 "fills": [
 [
-0.32,
-10.0
+0.34,
+8.0
+],
+[
+0.35,
+2.0
 ]
 ]
 },
-"gross_per": 0.03,
+"gross_per": 0.008,
 "fee_total": 0.16,
 "fee_per": 0.016,
-"net_total": 0.14,
-"net_per": 0.014,
-"net_lo_per": -0.026,
-"net_hi_per": 0.054,
+"net_total": -0.08,
+"net_per": -0.008,
+"net_lo_per": -0.048,
+"net_hi_per": 0.032,
 "max_price_for_zero": 0.29,
 "max_price_for_zero_point": 0.33,
-"eligible": true,
-"reason": null
+"eligible": false,
+"reason": "not positive after fees"
 },
 "yes": {
 "side": "yes",
 "qty": 10.0,
 "executable": {
-"best": 0.69,
-"best_size": 29.0,
+"best": 0.67,
+"best_size": 1.0,
 "filled": 10.0,
-"avg": 0.69,
-"cost": 6.9,
+"avg": 0.693,
+"cost": 6.93,
 "partial": false,
-"levels_used": 1,
+"levels_used": 3,
 "fills": [
 [
+0.67,
+1.0
+],
+[
 0.69,
-10.0
+4.0
+],
+[
+0.7,
+5.0
 ]
 ]
 },
-"gross_per": -0.04,
+"gross_per": -0.043,
 "fee_total": 0.15,
 "fee_per": 0.015,
-"net_total": -0.55,
-"net_per": -0.055,
-"net_lo_per": -0.095,
-"net_hi_per": -0.015,
+"net_total": -0.58,
+"net_per": -0.058,
+"net_lo_per": -0.098,
+"net_hi_per": -0.018,
 "max_price_for_zero": 0.59,
 "max_price_for_zero_point": 0.63,
 "eligible": false,
@@ -919,7 +931,7 @@
 "icao": "KEWR",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -935,14 +947,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 28 m old",
-"radar 4 m old"
+"gauge report 30 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -1025,7 +1037,7 @@
 "icao": "KHOU",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1041,14 +1053,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old"
+"gauge report 28 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -1131,7 +1143,7 @@
 "icao": "KLAX",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T08:00:00+00:00",
-"minutes_left": 940,
+"minutes_left": 938,
 "close_time": "2026-09-20T08:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1147,15 +1159,15 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "RAIN_NEARBY",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old",
+"gauge report 28 m old",
+"radar 6 m old",
 "3% of the 6 mi ring has echo"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
@@ -1232,7 +1244,7 @@
 "icao": "KLEX",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1248,7 +1260,7 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "UNKNOWN",
 "wet_inputs": [
-"gauge report 25 m old",
+"gauge report 27 m old",
 "a live input is missing or stale"
 ],
 "book_source": "websocket book",
@@ -1264,27 +1276,27 @@
 "side": "no",
 "qty": 10.0,
 "executable": {
-"best": 0.68,
-"best_size": 22.0,
+"best": 0.7,
+"best_size": 26.39,
 "filled": 10.0,
-"avg": 0.68,
-"cost": 6.8,
+"avg": 0.7,
+"cost": 7.0,
 "partial": false,
 "levels_used": 1,
 "fills": [
 [
-0.68,
+0.7,
 10.0
 ]
 ]
 },
-"gross_per": 0.19,
-"fee_total": 0.16,
-"fee_per": 0.016,
-"net_total": 1.74,
-"net_per": 0.174,
-"net_lo_per": 0.074,
-"net_hi_per": 0.274,
+"gross_per": 0.17,
+"fee_total": 0.15,
+"fee_per": 0.015,
+"net_total": 1.55,
+"net_per": 0.155,
+"net_lo_per": 0.055,
+"net_hi_per": 0.255,
 "max_price_for_zero": 0.75,
 "max_price_for_zero_point": 0.86,
 "eligible": true,
@@ -1294,27 +1306,35 @@
 "side": "yes",
 "qty": 10.0,
 "executable": {
-"best": 0.35,
-"best_size": 80.19999999999999,
+"best": 0.31,
+"best_size": 3.0,
 "filled": 10.0,
-"avg": 0.35,
-"cost": 3.5,
+"avg": 0.323,
+"cost": 3.23,
 "partial": false,
-"levels_used": 1,
+"levels_used": 3,
 "fills": [
 [
-0.35,
-10.0
+0.31,
+3.0
+],
+[
+0.32,
+1.0
+],
+[
+0.33,
+6.0
 ]
 ]
 },
-"gross_per": -0.22,
+"gross_per": -0.193,
 "fee_total": 0.16,
 "fee_per": 0.016,
-"net_total": -2.36,
-"net_per": -0.236,
-"net_lo_per": -0.336,
-"net_hi_per": -0.136,
+"net_total": -2.09,
+"net_per": -0.209,
+"net_lo_per": -0.309,
+"net_hi_per": -0.109,
 "max_price_for_zero": 0.02,
 "max_price_for_zero_point": 0.12,
 "eligible": false,
@@ -1340,7 +1360,7 @@
 "icao": "KLAS",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T08:00:00+00:00",
-"minutes_left": 940,
+"minutes_left": 938,
 "close_time": "2026-09-20T08:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1356,14 +1376,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 23 m old",
-"radar 4 m old"
+"gauge report 25 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -1438,7 +1458,7 @@
 "icao": "KMIA",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1454,80 +1474,80 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "RAIN_NEARBY",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old",
+"gauge report 28 m old",
+"radar 6 m old",
 "3% of the 6 mi ring has echo"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
 "side": "no",
 "qty": 10.0,
 "executable": {
-"best": 0.37,
+"best": 0.28,
 "best_size": 1.0,
 "filled": 10.0,
-"avg": 0.379,
-"cost": 3.79,
+"avg": 0.289,
+"cost": 2.89,
 "partial": false,
 "levels_used": 2,
 "fills": [
 [
-0.37,
+0.28,
 1.0
 ],
 [
-0.38,
+0.29,
 9.0
 ]
 ]
 },
-"gross_per": -0.059,
-"fee_total": 0.17,
-"fee_per": 0.017,
-"net_total": -0.76,
-"net_per": -0.076,
-"net_lo_per": -0.116,
-"net_hi_per": -0.036,
+"gross_per": 0.031,
+"fee_total": 0.15,
+"fee_per": 0.015,
+"net_total": 0.16,
+"net_per": 0.016,
+"net_lo_per": -0.024,
+"net_hi_per": 0.056,
 "max_price_for_zero": 0.26,
 "max_price_for_zero_point": 0.3,
-"eligible": false,
-"reason": "not positive after fees"
+"eligible": true,
+"reason": null
 },
 "yes": {
 "side": "yes",
 "qty": 10.0,
 "executable": {
-"best": 0.65,
-"best_size": 30.0,
+"best": 0.74,
+"best_size": 42.0,
 "filled": 10.0,
-"avg": 0.65,
-"cost": 6.5,
+"avg": 0.74,
+"cost": 7.4,
 "partial": false,
 "levels_used": 1,
 "fills": [
 [
-0.65,
+0.74,
 10.0
 ]
 ]
 },
-"gross_per": 0.03,
-"fee_total": 0.16,
-"fee_per": 0.016,
-"net_total": 0.14,
-"net_per": 0.014,
-"net_lo_per": -0.026,
-"net_hi_per": 0.054,
+"gross_per": -0.06,
+"fee_total": 0.14,
+"fee_per": 0.014,
+"net_total": -0.74,
+"net_per": -0.074,
+"net_lo_per": -0.114,
+"net_hi_per": -0.034,
 "max_price_for_zero": 0.62,
 "max_price_for_zero_point": 0.66,
-"eligible": true,
-"reason": null
+"eligible": false,
+"reason": "not positive after fees"
 },
 "side": null,
 "rank": null,
@@ -1549,7 +1569,7 @@
 "icao": "KMSP",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1568,8 +1588,8 @@
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
-"gauge_age_min": 30,
-"radar_scan_age_min": 5,
+"gauge_age_min": 32,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "forecasts disagree: NWS peak 20%",
@@ -1597,7 +1617,7 @@
 "icao": "KMKE",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1616,7 +1636,7 @@
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
-"gauge_age_min": 30,
+"gauge_age_min": 32,
 "radar_scan_age_min": null,
 "radar_coverage_pct": null,
 "conflicts": [
@@ -1644,7 +1664,7 @@
 "icao": "KMSY",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1660,14 +1680,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old"
+"gauge report 28 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -1742,7 +1762,7 @@
 "icao": "KNYC",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1758,14 +1778,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 28 m old",
-"radar 4 m old"
+"gauge report 30 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "positive at the point (+0.9c) but not at the pessimistic edge of the band (-3.1c)"
@@ -1850,7 +1870,7 @@
 "icao": "KOKC",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1866,14 +1886,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 27 m old",
-"radar 4 m old"
+"gauge report 29 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -1956,7 +1976,7 @@
 "icao": "KPHL",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -1972,14 +1992,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 25 m old",
-"radar 4 m old"
+"gauge report 27 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -2062,7 +2082,7 @@
 "icao": "KPHX",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T07:00:00+00:00",
-"minutes_left": 880,
+"minutes_left": 878,
 "close_time": "2026-09-20T07:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -2078,15 +2098,15 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "RAIN_NEARBY",
 "wet_inputs": [
-"gauge report 28 m old",
-"radar 4 m old",
+"gauge report 30 m old",
+"radar 6 m old",
 "2% of the 6 mi ring has echo"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
@@ -2163,7 +2183,7 @@
 "icao": "KPVD",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -2179,7 +2199,7 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "UNKNOWN",
 "wet_inputs": [
-"gauge report 28 m old",
+"gauge report 30 m old",
 "a live input is missing or stale"
 ],
 "book_source": "websocket book",
@@ -2263,7 +2283,7 @@
 "icao": "KSAT",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T06:00:00+00:00",
-"minutes_left": 820,
+"minutes_left": 818,
 "close_time": "2026-09-20T06:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -2279,14 +2299,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 28 m old",
-"radar 4 m old"
+"gauge report 30 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -2369,7 +2389,7 @@
 "icao": "KSEA",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T08:00:00+00:00",
-"minutes_left": 940,
+"minutes_left": 938,
 "close_time": "2026-09-20T08:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -2385,15 +2405,15 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "RAIN_NEARBY",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old",
+"gauge report 28 m old",
+"radar 6 m old",
 "1 wet airport(s) nearby"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [
 "low modelled probability but the sky is RAIN NEARBY (light echo, shown not blocking)"
@@ -2478,7 +2498,7 @@
 "icao": "KSFO",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T08:00:00+00:00",
-"minutes_left": 940,
+"minutes_left": 938,
 "close_time": "2026-09-20T08:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -2494,14 +2514,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 10 m old",
-"radar 4 m old"
+"gauge report 12 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
@@ -2576,7 +2596,7 @@
 "icao": "KTTN",
 "threshold": "strictly greater than 0 in, as reported by The Weather Company for the CLI station; trace and missing count as 0",
 "deadline_utc": "2026-09-20T05:00:00+00:00",
-"minutes_left": 760,
+"minutes_left": 758,
 "close_time": "2026-09-20T05:00:00Z",
 "exchange_status": "active",
 "exchange_result": null
@@ -2592,14 +2612,14 @@
 "model_evidence": "DRY_AS_OF",
 "wet_state": "QUIET",
 "wet_inputs": [
-"gauge report 26 m old",
-"radar 4 m old"
+"gauge report 28 m old",
+"radar 6 m old"
 ],
 "book_source": "websocket book",
 "book_age_s": 1,
 "book_status": "LIVE",
 "gauge_age_min": null,
-"radar_scan_age_min": 5,
+"radar_scan_age_min": 7,
 "radar_coverage_pct": 100.0,
 "conflicts": [],
 "no": {
