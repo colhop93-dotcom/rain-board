@@ -1,16 +1,16 @@
 {
  "schema": "019a.settle/1",
- "generated_utc": "2026-09-19T16:31:01.655095+00:00",
+ "generated_utc": "2026-09-19T16:32:01.733944+00:00",
  "stations": {
   "KATL": {
    "role": "leading",
-   "precip1h": 0.0,
-   "precip6h": 0.0,
-   "precip24h": 0.0,
-   "wx": "Partly Cloudy",
-   "valid_local": "2026-09-19T12:16:54-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
-   "error": null,
+   "precip1h": null,
+   "precip6h": null,
+   "precip24h": null,
+   "wx": null,
+   "valid_local": null,
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
+   "error": "URLError(TimeoutError('timed out'))",
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
     "hours": [
@@ -105,41 +105,52 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 0.0,
-    "pct60": 0.0,
+    "pct30": 0.1,
+    "pct60": 0.2,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
     "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
     "error": null,
     "cells": {
-     "nearest": null,
+     "nearest": {
+      "km": 140.9,
+      "bearing": "NW",
+      "dbz": 53,
+      "kt": 0,
+      "radar": "FFC",
+      "valid": "2026-09-19T16:24:27Z",
+      "heading": null,
+      "closest_km": null,
+      "eta_min": null,
+      "status": "stationary"
+     },
      "inbound": null,
      "n_inbound": 0,
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "no cell on track and no composite echo within 30 km"
+    "verdict": "composite echo 0.1% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 1158.0,
+    "unchanged_min": 1159.0,
     "since_utc": "2026-09-18T21:13:01.961112+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
-   "today_src": "1h",
+   "today_src": "carried",
    "today_day": "2026-09-19"
   },
   "KAUS": {
@@ -149,7 +160,7 @@
    "precip24h": 0.0,
    "wx": "Partly Cloudy",
    "valid_local": "2026-09-19T11:19:16-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -251,16 +262,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 2.1,
-    "pct30": 0.6,
-    "pct60": 0.4,
+    "pct10": 0.0,
+    "pct30": 0.8,
+    "pct60": 0.6,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -273,16 +284,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.6% in the 30 km ring"
+    "verdict": "composite echo 0.8% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 1002.0,
+    "unchanged_min": 1003.0,
     "since_utc": "2026-09-18T23:49:02.191479+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -296,7 +307,7 @@
    "precip24h": 0.0,
    "wx": "Cloudy",
    "valid_local": "2026-09-19T12:21:00-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -392,15 +403,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 0.2,
-    "pct60": 0.4,
+    "pct30": 0.0,
+    "pct60": 0.3,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 99.7,
@@ -413,16 +424,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.2% in the 30 km ring"
+    "verdict": "no cell on track and no composite echo within 30 km"
    },
    "tile": {
-    "unchanged_min": 1463.0,
+    "unchanged_min": 1464.0,
     "since_utc": "2026-09-18T16:08:01.769783+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -432,11 +443,11 @@
   "KORD": {
    "role": "leading",
    "precip1h": 0.0,
-   "precip6h": 0.41,
-   "precip24h": 0.54,
+   "precip6h": 0.38,
+   "precip24h": 0.47,
    "wx": "Cloudy",
-   "valid_local": "2026-09-19T11:16:48-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "valid_local": "2026-09-19T11:25:58-0500",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -538,16 +549,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 52.8,
-    "pct30": 55.8,
-    "pct60": 49.3,
+    "pct10": 36.8,
+    "pct30": 52.5,
+    "pct60": 46.6,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 99.9,
@@ -555,32 +566,32 @@
     "error": null,
     "cells": {
      "nearest": {
-      "km": 117.5,
+      "km": 140.5,
       "bearing": "W",
-      "dbz": 36,
-      "kt": 66,
-      "radar": "LOT",
-      "valid": "2026-09-19T16:20:32Z",
-      "heading": "ENE",
-      "closest_km": 26.4,
+      "dbz": 44,
+      "kt": 0,
+      "radar": "MKX",
+      "valid": "2026-09-19T16:27:30Z",
+      "heading": null,
+      "closest_km": null,
       "eta_min": null,
-      "status": "passing wide"
+      "status": "stationary"
      },
      "inbound": null,
      "n_inbound": 0,
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 55.8% in the 30 km ring"
+    "verdict": "composite echo 52.5% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 1179.0,
+    "unchanged_min": 1180.0,
     "since_utc": "2026-09-18T20:52:01.753068+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.51,
@@ -593,8 +604,8 @@
    "precip6h": 0.0,
    "precip24h": 0.0,
    "wx": "Fair",
-   "valid_local": "2026-09-19T11:18:21-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "valid_local": "2026-09-19T11:28:04-0500",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -700,12 +711,12 @@
     "pct30": 0.4,
     "pct60": 0.4,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -718,16 +729,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
     "verdict": "composite echo 0.4% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 1158.0,
+    "unchanged_min": 1159.0,
     "since_utc": "2026-09-18T21:13:01.961112+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -740,8 +751,8 @@
    "precip6h": 0.0,
    "precip24h": 0.0,
    "wx": "Mostly Cloudy",
-   "valid_local": "2026-09-19T12:15:04-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "valid_local": "2026-09-19T12:25:04-0400",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -836,16 +847,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 3.6,
-    "pct30": 1.0,
-    "pct60": 0.9,
+    "pct10": 4.3,
+    "pct30": 1.6,
+    "pct60": 1.0,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -858,16 +869,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 1.0% in the 30 km ring"
+    "verdict": "composite echo 1.6% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 1179.0,
+    "unchanged_min": 1180.0,
     "since_utc": "2026-09-18T20:52:01.753068+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -881,7 +892,7 @@
    "precip24h": 0.53,
    "wx": "Fair",
    "valid_local": "2026-09-19T10:19:23-0600",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:30:01.799571+00:00",
@@ -990,16 +1001,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 5.0,
-    "pct30": 4.8,
-    "pct60": 4.0,
-    "pct30_strong": 0.4,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "pct10": 1.5,
+    "pct30": 3.2,
+    "pct60": 3.7,
+    "pct30_strong": 0.2,
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -1012,16 +1023,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 4.8% in the 30 km ring, 0.4% of it heavy"
+    "verdict": "composite echo 3.2% in the 30 km ring, 0.2% of it heavy"
    },
    "tile": {
-    "unchanged_min": 1153.0,
+    "unchanged_min": 1154.0,
     "since_utc": "2026-09-18T21:18:01.976799+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -1035,7 +1046,7 @@
    "precip24h": 0.0,
    "wx": "Mostly Cloudy",
    "valid_local": "2026-09-19T12:19:19-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -1131,15 +1142,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 0.4,
-    "pct60": 0.3,
+    "pct30": 0.2,
+    "pct60": 0.2,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -1152,16 +1163,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.4% in the 30 km ring"
+    "verdict": "composite echo 0.2% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 15751.9,
+    "unchanged_min": 15752.9,
     "since_utc": "2026-09-08T17:59:10.257398+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -1175,7 +1186,7 @@
    "precip24h": 0.0,
    "wx": "Partly Cloudy",
    "valid_local": "2026-09-19T11:24:42-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -1277,16 +1288,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 2.2,
-    "pct30": 2.1,
-    "pct60": 4.0,
+    "pct10": 1.4,
+    "pct30": 1.7,
+    "pct60": 4.3,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -1299,16 +1310,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 2.1% in the 30 km ring"
+    "verdict": "composite echo 1.7% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 17.0,
+    "unchanged_min": 18.0,
     "since_utc": "2026-09-19T16:14:01.520382+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -1322,7 +1333,7 @@
    "precip24h": 0.0,
    "wx": "Mostly Cloudy",
    "valid_local": "2026-09-19T09:15:01-0700",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -1438,16 +1449,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 7.5,
-    "pct30": 3.9,
-    "pct60": 3.0,
+    "pct10": 0.0,
+    "pct30": 2.0,
+    "pct60": 2.2,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -1460,16 +1471,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 3.9% in the 30 km ring"
+    "verdict": "composite echo 2.0% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 1227.0,
+    "unchanged_min": 1228.0,
     "since_utc": "2026-09-18T20:04:01.473722+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -1483,7 +1494,7 @@
    "precip24h": 0.0,
    "wx": "Sunny",
    "valid_local": "2026-09-19T09:25:40-0700",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -1600,15 +1611,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 0.1,
-    "pct60": 0.2,
+    "pct30": 0.0,
+    "pct60": 0.0,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -1621,16 +1632,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.1% in the 30 km ring"
+    "verdict": "no cell on track and no composite echo within 30 km"
    },
    "tile": {
-    "unchanged_min": 478.0,
+    "unchanged_min": 479.0,
     "since_utc": "2026-09-19T08:33:02.026529+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -1644,7 +1655,7 @@
    "precip24h": 0.4,
    "wx": "Mostly Cloudy",
    "valid_local": "2026-09-19T12:14:53-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -1740,15 +1751,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 9.7,
-    "pct60": 17.3,
-    "pct30_strong": 2.2,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "pct30": 9.5,
+    "pct60": 18.6,
+    "pct30_strong": 2.5,
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -1756,130 +1767,143 @@
     "error": null,
     "cells": {
      "nearest": {
-      "km": 18.2,
-      "bearing": "ESE",
-      "dbz": 48,
-      "kt": 0,
-      "radar": "BYX",
-      "valid": "2026-09-19T16:21:40Z",
-      "heading": null,
-      "closest_km": null,
-      "eta_min": null,
-      "status": "stationary"
-     },
-     "inbound": {
-      "km": 20.4,
+      "km": 15.4,
       "bearing": "E",
-      "dbz": 54,
-      "kt": 6,
-      "radar": "AMX",
-      "valid": "2026-09-19T16:22:32Z",
-      "heading": "WSW",
-      "closest_km": 6.5,
-      "eta_min": 105,
+      "dbz": 48,
+      "kt": 8,
+      "radar": "BYX",
+      "valid": "2026-09-19T16:26:07Z",
+      "heading": "WNW",
+      "closest_km": 2.9,
+      "eta_min": 61,
       "status": "closing"
      },
-     "n_inbound": 1,
+     "inbound": {
+      "km": 15.4,
+      "bearing": "E",
+      "dbz": 48,
+      "kt": 8,
+      "radar": "BYX",
+      "valid": "2026-09-19T16:26:07Z",
+      "heading": "WNW",
+      "closest_km": 2.9,
+      "eta_min": 61,
+      "status": "closing"
+     },
+     "n_inbound": 2,
      "cells": [
       {
-       "km": 18.2,
-       "bearing": "ESE",
-       "dbz": 48,
-       "kt": 0,
-       "radar": "BYX",
-       "valid": "2026-09-19T16:21:40Z",
-       "heading": null,
-       "closest_km": null,
-       "eta_min": null,
-       "status": "stationary"
-      },
-      {
-       "km": 20.4,
+       "km": 15.4,
        "bearing": "E",
-       "dbz": 54,
-       "kt": 6,
-       "radar": "AMX",
-       "valid": "2026-09-19T16:22:32Z",
-       "heading": "WSW",
-       "closest_km": 6.5,
-       "eta_min": 105,
+       "dbz": 48,
+       "kt": 8,
+       "radar": "BYX",
+       "valid": "2026-09-19T16:26:07Z",
+       "heading": "WNW",
+       "closest_km": 2.9,
+       "eta_min": 61,
        "status": "closing"
       },
       {
-       "km": 46.8,
-       "bearing": "ESE",
-       "dbz": 44,
-       "kt": 0,
+       "km": 16.6,
+       "bearing": "E",
+       "dbz": 52,
+       "kt": 8,
        "radar": "AMX",
-       "valid": "2026-09-19T16:22:32Z",
-       "heading": null,
-       "closest_km": null,
-       "eta_min": null,
-       "status": "stationary"
+       "valid": "2026-09-19T16:27:43Z",
+       "heading": "WSW",
+       "closest_km": 6.4,
+       "eta_min": 62,
+       "status": "closing"
       },
       {
-       "km": 51.1,
+       "km": 46.4,
+       "bearing": "ESE",
+       "dbz": 47,
+       "kt": 6,
+       "radar": "AMX",
+       "valid": "2026-09-19T16:27:43Z",
+       "heading": "WNW",
+       "closest_km": 7.0,
+       "eta_min": null,
+       "status": "on a line, far",
+       "eta_far_min": 248
+      },
+      {
+       "km": 48.6,
        "bearing": "SE",
        "dbz": 51,
        "kt": 10,
        "radar": "AMX",
-       "valid": "2026-09-19T16:22:32Z",
+       "valid": "2026-09-19T16:27:43Z",
        "heading": "NNW",
-       "closest_km": 16.0,
+       "closest_km": 16.5,
        "eta_min": null,
        "status": "passing wide"
       },
       {
-       "km": 52.2,
+       "km": 48.8,
        "bearing": "SE",
        "dbz": 48,
-       "kt": 8,
+       "kt": 10,
        "radar": "BYX",
-       "valid": "2026-09-19T16:21:40Z",
+       "valid": "2026-09-19T16:26:07Z",
        "heading": "NNW",
-       "closest_km": 12.4,
+       "closest_km": 15.5,
        "eta_min": null,
        "status": "passing wide"
       },
       {
-       "km": 75.1,
-       "bearing": "SSE",
-       "dbz": 45,
-       "kt": 12,
+       "km": 50.4,
+       "bearing": "WSW",
+       "dbz": 32,
+       "kt": 0,
        "radar": "BYX",
-       "valid": "2026-09-19T16:21:40Z",
-       "heading": "NNW",
-       "closest_km": 4.9,
+       "valid": "2026-09-19T16:26:07Z",
+       "heading": null,
+       "closest_km": null,
        "eta_min": null,
-       "status": "on a line, far",
-       "eta_far_min": 203
+       "status": "stationary"
       },
       {
-       "km": 77.2,
+       "km": 71.8,
+       "bearing": "SSE",
+       "dbz": 49,
+       "kt": 14,
+       "radar": "BYX",
+       "valid": "2026-09-19T16:26:07Z",
+       "heading": "NNW",
+       "closest_km": 5.4,
+       "eta_min": null,
+       "status": "on a line, far",
+       "eta_far_min": 166
+      },
+      {
+       "km": 76.9,
        "bearing": "SSE",
        "dbz": 49,
        "kt": 10,
        "radar": "AMX",
-       "valid": "2026-09-19T16:22:32Z",
+       "valid": "2026-09-19T16:27:43Z",
        "heading": "NNW",
-       "closest_km": 3.9,
+       "closest_km": 5.1,
        "eta_min": null,
        "status": "on a line, far",
-       "eta_far_min": 250
+       "eta_far_min": 249
       }
      ],
-     "n_within_60": 5,
+     "n_within_60": 6,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "54 dBZ core arrives in about 105 min, passing 6.5 km from the gauge (now 20.4 km E, moving WSW at 6 kt)"
+    "verdict": "48 dBZ core arrives in about 61 min, passing 2.9 km from the gauge (now 15.4 km E, moving WNW at 8 kt); 2 cells on track"
    },
    "tile": {
-    "unchanged_min": 134.0,
+    "unchanged_min": 135.0,
     "since_utc": "2026-09-19T14:17:01.589210+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -1893,7 +1917,7 @@
    "precip24h": 0.63,
    "wx": "Cloudy",
    "valid_local": "2026-09-19T11:24:41-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -1995,16 +2019,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 1.0,
-    "pct30": 9.5,
-    "pct60": 7.0,
+    "pct10": 2.3,
+    "pct30": 9.0,
+    "pct60": 6.7,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -2017,16 +2041,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 9.5% in the 30 km ring"
+    "verdict": "composite echo 9.0% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 323.0,
+    "unchanged_min": 324.0,
     "since_utc": "2026-09-19T11:08:01.261640+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.15,
@@ -2040,7 +2064,7 @@
    "precip24h": 0.0,
    "wx": "Fair",
    "valid_local": "2026-09-19T11:16:50-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -2142,19 +2166,19 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 3.2,
-    "pct30": 0.4,
-    "pct60": 0.1,
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
-    "coverage30_pct": 84.0,
-    "coverage60_pct": 76.8,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
     "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
     "error": null,
     "cells": {
@@ -2164,16 +2188,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.4% in the 30 km ring"
+    "verdict": "no cell on track and no composite echo within 30 km"
    },
    "tile": {
-    "unchanged_min": 347.0,
+    "unchanged_min": 348.0,
     "since_utc": "2026-09-19T10:44:02.042934+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -2186,8 +2210,8 @@
    "precip6h": 0.0,
    "precip24h": 0.0,
    "wx": "Cloudy",
-   "valid_local": "2026-09-19T12:19:26-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "valid_local": "2026-09-19T12:28:37-0400",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -2283,15 +2307,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 0.7,
+    "pct30": 0.2,
     "pct60": 0.2,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -2304,16 +2328,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.7% in the 30 km ring"
+    "verdict": "composite echo 0.2% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 15751.9,
+    "unchanged_min": 15752.9,
     "since_utc": "2026-09-08T17:59:10.257398+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -2327,7 +2351,7 @@
    "precip24h": 0.0,
    "wx": "Fair",
    "valid_local": "2026-09-19T11:23:05-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -2430,15 +2454,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 0.0,
-    "pct60": 0.5,
+    "pct30": 0.2,
+    "pct60": 0.6,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -2451,16 +2475,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "no cell on track and no composite echo within 30 km"
+    "verdict": "composite echo 0.2% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 29.0,
+    "unchanged_min": 30.0,
     "since_utc": "2026-09-19T16:02:01.436764+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -2474,7 +2498,7 @@
    "precip24h": 0.0,
    "wx": "Mostly Cloudy",
    "valid_local": "2026-09-19T12:16:39-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -2570,15 +2594,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 4.1,
-    "pct60": 1.7,
+    "pct30": 4.2,
+    "pct60": 2.0,
     "pct30_strong": 0.1,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -2591,16 +2615,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 4.1% in the 30 km ring, 0.1% of it heavy"
+    "verdict": "composite echo 4.2% in the 30 km ring, 0.1% of it heavy"
    },
    "tile": {
-    "unchanged_min": 192.0,
+    "unchanged_min": 193.0,
     "since_utc": "2026-09-19T13:19:01.257096+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -2614,7 +2638,7 @@
    "precip24h": 0.0,
    "wx": "Fair",
    "valid_local": "2026-09-19T09:24:18-0700",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:30:01.799571+00:00",
@@ -2723,16 +2747,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 0.3,
-    "pct30": 0.6,
-    "pct60": 0.7,
+    "pct10": 1.7,
+    "pct30": 0.7,
+    "pct60": 0.5,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -2745,16 +2769,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.6% in the 30 km ring"
+    "verdict": "composite echo 0.7% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 43.0,
+    "unchanged_min": 44.0,
     "since_utc": "2026-09-19T15:48:01.438701+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -2768,7 +2792,7 @@
    "precip24h": 0.42,
    "wx": "Mostly Cloudy",
    "valid_local": "2026-09-19T11:19:41-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -2871,15 +2895,15 @@
    },
    "radar": {
     "pct10": 0.0,
-    "pct30": 0.6,
-    "pct60": 0.7,
+    "pct30": 1.0,
+    "pct60": 0.6,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -2892,16 +2916,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.6% in the 30 km ring"
+    "verdict": "composite echo 1.0% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 347.0,
+    "unchanged_min": 348.0,
     "since_utc": "2026-09-19T10:44:02.042934+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -2915,7 +2939,7 @@
    "precip24h": 0.0,
    "wx": "Fog",
    "valid_local": "2026-09-19T09:22:38-0700",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3033,14 +3057,14 @@
    "radar": {
     "pct10": 0.0,
     "pct30": 0.0,
-    "pct60": 0.3,
+    "pct60": 0.2,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 98.7,
@@ -3053,16 +3077,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
     "verdict": "no cell on track and no composite echo within 30 km"
    },
    "tile": {
-    "unchanged_min": 98.0,
+    "unchanged_min": 99.0,
     "since_utc": "2026-09-19T14:53:01.947553+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -3076,7 +3100,7 @@
    "precip24h": 0.0,
    "wx": "Mostly Cloudy",
    "valid_local": "2026-09-19T09:23:23-0700",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3196,12 +3220,12 @@
     "pct30": 0.0,
     "pct60": 0.7,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -3214,16 +3238,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
     "verdict": "no cell on track and no composite echo within 30 km"
    },
    "tile": {
-    "unchanged_min": 378.0,
+    "unchanged_min": 379.0,
     "since_utc": "2026-09-19T10:13:01.855957+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -3237,7 +3261,7 @@
    "precip24h": 0.0,
    "wx": "Fair",
    "valid_local": "2026-09-19T12:17:45-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3332,16 +3356,16 @@
     "day_label": "Today"
    },
    "radar": {
-    "pct10": 0.0,
-    "pct30": 0.1,
+    "pct10": 3.1,
+    "pct30": 0.4,
     "pct60": 0.3,
     "pct30_strong": 0.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_utc": null,
     "source": "IEM NEXRAD composite (N0Q)",
-    "scan_valid_utc": "2026-09-19T16:25:00Z",
-    "read_utc": "2026-09-19T16:27:01Z",
-    "radar_quorum": "144/147",
-    "scan_meta_error": null,
+    "scan_valid_utc": null,
+    "read_utc": "2026-09-19T16:32:01Z",
+    "radar_quorum": null,
+    "scan_meta_error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed",
     "coverage10_pct": 100.0,
     "coverage30_pct": 100.0,
     "coverage60_pct": 100.0,
@@ -3354,16 +3378,16 @@
      "cells": [],
      "n_within_60": 0,
      "source": "IEM NEXRAD storm attributes",
-     "checked_utc": "2026-09-19T16:28:03Z"
+     "checked_utc": "2026-09-19T16:33:48Z"
     },
-    "verdict": "composite echo 0.1% in the 30 km ring"
+    "verdict": "composite echo 0.4% in the 30 km ring"
    },
    "tile": {
-    "unchanged_min": 87.0,
+    "unchanged_min": 88.0,
     "since_utc": "2026-09-19T15:04:02.078214+00:00",
     "site_block_stale": true,
-    "frame_age_min": 6.0,
-    "frame_utc": "2026-09-19T16:25:00Z",
+    "frame_age_min": null,
+    "frame_utc": null,
     "stale": false
    },
    "today_in": 0.0,
@@ -3375,9 +3399,9 @@
    "precip1h": 0.0,
    "precip6h": 0.0,
    "precip24h": 0.0,
-   "wx": "Cloudy",
-   "valid_local": "2026-09-19T12:14:33-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "wx": "Mostly Cloudy",
+   "valid_local": "2026-09-19T12:24:20-0400",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3473,7 +3497,7 @@
    },
    "radar": null,
    "tile": {
-    "unchanged_min": 87.0,
+    "unchanged_min": 88.0,
     "since_utc": "2026-09-19T15:04:02.078214+00:00",
     "site_block_stale": true,
     "frame_age_min": null,
@@ -3491,7 +3515,7 @@
    "precip24h": 0.94,
    "wx": "Cloudy",
    "valid_local": "2026-09-19T11:18:38-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3594,7 +3618,7 @@
    },
    "radar": null,
    "tile": {
-    "unchanged_min": 63.0,
+    "unchanged_min": 64.0,
     "since_utc": "2026-09-19T15:28:02.134139+00:00",
     "site_block_stale": true,
     "frame_age_min": null,
@@ -3612,7 +3636,7 @@
    "precip24h": 0.06,
    "wx": "Sunny",
    "valid_local": "2026-09-19T12:17:43-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3708,7 +3732,7 @@
    },
    "radar": null,
    "tile": {
-    "unchanged_min": 63.0,
+    "unchanged_min": 64.0,
     "since_utc": "2026-09-19T15:28:02.134139+00:00",
     "site_block_stale": true,
     "frame_age_min": null,
@@ -3725,8 +3749,8 @@
    "precip6h": 0.0,
    "precip24h": 0.0,
    "wx": "Partly Cloudy",
-   "valid_local": "2026-09-19T11:19:44-0500",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "valid_local": "2026-09-19T11:29:46-0500",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3829,7 +3853,7 @@
    },
    "radar": null,
    "tile": {
-    "unchanged_min": 63.0,
+    "unchanged_min": 64.0,
     "since_utc": "2026-09-19T15:28:02.134139+00:00",
     "site_block_stale": true,
     "frame_age_min": null,
@@ -3847,7 +3871,7 @@
    "precip24h": 0.0,
    "wx": "Mostly Cloudy",
    "valid_local": "2026-09-19T12:23:31-0400",
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00",
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "fc": {
     "fetched_utc": "2026-09-19T16:25:01.602511+00:00",
@@ -3943,7 +3967,7 @@
    },
    "radar": null,
    "tile": {
-    "unchanged_min": 63.0,
+    "unchanged_min": 64.0,
     "since_utc": "2026-09-19T15:28:02.134139+00:00",
     "site_block_stale": true,
     "frame_age_min": null,
@@ -3959,12 +3983,12 @@
   "synoptic": {
    "disabled": "synoptic off  HTTP 403",
    "note": "caps 55 contracts, $250 a day, limit 0.97 (CAPS.json); synoptic off: HTTP 403; awc ok; madis ok",
-   "heartbeat_utc": "2026-09-19T16:31:07.046257+00:00",
+   "heartbeat_utc": "2026-09-19T16:33:47.907129+00:00",
    "stale": false,
-   "seen_utc": "2026-09-19T16:31:01.655095+00:00"
+   "seen_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "radar": {
-   "computed_utc": "2026-09-19T16:27:01.601465+00:00",
+   "computed_utc": "2026-09-19T16:32:01.733944+00:00",
    "error": null,
    "n": 22
   }
@@ -3977,7 +4001,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KAUS": {
    "date": "2026-09-19",
@@ -3986,7 +4010,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KBOS": {
    "date": "2026-09-19",
@@ -3995,7 +4019,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KCLL": {
    "date": "2026-09-19",
@@ -4004,7 +4028,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KCMH": {
    "date": "2026-09-19",
@@ -4013,7 +4037,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KDCA": {
    "date": "2026-09-19",
@@ -4022,7 +4046,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KDEN": {
    "date": "2026-09-19",
@@ -4031,7 +4055,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KDFW": {
    "date": "2026-09-19",
@@ -4040,7 +4064,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KEWR": {
    "date": "2026-09-19",
@@ -4049,7 +4073,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KHOU": {
    "date": "2026-09-19",
@@ -4058,7 +4082,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KLAS": {
    "date": "2026-09-19",
@@ -4067,7 +4091,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KLAX": {
    "date": "2026-09-19",
@@ -4076,7 +4100,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KLEX": {
    "date": "2026-09-19",
@@ -4085,7 +4109,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KMIA": {
    "date": "2026-09-19",
@@ -4094,7 +4118,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KMKE": {
    "date": "2026-09-19",
@@ -4103,7 +4127,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KMSP": {
    "date": "2026-09-19",
@@ -4112,7 +4136,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KMSY": {
    "date": "2026-09-19",
@@ -4121,7 +4145,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KNYC": {
    "date": "2026-09-19",
@@ -4130,7 +4154,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KOKC": {
    "date": "2026-09-19",
@@ -4139,7 +4163,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KORD": {
    "date": "2026-09-19",
@@ -4148,7 +4172,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KPHL": {
    "date": "2026-09-19",
@@ -4157,7 +4181,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KPHX": {
    "date": "2026-09-19",
@@ -4166,7 +4190,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KPVD": {
    "date": "2026-09-19",
@@ -4175,7 +4199,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KSAT": {
    "date": "2026-09-19",
@@ -4184,7 +4208,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KSEA": {
    "date": "2026-09-19",
@@ -4193,7 +4217,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KSFO": {
    "date": "2026-09-19",
@@ -4202,7 +4226,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   },
   "KTTN": {
    "date": "2026-09-19",
@@ -4211,7 +4235,7 @@
    "precip": null,
    "issueTime": null,
    "isOfficial": null,
-   "fetched_utc": "2026-09-19T16:31:01.655095+00:00"
+   "fetched_utc": "2026-09-19T16:32:01.733944+00:00"
   }
  }
 }
