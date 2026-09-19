@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-09-19T16:24:06.220252+00:00",
+ "checked_utc": "2026-09-19T16:29:06.253001+00:00",
  "files": [],
  "stations": {
   "KATL": {
@@ -14,7 +14,7 @@
     {
      "check": "forecast",
      "severity": "med",
-     "detail": "board headline 54% but the board's OWN calibrated physics says 8%"
+     "detail": "board headline 54% but the board's OWN calibrated physics says 12%"
     }
    ]
   },
@@ -41,8 +41,14 @@
    "discrepancies": []
   },
   "KCMH": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 40% but the board's OWN calibrated physics says 70%"
+    }
+   ]
   },
   "KDFW": {
    "ok": true,
@@ -58,7 +64,7 @@
     {
      "check": "forecast",
      "severity": "med",
-     "detail": "board headline 67% but the board's OWN calibrated physics says 5%"
+     "detail": "board headline 67% but the board's OWN calibrated physics says 7%"
     }
    ]
   },
@@ -142,8 +148,8 @@
   }
  },
  "summary": {
-  "n_open": 5,
-  "n_stations_bad": 4,
+  "n_open": 6,
+  "n_stations_bad": 5,
   "worst": "Atlanta: board headline 54% but weather.com, the settlement source, says 85%, a gap of 31 points",
   "files_stale": 0
  }
