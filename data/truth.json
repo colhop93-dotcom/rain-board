@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-09-19T16:14:06.202820+00:00",
+ "checked_utc": "2026-09-19T16:19:06.252353+00:00",
  "files": [],
  "stations": {
   "KATL": {
@@ -27,8 +27,14 @@
    "discrepancies": []
   },
   "KORD": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "high",
+     "detail": "board headline 92% but weather.com, the settlement source, says 72%, a gap of 20 points"
+    }
+   ]
   },
   "KCLL": {
    "ok": true,
@@ -136,8 +142,8 @@
   }
  },
  "summary": {
-  "n_open": 4,
-  "n_stations_bad": 3,
+  "n_open": 5,
+  "n_stations_bad": 4,
   "worst": "Atlanta: board headline 54% but weather.com, the settlement source, says 85%, a gap of 31 points",
   "files_stale": 0
  }
