@@ -1,6 +1,6 @@
 {
  "schema": "019a.metars/2",
- "generated_utc": "2026-09-26T19:12:32.541898+00:00",
+ "generated_utc": "2026-09-26T19:13:32.562064+00:00",
  "n": 209,
  "stations": {
   "KDYL": {
@@ -867,7 +867,7 @@
    "pno": false,
    "raw": "METAR KDCA 261852Z COR 35016G30KT 8SM -RA BKN043 BKN065 OVC075 17/12 A2987 RMK PK WND 35033/1827 SLP112 P0000 T01720117",
    "nws": {
-    "time_utc": "2026-09-26T18:45:00+00:00",
+    "time_utc": "2026-09-26T18:50:00+00:00",
     "text": "Light Rain",
     "raining": true,
     "precip_in": null
@@ -1048,6 +1048,41 @@
    "raw": "METAR KBJC 261845Z 14007KT 10SM SCT100 27/M01 A3012",
    "raining_any": false
   },
+  "KMSP": {
+   "id": "KMSP",
+   "time_utc": "2026-09-26T19:12:00Z",
+   "report_time_utc": "2026-09-26T19:12:00.000Z",
+   "wx": "-RA BR",
+   "raining": true,
+   "precip_in": 0.07,
+   "trace": false,
+   "pno": false,
+   "raw": "SPECI KMSP 261912Z 14008KT 3SM -RA BR FEW026 OVC036 16/13 A3011 RMK AO2 P0007 T01560133 ",
+   "lock": {
+    "in": 0.02,
+    "time_utc": "2026-09-26T19:01:00+00:00"
+   },
+   "raining_any": true,
+   "madis": {
+    "obs_utc": "2026-09-26T19:00:00+00:00",
+    "recv_utc": "2026-09-26T19:02:13+00:00",
+    "wx": "RA BR",
+    "precip_in": 0.02,
+    "raining": true
+   }
+  },
+  "KLWM": {
+   "id": "KLWM",
+   "time_utc": "2026-09-26T19:10:00Z",
+   "report_time_utc": "2026-09-26T19:10:00.000Z",
+   "wx": "RA BR",
+   "raining": true,
+   "precip_in": 0.02,
+   "trace": false,
+   "pno": false,
+   "raw": "SPECI KLWM 261910Z 04021G32KT 2SM RA BR FEW011 BKN026 OVC034 13/11 A2993 RMK AO2 PK WND 05032/1908 P0002 T01280111",
+   "raining_any": true
+  },
   "KOWD": {
    "id": "KOWD",
    "time_utc": "2026-09-26T19:07:00Z",
@@ -1072,77 +1107,6 @@
    "raw": "SPECI KPTW 261903Z AUTO 34011G19KT 10SM -RA BKN024 OVC032 15/12 A2982 RMK AO2 RAB00 P0000 T01500122 $",
    "raining_any": true
   },
-  "KMSP": {
-   "id": "KMSP",
-   "time_utc": "2026-09-26T19:01:00Z",
-   "report_time_utc": "2026-09-26T19:01:00.000Z",
-   "wx": "RA BR",
-   "raining": true,
-   "precip_in": 0.02,
-   "trace": false,
-   "pno": false,
-   "raw": "SPECI KMSP 261901Z 16007KT 1 3/4SM RA BR FEW025 BKN036 OVC048 16/13 A3011 RMK AO2 P0002 T01560133",
-   "lock": {
-    "in": 0.02,
-    "time_utc": "2026-09-26T19:01:00+00:00"
-   },
-   "raining_any": true,
-   "madis": {
-    "obs_utc": "2026-09-26T19:00:00+00:00",
-    "recv_utc": "2026-09-26T19:02:13+00:00",
-    "wx": "RA BR",
-    "precip_in": 0.02,
-    "raining": true
-   }
-  },
-  "KJRB": {
-   "id": "KJRB",
-   "time_utc": "2026-09-26T18:56:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KJRB 261856Z AUTO VRB04G24KT 10SM BKN021 OVC026 18/18 A2974 RMK AO2 SLP071 T01780178",
-   "raining_any": false
-  },
-  "KHYI": {
-   "id": "KHYI",
-   "time_utc": "2026-09-26T18:56:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KHYI 261856Z 21004KT 10SM SCT040 32/21 A3000 RMK AO2 SLP152 T03220206",
-   "raining_any": false
-  },
-  "KHEF": {
-   "id": "KHEF",
-   "time_utc": "2026-09-26T18:56:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KHEF 261856Z 01016G22KT 10SM OVC055 21/08 A2987 RMK AO2 PK WND 35026/1833 SLP119 T02110083 $",
-   "raining_any": false
-  },
-  "KHND": {
-   "id": "KHND",
-   "time_utc": "2026-09-26T18:56:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KHND 261856Z 25015G22KT 10SM CLR 33/05 A2999 RMK AO2 SLP141 T03330050 $",
-   "raining_any": false
-  },
   "KLAS": {
    "id": "KLAS",
    "time_utc": "2026-09-26T18:56:00Z",
@@ -1161,6 +1125,66 @@
    },
    "raining_any": false
   },
+  "KHYI": {
+   "id": "KHYI",
+   "time_utc": "2026-09-26T18:56:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KHYI 261856Z 21004KT 10SM SCT040 32/21 A3000 RMK AO2 SLP152 T03220206",
+   "raining_any": false
+  },
+  "KHND": {
+   "id": "KHND",
+   "time_utc": "2026-09-26T18:56:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KHND 261856Z 25015G22KT 10SM CLR 33/05 A2999 RMK AO2 SLP141 T03330050 $",
+   "raining_any": false
+  },
+  "KHEF": {
+   "id": "KHEF",
+   "time_utc": "2026-09-26T18:56:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KHEF 261856Z 01016G22KT 10SM OVC055 21/08 A2987 RMK AO2 PK WND 35026/1833 SLP119 T02110083 $",
+   "raining_any": false
+  },
+  "KJRB": {
+   "id": "KJRB",
+   "time_utc": "2026-09-26T18:56:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KJRB 261856Z AUTO VRB04G24KT 10SM BKN021 OVC026 18/18 A2974 RMK AO2 SLP071 T01780178",
+   "raining_any": false
+  },
+  "KLOM": {
+   "id": "KLOM",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": 0.01,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLOM 261855Z AUTO 33008KT 310V020 10SM OVC025 15/13 A2980 RMK AO2 P0001 TSNO",
+   "raining_any": false
+  },
   "KPLU": {
    "id": "KPLU",
    "time_utc": "2026-09-26T18:55:00Z",
@@ -1173,8 +1197,20 @@
    "raw": "METAR KPLU 261855Z AUTO 00000KT 10SM SCT030 16/08 A3019 RMK AO2",
    "raining_any": false
   },
-  "KLHB": {
-   "id": "KLHB",
+  "KLVN": {
+   "id": "KLVN",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "RA",
+   "raining": true,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLVN 261855Z AUTO 11007G14KT 10SM RA SCT033 OVC041 14/13 A3012 RMK AO2",
+   "raining_any": true
+  },
+  "KNBG": {
+   "id": "KNBG",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1182,11 +1218,11 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KLHB 261855Z AUTO VRB02KT 10SM CLR 31/17 A3000 RMK AO2",
+   "raw": "METAR KNBG 261855Z VRB06KT 10SM SCT050 BKN250 30/17 A3000 RMK AO2 SLP157 T03000167",
    "raining_any": false
   },
-  "KMGE": {
-   "id": "KMGE",
+  "KLMO": {
+   "id": "KLMO",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1194,7 +1230,7 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KMGE 261855Z 26003KT 10SM FEW050 FEW250 27/11 A2999 RMK AO2A SLP148 T02670112 $",
+   "raw": "METAR KLMO 261855Z AUTO 19005KT 10SM SCT120 28/00 A3007 RMK AO2 T02781002",
    "raining_any": false
   },
   "KLSV": {
@@ -1209,6 +1245,30 @@
    "raw": "METAR KLSV 261855Z 19016KT 10SM CLR 34/01 A2989 RMK AO2A SLP092 T03430008 $",
    "raining_any": false
   },
+  "KMGE": {
+   "id": "KMGE",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KMGE 261855Z 26003KT 10SM FEW050 FEW250 27/11 A2999 RMK AO2A SLP148 T02670112 $",
+   "raining_any": false
+  },
+  "KLHB": {
+   "id": "KLHB",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLHB 261855Z AUTO VRB02KT 10SM CLR 31/17 A3000 RMK AO2",
+   "raining_any": false
+  },
   "KGPM": {
    "id": "KGPM",
    "time_utc": "2026-09-26T18:55:00Z",
@@ -1219,54 +1279,6 @@
    "trace": false,
    "pno": false,
    "raw": "METAR KGPM 261855Z AUTO 20004KT 10SM CLR 33/17 A3000 RMK AO2 T03280169",
-   "raining_any": false
-  },
-  "KLDJ": {
-   "id": "KLDJ",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLDJ 261855Z AUTO 04015G24KT 10SM OVC027 17/11 A2975 RMK AO2 T01710114",
-   "raining_any": false
-  },
-  "KLCK": {
-   "id": "KLCK",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLCK 261855Z AUTO 02009KT 10SM CLR 22/09 A3011 RMK AO2 T02230090",
-   "raining_any": false
-  },
-  "KK70": {
-   "id": "KK70",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KK70 261855Z AUTO 00000KT 10SM CLR 31/21 A2988 RMK AO2",
-   "raining_any": false
-  },
-  "KPJC": {
-   "id": "KPJC",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KPJC 261855Z AUTO 34008G15KT 272V002 10SM CLR 21/10 A3006 RMK AO2",
    "raining_any": false
   },
   "KMQS": {
@@ -1293,29 +1305,17 @@
    "raw": "METAR KMRT 261855Z AUTO 35009G15KT 10SM CLR 21/13 A3013 RMK AO2",
    "raining_any": false
   },
-  "KGTU": {
-   "id": "KGTU",
+  "KHST": {
+   "id": "KHST",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
+   "wx": "-DZ",
+   "raining": true,
+   "precip_in": 0.005,
+   "trace": true,
    "pno": false,
-   "raw": "METAR KGTU 261855Z 00000KT 10SM CLR 32/19 A3002 RMK AO2 SLP156 T03170194",
-   "raining_any": false
-  },
-  "KHMP": {
-   "id": "KHMP",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KHMP 261855Z AUTO 33004KT 10SM CLR 27/10 A3001 RMK AO2 T02720102",
-   "raining_any": false
+   "raw": "METAR KHST 261855Z AUTO 07003KT 10SM -DZ SCT049 30/21 A2988 RMK AO2 SLP122 P0000 T03000208 $",
+   "raining_any": true
   },
   "KHAF": {
    "id": "KHAF",
@@ -1329,32 +1329,8 @@
    "raw": "METAR KHAF 261855Z AUTO 23004KT 6SM HZ SCT015 17/13 A2997 RMK AO2",
    "raining_any": false
   },
-  "KLOM": {
-   "id": "KLOM",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": 0.01,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLOM 261855Z AUTO 33008KT 310V020 10SM OVC025 15/13 A2980 RMK AO2 P0001 TSNO",
-   "raining_any": false
-  },
-  "KGHG": {
-   "id": "KGHG",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "BR",
-   "raining": false,
-   "precip_in": 0.01,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KGHG 261855Z AUTO 04011G22KT 010V070 2SM BR OVC007 15/13 A2982 RMK AO2 P0001",
-   "raining_any": false
-  },
-  "KLMO": {
-   "id": "KLMO",
+  "KK70": {
+   "id": "KK70",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1362,19 +1338,7 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KLMO 261855Z AUTO 19005KT 10SM SCT120 28/00 A3007 RMK AO2 T02781002",
-   "raining_any": false
-  },
-  "KLUF": {
-   "id": "KLUF",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLUF 261855Z AUTO 03003KT 10SM CLR 34/14 A2992 RMK AO2 SLP116 T03360136 $",
+   "raw": "METAR KK70 261855Z AUTO 00000KT 10SM CLR 31/21 A2988 RMK AO2",
    "raining_any": false
   },
   "KMCJ": {
@@ -1389,8 +1353,8 @@
    "raw": "METAR KMCJ 261855Z AUTO 09005G13KT 10SM SCT046 SCT060 31/19 A2998 RMK A01",
    "raining_any": false
   },
-  "KGRF": {
-   "id": "KGRF",
+  "KJOT": {
+   "id": "KJOT",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1398,11 +1362,11 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KGRF 261855Z AUTO 00000KT 10SM FEW016 15/09 A3016 RMK AO2 SLP217 T01450089 $",
+   "raw": "METAR KJOT 261855Z AUTO 06004KT 10SM CLR 22/09 A3018 RMK AO2 T02180087",
    "raining_any": false
   },
-  "KNBG": {
-   "id": "KNBG",
+  "KLCK": {
+   "id": "KLCK",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1410,44 +1374,8 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KNBG 261855Z VRB06KT 10SM SCT050 BKN250 30/17 A3000 RMK AO2 SLP157 T03000167",
+   "raw": "METAR KLCK 261855Z AUTO 02009KT 10SM CLR 22/09 A3011 RMK AO2 T02230090",
    "raining_any": false
-  },
-  "KNUQ": {
-   "id": "KNUQ",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KNUQ 261855Z AUTO VRB04KT 9SM CLR 20/11 A2994 RMK AO2",
-   "raining_any": false
-  },
-  "KLVN": {
-   "id": "KLVN",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "RA",
-   "raining": true,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLVN 261855Z AUTO 11007G14KT 10SM RA SCT033 OVC041 14/13 A3012 RMK AO2",
-   "raining_any": true
-  },
-  "KHST": {
-   "id": "KHST",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "-DZ",
-   "raining": true,
-   "precip_in": 0.005,
-   "trace": true,
-   "pno": false,
-   "raw": "METAR KHST 261855Z AUTO 07003KT 10SM -DZ SCT049 30/21 A2988 RMK AO2 SLP122 P0000 T03000208 $",
-   "raining_any": true
   },
   "KOQN": {
    "id": "KOQN",
@@ -1461,8 +1389,20 @@
    "raw": "METAR KOQN 261855Z AUTO 36010G16KT 7SM -DZ SCT007 BKN013 BKN019 15/12 A2981 RMK AO2 P0001",
    "raining_any": true
   },
-  "KJOT": {
-   "id": "KJOT",
+  "KGHG": {
+   "id": "KGHG",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "BR",
+   "raining": false,
+   "precip_in": 0.01,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KGHG 261855Z AUTO 04011G22KT 010V070 2SM BR OVC007 15/13 A2982 RMK AO2 P0001",
+   "raining_any": false
+  },
+  "KIOB": {
+   "id": "KIOB",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1470,7 +1410,31 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KJOT 261855Z AUTO 06004KT 10SM CLR 22/09 A3018 RMK AO2 T02180087",
+   "raw": "METAR KIOB 261855Z AUTO 00000KT 10SM CLR 22/07 A3013 RMK AO2 PWINO",
+   "raining_any": false
+  },
+  "KHMP": {
+   "id": "KHMP",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KHMP 261855Z AUTO 33004KT 10SM CLR 27/10 A3001 RMK AO2 T02720102",
+   "raining_any": false
+  },
+  "KLDJ": {
+   "id": "KLDJ",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLDJ 261855Z AUTO 04015G24KT 10SM OVC027 17/11 A2975 RMK AO2 T01710114",
    "raining_any": false
   },
   "KMWC": {
@@ -1485,8 +1449,8 @@
    "raw": "METAR KMWC 261855Z AUTO 12006KT 10SM CLR 17/09 A3024 RMK AO2",
    "raining_any": false
   },
-  "KIOB": {
-   "id": "KIOB",
+  "KGTU": {
+   "id": "KGTU",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1494,7 +1458,95 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KIOB 261855Z AUTO 00000KT 10SM CLR 22/07 A3013 RMK AO2 PWINO",
+   "raw": "METAR KGTU 261855Z 00000KT 10SM CLR 32/19 A3002 RMK AO2 SLP156 T03170194",
+   "raining_any": false
+  },
+  "KLUF": {
+   "id": "KLUF",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLUF 261855Z AUTO 03003KT 10SM CLR 34/14 A2992 RMK AO2 SLP116 T03360136 $",
+   "raining_any": false
+  },
+  "KNUQ": {
+   "id": "KNUQ",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KNUQ 261855Z AUTO VRB04KT 9SM CLR 20/11 A2994 RMK AO2",
+   "raining_any": false
+  },
+  "KPJC": {
+   "id": "KPJC",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KPJC 261855Z AUTO 34008G15KT 272V002 10SM CLR 21/10 A3006 RMK AO2",
+   "raining_any": false
+  },
+  "KGRF": {
+   "id": "KGRF",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KGRF 261855Z AUTO 00000KT 10SM FEW016 15/09 A3016 RMK AO2 SLP217 T01450089 $",
+   "raining_any": false
+  },
+  "KPHL": {
+   "id": "KPHL",
+   "time_utc": "2026-09-26T18:54:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": 0.005,
+   "trace": true,
+   "pno": false,
+   "raw": "METAR KPHL 261854Z 35014KT 10SM FEW015 BKN025 OVC030 16/13 A2976 RMK AO2 PK WND 36032/1801 RAB17E38 SLP079 P0000 T01610133 $",
+   "lock": {
+    "in": 0.11,
+    "time_utc": "2026-09-26T15:54:00+00:00"
+   },
+   "raining_any": false
+  },
+  "KPNE": {
+   "id": "KPNE",
+   "time_utc": "2026-09-26T18:54:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "-RA BR",
+   "raining": true,
+   "precip_in": 0.005,
+   "trace": true,
+   "pno": false,
+   "raw": "METAR KPNE 261854Z 35012G19KT 4SM -RA BR OVC028 15/13 A2977 RMK AO2 RAE05B49 SLP079 P0000 T01500133 $",
+   "raining_any": true
+  },
+  "KHWD": {
+   "id": "KHWD",
+   "time_utc": "2026-09-26T18:54:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KHWD 261854Z VRB05KT 10SM CLR 19/11 A2994 RMK AO2 SLP148 T01940111",
    "raining_any": false
   },
   "KLEX": {
@@ -1522,60 +1574,8 @@
     "raining": false
    }
   },
-  "KHWD": {
-   "id": "KHWD",
-   "time_utc": "2026-09-26T18:54:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KHWD 261854Z VRB05KT 10SM CLR 19/11 A2994 RMK AO2 SLP148 T01940111",
-   "raining_any": false
-  },
-  "KPHL": {
-   "id": "KPHL",
-   "time_utc": "2026-09-26T18:54:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": 0.005,
-   "trace": true,
-   "pno": false,
-   "raw": "METAR KPHL 261854Z 35014KT 10SM FEW015 BKN025 OVC030 16/13 A2976 RMK AO2 PK WND 36032/1801 RAB17E38 SLP079 P0000 T01610133 $",
-   "lock": {
-    "in": 0.11,
-    "time_utc": "2026-09-26T15:54:00+00:00"
-   },
-   "raining_any": false
-  },
-  "KLWM": {
-   "id": "KLWM",
-   "time_utc": "2026-09-26T18:54:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "-RA BR",
-   "raining": true,
-   "precip_in": 0.05,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLWM 261854Z 04018G32KT 3SM -RA BR FEW011 FEW017 OVC024 13/12 A2994 RMK AO2 PK WND 04033/1803 SLP136 P0005 T01280117",
-   "raining_any": true
-  },
-  "KPNE": {
-   "id": "KPNE",
-   "time_utc": "2026-09-26T18:54:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "-RA BR",
-   "raining": true,
-   "precip_in": 0.005,
-   "trace": true,
-   "pno": false,
-   "raw": "METAR KPNE 261854Z 35012G19KT 4SM -RA BR OVC028 15/13 A2977 RMK AO2 RAE05B49 SLP079 P0000 T01500133 $",
-   "raining_any": true
-  },
-  "KLVJ": {
-   "id": "KLVJ",
+  "KHHR": {
+   "id": "KHHR",
    "time_utc": "2026-09-26T18:53:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1583,11 +1583,11 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KLVJ 261853Z AUTO 05008KT 10SM FEW034 SCT040 BKN048 31/22 A3000 RMK AO2 SLP156 T03060217",
+   "raw": "METAR KHHR 261853Z 27007KT 240V300 10SM CLR 28/19 A2989 RMK AO2 SLP121 T02830189",
    "raining_any": false
   },
-  "KGKY": {
-   "id": "KGKY",
+  "KHWO": {
+   "id": "KHWO",
    "time_utc": "2026-09-26T18:53:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1595,11 +1595,11 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KGKY 261853Z 15007KT 120V200 10SM CLR 33/19 A2999 RMK AO2 SLP144 T03280189",
+   "raw": "METAR KHWO 261853Z 31006KT 10SM SCT045 SCT055 BKN065 30/20 A2988 RMK AO2 SLP119 T03000200",
    "raining_any": false
   },
-  "KPMP": {
-   "id": "KPMP",
+  "KIAH": {
+   "id": "KIAH",
    "time_utc": "2026-09-26T18:53:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1607,19 +1607,7 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KPMP 261853Z 32011KT 10SM FEW049 SCT070 30/19 A2988 RMK AO2 SLP119 T03000194",
-   "raining_any": false
-  },
-  "KGOK": {
-   "id": "KGOK",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KGOK 261853Z AUTO 15013G19KT 10SM CLR 29/15 A2995 RMK AO2 SLP132 T02940150 $",
+   "raw": "METAR KIAH 261853Z 09007KT 10SM FEW046 SCT060 BKN250 33/19 A2999 RMK AO2 SLP155 T03280194",
    "raining_any": false
   },
   "KPDK": {
@@ -1634,8 +1622,8 @@
    "raw": "METAR KPDK 261853Z 30005KT 10SM CLR 27/09 A3000 RMK AO2 SLP148 T02720094",
    "raining_any": false
   },
-  "KPAE": {
-   "id": "KPAE",
+  "KOAK": {
+   "id": "KOAK",
    "time_utc": "2026-09-26T18:53:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1643,11 +1631,11 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KPAE 261853Z 34004KT 10SM CLR 14/08 A3020 RMK AO2 SLP229 T01390083",
+   "raw": "METAR KOAK 261853Z 24005KT 10SM FEW015 SCT250 18/12 A2995 RMK AO2 SLP142 T01780117",
    "raining_any": false
   },
-  "KHHR": {
-   "id": "KHHR",
+  "KLVK": {
+   "id": "KLVK",
    "time_utc": "2026-09-26T18:53:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1655,7 +1643,152 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KHHR 261853Z 27007KT 240V300 10SM CLR 28/19 A2989 RMK AO2 SLP121 T02830189",
+   "raw": "METAR KLVK 261853Z 00000KT 10SM CLR 22/09 A2993 RMK AO2 SLP131 T02170089",
+   "raining_any": false
+  },
+  "KMDW": {
+   "id": "KMDW",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KMDW 261853Z 03005G14KT 10SM BKN250 19/08 A3019 RMK AO2 SLP219 T01940078",
+   "raining_any": false
+  },
+  "KLHQ": {
+   "id": "KLHQ",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLHQ 261853Z AUTO 34009KT 10SM CLR 22/09 A3011 RMK AO2 SLP195 T02220089",
+   "raining_any": false
+  },
+  "KLVJ": {
+   "id": "KLVJ",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLVJ 261853Z AUTO 05008KT 10SM FEW034 SCT040 BKN048 31/22 A3000 RMK AO2 SLP156 T03060217",
+   "raining_any": false
+  },
+  "KLGB": {
+   "id": "KLGB",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLGB 261853Z 19010KT 10SM CLR 27/19 A2988 RMK AO2 SLP118 T02720194",
+   "raining_any": false
+  },
+  "KGKY": {
+   "id": "KGKY",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KGKY 261853Z 15007KT 120V200 10SM CLR 33/19 A2999 RMK AO2 SLP144 T03280189",
+   "raining_any": false
+  },
+  "KMIA": {
+   "id": "KMIA",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KMIA 261853Z COR VRB04KT 10SM FEW025 FEW080 31/19 A2988 RMK AO2 SLP118 T03060194 $",
+   "nws": {
+    "time_utc": "2026-09-26T18:50:00+00:00",
+    "text": "Mostly Clear",
+    "raining": false,
+    "precip_in": null
+   },
+   "raining_any": false
+  },
+  "KGOK": {
+   "id": "KGOK",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KGOK 261853Z AUTO 15013G19KT 10SM CLR 29/15 A2995 RMK AO2 SLP132 T02940150 $",
+   "raining_any": false
+  },
+  "KMSY": {
+   "id": "KMSY",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KMSY 261853Z 05006G14KT 10SM FEW043 BKN250 29/18 A3001 RMK AO2 SLP164 T02940183 $",
+   "nws": {
+    "time_utc": "2026-09-26T18:50:00+00:00",
+    "text": "Mostly Clear",
+    "raining": false,
+    "precip_in": null
+   },
+   "raining_any": false,
+   "madis": {
+    "obs_utc": "2026-09-26T19:00:00+00:00",
+    "recv_utc": "2026-09-26T19:02:13+00:00",
+    "wx": "",
+    "precip_in": 0.0,
+    "raining": false
+   }
+  },
+  "KMIC": {
+   "id": "KMIC",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "-RA BR",
+   "raining": true,
+   "precip_in": 0.01,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KMIC 261853Z 13005KT 5SM -RA BR BKN049 OVC065 16/13 A3009 RMK AO2 SLP190 P0001 T01560133",
+   "raining_any": true
+  },
+  "KLAX": {
+   "id": "KLAX",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KLAX 261853Z 23009KT 9SM FEW220 SCT280 27/19 A2990 RMK AO2 SLP121 T02670194 $",
+   "nws": {
+    "time_utc": "2026-09-26T18:50:00+00:00",
+    "text": "",
+    "raining": false,
+    "precip_in": null
+   },
    "raining_any": false
   },
   "KHLG": {
@@ -1668,6 +1801,18 @@
    "trace": false,
    "pno": false,
    "raw": "METAR KHLG 261853Z 35007G18KT 10SM CLR 21/08 A3006 RMK AO2 SLP179 T02110078",
+   "raining_any": false
+  },
+  "KPMP": {
+   "id": "KPMP",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KPMP 261853Z 32011KT 10SM FEW049 SCT070 30/19 A2988 RMK AO2 SLP119 T03000194",
    "raining_any": false
   },
   "KOSU": {
@@ -1719,42 +1864,6 @@
    "raw": "METAR KOPF 261853Z 34006KT 10SM BKN046 31/21 A2988 RMK AO2 SLP120 T03110206 $",
    "raining_any": false
   },
-  "KOAK": {
-   "id": "KOAK",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KOAK 261853Z 24005KT 10SM FEW015 SCT250 18/12 A2995 RMK AO2 SLP142 T01780117",
-   "raining_any": false
-  },
-  "KHWO": {
-   "id": "KHWO",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KHWO 261853Z 31006KT 10SM SCT045 SCT055 BKN065 30/20 A2988 RMK AO2 SLP119 T03000200",
-   "raining_any": false
-  },
-  "KIAH": {
-   "id": "KIAH",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KIAH 261853Z 09007KT 10SM FEW046 SCT060 BKN250 33/19 A2999 RMK AO2 SLP155 T03280194",
-   "raining_any": false
-  },
   "KNEW": {
    "id": "KNEW",
    "time_utc": "2026-09-26T18:53:00Z",
@@ -1767,8 +1876,8 @@
    "raw": "METAR KNEW 261853Z 34006KT 10SM CLR 29/19 A3001 RMK AO1 SLP157 T02940189 $",
    "raining_any": false
   },
-  "KMSY": {
-   "id": "KMSY",
+  "KPAE": {
+   "id": "KPAE",
    "time_utc": "2026-09-26T18:53:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -1776,117 +1885,20 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KMSY 261853Z 05006G14KT 10SM FEW043 BKN250 29/18 A3001 RMK AO2 SLP164 T02940183 $",
-   "nws": {
-    "time_utc": "2026-09-26T18:45:00+00:00",
-    "text": "Mostly Clear",
-    "raining": false,
-    "precip_in": null
-   },
-   "raining_any": false,
-   "madis": {
-    "obs_utc": "2026-09-26T19:00:00+00:00",
-    "recv_utc": "2026-09-26T19:02:13+00:00",
-    "wx": "",
-    "precip_in": 0.0,
-    "raining": false
-   }
-  },
-  "KLAX": {
-   "id": "KLAX",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLAX 261853Z 23009KT 9SM FEW220 SCT280 27/19 A2990 RMK AO2 SLP121 T02670194 $",
-   "nws": {
-    "time_utc": "2026-09-26T18:50:00+00:00",
-    "text": "",
-    "raining": false,
-    "precip_in": null
-   },
+   "raw": "METAR KPAE 261853Z 34004KT 10SM CLR 14/08 A3020 RMK AO2 SLP229 T01390083",
    "raining_any": false
   },
-  "KMIC": {
-   "id": "KMIC",
-   "time_utc": "2026-09-26T18:53:00Z",
+  "KIAD": {
+   "id": "KIAD",
+   "time_utc": "2026-09-26T18:52:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "-RA BR",
+   "wx": "-RA",
    "raining": true,
-   "precip_in": 0.01,
-   "trace": false,
+   "precip_in": 0.005,
+   "trace": true,
    "pno": false,
-   "raw": "METAR KMIC 261853Z 13005KT 5SM -RA BR BKN049 OVC065 16/13 A3009 RMK AO2 SLP190 P0001 T01560133",
+   "raw": "METAR KIAD 261852Z 35020G26KT 10SM -RA BKN049 BKN070 BKN090 20/08 A2987 RMK AO2 PK WND 36027/1840 RAB46 SLP114 P0000 T02000083 $",
    "raining_any": true
-  },
-  "KMIA": {
-   "id": "KMIA",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KMIA 261853Z COR VRB04KT 10SM FEW025 FEW080 31/19 A2988 RMK AO2 SLP118 T03060194 $",
-   "nws": {
-    "time_utc": "2026-09-26T18:50:00+00:00",
-    "text": "Mostly Clear",
-    "raining": false,
-    "precip_in": null
-   },
-   "raining_any": false
-  },
-  "KLGB": {
-   "id": "KLGB",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLGB 261853Z 19010KT 10SM CLR 27/19 A2988 RMK AO2 SLP118 T02720194",
-   "raining_any": false
-  },
-  "KMDW": {
-   "id": "KMDW",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KMDW 261853Z 03005G14KT 10SM BKN250 19/08 A3019 RMK AO2 SLP219 T01940078",
-   "raining_any": false
-  },
-  "KLHQ": {
-   "id": "KLHQ",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLHQ 261853Z AUTO 34009KT 10SM CLR 22/09 A3011 RMK AO2 SLP195 T02220089",
-   "raining_any": false
-  },
-  "KLVK": {
-   "id": "KLVK",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KLVK 261853Z 00000KT 10SM CLR 22/09 A2993 RMK AO2 SLP131 T02170089",
-   "raining_any": false
   },
   "KOKC": {
    "id": "KOKC",
@@ -1910,18 +1922,6 @@
     "precip_in": 0.0,
     "raining": false
    }
-  },
-  "KIAD": {
-   "id": "KIAD",
-   "time_utc": "2026-09-26T18:52:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "-RA",
-   "raining": true,
-   "precip_in": 0.005,
-   "trace": true,
-   "pno": false,
-   "raw": "METAR KIAD 261852Z 35020G26KT 10SM -RA BKN049 BKN070 BKN090 20/08 A2987 RMK AO2 PK WND 36027/1840 RAB46 SLP114 P0000 T02000083 $",
-   "raining_any": true
   },
   "KMKE": {
    "id": "KMKE",
@@ -1948,21 +1948,17 @@
     "raining": false
    }
   },
-  "KNYC": {
-   "id": "KNYC",
+  "KLGA": {
+   "id": "KLGA",
    "time_utc": "2026-09-26T18:51:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
+   "wx": "-RA",
+   "raining": true,
+   "precip_in": 0.005,
+   "trace": true,
    "pno": false,
-   "raw": "METAR KNYC 261851Z AUTO 01010G27KT 330V040 9SM OVC025 16/13 A2978 RMK AO2 PK WND 36030/1840 SLP075 T01610128 $",
-   "lock": {
-    "in": 0.31,
-    "time_utc": "2026-09-26T17:51:00+00:00"
-   },
-   "raining_any": false
+   "raw": "METAR KLGA 261851Z 02017G30KT 8SM -RA FEW016 BKN025 OVC035 17/13 A2974 RMK AO2 PK WND 04032/1807 RAB45 SLP072 P0000 T01670128 $",
+   "raining_any": true
   },
   "KILG": {
    "id": "KILG",
@@ -1987,7 +1983,7 @@
    "pno": false,
    "raw": "METAR KORD 261851Z 06008KT 10SM BKN250 20/08 A3018 RMK AO2 SLP221 T02000083",
    "nws": {
-    "time_utc": "2026-09-26T18:45:00+00:00",
+    "time_utc": "2026-09-26T18:50:00+00:00",
     "text": "",
     "raining": false,
     "precip_in": null
@@ -2013,17 +2009,21 @@
    "raw": "METAR KJFK 261851Z 02023G39KT 10SM OVC025 17/12 A2972 RMK AO2 PK WND 02041/1831 RAB12E18B36E45 SLP063 P0000 T01720122 $",
    "raining_any": false
   },
-  "KLGA": {
-   "id": "KLGA",
+  "KNYC": {
+   "id": "KNYC",
    "time_utc": "2026-09-26T18:51:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "-RA",
-   "raining": true,
-   "precip_in": 0.005,
-   "trace": true,
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
    "pno": false,
-   "raw": "METAR KLGA 261851Z 02017G30KT 8SM -RA FEW016 BKN025 OVC035 17/13 A2974 RMK AO2 PK WND 04032/1807 RAB45 SLP072 P0000 T01670128 $",
-   "raining_any": true
+   "raw": "METAR KNYC 261851Z AUTO 01010G27KT 330V040 9SM OVC025 16/13 A2978 RMK AO2 PK WND 36030/1840 SLP075 T01610128 $",
+   "lock": {
+    "in": 0.31,
+    "time_utc": "2026-09-26T17:51:00+00:00"
+   },
+   "raining_any": false
   },
   "KPIT": {
    "id": "KPIT",
@@ -2181,6 +2181,18 @@
    "raw": "METAR KPWT 261856Z AUTO VRB04KT 10SM CLR 14/09 A3020 RMK AO2 SLP230 T01390089 $",
    "raining_any": false
   },
+  "KSKF": {
+   "id": "KSKF",
+   "time_utc": "2026-09-26T18:56:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSKF 261856Z 18007KT 10SM FEW160 FEW210 34/18 A2995 RMK A02A SLP133 T03400184 $",
+   "raining_any": false
+  },
   "KSFO": {
    "id": "KSFO",
    "time_utc": "2026-09-26T18:56:00Z",
@@ -2197,66 +2209,6 @@
     "raining": false,
     "precip_in": null
    },
-   "raining_any": false
-  },
-  "KSKF": {
-   "id": "KSKF",
-   "time_utc": "2026-09-26T18:56:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSKF 261856Z 18007KT 10SM FEW160 FEW210 34/18 A2995 RMK A02A SLP133 T03400184 $",
-   "raining_any": false
-  },
-  "KSEQ": {
-   "id": "KSEQ",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSEQ 261855Z AUTO 17003KT 10SM BKN280 36/20 A2993 RMK AO2 SLP129 T03600202 $",
-   "raining_any": false
-  },
-  "KRQO": {
-   "id": "KRQO",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KRQO 261855Z AUTO 18013G19KT 10SM OVC110 31/15 A2997 RMK AO2 PWINO",
-   "raining_any": false
-  },
-  "KSNL": {
-   "id": "KSNL",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSNL 261855Z AUTO 15011KT 10SM SCT120 30/13 A2999 RMK AO2 T03000132 TSNO",
-   "raining_any": false
-  },
-  "KT41": {
-   "id": "KT41",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KT41 261855Z AUTO 11009KT 10SM BKN037 31/21 A3000 RMK AO2",
    "raining_any": false
   },
   "KRCE": {
@@ -2283,6 +2235,54 @@
    "raw": "METAR KRYW 261855Z AUTO 20005KT 10SM SCT040 31/20 A3006 RMK AO2 T03120195",
    "raining_any": false
   },
+  "KT41": {
+   "id": "KT41",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KT41 261855Z AUTO 11009KT 10SM BKN037 31/21 A3000 RMK AO2",
+   "raining_any": false
+  },
+  "KRND": {
+   "id": "KRND",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KRND 261855Z AUTO 00000KT 10SM FEW120 FEW200 33/18 A2998 RMK AO2 SLP143 T03270177 $",
+   "raining_any": false
+  },
+  "KTZR": {
+   "id": "KTZR",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KTZR 261855Z 36010KT 10SM CLR 22/08 A3013",
+   "raining_any": false
+  },
+  "KSGS": {
+   "id": "KSGS",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSGS 261855Z AUTO 15007KT 110V180 7SM SCT046 OVC055 18/12 A3012 RMK AO2 T01750116",
+   "raining_any": false
+  },
   "KPVD": {
    "id": "KPVD",
    "time_utc": "2026-09-26T18:55:00Z",
@@ -2299,20 +2299,8 @@
    },
    "raining_any": true
   },
-  "KSYN": {
-   "id": "KSYN",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "-RA",
-   "raining": true,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSYN 261855Z AUTO 12005KT 10SM -RA OVC044 16/13 A3012 RMK AO2 T01560126",
-   "raining_any": true
-  },
-  "KTZR": {
-   "id": "KTZR",
+  "KRQO": {
+   "id": "KRQO",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -2320,7 +2308,7 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KTZR 261855Z 36010KT 10SM CLR 22/08 A3013",
+   "raw": "METAR KRQO 261855Z AUTO 18013G19KT 10SM OVC110 31/15 A2997 RMK AO2 PWINO",
    "raining_any": false
   },
   "KT74": {
@@ -2335,20 +2323,8 @@
    "raw": "METAR KT74 261855Z AUTO 00000KT 10SM CLR 31/20 A3006 RMK AO2",
    "raining_any": false
   },
-  "KUKT": {
-   "id": "KUKT",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "BR",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KUKT 261855Z AUTO 35012G18KT 300V020 6SM BR BKN024 OVC030 15/13 A2981 RMK AO2",
-   "raining_any": false
-  },
-  "KSGS": {
-   "id": "KSGS",
+  "KSEQ": {
+   "id": "KSEQ",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -2356,31 +2332,7 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KSGS 261855Z AUTO 15007KT 110V180 7SM SCT046 OVC055 18/12 A3012 RMK AO2 T01750116",
-   "raining_any": false
-  },
-  "KTCM": {
-   "id": "KTCM",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KTCM 261855Z AUTO 31003KT 10SM FEW025 15/08 A3018 RMK AO2 SLP224 T01500080 $",
-   "raining_any": false
-  },
-  "KTIK": {
-   "id": "KTIK",
-   "time_utc": "2026-09-26T18:55:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KTIK 261855Z AUTO 18009KT 10SM BKN085 OVC110 31/14 A2997 RMK AO2 SLP135 T03050141 $",
+   "raw": "METAR KSEQ 261855Z AUTO 17003KT 10SM BKN280 36/20 A2993 RMK AO2 SLP129 T03600202 $",
    "raining_any": false
   },
   "KSLI": {
@@ -2395,8 +2347,8 @@
    "raw": "METAR KSLI 261855Z 19008KT 8SM FEW220 29/20 A2984 RMK AO2A SLP108 T02940197",
    "raining_any": false
   },
-  "KRND": {
-   "id": "KRND",
+  "KTIK": {
+   "id": "KTIK",
    "time_utc": "2026-09-26T18:55:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -2404,8 +2356,20 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KRND 261855Z AUTO 00000KT 10SM FEW120 FEW200 33/18 A2998 RMK AO2 SLP143 T03270177 $",
+   "raw": "METAR KTIK 261855Z AUTO 18009KT 10SM BKN085 OVC110 31/14 A2997 RMK AO2 SLP135 T03050141 $",
    "raining_any": false
+  },
+  "KSYN": {
+   "id": "KSYN",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "-RA",
+   "raining": true,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSYN 261855Z AUTO 12005KT 10SM -RA OVC044 16/13 A3012 RMK AO2 T01560126",
+   "raining_any": true
   },
   "KRGA": {
    "id": "KRGA",
@@ -2417,6 +2381,18 @@
    "trace": false,
    "pno": false,
    "raw": "METAR KRGA 261855Z AUTO 00000KT 10SM CLR 24/04 A3011 RMK AO2",
+   "raining_any": false
+  },
+  "KTCM": {
+   "id": "KTCM",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KTCM 261855Z AUTO 31003KT 10SM FEW025 15/08 A3018 RMK AO2 SLP224 T01500080 $",
    "raining_any": false
   },
   "KRWV": {
@@ -2431,6 +2407,42 @@
    "raw": "METAR KRWV 261855Z AUTO 07003KT 10SM CLR 31/16 A3002 RMK AO2",
    "raining_any": false
   },
+  "KSNL": {
+   "id": "KSNL",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSNL 261855Z AUTO 15011KT 10SM SCT120 30/13 A2999 RMK AO2 T03000132 TSNO",
+   "raining_any": false
+  },
+  "KUKT": {
+   "id": "KUKT",
+   "time_utc": "2026-09-26T18:55:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "BR",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KUKT 261855Z AUTO 35012G18KT 300V020 6SM BR BKN024 OVC030 15/13 A2981 RMK AO2",
+   "raining_any": false
+  },
+  "KVTA": {
+   "id": "KVTA",
+   "time_utc": "2026-09-26T18:54:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KVTA 261854Z AUTO 01007KT 330V040 10SM CLR 22/08 A3010 RMK AO2 SLP190 T02170083",
+   "raining_any": false
+  },
   "KVAY": {
    "id": "KVAY",
    "time_utc": "2026-09-26T18:54:00Z",
@@ -2443,16 +2455,52 @@
    "raw": "METAR KVAY 261854Z AUTO 35009G17KT 9SM -RA BKN016 OVC022 14/13 A2974 RMK AO2 RAE17B30 SLP070 P0001 T01440133 $",
    "raining_any": true
   },
-  "KVTA": {
-   "id": "KVTA",
-   "time_utc": "2026-09-26T18:54:00Z",
+  "KSGR": {
+   "id": "KSGR",
+   "time_utc": "2026-09-26T18:53:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
    "raining": false,
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KVTA 261854Z AUTO 01007KT 330V040 10SM CLR 22/08 A3010 RMK AO2 SLP190 T02170083",
+   "raw": "METAR KSGR 261853Z 04008KT 10SM BKN050 32/20 A2998 RMK AO2 SLP152 T03170200",
+   "raining_any": false
+  },
+  "KSSF": {
+   "id": "KSSF",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSSF 261853Z 00000KT 10SM CLR 33/19 A2996 RMK AO2 SLP133 T03280189 $",
+   "raining_any": false
+  },
+  "KSDL": {
+   "id": "KSDL",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSDL 261853Z VRB03KT 10SM CLR 33/14 A2997 RMK AO2 SLP121 T03330139",
+   "raining_any": false
+  },
+  "KSJC": {
+   "id": "KSJC",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSJC 261853Z VRB03KT 10SM FEW120 21/10 A2994 RMK AO2 SLP137 T02110100",
    "raining_any": false
   },
   "KPWA": {
@@ -2481,6 +2529,60 @@
     "in": 0.19,
     "time_utc": "2026-09-26T14:53:00+00:00"
    },
+   "raining_any": false
+  },
+  "KTIW": {
+   "id": "KTIW",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KTIW 261853Z VRB04KT 10SM SCT012 13/08 A3019 RMK AO2 SLP222 T01330078",
+   "raining_any": false
+  },
+  "KSEA": {
+   "id": "KSEA",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSEA 261853Z 00000KT 10SM SCT027 15/06 A3019 RMK AO2 SLP230 T01500061 $",
+   "nws": {
+    "time_utc": "2026-09-26T18:50:00+00:00",
+    "text": "Mostly Clear",
+    "raining": false,
+    "precip_in": null
+   },
+   "raining_any": false
+  },
+  "KRAC": {
+   "id": "KRAC",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KRAC 261853Z AUTO 09007KT 10SM CLR 17/11 A3024 RMK AO2 SLP241 T01670106",
+   "raining_any": false
+  },
+  "KRNT": {
+   "id": "KRNT",
+   "time_utc": "2026-09-26T18:53:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KRNT 261853Z 36004KT 10SM CLR 14/08 A3019 RMK AO2 SLP228 T01440078",
    "raining_any": false
   },
   "KRBD": {
@@ -2519,18 +2621,6 @@
    "raw": "METAR KSTP 261853Z 14009KT 10SM OVC060 17/12 A3012 RMK AO2 RAB25E40 SLP196 P0000 T01720122",
    "raining_any": false
   },
-  "KSSF": {
-   "id": "KSSF",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSSF 261853Z 00000KT 10SM CLR 33/19 A2996 RMK AO2 SLP133 T03280189 $",
-   "raining_any": false
-  },
   "KSMQ": {
    "id": "KSMQ",
    "time_utc": "2026-09-26T18:53:00Z",
@@ -2541,96 +2631,6 @@
    "trace": false,
    "pno": false,
    "raw": "METAR KSMQ 261853Z AUTO 01012G29KT 10SM OVC037 18/11 A2974 RMK AO2 PK WND 01030/1828 SLP071 T01830111 $",
-   "raining_any": false
-  },
-  "KSDL": {
-   "id": "KSDL",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSDL 261853Z VRB03KT 10SM CLR 33/14 A2997 RMK AO2 SLP121 T03330139",
-   "raining_any": false
-  },
-  "KSGR": {
-   "id": "KSGR",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSGR 261853Z 04008KT 10SM BKN050 32/20 A2998 RMK AO2 SLP152 T03170200",
-   "raining_any": false
-  },
-  "KRNT": {
-   "id": "KRNT",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KRNT 261853Z 36004KT 10SM CLR 14/08 A3019 RMK AO2 SLP228 T01440078",
-   "raining_any": false
-  },
-  "KRAC": {
-   "id": "KRAC",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KRAC 261853Z AUTO 09007KT 10SM CLR 17/11 A3024 RMK AO2 SLP241 T01670106",
-   "raining_any": false
-  },
-  "KSEA": {
-   "id": "KSEA",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSEA 261853Z 00000KT 10SM SCT027 15/06 A3019 RMK AO2 SLP230 T01500061 $",
-   "nws": {
-    "time_utc": "2026-09-26T18:50:00+00:00",
-    "text": "Mostly Clear",
-    "raining": false,
-    "precip_in": null
-   },
-   "raining_any": false
-  },
-  "KTIW": {
-   "id": "KTIW",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KTIW 261853Z VRB04KT 10SM SCT012 13/08 A3019 RMK AO2 SLP222 T01330078",
-   "raining_any": false
-  },
-  "KSJC": {
-   "id": "KSJC",
-   "time_utc": "2026-09-26T18:53:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSJC 261853Z VRB03KT 10SM FEW120 21/10 A2994 RMK AO2 SLP137 T02110100",
    "raining_any": false
   },
   "KPWK": {
@@ -2657,6 +2657,18 @@
    "raw": "METAR KTAN 261852Z AUTO 02007G17KT 280V070 1 1/4SM -RA BR BKN007 OVC012 14/13 A2980 RMK AO2 LTG DSNT SE SLP091 T01390133 PNO $",
    "raining_any": true
   },
+  "KSMO": {
+   "id": "KSMO",
+   "time_utc": "2026-09-26T18:51:00Z",
+   "report_time_utc": "2026-09-26T19:00:00.000Z",
+   "wx": "",
+   "raining": false,
+   "precip_in": null,
+   "trace": false,
+   "pno": false,
+   "raw": "METAR KSMO 261851Z 20007KT 10SM CLR 27/19 A2989 RMK AO2 SLP119 T02720189",
+   "raining_any": false
+  },
   "KUGN": {
    "id": "KUGN",
    "time_utc": "2026-09-26T18:51:00Z",
@@ -2669,8 +2681,8 @@
    "raw": "METAR KUGN 261851Z 09006KT 10SM CLR 17/09 A3021 RMK AO2 SLP227 T01670094",
    "raining_any": false
   },
-  "KSMO": {
-   "id": "KSMO",
+  "KSAT": {
+   "id": "KSAT",
    "time_utc": "2026-09-26T18:51:00Z",
    "report_time_utc": "2026-09-26T19:00:00.000Z",
    "wx": "",
@@ -2678,7 +2690,13 @@
    "precip_in": null,
    "trace": false,
    "pno": false,
-   "raw": "METAR KSMO 261851Z 20007KT 10SM CLR 27/19 A2989 RMK AO2 SLP119 T02720189",
+   "raw": "METAR KSAT 261851Z COR VRB04KT 10SM FEW050 BKN250 32/19 A3000 RMK AO2 SLP138 T03220194 $",
+   "nws": {
+    "time_utc": "2026-09-26T18:51:00+00:00",
+    "text": "Clear",
+    "raining": false,
+    "precip_in": null
+   },
    "raining_any": false
   },
   "KVNY": {
@@ -2704,24 +2722,6 @@
    "pno": false,
    "raw": "METAR KTEB 261851Z 01012G23KT 3SM -RA BR FEW025 OVC033 16/13 A2976 RMK AO2 PK WND 02029/1837 RAB47 SLP078 P0000 T01610128 $",
    "raining_any": true
-  },
-  "KSAT": {
-   "id": "KSAT",
-   "time_utc": "2026-09-26T18:51:00Z",
-   "report_time_utc": "2026-09-26T19:00:00.000Z",
-   "wx": "",
-   "raining": false,
-   "precip_in": null,
-   "trace": false,
-   "pno": false,
-   "raw": "METAR KSAT 261851Z COR VRB04KT 10SM FEW050 BKN250 32/19 A3000 RMK AO2 SLP138 T03220194 $",
-   "nws": {
-    "time_utc": "2026-09-26T18:51:00+00:00",
-    "text": "Clear",
-    "raining": false,
-    "precip_in": null
-   },
-   "raining_any": false
   },
   "KRYY": {
    "id": "KRYY",
