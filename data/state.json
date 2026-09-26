@@ -1,6 +1,6 @@
 {
  "schema": "019a.state/3",
- "generated_utc": "2026-09-26T19:08:30.911085+00:00",
+ "generated_utc": "2026-09-26T19:11:30.914040+00:00",
  "interval_s": 300,
  "hrrr_init_utc": "2026-09-26T17:00:00Z",
  "stations": [
@@ -80,7 +80,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -204,7 +204,7 @@
     "volume": 4569.26,
     "open_interest": 3409.26,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.753173+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.383811+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -230,7 +230,7 @@
    },
    "metar_day": {
     "n_reports": 32,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:52:00Z",
     "pno_reports_utc": [],
@@ -335,10 +335,10 @@
    "radar": {
     "near10_pct": 3.0,
     "near30_pct": 2.9,
-    "near60_pct": 2.7,
-    "nearest_km": 4.7,
-    "nearest_dir": "S",
-    "_n": 231,
+    "near60_pct": 2.4,
+    "nearest_km": 5.5,
+    "nearest_dir": "NE",
+    "_n": 201,
     "site": "FFC",
     "motion": null
    },
@@ -431,10 +431,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -1582,6 +1578,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -1667,7 +1667,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -1774,9 +1774,9 @@
     "locked": false,
     "wx_now": [],
     "raining_now": false,
-    "latest_ob_utc": "2026-09-26T18:50:00+00:00",
+    "latest_ob_utc": "2026-09-26T19:00:00+00:00",
     "latest_raw": "",
-    "n_obs": 169,
+    "n_obs": 171,
     "wet_hours": [],
     "precip_known": false
    },
@@ -1791,7 +1791,7 @@
     "volume": 12020.15,
     "open_interest": 8802.3,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.238694+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.836634+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -1817,7 +1817,7 @@
    },
    "metar_day": {
     "n_reports": 37,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -1898,14 +1898,18 @@
     }
    ],
    "radar": {
-    "near10_pct": 4.9,
+    "near10_pct": 3.9,
     "near30_pct": 3.4,
     "near60_pct": 3.1,
-    "nearest_km": 5.2,
-    "nearest_dir": "W",
-    "_n": 242,
+    "nearest_km": 2.9,
+    "nearest_dir": "SW",
+    "_n": 236,
     "site": "EWX",
-    "motion": null
+    "motion": {
+     "dir": "S",
+     "kmh": 97,
+     "toward_gauge": true
+    }
    },
    "radar_down": null,
    "hrrr_hours": [
@@ -1992,16 +1996,12 @@
    ],
    "hrrr_init": "2026-09-26T17:00:00Z",
    "situation": [
-    "nearest echo 5.2 km W [site radar, 5 min]"
+    "nearest echo 2.9 km SW, moving S at 97 km/h, ETA about 2 min [site radar, 5 min]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -3149,6 +3149,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       1
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      1
      ]
     ]
    }
@@ -3234,7 +3238,7 @@
      "hours": 11
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -3376,7 +3380,7 @@
     "volume": 5961.4,
     "open_interest": 5404.65,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.728031+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.469344+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
@@ -3427,7 +3431,7 @@
    },
    "metar_day": {
     "n_reports": 41,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:54:00Z",
     "pno_reports_utc": [],
@@ -3446,10 +3450,10 @@
      "bearing": "SW",
      "lat": 42.1912,
      "lon": -71.1732,
-     "wx": "RA BR",
+     "wx": "-RA BR",
      "raining": true,
-     "precip_in": 0.14,
-     "time_utc": "2026-09-26T18:53:00Z"
+     "precip_in": 0.02,
+     "time_utc": "2026-09-26T19:07:00Z"
     },
     {
      "id": "KBVY",
@@ -3459,8 +3463,8 @@
      "lon": -70.9153,
      "wx": "-RA BR",
      "raining": true,
-     "precip_in": 0.07,
-     "time_utc": "2026-09-26T18:53:00Z"
+     "precip_in": 0.01,
+     "time_utc": "2026-09-26T19:07:00Z"
     },
     {
      "id": "KBED",
@@ -3530,16 +3534,16 @@
     }
    ],
    "radar": {
-    "near10_pct": 48.7,
-    "near30_pct": 46.6,
-    "near60_pct": 35.9,
-    "nearest_km": 0.8,
-    "nearest_dir": "NW",
-    "_n": 3149,
+    "near10_pct": 32.6,
+    "near30_pct": 43.4,
+    "near60_pct": 34.1,
+    "nearest_km": 4.3,
+    "nearest_dir": "N",
+    "_n": 2986,
     "site": "BOX",
     "motion": {
      "dir": "SW",
-     "kmh": 41,
+     "kmh": 48,
      "toward_gauge": true
     }
    },
@@ -3635,17 +3639,13 @@
    "situation": [
     "RAINING AT THE GAUGE now (-RA BR), reported 18:54Z [the gauge's own report]",
     "rain at KOWD (23 km SW), KBVY (26 km N), KBED (26 km NW), KLWM (40 km N) [neighbour airport reports]",
-    "echoes over the gauge, 48.7% of the 10 km ring [site radar, 5 min]",
+    "nearest echo 4.3 km N, moving SW at 48 km/h, ETA about 5 min [site radar, 5 min]",
     "model: echoes over the gauge at 4pm, 6pm, 7pm, 8pm, 9pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      52
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       52
@@ -4793,6 +4793,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       100
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      100
      ]
     ]
    }
@@ -4878,7 +4882,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -4998,18 +5002,18 @@
     "yes_ask": 0.02,
     "last": 0.02,
     "yes_bid_size": 0.0,
-    "yes_ask_size": 1565.01,
-    "volume": 15246.64,
+    "yes_ask_size": 1554.42,
+    "volume": 15257.23,
     "open_interest": 10590.89,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.951055+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.382805+00:00",
     "gap": 2,
     "momentum": {
      "now": 2,
      "delta_15m": 0,
      "delta_60m": null,
-     "vol_15m": 94,
-     "last_trade_utc": "2026-09-26T19:02:00+00:00"
+     "vol_15m": 104,
+     "last_trade_utc": "2026-09-26T19:11:00+00:00"
     }
    },
    "nws_alerts": [],
@@ -5028,7 +5032,7 @@
    },
    "metar_day": {
     "n_reports": 31,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -5133,10 +5137,10 @@
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.6,
-    "near60_pct": 1.2,
-    "nearest_km": 11.7,
-    "nearest_dir": "W",
-    "_n": 108,
+    "near60_pct": 1.5,
+    "nearest_km": 11.2,
+    "nearest_dir": "SW",
+    "_n": 129,
     "site": "LOT",
     "motion": null
    },
@@ -5224,10 +5228,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -6375,6 +6375,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -6460,7 +6464,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -6584,7 +6588,7 @@
     "volume": 3448.72,
     "open_interest": 3319.31,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:56.064505+00:00",
+    "fetched_utc": "2026-09-26T19:11:51.277277+00:00",
     "gap": 0,
     "momentum": {
      "now": 1,
@@ -6610,7 +6614,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -6682,10 +6686,10 @@
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.4,
-    "near60_pct": 0.5,
+    "near60_pct": 0.4,
     "nearest_km": 20.5,
     "nearest_dir": "E",
-    "_n": 42,
+    "_n": 30,
     "site": "GRK",
     "motion": null
    },
@@ -6783,10 +6787,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -7934,6 +7934,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       1
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      1
      ]
     ]
    }
@@ -8014,7 +8018,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -8121,9 +8125,9 @@
     "locked": false,
     "wx_now": [],
     "raining_now": false,
-    "latest_ob_utc": "2026-09-26T18:50:00+00:00",
+    "latest_ob_utc": "2026-09-26T19:00:00+00:00",
     "latest_raw": "",
-    "n_obs": 180,
+    "n_obs": 182,
     "wet_hours": [],
     "precip_known": false
    },
@@ -8138,7 +8142,7 @@
     "volume": 3634.89,
     "open_interest": 2854.03,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:53.440313+00:00",
+    "fetched_utc": "2026-09-26T19:11:50.534857+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -8164,7 +8168,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -8368,10 +8372,6 @@
     "delta_3h": 0,
     "history": [
      [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
-     [
       "2026-09-26T04:50:31.334259+00:00",
       0
      ],
@@ -9518,6 +9518,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -9603,7 +9607,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -9721,20 +9725,20 @@
     "status": "active",
     "yes_bid": 0.02,
     "yes_ask": 0.05,
-    "last": 0.02,
+    "last": 0.05,
     "yes_bid_size": 27.0,
-    "yes_ask_size": 15.21,
-    "volume": 8667.02,
-    "open_interest": 7392.45,
+    "yes_ask_size": 16.0,
+    "volume": 8672.02,
+    "open_interest": 7397.45,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.940051+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.439381+00:00",
     "gap": 4,
     "momentum": {
-     "now": 2,
-     "delta_15m": 0,
+     "now": 5,
+     "delta_15m": 3,
      "delta_60m": null,
-     "vol_15m": 73,
-     "last_trade_utc": "2026-09-26T19:03:00+00:00"
+     "vol_15m": 52,
+     "last_trade_utc": "2026-09-26T19:10:00+00:00"
     }
    },
    "nws_alerts": [
@@ -9760,7 +9764,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -9952,16 +9956,13 @@
    ],
    "hrrr_init": "2026-09-26T17:00:00Z",
    "situation": [
-    "nearest echo 2.2 km NW [site radar, 5 min]"
+    "nearest echo 2.2 km NW [site radar, 5 min]",
+    "price +3 in 15 min, +0 in 1 h, 52 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -11109,6 +11110,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       1
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      1
      ]
     ]
    }
@@ -11194,7 +11199,7 @@
      "hours": 9
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -11315,19 +11320,19 @@
     "yes_bid": 0.97,
     "yes_ask": 0.98,
     "last": 0.97,
-    "yes_bid_size": 1403.49,
-    "yes_ask_size": 653.29,
-    "volume": 20266.93,
-    "open_interest": 9535.02,
+    "yes_bid_size": 1390.42,
+    "yes_ask_size": 643.11,
+    "volume": 20281.18,
+    "open_interest": 9544.13,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.897020+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.387111+00:00",
     "gap": 18,
     "momentum": {
      "now": 97,
-     "delta_15m": -2,
-     "delta_60m": 2,
-     "vol_15m": 622,
-     "last_trade_utc": "2026-09-26T19:07:00+00:00"
+     "delta_15m": -1,
+     "delta_60m": 1,
+     "vol_15m": 626,
+     "last_trade_utc": "2026-09-26T19:11:00+00:00"
     }
    },
    "nws_alerts": [
@@ -11353,7 +11358,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:52:00Z",
     "pno_reports_utc": [],
@@ -11456,14 +11461,18 @@
     }
    ],
    "radar": {
-    "near10_pct": 22.7,
-    "near30_pct": 40.7,
-    "near60_pct": 45.1,
-    "nearest_km": 4.7,
-    "nearest_dir": "NE",
-    "_n": 3800,
+    "near10_pct": 29.9,
+    "near30_pct": 46.2,
+    "near60_pct": 47.6,
+    "nearest_km": 2.9,
+    "nearest_dir": "E",
+    "_n": 4006,
     "site": "LWX",
-    "motion": null
+    "motion": {
+     "dir": "SE",
+     "kmh": 12,
+     "toward_gauge": true
+    }
    },
    "radar_down": null,
    "hrrr_hours": [
@@ -11547,18 +11556,14 @@
    "situation": [
     "RAINING AT THE GAUGE now (-RA, trace so far), reported 18:52Z [the gauge's own report]",
     "rain at KADW (15 km E), KCGS (18 km NE), KDAA (20 km SW), KIAD (37 km W) [neighbour airport reports]",
-    "nearest echo 4.7 km NE [site radar, 5 min]",
+    "nearest echo 2.9 km E, moving SE at 12 km/h, ETA about 14 min [site radar, 5 min]",
     "model: echoes over the gauge at 3pm, 4pm, 6pm, 7pm, 8pm [HRRR run]",
-    "price -2 in 15 min, +2 in 1 h, 622 contracts in 15 min [Kalshi]"
+    "price -1 in 15 min, +1 in 1 h, 626 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 14,
     "delta_3h": 14,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      5
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       5
@@ -12706,6 +12711,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       80
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      80
      ]
     ]
    }
@@ -12796,7 +12805,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -12920,7 +12929,7 @@
     "volume": 11044.21,
     "open_interest": 9446.54,
     "close_time": "2026-09-27T07:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.727032+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.381102+00:00",
     "gap": 2,
     "momentum": {
      "now": 2,
@@ -12946,7 +12955,7 @@
    },
    "metar_day": {
     "n_reports": 39,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:16:00Z",
     "pno_reports_utc": [],
@@ -13028,13 +13037,17 @@
    ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 1.6,
+    "near30_pct": 1.5,
     "near60_pct": 0.8,
     "nearest_km": 11.7,
     "nearest_dir": "S",
-    "_n": 76,
+    "_n": 72,
     "site": "FTG",
-    "motion": null
+    "motion": {
+     "dir": "W",
+     "kmh": 39,
+     "toward_gauge": false
+    }
    },
    "radar_down": null,
    "hrrr_hours": [
@@ -13120,10 +13133,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      17
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       17
@@ -14271,6 +14280,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -14356,7 +14369,7 @@
      "hours": 11
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -14488,7 +14501,7 @@
     "volume": 7581.6,
     "open_interest": 7539.43,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:38.919883+00:00",
+    "fetched_utc": "2026-09-26T19:11:35.400556+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
@@ -14533,7 +14546,7 @@
    },
    "metar_day": {
     "n_reports": 33,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -14637,16 +14650,16 @@
    ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 7.5,
-    "near60_pct": 12.7,
-    "nearest_km": 11.5,
+    "near30_pct": 5.3,
+    "near60_pct": 12.1,
+    "nearest_km": 13.7,
     "nearest_dir": "S",
-    "_n": 1086,
+    "_n": 1040,
     "site": "OKX",
     "motion": {
-     "dir": "SE",
-     "kmh": 38,
-     "toward_gauge": false
+     "dir": "W",
+     "kmh": 9,
+     "toward_gauge": true
     }
    },
    "radar_down": null,
@@ -14741,17 +14754,13 @@
    "situation": [
     "RAINING AT THE GAUGE now (-RA, trace so far), reported 18:51Z [the gauge's own report]",
     "rain at KTEB (22 km NE), KLGA (27 km NE) [neighbour airport reports]",
-    "nearest echo 11.5 km S, moving SE at 38 km/h [site radar, 5 min]",
+    "nearest echo 13.7 km S, moving W at 9 km/h, ETA about 91 min [site radar, 5 min]",
     "model: echoes over the gauge at 2pm, 3pm, 4pm, 6pm, 7pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      53
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       53
@@ -15899,6 +15908,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       95
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      95
      ]
     ]
    }
@@ -15984,7 +15997,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -16100,22 +16113,22 @@
    "market": {
     "ticker": "KXRAIN-26SEP26-HOU",
     "status": "active",
-    "yes_bid": 0.04,
-    "yes_ask": 0.05,
-    "last": 0.07,
+    "yes_bid": 0.05,
+    "yes_ask": 0.09,
+    "last": 0.09,
     "yes_bid_size": 20.0,
-    "yes_ask_size": 1.32,
-    "volume": 11913.31,
-    "open_interest": 8648.69,
+    "yes_ask_size": 6.42,
+    "volume": 12264.19,
+    "open_interest": 8973.43,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:46.552866+00:00",
-    "gap": -6,
+    "fetched_utc": "2026-09-26T19:11:40.930653+00:00",
+    "gap": -2,
     "momentum": {
-     "now": 5,
-     "delta_15m": 4,
-     "delta_60m": 3,
-     "vol_15m": 20,
-     "last_trade_utc": "2026-09-26T19:08:00+00:00"
+     "now": 6,
+     "delta_15m": 5,
+     "delta_60m": 0,
+     "vol_15m": 441,
+     "last_trade_utc": "2026-09-26T19:11:00+00:00"
     }
    },
    "nws_alerts": [
@@ -16141,7 +16154,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -16244,14 +16257,18 @@
     }
    ],
    "radar": {
-    "near10_pct": 26.2,
-    "near30_pct": 24.0,
-    "near60_pct": 19.2,
-    "nearest_km": 0.7,
-    "nearest_dir": "S",
-    "_n": 1477,
+    "near10_pct": 28.4,
+    "near30_pct": 24.2,
+    "near60_pct": 19.1,
+    "nearest_km": 1.4,
+    "nearest_dir": "SW",
+    "_n": 1467,
     "site": "HGX",
-    "motion": null
+    "motion": {
+     "dir": "E",
+     "kmh": 29,
+     "toward_gauge": true
+    }
    },
    "radar_down": null,
    "hrrr_hours": [
@@ -16343,17 +16360,13 @@
    ],
    "hrrr_init": "2026-09-26T17:00:00Z",
    "situation": [
-    "echoes over the gauge, 26.2% of the 10 km ring [site radar, 5 min]",
-    "price +4 in 15 min, +3 in 1 h, 20 contracts in 15 min [Kalshi]"
+    "echoes over the gauge, 28.4% of the 10 km ring [site radar, 5 min]",
+    "price +5 in 15 min, +0 in 1 h, 441 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": -2,
     "delta_3h": -2,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -17501,6 +17514,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       11
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      11
      ]
     ]
    }
@@ -17596,7 +17613,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -17720,7 +17737,7 @@
     "volume": 3897.44,
     "open_interest": 3387.21,
     "close_time": "2026-09-27T08:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:46.154751+00:00",
+    "fetched_utc": "2026-09-26T19:11:41.074548+00:00",
     "gap": -1,
     "momentum": {
      "now": 1,
@@ -17753,7 +17770,7 @@
    },
    "metar_day": {
     "n_reports": 36,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -17865,7 +17882,7 @@
     "site": "VTX",
     "motion": {
      "dir": "N",
-     "kmh": 35,
+     "kmh": 49,
      "toward_gauge": true
     }
    },
@@ -17950,10 +17967,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -19101,6 +19114,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       3
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      3
      ]
     ]
    }
@@ -19181,7 +19198,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -19301,18 +19318,18 @@
     "yes_ask": 0.01,
     "last": 0.01,
     "yes_bid_size": 0.0,
-    "yes_ask_size": 2636.76,
-    "volume": 3140.8,
+    "yes_ask_size": 2631.67,
+    "volume": 3145.89,
     "open_interest": 2229.58,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:54.689132+00:00",
+    "fetched_utc": "2026-09-26T19:11:51.206224+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
      "delta_15m": 0,
      "delta_60m": null,
-     "vol_15m": 0,
-     "last_trade_utc": "2026-09-26T18:42:00+00:00"
+     "vol_15m": 5,
+     "last_trade_utc": "2026-09-26T19:11:00+00:00"
     }
    },
    "nws_alerts": [],
@@ -19331,7 +19348,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:54:00Z",
     "pno_reports_utc": [],
@@ -19502,10 +19519,6 @@
     "delta_3h": 0,
     "history": [
      [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
-     [
       "2026-09-26T04:50:31.334259+00:00",
       0
      ],
@@ -20652,6 +20665,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -20747,7 +20764,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -20871,7 +20888,7 @@
     "volume": 1380.11,
     "open_interest": 1318.11,
     "close_time": "2026-09-27T08:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:46.425050+00:00",
+    "fetched_utc": "2026-09-26T19:11:41.131697+00:00",
     "gap": 0,
     "momentum": {
      "now": 1,
@@ -20897,7 +20914,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:56:00Z",
     "pno_reports_utc": [],
@@ -20957,11 +20974,11 @@
    ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.5,
-    "near60_pct": 1.0,
-    "nearest_km": 18.4,
-    "nearest_dir": "W",
-    "_n": 90,
+    "near30_pct": 0.2,
+    "near60_pct": 1.2,
+    "nearest_km": 15.4,
+    "nearest_dir": "SE",
+    "_n": 106,
     "site": "ESX",
     "motion": null
    },
@@ -21049,10 +21066,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      1
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       1
@@ -22200,6 +22213,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       1
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      1
      ]
     ]
    }
@@ -22280,7 +22297,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -22397,21 +22414,21 @@
     "ticker": "KXRAIN-26SEP26-MIA",
     "status": "active",
     "yes_bid": 0.14,
-    "yes_ask": 0.16,
+    "yes_ask": 0.17,
     "last": 0.16,
-    "yes_bid_size": 22.9,
-    "yes_ask_size": 2.0,
-    "volume": 41444.3,
-    "open_interest": 17916.88,
+    "yes_bid_size": 28.47,
+    "yes_ask_size": 45.0,
+    "volume": 41533.18,
+    "open_interest": 17940.27,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:46.625561+00:00",
-    "gap": -11,
+    "fetched_utc": "2026-09-26T19:11:41.273513+00:00",
+    "gap": -10,
     "momentum": {
      "now": 16,
-     "delta_15m": -2,
-     "delta_60m": -10,
-     "vol_15m": 782,
-     "last_trade_utc": "2026-09-26T19:08:00+00:00"
+     "delta_15m": -1,
+     "delta_60m": -8,
+     "vol_15m": 841,
+     "last_trade_utc": "2026-09-26T19:11:00+00:00"
     }
    },
    "nws_alerts": [],
@@ -22430,7 +22447,7 @@
    },
    "metar_day": {
     "n_reports": 31,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -22522,12 +22539,12 @@
     }
    ],
    "radar": {
-    "near10_pct": 1.1,
-    "near30_pct": 3.3,
-    "near60_pct": 2.2,
+    "near10_pct": 1.9,
+    "near30_pct": 3.4,
+    "near60_pct": 2.1,
     "nearest_km": 6.9,
     "nearest_dir": "SW",
-    "_n": 170,
+    "_n": 160,
     "site": "AMX",
     "motion": null
    },
@@ -22619,16 +22636,12 @@
     "rain at KHST (34 km S) [neighbour airport reports]",
     "nearest echo 6.9 km SW [site radar, 5 min]",
     "model: echoes over the gauge at 8pm, 10pm [HRRR run]",
-    "price -2 in 15 min, -10 in 1 h, 782 contracts in 15 min [Kalshi]"
+    "price -1 in 15 min, -8 in 1 h, 841 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": -3,
     "delta_3h": -2,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      19
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       19
@@ -23776,6 +23789,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       27
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      27
      ]
     ]
    }
@@ -23861,7 +23878,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -23967,12 +23984,13 @@
     "in_today": 0.02,
     "locked": true,
     "wx_now": [
-     "rain"
+     "rain",
+     "fog_mist"
     ],
     "raining_now": true,
-    "latest_ob_utc": "2026-09-26T18:45:00+00:00",
+    "latest_ob_utc": "2026-09-26T19:00:00+00:00",
     "latest_raw": "",
-    "n_obs": 162,
+    "n_obs": 165,
     "wet_hours": [],
     "precip_known": true,
     "lock_src": "airport report 19:01Z"
@@ -23983,19 +24001,19 @@
     "yes_bid": 0.99,
     "yes_ask": 1.0,
     "last": 0.99,
-    "yes_bid_size": 31639.79,
+    "yes_bid_size": 31295.96,
     "yes_ask_size": 0.0,
-    "volume": 21562.23,
+    "volume": 21906.06,
     "open_interest": 9729.5,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:46.883631+00:00",
+    "fetched_utc": "2026-09-26T19:11:42.175564+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
      "delta_15m": 0,
      "delta_60m": 2,
-     "vol_15m": 1511,
-     "last_trade_utc": "2026-09-26T18:58:00+00:00"
+     "vol_15m": 390,
+     "last_trade_utc": "2026-09-26T19:10:00+00:00"
     }
    },
    "nws_alerts": [],
@@ -24014,7 +24032,7 @@
    },
    "metar_day": {
     "n_reports": 38,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:17:00Z",
     "pno_reports_utc": [],
@@ -24117,16 +24135,16 @@
     }
    ],
    "radar": {
-    "near10_pct": 77.6,
-    "near30_pct": 36.9,
-    "near60_pct": 24.4,
+    "near10_pct": 60.6,
+    "near30_pct": 36.1,
+    "near60_pct": 23.3,
     "nearest_km": 0.4,
     "nearest_dir": "S",
-    "_n": 2194,
+    "_n": 2103,
     "site": "MPX",
     "motion": {
      "dir": "E",
-     "kmh": 26,
+     "kmh": 16,
      "toward_gauge": true
     }
    },
@@ -24222,17 +24240,13 @@
    "situation": [
     "RAINING AT THE GAUGE now (RA BR), reported 19:01Z [the gauge's own report]",
     "rain at KFCM (20 km W), KMIC (22 km NW), KLVN (29 km S), K21D (32 km NE) [neighbour airport reports]",
-    "echoes over the gauge, 77.6% of the 10 km ring [site radar, 5 min]",
+    "echoes over the gauge, 60.6% of the 10 km ring [site radar, 5 min]",
     "model: echoes over the gauge at 3pm, 4pm, 5pm, 6pm, 7pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": -5,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -25380,6 +25394,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       29
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      29
      ]
     ]
    }
@@ -25465,7 +25483,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -25572,9 +25590,9 @@
     "locked": false,
     "wx_now": [],
     "raining_now": false,
-    "latest_ob_utc": "2026-09-26T18:50:00+00:00",
+    "latest_ob_utc": "2026-09-26T19:00:00+00:00",
     "latest_raw": "",
-    "n_obs": 167,
+    "n_obs": 169,
     "wet_hours": [],
     "precip_known": false
    },
@@ -25589,7 +25607,7 @@
     "volume": 7695.78,
     "open_interest": 5715.28,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:54.324506+00:00",
+    "fetched_utc": "2026-09-26T19:11:50.617887+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -25615,7 +25633,7 @@
    },
    "metar_day": {
     "n_reports": 31,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:52:00Z",
     "pno_reports_utc": [],
@@ -25827,10 +25845,6 @@
     "delta_3h": 0,
     "history": [
      [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
-     [
       "2026-09-26T04:50:31.334259+00:00",
       0
      ],
@@ -26977,6 +26991,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -27062,7 +27080,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -27169,9 +27187,9 @@
     "locked": false,
     "wx_now": [],
     "raining_now": false,
-    "latest_ob_utc": "2026-09-26T18:50:00+00:00",
+    "latest_ob_utc": "2026-09-26T19:00:00+00:00",
     "latest_raw": "",
-    "n_obs": 167,
+    "n_obs": 169,
     "wet_hours": [],
     "precip_known": false
    },
@@ -27186,12 +27204,12 @@
     "volume": 4857.24,
     "open_interest": 3331.41,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:46.512472+00:00",
+    "fetched_utc": "2026-09-26T19:11:42.269051+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
      "delta_15m": 0,
-     "delta_60m": 0,
+     "delta_60m": null,
      "vol_15m": 187,
      "last_trade_utc": "2026-09-26T19:07:00+00:00"
     }
@@ -27212,7 +27230,7 @@
    },
    "metar_day": {
     "n_reports": 32,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:36:00Z",
     "pno_reports_utc": [],
@@ -27273,10 +27291,10 @@
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.0,
-    "near60_pct": 3.2,
-    "nearest_km": 33.1,
+    "near60_pct": 3.3,
+    "nearest_km": 31.7,
     "nearest_dir": "NW",
-    "_n": 269,
+    "_n": 273,
     "site": "HDC",
     "motion": null
    },
@@ -27360,16 +27378,12 @@
    ],
    "hrrr_init": "2026-09-26T17:00:00Z",
    "situation": [
-    "nearest echo 33.1 km NW [site radar, 5 min]"
+    "nearest echo 31.7 km NW [site radar, 5 min]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -28517,6 +28531,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -28602,7 +28620,7 @@
      "hours": 11
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -28739,7 +28757,7 @@
     "volume": 21790.9,
     "open_interest": 17694.19,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:47.093732+00:00",
+    "fetched_utc": "2026-09-26T19:11:42.701700+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
@@ -28784,7 +28802,7 @@
    },
    "metar_day": {
     "n_reports": 41,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -28888,15 +28906,15 @@
    ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 12.6,
-    "near60_pct": 17.3,
-    "nearest_km": 15.4,
-    "nearest_dir": "N",
-    "_n": 1563,
+    "near30_pct": 15.2,
+    "near60_pct": 15.3,
+    "nearest_km": 12.1,
+    "nearest_dir": "E",
+    "_n": 1379,
     "site": "OKX",
     "motion": {
-     "dir": "SW",
-     "kmh": 37,
+     "dir": "W",
+     "kmh": 35,
      "toward_gauge": true
     }
    },
@@ -28981,17 +28999,13 @@
    "hrrr_init": "2026-09-26T17:00:00Z",
    "situation": [
     "rain at KLGA (7 km E), KTEB (11 km NW), KEWR (20 km SW) [neighbour airport reports]",
-    "nearest echo 15.4 km N, moving SW at 37 km/h, ETA about 25 min [site radar, 5 min]",
+    "nearest echo 12.1 km E, moving W at 35 km/h, ETA about 21 min [site radar, 5 min]",
     "model: echoes over the gauge at 3pm, 4pm, 6pm, 7pm, 8pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      62
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       62
@@ -30139,6 +30153,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       100
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      100
      ]
     ]
    }
@@ -30224,7 +30242,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -30351,7 +30369,7 @@
     "volume": 45437.28,
     "open_interest": 23286.94,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:47.134180+00:00",
+    "fetched_utc": "2026-09-26T19:11:43.010261+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
@@ -30377,7 +30395,7 @@
    },
    "metar_day": {
     "n_reports": 34,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:52:00Z",
     "pno_reports_utc": [],
@@ -30483,7 +30501,7 @@
    "radar_down": {
     "site": "TLX",
     "scan_utc": "2026-09-26T00:57:43Z",
-    "age_min": 1091.1,
+    "age_min": 1094.0,
     "reason": "TLX newest scan 2026-09-26T00:57:43Z"
    },
    "hrrr_hours": [
@@ -30571,10 +30589,6 @@
     "delta_1h": -27,
     "delta_3h": -25,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      10
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       10
@@ -31722,6 +31736,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       23
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      23
      ]
     ]
    }
@@ -31807,7 +31825,7 @@
      "hours": 11
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -31941,7 +31959,7 @@
     "volume": 11072.4,
     "open_interest": 8116.11,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:48.449552+00:00",
+    "fetched_utc": "2026-09-26T19:11:44.155017+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
@@ -31980,7 +31998,7 @@
    },
    "metar_day": {
     "n_reports": 37,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:54:00Z",
     "pno_reports_utc": [],
@@ -32079,20 +32097,20 @@
      "wx": "",
      "raining": false,
      "precip_in": null,
-     "time_utc": "2026-09-26T18:54:00Z"
+     "time_utc": "2026-09-26T19:08:00Z"
     }
    ],
    "radar": {
-    "near10_pct": 5.1,
-    "near30_pct": 5.8,
-    "near60_pct": 3.0,
-    "nearest_km": 3.1,
-    "nearest_dir": "N",
-    "_n": 258,
+    "near10_pct": 19.2,
+    "near30_pct": 5.3,
+    "near60_pct": 2.6,
+    "nearest_km": 5.0,
+    "nearest_dir": "E",
+    "_n": 221,
     "site": "DIX",
     "motion": {
-     "dir": "N",
-     "kmh": 24,
+     "dir": "W",
+     "kmh": 31,
      "toward_gauge": false
     }
    },
@@ -32177,17 +32195,13 @@
    "hrrr_init": "2026-09-26T17:00:00Z",
    "situation": [
     "rain at KPNE (29 km NE), KOQN (33 km NW), KVAY (34 km E), KPTW (49 km NW) [neighbour airport reports]",
-    "nearest echo 3.1 km N, moving N at 24 km/h [site radar, 5 min]",
+    "nearest echo 5.0 km E, moving W at 31 km/h [site radar, 5 min]",
     "model: echoes over the gauge at 3pm, 4pm, 6pm, 8pm, 9pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      71
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       71
@@ -33335,6 +33349,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       93
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      93
      ]
     ]
    }
@@ -33425,7 +33443,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -33549,7 +33567,7 @@
     "volume": 3438.02,
     "open_interest": 3222.1,
     "close_time": "2026-09-27T07:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:52.459648+00:00",
+    "fetched_utc": "2026-09-26T19:11:48.131225+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -33575,7 +33593,7 @@
    },
    "metar_day": {
     "n_reports": 31,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -33668,11 +33686,11 @@
    ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 1.3,
-    "near60_pct": 1.9,
-    "nearest_km": 10.8,
+    "near30_pct": 0.9,
+    "near60_pct": 1.7,
+    "nearest_km": 11.3,
     "nearest_dir": "N",
-    "_n": 154,
+    "_n": 137,
     "site": "IWA",
     "motion": null
    },
@@ -33760,10 +33778,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      1
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       1
@@ -34911,6 +34925,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -34991,7 +35009,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -35109,18 +35127,18 @@
     "status": "active",
     "yes_bid": 0.01,
     "yes_ask": 0.02,
-    "last": 0.02,
-    "yes_bid_size": 759.96,
+    "last": 0.01,
+    "yes_bid_size": 744.36,
     "yes_ask_size": 1845.64,
-    "volume": 8270.95,
+    "volume": 8286.55,
     "open_interest": 5538.12,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:55.961901+00:00",
+    "fetched_utc": "2026-09-26T19:11:53.502731+00:00",
     "gap": 2,
     "momentum": {
      "now": 2,
      "delta_15m": 0,
-     "delta_60m": null,
+     "delta_60m": 1,
      "vol_15m": 234,
      "last_trade_utc": "2026-09-26T19:07:00+00:00"
     }
@@ -35141,7 +35159,7 @@
    },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -35233,18 +35251,14 @@
     }
    ],
    "radar": {
-    "near10_pct": 0.3,
-    "near30_pct": 1.1,
-    "near60_pct": 0.8,
-    "nearest_km": 9.4,
-    "nearest_dir": "N",
-    "_n": 73,
+    "near10_pct": 2.5,
+    "near30_pct": 1.7,
+    "near60_pct": 1.1,
+    "nearest_km": 5.4,
+    "nearest_dir": "S",
+    "_n": 93,
     "site": "PBZ",
-    "motion": {
-     "dir": "S",
-     "kmh": 66,
-     "toward_gauge": false
-    }
+    "motion": null
    },
    "radar_down": null,
    "hrrr_hours": [
@@ -35345,10 +35359,6 @@
     "delta_1h": 0,
     "delta_3h": -1,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       0
@@ -36496,6 +36506,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -36581,7 +36595,7 @@
      "hours": 11
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -36718,7 +36732,7 @@
     "volume": 4671.83,
     "open_interest": 4137.58,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:56.139815+00:00",
+    "fetched_utc": "2026-09-26T19:11:51.285955+00:00",
     "gap": null,
     "momentum": {
      "now": null,
@@ -36763,7 +36777,7 @@
    },
    "metar_day": {
     "n_reports": 45,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -36826,23 +36840,23 @@
      "bearing": "N",
      "lat": 42.1912,
      "lon": -71.1732,
-     "wx": "RA BR",
+     "wx": "-RA BR",
      "raining": true,
-     "precip_in": 0.14,
-     "time_utc": "2026-09-26T18:53:00Z"
+     "precip_in": 0.02,
+     "time_utc": "2026-09-26T19:07:00Z"
     }
    ],
    "radar": {
-    "near10_pct": 8.3,
-    "near30_pct": 45.5,
-    "near60_pct": 52.0,
-    "nearest_km": 7.2,
-    "nearest_dir": "SE",
-    "_n": 4615,
+    "near10_pct": 21.7,
+    "near30_pct": 51.5,
+    "near60_pct": 52.2,
+    "nearest_km": 2.8,
+    "nearest_dir": "S",
+    "_n": 4633,
     "site": "BOX",
     "motion": {
-     "dir": "NW",
-     "kmh": 8,
+     "dir": "NE",
+     "kmh": 15,
      "toward_gauge": true
     }
    },
@@ -36943,17 +36957,13 @@
    "situation": [
     "RAINING AT THE GAUGE now (-RA BR, trace so far), reported 18:55Z [the gauge's own report]",
     "rain at K1B9 (36 km NE), KTAN (38 km NE), KEWB (39 km E), KWST (52 km SW) [neighbour airport reports]",
-    "nearest echo 7.2 km SE, moving NW at 8 km/h, ETA about 54 min [site radar, 5 min]",
+    "nearest echo 2.8 km S, moving NE at 15 km/h, ETA about 11 min [site radar, 5 min]",
     "model: echoes over the gauge at 2pm, 3pm, 4pm, 5pm, 6pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      58
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       58
@@ -38101,6 +38111,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       100
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      100
      ]
     ]
    }
@@ -38186,7 +38200,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -38310,7 +38324,7 @@
     "volume": 3777.02,
     "open_interest": 3604.21,
     "close_time": "2026-09-27T06:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:53.468296+00:00",
+    "fetched_utc": "2026-09-26T19:11:48.307133+00:00",
     "gap": 2,
     "momentum": {
      "now": 2,
@@ -38336,7 +38350,7 @@
    },
    "metar_day": {
     "n_reports": 37,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:51:00Z",
     "pno_reports_utc": [],
@@ -38529,10 +38543,6 @@
     "delta_3h": -1,
     "history": [
      [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
-     [
       "2026-09-26T04:50:31.334259+00:00",
       0
      ],
@@ -39679,6 +39689,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -39774,7 +39788,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -39898,7 +39912,7 @@
     "volume": 9256.44,
     "open_interest": 6573.6,
     "close_time": "2026-09-27T08:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:53.570876+00:00",
+    "fetched_utc": "2026-09-26T19:11:48.994590+00:00",
     "gap": 2,
     "momentum": {
      "now": 1,
@@ -39924,7 +39938,7 @@
    },
    "metar_day": {
     "n_reports": 38,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -40032,7 +40046,7 @@
     "near60_pct": 0.1,
     "nearest_km": 26.8,
     "nearest_dir": "E",
-    "_n": 9,
+    "_n": 8,
     "site": "ATX",
     "motion": null
    },
@@ -40122,10 +40136,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      35
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       35
@@ -41273,6 +41283,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       0
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      0
      ]
     ]
    }
@@ -41368,7 +41382,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -41492,7 +41506,7 @@
     "volume": 2551.45,
     "open_interest": 2324.17,
     "close_time": "2026-09-27T08:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:53.743768+00:00",
+    "fetched_utc": "2026-09-26T19:11:49.059370+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -41518,7 +41532,7 @@
    },
    "metar_day": {
     "n_reports": 40,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:56:00Z",
     "pno_reports_utc": [],
@@ -41718,10 +41732,6 @@
     "delta_3h": 0,
     "history": [
      [
-      "2026-09-26T04:47:31.330765+00:00",
-      0
-     ],
-     [
       "2026-09-26T04:50:31.334259+00:00",
       0
      ],
@@ -42868,6 +42878,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       1
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      1
      ]
     ]
    }
@@ -42948,7 +42962,7 @@
      "hours": 10
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -43082,7 +43096,7 @@
     "volume": 7941.2,
     "open_interest": 7030.76,
     "close_time": "2026-09-27T05:00:00Z",
-    "fetched_utc": "2026-09-26T19:08:53.402475+00:00",
+    "fetched_utc": "2026-09-26T19:11:50.340691+00:00",
     "gap": null,
     "momentum": {
      "now": null,
@@ -43115,7 +43129,7 @@
    },
    "metar_day": {
     "n_reports": 35,
-    "fetched_utc": "2026-09-26T19:08:30.911085+00:00",
+    "fetched_utc": "2026-09-26T19:11:30.914040+00:00",
     "day": "2026-09-26",
     "window_from_utc": "2026-09-25T13:53:00Z",
     "pno_reports_utc": [],
@@ -43170,7 +43184,7 @@
      "wx": "",
      "raining": false,
      "precip_in": null,
-     "time_utc": "2026-09-26T18:54:00Z"
+     "time_utc": "2026-09-26T19:08:00Z"
     },
     {
      "id": "KSMQ",
@@ -43219,11 +43233,11 @@
    ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.7,
+    "near30_pct": 0.6,
     "near60_pct": 4.0,
-    "nearest_km": 17.6,
+    "nearest_km": 22.4,
     "nearest_dir": "S",
-    "_n": 362,
+    "_n": 357,
     "site": "DIX",
     "motion": null
    },
@@ -43313,17 +43327,13 @@
    "hrrr_init": "2026-09-26T17:00:00Z",
    "situation": [
     "rain at KPNE (28 km SW), KWRI (35 km SE), KVAY (37 km S) [neighbour airport reports]",
-    "nearest echo 17.6 km S [site radar, 5 min]",
+    "nearest echo 22.4 km S [site radar, 5 min]",
     "model: echoes over the gauge at 2pm, 3pm, 4pm, 5pm, 6pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-09-26T04:47:31.330765+00:00",
-      68
-     ],
      [
       "2026-09-26T04:50:31.334259+00:00",
       68
@@ -44471,6 +44481,10 @@
      [
       "2026-09-26T19:08:30.911085+00:00",
       89
+     ],
+     [
+      "2026-09-26T19:11:30.914040+00:00",
+      89
      ]
     ]
    }
@@ -44520,26 +44534,26 @@
   "movers_15m": [
    [
     "HOU",
-    4
+    5
+   ],
+   [
+    "DAL",
+    3
    ],
    [
     "DC",
-    -2
-   ],
-   [
-    "MIA",
-    -2
+    -1
    ],
    [
     "LAX",
     -1
    ],
    [
-    "SEA",
+    "MIA",
     -1
    ],
    [
-    "SFO",
+    "SEA",
     -1
    ]
   ],
@@ -44654,11 +44668,7 @@
    ],
    [
     "MIA",
-    -11
-   ],
-   [
-    "HOU",
-    -6
+    -10
    ],
    [
     "DAL",
@@ -44671,6 +44681,10 @@
    [
     "DEN",
     2
+   ],
+   [
+    "HOU",
+    -2
    ]
   ]
  },
