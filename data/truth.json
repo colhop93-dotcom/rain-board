@@ -1,0 +1,171 @@
+{
+ "schema": "019a.truth/1",
+ "checked_utc": "2026-09-26T18:09:06.295567+00:00",
+ "files": [],
+ "stations": {
+  "KATL": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KAUS": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KBOS": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KORD": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KCLL": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KCMH": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KDFW": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KDCA": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 80% but the board's OWN calibrated physics says 7%"
+    },
+    {
+     "check": "gauge",
+     "severity": "med",
+     "detail": "weather.com reports 0.10 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
+    }
+   ]
+  },
+  "KDEN": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KEWR": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "high",
+     "detail": "board headline 95% but weather.com, the settlement source, says 47%, a gap of 48 points"
+    }
+   ]
+  },
+  "KHOU": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLAX": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLEX": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLAS": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMIA": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMSP": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 85% but the board's OWN calibrated physics says 22%"
+    },
+    {
+     "check": "gauge",
+     "severity": "med",
+     "detail": "weather.com reports 0.03 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
+    }
+   ]
+  },
+  "KMKE": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMSY": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KNYC": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "high",
+     "detail": "board headline 98% but weather.com, the settlement source, says 46%, a gap of 52 points"
+    }
+   ]
+  },
+  "KOKC": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "high",
+     "detail": "board headline 43% but weather.com, the settlement source, says 18%, a gap of 25 points"
+    }
+   ]
+  },
+  "KPHL": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "high",
+     "detail": "board headline 93% but weather.com, the settlement source, says 68%, a gap of 25 points"
+    }
+   ]
+  },
+  "KPHX": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KPIT": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KPVD": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSAT": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSEA": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSFO": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KTTN": {
+   "ok": true,
+   "discrepancies": []
+  }
+ },
+ "summary": {
+  "n_open": 8,
+  "n_stations_bad": 6,
+  "worst": "Newark: board headline 95% but weather.com, the settlement source, says 47%, a gap of 48 points",
+  "files_stale": 0
+ }
+}
