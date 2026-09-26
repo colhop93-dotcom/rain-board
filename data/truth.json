@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-09-26T18:24:06.344469+00:00",
+ "checked_utc": "2026-09-26T18:29:06.344430+00:00",
  "files": [],
  "stations": {
   "KATL": {
@@ -91,7 +91,7 @@
     {
      "check": "gauge",
      "severity": "med",
-     "detail": "weather.com reports 0.03 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
+     "detail": "weather.com reports 0.04 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
     }
    ]
   },
@@ -109,7 +109,7 @@
     {
      "check": "forecast",
      "severity": "high",
-     "detail": "board headline 98% but weather.com, the settlement source, says 46%, a gap of 52 points"
+     "detail": "board headline 98% but weather.com, the settlement source, says 69%, a gap of 29 points"
     }
    ]
   },
@@ -124,14 +124,8 @@
    ]
   },
   "KPHL": {
-   "ok": false,
-   "discrepancies": [
-    {
-     "check": "forecast",
-     "severity": "high",
-     "detail": "board headline 93% but weather.com, the settlement source, says 68%, a gap of 25 points"
-    }
-   ]
+   "ok": true,
+   "discrepancies": []
   },
   "KPHX": {
    "ok": true,
@@ -158,8 +152,14 @@
    "discrepancies": []
   },
   "KTTN": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "high",
+     "detail": "board headline 89% but weather.com, the settlement source, says 41%, a gap of 48 points"
+    }
+   ]
   }
  },
  "summary": {
