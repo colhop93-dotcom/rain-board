@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-09-26T18:29:06.344430+00:00",
+ "checked_utc": "2026-09-26T18:34:06.351122+00:00",
  "files": [],
  "stations": {
   "KATL": {
@@ -42,7 +42,7 @@
     {
      "check": "gauge",
      "severity": "med",
-     "detail": "weather.com reports 0.10 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
+     "detail": "weather.com reports 0.11 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
     }
    ]
   },
@@ -109,19 +109,13 @@
     {
      "check": "forecast",
      "severity": "high",
-     "detail": "board headline 98% but weather.com, the settlement source, says 69%, a gap of 29 points"
+     "detail": "board headline 100% but weather.com, the settlement source, says 69%, a gap of 31 points"
     }
    ]
   },
   "KOKC": {
-   "ok": false,
-   "discrepancies": [
-    {
-     "check": "radar",
-     "severity": "med",
-     "detail": "site radar TLX is DOWN (newest scan 2026-09-26T00:57:43Z); no close-up radar for this gauge, the composite below still reads"
-    }
-   ]
+   "ok": true,
+   "discrepancies": []
   },
   "KPHL": {
    "ok": true,
@@ -163,8 +157,8 @@
   }
  },
  "summary": {
-  "n_open": 8,
-  "n_stations_bad": 6,
+  "n_open": 7,
+  "n_stations_bad": 5,
   "worst": "Newark: board headline 95% but weather.com, the settlement source, says 47%, a gap of 48 points",
   "files_stale": 0
  }
