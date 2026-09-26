@@ -1,6 +1,6 @@
 {
  "schema": "019a.models/1",
- "generated_utc": "2026-09-26T17:59:54.009392+00:00",
+ "generated_utc": "2026-09-26T18:14:54.016984+00:00",
  "stations": {
   "KATL": {
    "day": "2026-09-26",
@@ -688,29 +688,117 @@
   },
   "KLEX": {
    "day": "2026-09-26",
-   "models": {},
-   "consensus": {
-    "median_pct": null,
-    "min_pct": null,
-    "max_pct": null,
-    "n_pct": 0,
-    "n_wet": 0,
-    "n_models": 0
+   "models": {
+    "ecmwf": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "gfs": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "icon": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "ukmo": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "gem": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "meteofrance": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "jma": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    }
    },
-   "error": "<HTTPError 503: 'Service Unavailable'>"
+   "consensus": {
+    "median_pct": 0,
+    "min_pct": 0,
+    "max_pct": 0,
+    "n_pct": 5,
+    "n_wet": 0,
+    "n_models": 7
+   },
+   "error": null,
+   "hours_in_day": 24
   },
   "KLAS": {
    "day": "2026-09-26",
-   "models": {},
-   "consensus": {
-    "median_pct": null,
-    "min_pct": null,
-    "max_pct": null,
-    "n_pct": 0,
-    "n_wet": 0,
-    "n_models": 0
+   "models": {
+    "ecmwf": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "gfs": {
+     "pct": 1,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "icon": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "ukmo": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "gem": {
+     "pct": 5,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "meteofrance": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "jma": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    }
    },
-   "error": "<HTTPError 503: 'Service Unavailable'>"
+   "consensus": {
+    "median_pct": 0,
+    "min_pct": 0,
+    "max_pct": 5,
+    "n_pct": 5,
+    "n_wet": 0,
+    "n_models": 7
+   },
+   "error": null,
+   "hours_in_day": 24
   },
   "KMIA": {
    "day": "2026-09-26",
