@@ -1,6 +1,6 @@
 {
  "schema": "019a.briefing/1",
- "generated_utc": "2026-09-26T18:32:47Z",
+ "generated_utc": "2026-09-26T18:47:47Z",
  "n": 28,
  "errors": 0,
  "method": "deterministic: templates over the NWS point forecast, the TAF and active alerts, plus verbatim keyword-selected sentences from the office's AFD; no generated prose",
@@ -15,27 +15,27 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T18:29:30.796526+00:00",
-    "updated_utc": null,
+    "generated_utc": "2026-09-26T18:47:48+00:00",
+    "updated_utc": "2026-09-26T18:26:58+00:00",
     "url": "https://api.weather.gov/gridpoints/FFC/61,82/forecast/hourly",
-    "note": "collector copy, today only",
+    "note": null,
     "before_cutoff": {
-     "hours": 10,
+     "hours": 11,
      "peak_pct": 0,
-     "peak_local_hour": 14.0,
-     "peak_utc": "2026-09-26T19:00:00Z",
+     "peak_local_hour": 13.0,
+     "peak_utc": "2026-09-26T18:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Sunny"
     },
     "after_cutoff": {
-     "hours": 1,
+     "hours": 12,
      "peak_pct": 0,
      "peak_local_hour": 24.0,
      "peak_utc": "2026-09-27T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Mostly Clear"
+     "wording": "Partly Cloudy"
     }
    },
    "twc_forecast": {
@@ -99,7 +99,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 2:00 PM CT (sunny).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 1:00 PM CT (sunny).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
     "The TAF for KATL (issued 12:31 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -131,12 +131,10 @@
     "It's also worth mentioning that anyone getting their fall festivities on in the North GA mountains may want to pack an extra layer, as these areas could see morning lows in the mid 40s!",
     "With a supremely dry airmass in place, portions of central Georgia may approach critical relative humidity thresholds on Monday and Tuesday."
    ],
-   "unavailable": [
-    "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
-   ],
-   "inputs_hash": "13cd9518cb929969",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "unavailable": [],
+   "inputs_hash": "ec4d6582b434f707",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KAUS": {
    "city": "AUS",
@@ -197,9 +195,9 @@
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS EWX Area Forecast Discussion",
-    "issued_utc": "2026-09-26T17:18:00+00:00",
-    "url": "https://api.weather.gov/products/0a330857-9e8a-422c-ae58-295305fca377",
-    "product_id": "0a330857-9e8a-422c-ae58-295305fca377",
+    "issued_utc": "2026-09-26T18:36:00+00:00",
+    "url": "https://api.weather.gov/products/6e7c45b4-2bf4-4656-8a58-c4fe11b812f3",
+    "product_id": "6e7c45b4-2bf4-4656-8a58-c4fe11b812f3",
     "sections": [
      "KEY MESSAGES",
      "SHORT TERM",
@@ -210,18 +208,20 @@
     ],
     "quotes": {
      "support": [
-      "At the surface the weak frontal boundary that has been in the region is across our eastern counties.",
-      "The low level flow across our CWA is from the southeast keeping a warm (hot), moist airmass in place.",
-      "Today it will suppress any convection keeping the entire area dry."
+      "(Tonight through Sunday night) Issued at 135 PM CDT Sat Sep 26 2026 Upper-level ridging has reestablished itself over the RGV based on the morning 12Z soundings and should continue its southwestward drift through Sunday.",
+      "A mid- level trough is noted over the Panhandle and Texas High Plains region.",
+      "As is typical in these conditions, the warm weather could aid storms in producing locally gusty winds."
      ],
      "prevent": [
-      "Drier, with summer-like temperatures through the weekend.",
-      "(Today through Sunday) Issued at 1200 AM CDT Sat Sep 26 2026 Another day with the 500mb high centered over southeast TX and a large amplitude ridge stretching from there to the northern plains."
+      "Low chance for isolated storms Sunday afternoon and evening over the Hill Country.",
+      "By Sunday afternoon, the upper-level wind will shift towards northwesterlies and this setup is slightly more favorable to a few isolated showers or storms entering or developing over the southern Edwards Plateau and Hill Country Sunday afternoon/evening."
      ],
-     "timing": [],
+     "timing": [
+      "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
+     ],
      "uncertainty": [
-      "A Pacific cold front may bring widespread rain next week.",
-      "Sunday the upper high may be far enough south and west to allow a few showers or thunderstorms to develop during the afternoon."
+      "A Pacific cold front may bring widespread rain mid to late next week.",
+      "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
      ],
      "aviation": []
     },
@@ -237,9 +237,9 @@
    "supports": {
     "data": [],
     "discussion": [
-     "At the surface the weak frontal boundary that has been in the region is across our eastern counties.",
-     "The low level flow across our CWA is from the southeast keeping a warm (hot), moist airmass in place.",
-     "Today it will suppress any convection keeping the entire area dry."
+     "(Tonight through Sunday night) Issued at 135 PM CDT Sat Sep 26 2026 Upper-level ridging has reestablished itself over the RGV based on the morning 12Z soundings and should continue its southwestward drift through Sunday.",
+     "A mid- level trough is noted over the Panhandle and Texas High Plains region.",
+     "As is typical in these conditions, the warm weather could aid storms in producing locally gusty winds."
     ]
    },
    "prevents": {
@@ -248,22 +248,24 @@
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
-     "Drier, with summer-like temperatures through the weekend.",
-     "(Today through Sunday) Issued at 1200 AM CDT Sat Sep 26 2026 Another day with the 500mb high centered over southeast TX and a large amplitude ridge stretching from there to the northern plains."
+     "Low chance for isolated storms Sunday afternoon and evening over the Hill Country.",
+     "By Sunday afternoon, the upper-level wind will shift towards northwesterlies and this setup is slightly more favorable to a few isolated showers or storms entering or developing over the southern Edwards Plateau and Hill Country Sunday afternoon/evening."
     ]
    },
    "timing": {
-    "discussion": [],
+    "discussion": [
+     "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
+    ],
     "aviation": []
    },
    "uncertainty": [
-    "A Pacific cold front may bring widespread rain next week.",
-    "Sunday the upper high may be far enough south and west to allow a few showers or thunderstorms to develop during the afternoon."
+    "A Pacific cold front may bring widespread rain mid to late next week.",
+    "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
    ],
    "unavailable": [],
-   "inputs_hash": "b82a75300cf8eb9c",
-   "text_generated_utc": "2026-09-26T17:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "be82872f840e9533",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KBOS": {
    "city": "BOS",
@@ -306,7 +308,7 @@
      "peak_pct": 100,
      "peak_local_hour": 17.0,
      "peak_utc": "2026-09-26T22:00:00Z",
-     "qpf_in": 1.0,
+     "qpf_in": 0.96,
      "first_30_local_hour": 14.0,
      "wording": "Rain/Wind"
     }
@@ -467,7 +469,7 @@
    "unavailable": [],
    "inputs_hash": "ab1c1197d11aea87",
    "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KORD": {
    "city": "CHI",
@@ -507,7 +509,7 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 11,
-     "peak_pct": 11,
+     "peak_pct": 7,
      "peak_local_hour": 23.0,
      "peak_utc": "2026-09-27T05:00:00Z",
      "qpf_in": 0,
@@ -600,9 +602,9 @@
     "There is a fair amount of ensemble support for a modest amount of instability building into our area during this time period, suggesting that there could be some potential for thunderstorms."
    ],
    "unavailable": [],
-   "inputs_hash": "d607d3ca542cf39f",
-   "text_generated_utc": "2026-09-26T18:17:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "bd205fe2fc73fc1a",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KCLL": {
    "city": "CLL",
@@ -647,7 +649,7 @@
      "peak_utc": "2026-09-27T05:00:00Z",
      "qpf_in": 0,
      "first_30_local_hour": null,
-     "wording": "Clear"
+     "wording": "Mostly Clear"
     }
    },
    "taf": {
@@ -729,7 +731,7 @@
    "unavailable": [],
    "inputs_hash": "f9f1d643d3f78846",
    "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KCMH": {
    "city": "CMH",
@@ -843,7 +845,7 @@
    "unavailable": [],
    "inputs_hash": "f8d4aec24cbc7f05",
    "text_generated_utc": "2026-09-26T18:02:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KDFW": {
    "city": "DAL",
@@ -855,8 +857,8 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:47:52+00:00",
-    "updated_utc": "2026-09-26T16:36:34+00:00",
+    "generated_utc": "2026-09-26T18:47:52+00:00",
+    "updated_utc": "2026-09-26T18:26:32+00:00",
     "url": "https://api.weather.gov/gridpoints/FWD/96,111/forecast/hourly",
     "note": null,
     "before_cutoff": {
@@ -985,7 +987,7 @@
    "unavailable": [],
    "inputs_hash": "1448864b4ea0f768",
    "text_generated_utc": "2026-09-26T17:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KDCA": {
    "city": "DC",
@@ -1028,7 +1030,7 @@
      "peak_pct": 98,
      "peak_local_hour": 18.0,
      "peak_utc": "2026-09-26T23:00:00Z",
-     "qpf_in": 0.3,
+     "qpf_in": 0.34,
      "first_30_local_hour": 14.0,
      "wording": "Rain"
     }
@@ -1144,7 +1146,7 @@
    "unavailable": [],
    "inputs_hash": "ac040193d3c83b5d",
    "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KDEN": {
    "city": "DEN",
@@ -1202,39 +1204,7 @@
     "precip_groups": [],
     "url": "https://aviationweather.gov/data/taf/?id=KDEN"
    },
-   "discussion": {
-    "kind": "regional discussion",
-    "source": "NWS BOU Area Forecast Discussion",
-    "issued_utc": "2026-09-26T17:28:00+00:00",
-    "url": "https://api.weather.gov/products/b0c11ff5-e6c1-4dd5-afaa-8eace320831e",
-    "product_id": "b0c11ff5-e6c1-4dd5-afaa-8eace320831e",
-    "sections": [
-     "KEY MESSAGES",
-     "DISCUSSION",
-     "AVIATION",
-     "BOU WATCHES"
-    ],
-    "quotes": {
-     "support": [
-      "Tomorrow and Sunday should both be much quieter weather days, thanks to subsidence from an upper-level ridge building over the area tonight into tomorrow.",
-      "Dewpoints should drop into the 20s and 30s as the ridge moves into our CWA, and our high temperatures are expected to be in the mid 60s-70s for the mountains and low- to mid-80s for the plains.",
-      "With both subsidence from the ridge and drier conditions at the surface, this weekend should stay dry and mostly sunny, though Sunday afternoon and evening could see a few showers over the mountains."
-     ],
-     "prevent": [
-      "Drier and warmer this weekend, with highs reaching into the 80s across the plains.",
-      "Issued at 1110 PM MDT Fri Sep 25 2026 While most of today's activity has died down, we still have a few showers making their way across the eastern plains, and we expect them to continue weakening as they move east."
-     ],
-     "timing": [
-      "As skies clear up and winds become light behind these showers, we could see some patchy fog develop in the northeastern counties for a few hours tonight."
-     ],
-     "uncertainty": [
-      "Potential for heavy rain Tuesday into Thursday, but confidence in amounts and locations remains low.",
-      "As skies clear up and winds become light behind these showers, we could see some patchy fog develop in the northeastern counties for a few hours tonight."
-     ],
-     "aviation": []
-    },
-    "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
-   },
+   "discussion": null,
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
@@ -1244,36 +1214,26 @@
    ],
    "supports": {
     "data": [],
-    "discussion": [
-     "Tomorrow and Sunday should both be much quieter weather days, thanks to subsidence from an upper-level ridge building over the area tonight into tomorrow.",
-     "Dewpoints should drop into the 20s and 30s as the ridge moves into our CWA, and our high temperatures are expected to be in the mid 60s-70s for the mountains and low- to mid-80s for the plains.",
-     "With both subsidence from the ridge and drier conditions at the surface, this weekend should stay dry and mostly sunny, though Sunday afternoon and evening could see a few showers over the mountains."
-    ]
+    "discussion": []
    },
    "prevents": {
     "data": [
      "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
-    "discussion": [
-     "Drier and warmer this weekend, with highs reaching into the 80s across the plains.",
-     "Issued at 1110 PM MDT Fri Sep 25 2026 While most of today's activity has died down, we still have a few showers making their way across the eastern plains, and we expect them to continue weakening as they move east."
-    ]
+    "discussion": []
    },
    "timing": {
-    "discussion": [
-     "As skies clear up and winds become light behind these showers, we could see some patchy fog develop in the northeastern counties for a few hours tonight."
-    ],
+    "discussion": [],
     "aviation": []
    },
-   "uncertainty": [
-    "Potential for heavy rain Tuesday into Thursday, but confidence in amounts and locations remains low.",
-    "As skies clear up and winds become light behind these showers, we could see some patchy fog develop in the northeastern counties for a few hours tonight."
+   "uncertainty": [],
+   "unavailable": [
+    "AFD: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
    ],
-   "unavailable": [],
-   "inputs_hash": "bfcb29bb4a4f13a3",
-   "text_generated_utc": "2026-09-26T18:02:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "e801e49754a8da00",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KEWR": {
    "city": "EWR",
@@ -1313,12 +1273,12 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 10,
-     "peak_pct": 56,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-09-27T04:00:00Z",
-     "qpf_in": 0.03,
+     "peak_pct": 60,
+     "peak_local_hour": 15.0,
+     "peak_utc": "2026-09-26T20:00:00Z",
+     "qpf_in": 0.04,
      "first_30_local_hour": 14.0,
-     "wording": "Showers/Wind"
+     "wording": "Rain/Wind"
     }
    },
    "taf": {
@@ -1507,12 +1467,12 @@
    "uncertainty": [
     "As its warm seclusion becomes cut off from the main warm conveyor belt late tonight the sfc low should weaken fairly quickly from then into the day on Sunday, and may stall or weakly meander over or nearby the area to the south through Monday.",
     "Conditions may even dry out for a time in spots between these bands especially this afternoon.",
-    "The two airport forecasts disagree before the cutoff: NWS peak 95%, weather.com peak 56%."
+    "The two airport forecasts disagree before the cutoff: NWS peak 95%, weather.com peak 60%."
    ],
    "unavailable": [],
-   "inputs_hash": "a1357eb96653fade",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "5b2650182d792da3",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KHOU": {
    "city": "HOU",
@@ -1647,7 +1607,7 @@
    "unavailable": [],
    "inputs_hash": "6cc3e7dfa54df1d4",
    "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KLAX": {
    "city": "LAX",
@@ -1659,9 +1619,9 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:47:54+00:00",
-    "updated_utc": "2026-09-26T07:56:51+00:00",
-    "url": "https://api.weather.gov/gridpoints/LOX/176,41/forecast/hourly",
+    "generated_utc": "2026-09-26T18:47:57+00:00",
+    "updated_utc": "2026-09-26T18:26:42+00:00",
+    "url": "https://api.weather.gov/gridpoints/LOX/176,42/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 14,
@@ -1674,12 +1634,12 @@
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 6,
-     "peak_local_hour": 34.0,
-     "peak_utc": "2026-09-27T18:00:00Z",
+     "peak_pct": 3,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-09-27T08:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Mostly Sunny"
+     "wording": "Mostly Cloudy"
     }
    },
    "twc_forecast": {
@@ -1744,7 +1704,7 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 3%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 3% around 1:00 AM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 6% around 1:00 PM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 3% around 3:00 AM CT.",
     "The TAF for KLAX (issued 12:20 PM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Beach Hazards Statement. A watch is a watch, not a gauge hit."
    ],
@@ -1771,9 +1731,9 @@
    },
    "uncertainty": [],
    "unavailable": [],
-   "inputs_hash": "0353f667c634e754",
-   "text_generated_utc": "2026-09-26T17:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "07e56be760281f5b",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KLEX": {
    "city": "LEX",
@@ -1785,8 +1745,8 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:47:54+00:00",
-    "updated_utc": "2026-09-26T16:21:09+00:00",
+    "generated_utc": "2026-09-26T18:47:58+00:00",
+    "updated_utc": "2026-09-26T18:27:42+00:00",
     "url": "https://api.weather.gov/gridpoints/LMK/113,72/forecast/hourly",
     "note": null,
     "before_cutoff": {
@@ -1834,9 +1794,9 @@
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS LMK Area Forecast Discussion",
-    "issued_utc": "2026-09-26T17:20:00+00:00",
-    "url": "https://api.weather.gov/products/4ed25df2-bb48-4329-80b0-5808abf13fdc",
-    "product_id": "4ed25df2-bb48-4329-80b0-5808abf13fdc",
+    "issued_utc": "2026-09-26T18:31:00+00:00",
+    "url": "https://api.weather.gov/products/f1d2355b-484b-4f1a-a52f-f000faf4a976",
+    "product_id": "f1d2355b-484b-4f1a-a52f-f000faf4a976",
     "sections": [
      "KEY MESSAGES",
      "SHORT TERM",
@@ -1846,17 +1806,18 @@
     ],
     "quotes": {
      "support": [
-      "Moisture will also begin to advect back into the area rising dewpoints back into the 60s by Thursday.",
-      "A shortwave disturbance is expected to move through the Great Lakes region, while a low pressure system develops over the Plains.",
-      "Frontal boundaries associated with both systems will bring precip chances back into the forecast Wednesday and Thursday."
+      "RH levels in the afternoon are crashing into the upper 20% to mid 30% range and dew points are in the upper 30s and low 40s.",
+      "The remnant energy and moisture from Hurricane Polo will get swept up by troughing swinging through the desert southwest.",
+      "A shortwave is expected to move across the Great Lakes, while the aforementioned western trough develops a surface low pressure over the Plains."
      ],
      "prevent": [
-      "Issued at 319 AM EDT Sat Sep 26 2026 Saturday and Sunday Surface high pressure will persist over the area for the weekend, along with northeastward flow.",
-      "Dry air near the surface will keep dewpoints and humidity low."
+      "This airmass is quite dry aloft, and coupled with ample mixing, is allowing for dry air to mix down to the surface.",
+      "On Tuesday, surface high pressure will begin to shift east and southerly flow will return to the region."
      ],
      "timing": [],
      "uncertainty": [
-      "This could linger into Friday night as the low pressure system begins to eject into the northern stream."
+      "Though wind protected valley areas in the Bluegrass may dip into the low 40s Sunday morning.",
+      "Dry air aloft and deep mixing (up to 800mb) may lead to dry air mix down and slightly overachieving temperatures and breezy winds."
      ],
      "aviation": []
     },
@@ -1872,9 +1833,9 @@
    "supports": {
     "data": [],
     "discussion": [
-     "Moisture will also begin to advect back into the area rising dewpoints back into the 60s by Thursday.",
-     "A shortwave disturbance is expected to move through the Great Lakes region, while a low pressure system develops over the Plains.",
-     "Frontal boundaries associated with both systems will bring precip chances back into the forecast Wednesday and Thursday."
+     "RH levels in the afternoon are crashing into the upper 20% to mid 30% range and dew points are in the upper 30s and low 40s.",
+     "The remnant energy and moisture from Hurricane Polo will get swept up by troughing swinging through the desert southwest.",
+     "A shortwave is expected to move across the Great Lakes, while the aforementioned western trough develops a surface low pressure over the Plains."
     ]
    },
    "prevents": {
@@ -1883,8 +1844,8 @@
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
-     "Issued at 319 AM EDT Sat Sep 26 2026 Saturday and Sunday Surface high pressure will persist over the area for the weekend, along with northeastward flow.",
-     "Dry air near the surface will keep dewpoints and humidity low."
+     "This airmass is quite dry aloft, and coupled with ample mixing, is allowing for dry air to mix down to the surface.",
+     "On Tuesday, surface high pressure will begin to shift east and southerly flow will return to the region."
     ]
    },
    "timing": {
@@ -1892,12 +1853,13 @@
     "aviation": []
    },
    "uncertainty": [
-    "This could linger into Friday night as the low pressure system begins to eject into the northern stream."
+    "Though wind protected valley areas in the Bluegrass may dip into the low 40s Sunday morning.",
+    "Dry air aloft and deep mixing (up to 800mb) may lead to dry air mix down and slightly overachieving temperatures and breezy winds."
    ],
    "unavailable": [],
-   "inputs_hash": "7ae38fe3e6fd46ab",
-   "text_generated_utc": "2026-09-26T18:02:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "ac09084ba47d93d5",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KLAS": {
    "city": "LV",
@@ -2022,7 +1984,7 @@
    "unavailable": [],
    "inputs_hash": "e4208cf4c7888ffe",
    "text_generated_utc": "2026-09-26T17:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KMIA": {
    "city": "MIA",
@@ -2034,27 +1996,27 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:47:55+00:00",
-    "updated_utc": "2026-09-26T12:36:41+00:00",
-    "url": "https://api.weather.gov/gridpoints/MFL/112,52/forecast/hourly",
+    "generated_utc": "2026-09-26T18:48:00+00:00",
+    "updated_utc": "2026-09-26T18:31:57+00:00",
+    "url": "https://api.weather.gov/gridpoints/MFL/111,52/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 11,
-     "peak_pct": 30,
-     "peak_local_hour": 18.0,
-     "peak_utc": "2026-09-26T23:00:00Z",
+     "peak_pct": 27,
+     "peak_local_hour": 17.0,
+     "peak_utc": "2026-09-26T22:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 18.0,
-     "wording": "Chance Showers And Thunderstorms"
+     "first_30_local_hour": null,
+     "wording": "Scattered Showers And Thunderstorms"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 4,
-     "peak_local_hour": 31.0,
-     "peak_utc": "2026-09-27T12:00:00Z",
+     "peak_pct": 6,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-09-27T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Sunny"
+     "wording": "Partly Cloudy"
     }
    },
    "twc_forecast": {
@@ -2135,15 +2097,14 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain possible before the cutoff: the point forecast peaks at 30% around 6:00 PM CT. The TAF carries VCSH from 8:00 PM CT to 12:00 AM CT.",
+   "headline": "A low chance before the cutoff: the point forecast peaks at 27% around 5:00 PM CT. The TAF carries VCSH from 8:00 PM CT to 12:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 30% around 6:00 PM CT (chance showers and thunderstorms); the first hour at 30% or more is 6:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 4% around 7:00 AM CT.",
+    "Before the cutoff the NWS point forecast peaks at 27% around 5:00 PM CT (scattered showers and thunderstorms).",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 6% around 12:00 AM CT.",
     "The TAF for KMIA (issued 12:50 PM CT) carries VCSH 8:00 PM CT to 5:00 AM CT (FM)."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 30% before the cutoff",
      "TAF carries VCSH before the cutoff"
     ],
     "discussion": [
@@ -2173,9 +2134,9 @@
     "PoPs are no higher than 20-30%, and this is only along the immediate east coast metro areas where NNW flow and a weak sea breeze circulation could spark a few showers in the late afternoon and early evening."
    ],
    "unavailable": [],
-   "inputs_hash": "8d3d949cda249f6d",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "03b43aa09af09fea",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KMSP": {
    "city": "MIN",
@@ -2187,12 +2148,12 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T18:29:30.796526+00:00",
+    "generated_utc": "2026-09-26T18:44:30.789080+00:00",
     "updated_utc": null,
     "url": "https://api.weather.gov/gridpoints/MPX/156,68/forecast/hourly",
     "note": "collector copy, today only",
     "before_cutoff": {
-     "hours": 12,
+     "hours": 11,
      "peak_pct": 29,
      "peak_local_hour": 21.0,
      "peak_utc": "2026-09-27T03:00:00Z",
@@ -2215,10 +2176,10 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 11,
-     "peak_pct": 89,
+     "peak_pct": 90,
      "peak_local_hour": 13.0,
      "peak_utc": "2026-09-26T19:00:00Z",
-     "qpf_in": 0.18,
+     "qpf_in": 0.17,
      "first_30_local_hour": 13.0,
      "wording": "Rain"
     }
@@ -2348,14 +2309,14 @@
    "uncertainty": [
     "Rain showers will increase in coverage from west to east through the morning and into the afternoon.",
     "Shower activity will be more widespread across western MN, with lesser probabilities and coverage across eastern MN and western WI.",
-    "The two airport forecasts disagree before the cutoff: NWS peak 29%, weather.com peak 89%."
+    "The two airport forecasts disagree before the cutoff: NWS peak 29%, weather.com peak 90%."
    ],
    "unavailable": [
     "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
    ],
-   "inputs_hash": "0f7c3d6cb2f66b47",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "a67cc9345d99fe6d",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KMKE": {
    "city": "MKE",
@@ -2486,7 +2447,7 @@
    "unavailable": [],
    "inputs_hash": "e64d6fc4290ae031",
    "text_generated_utc": "2026-09-26T18:02:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KMSY": {
    "city": "NOLA",
@@ -2498,10 +2459,10 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T18:17:54+00:00",
-    "updated_utc": "2026-09-26T15:26:28+00:00",
+    "generated_utc": "2026-09-26T18:44:30.789080+00:00",
+    "updated_utc": null,
     "url": "https://api.weather.gov/gridpoints/LIX/75,89/forecast/hourly",
-    "note": null,
+    "note": "collector copy, today only",
     "before_cutoff": {
      "hours": 12,
      "peak_pct": 0,
@@ -2509,16 +2470,16 @@
      "peak_utc": "2026-09-26T18:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Partly Sunny"
+     "wording": "Mostly Sunny"
     },
     "after_cutoff": {
-     "hours": 12,
-     "peak_pct": 2,
-     "peak_local_hour": 33.0,
-     "peak_utc": "2026-09-27T15:00:00Z",
+     "hours": 1,
+     "peak_pct": 0,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-09-27T06:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Sunny"
+     "wording": "Partly Cloudy"
     }
    },
    "twc_forecast": {
@@ -2580,8 +2541,8 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 1:00 PM CT (partly sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 2% around 10:00 AM CT.",
+    "Before the cutoff the NWS point forecast peaks at 0% around 1:00 PM CT (mostly sunny).",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KMSY (issued 12:20 PM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
@@ -2610,10 +2571,12 @@
     "While there is still significant uncertainty regarding the specifics, heavy rain could become a concern mainly Friday and into the weekend.",
     "Heavy rainfall and flash flooding will be a concern if the trend holds through the week."
    ],
-   "unavailable": [],
-   "inputs_hash": "be1a000c12e3cb9a",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "unavailable": [
+    "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+   ],
+   "inputs_hash": "fa2380e585a015a0",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KNYC": {
    "city": "NYC",
@@ -2625,21 +2588,21 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T18:17:55+00:00",
-    "updated_utc": "2026-09-26T10:02:33+00:00",
-    "url": "https://api.weather.gov/gridpoints/OKX/62,43/forecast/hourly",
-    "note": null,
+    "generated_utc": "2026-09-26T18:44:30.789080+00:00",
+    "updated_utc": null,
+    "url": "https://api.weather.gov/gridpoints/OKX/63,43/forecast/hourly",
+    "note": "collector copy, today only",
     "before_cutoff": {
-     "hours": 11,
-     "peak_pct": 100,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-09-27T04:00:00Z",
+     "hours": 10,
+     "peak_pct": 95,
+     "peak_local_hour": 17.0,
+     "peak_utc": "2026-09-26T22:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 13.0,
+     "first_30_local_hour": 14.0,
      "wording": "Rain"
     },
     "after_cutoff": {
-     "hours": 12,
+     "hours": 1,
      "peak_pct": 100,
      "peak_local_hour": 24.0,
      "peak_utc": "2026-09-27T05:00:00Z",
@@ -2654,11 +2617,11 @@
     "before_cutoff": {
      "hours": 10,
      "peak_pct": 65,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-09-27T04:00:00Z",
-     "qpf_in": 0.12,
+     "peak_local_hour": 14.0,
+     "peak_utc": "2026-09-26T19:00:00Z",
+     "qpf_in": 0.09,
      "first_30_local_hour": 14.0,
-     "wording": "Rain/Wind"
+     "wording": "Showers/Wind"
     }
    },
    "taf": null,
@@ -2725,13 +2688,13 @@
    ],
    "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 100% around 11:00 PM CT (rain); the first hour at 30% or more is 1:00 PM CT.",
+    "Before the cutoff the NWS point forecast peaks at 95% around 5:00 PM CT (rain); the first hour at 30% or more is 2:00 PM CT.",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 100% around 12:00 AM CT.",
     "Active alert: Wind Advisory; Coastal Flood Warning; Coastal Flood Advisory. A watch is a watch, not a gauge hit."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 100% before the cutoff"
+     "NWS point forecast reaches 95% before the cutoff"
     ],
     "discussion": [
      "Strong winds with this storm will also impact the area, mainly toward the coast, and the wind advisory remains in effect for all but Orange, Putnam, and W Passaic, for sustained winds as high as 30-35 mph in coastal areas and gusts 45-55 mph.",
@@ -2757,14 +2720,15 @@
    "uncertainty": [
     "As its warm seclusion becomes cut off from the main warm conveyor belt late tonight the sfc low should weaken fairly quickly from then into the day on Sunday, and may stall or weakly meander over or nearby the area to the south through Monday.",
     "Conditions may even dry out for a time in spots between these bands especially this afternoon.",
-    "The two airport forecasts disagree before the cutoff: NWS peak 100%, weather.com peak 65%."
+    "The two airport forecasts disagree before the cutoff: NWS peak 95%, weather.com peak 65%."
    ],
    "unavailable": [
+    "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
     "TAF: no row for KNYC in this run"
    ],
-   "inputs_hash": "f2a3b95ecfb93543",
-   "text_generated_utc": "2026-09-26T18:02:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "93950755aa1e417d",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KOKC": {
    "city": "OKC",
@@ -2804,10 +2768,10 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 11,
-     "peak_pct": 52,
+     "peak_pct": 56,
      "peak_local_hour": 19.0,
      "peak_utc": "2026-09-27T01:00:00Z",
-     "qpf_in": 0.1,
+     "qpf_in": 0.09,
      "first_30_local_hour": 19.0,
      "wording": "Scattered Thunderstorms"
     }
@@ -2906,9 +2870,9 @@
     "This shortwave ridging will keep rain chances minimal through the day Monday and will allow temperatures to rebound both Sunday and Monday back into the 90s outside of northern Oklahoma, A few locations near and south of the Red River may approach 100 degrees both days."
    ],
    "unavailable": [],
-   "inputs_hash": "8d8370ee0a30f3bc",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "6424359d88bdd11e",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KPHL": {
    "city": "PHIL",
@@ -2920,7 +2884,7 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:47:58+00:00",
+    "generated_utc": "2026-09-26T18:48:03+00:00",
     "updated_utc": "2026-09-26T08:12:33+00:00",
     "url": "https://api.weather.gov/gridpoints/PHI/87,76/forecast/hourly",
     "note": null,
@@ -2948,12 +2912,12 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 10,
-     "peak_pct": 55,
+     "peak_pct": 61,
      "peak_local_hour": 14.0,
      "peak_utc": "2026-09-26T19:00:00Z",
-     "qpf_in": 0.02,
+     "qpf_in": 0.01,
      "first_30_local_hour": 14.0,
-     "wording": "Showers"
+     "wording": "Light Rain"
     }
    },
    "taf": {
@@ -3086,12 +3050,12 @@
     ]
    },
    "uncertainty": [
-    "The two airport forecasts disagree before the cutoff: NWS peak 93%, weather.com peak 55%."
+    "The two airport forecasts disagree before the cutoff: NWS peak 93%, weather.com peak 61%."
    ],
    "unavailable": [],
-   "inputs_hash": "32dec885b969b767",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "c15b28d2bcd13103",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KPHX": {
    "city": "PHX",
@@ -3103,9 +3067,9 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T18:33:02+00:00",
-    "updated_utc": "2026-09-26T16:51:43+00:00",
-    "url": "https://api.weather.gov/gridpoints/PSR/194,57/forecast/hourly",
+    "generated_utc": "2026-09-26T18:48:04+00:00",
+    "updated_utc": "2026-09-26T18:32:51+00:00",
+    "url": "https://api.weather.gov/gridpoints/PSR/196,57/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 13,
@@ -3118,12 +3082,12 @@
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 7,
+     "peak_pct": 2,
      "peak_local_hour": 35.0,
      "peak_utc": "2026-09-27T18:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Mostly Cloudy"
+     "wording": "Partly Sunny"
     }
    },
    "twc_forecast": {
@@ -3152,9 +3116,9 @@
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS PSR Area Forecast Discussion",
-    "issued_utc": "2026-09-26T11:26:00+00:00",
-    "url": "https://api.weather.gov/products/cc7ab124-967e-4ddd-b8bb-f7be3b9917d2",
-    "product_id": "cc7ab124-967e-4ddd-b8bb-f7be3b9917d2",
+    "issued_utc": "2026-09-26T18:32:00+00:00",
+    "url": "https://api.weather.gov/products/0abc1213-43ac-4cf1-a3fb-625fd53d2e11",
+    "product_id": "0abc1213-43ac-4cf1-a3fb-625fd53d2e11",
     "sections": [
      "UPDATE",
      "KEY MESSAGES",
@@ -3182,8 +3146,9 @@
       "One of the more uncertain ingredients for the severe storm potential is the amount of instability that will be available."
      ],
      "aviation": [
-      "South Central Arizona including KPHX, KIWA, KSDL, and KDVT: No aviation weather concerns are expected through the forecast period.",
-      "A period of southerly crosswinds (150v200) is also anticipated at KPHX and KDVT late this morning/early afternoon prior to the westerly shift."
+      "South Central Arizona including KPHX, KIWA, KSDL, and KDVT: No major weather concerns are expected through the TAF period.",
+      "Additionally, current southerly crosswinds (160v200) are expected to continue at KPHX, KSDL and KDVT prior to the westerly shift this afternoon, however winds should remain aob 8 kts during this time.",
+      "Southeast California/Southwest Arizona including KIPL and KBLH: No major weather concerns are expected through the TAF period."
      ]
     },
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
@@ -3192,7 +3157,7 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 1:00 PM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 7% around 1:00 PM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 2% around 1:00 PM CT.",
     "The TAF for KPHX (issued 12:31 PM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
@@ -3218,8 +3183,9 @@
      "This will all begin to change tonight into Sunday as upper level moisture gets peeled away from the decaying TC Odalys and advected into our region."
     ],
     "aviation": [
-     "South Central Arizona including KPHX, KIWA, KSDL, and KDVT: No aviation weather concerns are expected through the forecast period.",
-     "A period of southerly crosswinds (150v200) is also anticipated at KPHX and KDVT late this morning/early afternoon prior to the westerly shift."
+     "South Central Arizona including KPHX, KIWA, KSDL, and KDVT: No major weather concerns are expected through the TAF period.",
+     "Additionally, current southerly crosswinds (160v200) are expected to continue at KPHX, KSDL and KDVT prior to the westerly shift this afternoon, however winds should remain aob 8 kts during this time.",
+     "Southeast California/Southwest Arizona including KIPL and KBLH: No major weather concerns are expected through the TAF period."
     ]
    },
    "uncertainty": [
@@ -3227,9 +3193,9 @@
     "One of the more uncertain ingredients for the severe storm potential is the amount of instability that will be available."
    ],
    "unavailable": [],
-   "inputs_hash": "6b5dceb4fd3ab443",
-   "text_generated_utc": "2026-09-26T18:02:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "3d5b28eb6862caa5",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KPIT": {
    "city": "PIT",
@@ -3241,27 +3207,27 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:47:59+00:00",
-    "updated_utc": "2026-09-26T16:51:41+00:00",
+    "generated_utc": "2026-09-26T18:44:30.789080+00:00",
+    "updated_utc": null,
     "url": "https://api.weather.gov/gridpoints/PBZ/91,67/forecast/hourly",
-    "note": null,
+    "note": "collector copy, today only",
     "before_cutoff": {
-     "hours": 11,
+     "hours": 10,
      "peak_pct": 0,
-     "peak_local_hour": 13.0,
-     "peak_utc": "2026-09-26T18:00:00Z",
+     "peak_local_hour": 14.0,
+     "peak_utc": "2026-09-26T19:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Sunny"
     },
     "after_cutoff": {
-     "hours": 12,
-     "peak_pct": 2,
-     "peak_local_hour": 33.0,
-     "peak_utc": "2026-09-27T14:00:00Z",
+     "hours": 1,
+     "peak_pct": 0,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-09-27T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Sunny"
+     "wording": "Mostly Cloudy"
     }
    },
    "twc_forecast": {
@@ -3322,8 +3288,8 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 1:00 PM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 2% around 9:00 AM CT.",
+    "Before the cutoff the NWS point forecast peaks at 0% around 2:00 PM CT (sunny).",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
     "The TAF for KPIT (issued 12:23 PM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
@@ -3352,10 +3318,12 @@
     "The trend continues for dry weather, however a weak impulse could traverse generating scattered showers.",
     "With increased moisture in the column, forecast highs pull back a little on day 6 and 7 to the lower to mid 70s, while overnight lows near 60 are projected with above average confidence."
    ],
-   "unavailable": [],
-   "inputs_hash": "b60f5e8a5313813e",
-   "text_generated_utc": "2026-09-26T18:02:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "unavailable": [
+    "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+   ],
+   "inputs_hash": "a6b2d82cae8434a4",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KPVD": {
    "city": "PVD",
@@ -3367,21 +3335,21 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T18:29:30.796526+00:00",
-    "updated_utc": null,
+    "generated_utc": "2026-09-26T18:17:57+00:00",
+    "updated_utc": "2026-09-26T16:34:19+00:00",
     "url": "https://api.weather.gov/gridpoints/BOX/87,71/forecast/hourly",
-    "note": "collector copy, today only",
+    "note": null,
     "before_cutoff": {
-     "hours": 10,
+     "hours": 11,
      "peak_pct": 100,
-     "peak_local_hour": 19.0,
-     "peak_utc": "2026-09-27T00:00:00Z",
+     "peak_local_hour": 18.0,
+     "peak_utc": "2026-09-26T23:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 14.0,
+     "first_30_local_hour": 13.0,
      "wording": "Patchy Fog"
     },
     "after_cutoff": {
-     "hours": 1,
+     "hours": 12,
      "peak_pct": 100,
      "peak_local_hour": 24.0,
      "peak_utc": "2026-09-27T05:00:00Z",
@@ -3396,9 +3364,9 @@
     "before_cutoff": {
      "hours": 10,
      "peak_pct": 100,
-     "peak_local_hour": 17.0,
-     "peak_utc": "2026-09-26T22:00:00Z",
-     "qpf_in": 1.15,
+     "peak_local_hour": 15.0,
+     "peak_utc": "2026-09-26T20:00:00Z",
+     "qpf_in": 1.14,
      "first_30_local_hour": 14.0,
      "wording": "Rain/Wind"
     }
@@ -3546,7 +3514,7 @@
    ],
    "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 100% around 7:00 PM CT (patchy fog); the first hour at 30% or more is 2:00 PM CT.",
+    "Before the cutoff the NWS point forecast peaks at 100% around 6:00 PM CT (patchy fog); the first hour at 30% or more is 1:00 PM CT.",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 100% around 12:00 AM CT.",
     "The TAF for KPVD (issued 12:38 PM CT) carries SHRA BR 1:00 PM CT to 4:00 PM CT; TSRA 1:00 PM CT to 2:00 PM CT (TEMPO); SHRA BR 4:00 PM CT to 12:00 AM CT (FM).",
     "Active alert: Coastal Flood Advisory; High Wind Warning; Flood Watch. A watch is a watch, not a gauge hit."
@@ -3576,12 +3544,10 @@
     ]
    },
    "uncertainty": [],
-   "unavailable": [
-    "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
-   ],
-   "inputs_hash": "54d6e0a047b37959",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "unavailable": [],
+   "inputs_hash": "2c10798795b61ddd",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KSAT": {
    "city": "SATX",
@@ -3593,18 +3559,18 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:48:00+00:00",
-    "updated_utc": "2026-09-26T17:42:21+00:00",
+    "generated_utc": "2026-09-26T18:48:07+00:00",
+    "updated_utc": "2026-09-26T18:24:23+00:00",
     "url": "https://api.weather.gov/gridpoints/EWX/158,60/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 12,
-     "peak_pct": 1,
-     "peak_local_hour": 18.0,
-     "peak_utc": "2026-09-27T00:00:00Z",
+     "peak_pct": 0,
+     "peak_local_hour": 12.0,
+     "peak_utc": "2026-09-26T18:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Mostly Cloudy"
+     "wording": "Partly Sunny"
     },
     "after_cutoff": {
      "hours": 12,
@@ -3642,9 +3608,9 @@
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS EWX Area Forecast Discussion",
-    "issued_utc": "2026-09-26T17:18:00+00:00",
-    "url": "https://api.weather.gov/products/0a330857-9e8a-422c-ae58-295305fca377",
-    "product_id": "0a330857-9e8a-422c-ae58-295305fca377",
+    "issued_utc": "2026-09-26T18:36:00+00:00",
+    "url": "https://api.weather.gov/products/6e7c45b4-2bf4-4656-8a58-c4fe11b812f3",
+    "product_id": "6e7c45b4-2bf4-4656-8a58-c4fe11b812f3",
     "sections": [
      "KEY MESSAGES",
      "SHORT TERM",
@@ -3655,36 +3621,38 @@
     ],
     "quotes": {
      "support": [
-      "At the surface the weak frontal boundary that has been in the region is across our eastern counties.",
-      "The low level flow across our CWA is from the southeast keeping a warm (hot), moist airmass in place.",
-      "Today it will suppress any convection keeping the entire area dry."
+      "(Tonight through Sunday night) Issued at 135 PM CDT Sat Sep 26 2026 Upper-level ridging has reestablished itself over the RGV based on the morning 12Z soundings and should continue its southwestward drift through Sunday.",
+      "A mid- level trough is noted over the Panhandle and Texas High Plains region.",
+      "As is typical in these conditions, the warm weather could aid storms in producing locally gusty winds."
      ],
      "prevent": [
-      "Drier, with summer-like temperatures through the weekend.",
-      "(Today through Sunday) Issued at 1200 AM CDT Sat Sep 26 2026 Another day with the 500mb high centered over southeast TX and a large amplitude ridge stretching from there to the northern plains."
+      "Low chance for isolated storms Sunday afternoon and evening over the Hill Country.",
+      "By Sunday afternoon, the upper-level wind will shift towards northwesterlies and this setup is slightly more favorable to a few isolated showers or storms entering or developing over the southern Edwards Plateau and Hill Country Sunday afternoon/evening."
      ],
-     "timing": [],
+     "timing": [
+      "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
+     ],
      "uncertainty": [
-      "A Pacific cold front may bring widespread rain next week.",
-      "Sunday the upper high may be far enough south and west to allow a few showers or thunderstorms to develop during the afternoon."
+      "A Pacific cold front may bring widespread rain mid to late next week.",
+      "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
      ],
      "aviation": []
     },
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 1%).",
+   "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 1% around 7:00 PM CT (mostly cloudy).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 1:00 PM CT (partly sunny).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 1% around 1:00 AM CT.",
     "The TAF for KSAT (issued 12:24 PM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
     "discussion": [
-     "At the surface the weak frontal boundary that has been in the region is across our eastern counties.",
-     "The low level flow across our CWA is from the southeast keeping a warm (hot), moist airmass in place.",
-     "Today it will suppress any convection keeping the entire area dry."
+     "(Tonight through Sunday night) Issued at 135 PM CDT Sat Sep 26 2026 Upper-level ridging has reestablished itself over the RGV based on the morning 12Z soundings and should continue its southwestward drift through Sunday.",
+     "A mid- level trough is noted over the Panhandle and Texas High Plains region.",
+     "As is typical in these conditions, the warm weather could aid storms in producing locally gusty winds."
     ]
    },
    "prevents": {
@@ -3693,22 +3661,24 @@
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
-     "Drier, with summer-like temperatures through the weekend.",
-     "(Today through Sunday) Issued at 1200 AM CDT Sat Sep 26 2026 Another day with the 500mb high centered over southeast TX and a large amplitude ridge stretching from there to the northern plains."
+     "Low chance for isolated storms Sunday afternoon and evening over the Hill Country.",
+     "By Sunday afternoon, the upper-level wind will shift towards northwesterlies and this setup is slightly more favorable to a few isolated showers or storms entering or developing over the southern Edwards Plateau and Hill Country Sunday afternoon/evening."
     ]
    },
    "timing": {
-    "discussion": [],
+    "discussion": [
+     "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
+    ],
     "aviation": []
    },
    "uncertainty": [
-    "A Pacific cold front may bring widespread rain next week.",
-    "Sunday the upper high may be far enough south and west to allow a few showers or thunderstorms to develop during the afternoon."
+    "A Pacific cold front may bring widespread rain mid to late next week.",
+    "The nearby ridge and accompanying subsidence should prevent isolated showers/storms from moving into our area, though a few fleeting showers could temporarily drift into the southern Edwards Plateau on their way to fizzling out this evening."
    ],
    "unavailable": [],
-   "inputs_hash": "f7dc387042f985f3",
-   "text_generated_utc": "2026-09-26T17:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "17059bf3571992b6",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KSEA": {
    "city": "SEA",
@@ -3720,10 +3690,10 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T18:29:30.796526+00:00",
-    "updated_utc": null,
+    "generated_utc": "2026-09-26T18:48:08+00:00",
+    "updated_utc": "2026-09-26T18:26:46+00:00",
     "url": "https://api.weather.gov/gridpoints/SEW/159,60/forecast/hourly",
-    "note": "collector copy, today only",
+    "note": null,
     "before_cutoff": {
      "hours": 14,
      "peak_pct": 0,
@@ -3734,7 +3704,7 @@
      "wording": "Sunny"
     },
     "after_cutoff": {
-     "hours": 1,
+     "hours": 12,
      "peak_pct": 0,
      "peak_local_hour": 24.0,
      "peak_utc": "2026-09-27T08:00:00Z",
@@ -3838,12 +3808,10 @@
     "A little more fog coverage Sunday morning as the air mass continues to calm down.",
     "The forecast low of 46 at Seattle-Tacoma airport would be the coldest low since 45 degrees on May 30th."
    ],
-   "unavailable": [
-    "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
-   ],
+   "unavailable": [],
    "inputs_hash": "9e2be9a676f9bfbf",
    "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KSFO": {
    "city": "SFO",
@@ -3855,27 +3823,27 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-09-26T17:48:01+00:00",
-    "updated_utc": "2026-09-26T10:21:57+00:00",
+    "generated_utc": "2026-09-26T18:48:10+00:00",
+    "updated_utc": "2026-09-26T18:27:09+00:00",
     "url": "https://api.weather.gov/gridpoints/MTR/84,99/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 14,
-     "peak_pct": 1,
-     "peak_local_hour": 16.0,
-     "peak_utc": "2026-09-27T00:00:00Z",
+     "peak_pct": 15,
+     "peak_local_hour": 19.0,
+     "peak_utc": "2026-09-27T03:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Partly Sunny"
+     "wording": "Slight Chance Drizzle"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 4,
-     "peak_local_hour": 31.0,
-     "peak_utc": "2026-09-27T15:00:00Z",
+     "peak_pct": 15,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-09-27T08:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Partly Sunny"
+     "wording": "Slight Chance Drizzle"
     }
    },
    "twc_forecast": {
@@ -3935,10 +3903,10 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 1%).",
+   "headline": "A low chance before the cutoff: the point forecast peaks at 15% around 10:00 PM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 1% around 7:00 PM CT (partly sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 4% around 10:00 AM CT.",
+    "Before the cutoff the NWS point forecast peaks at 15% around 10:00 PM CT (slight chance drizzle).",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 15% around 3:00 AM CT.",
     "The TAF for KSFO (issued 12:27 PM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
@@ -3949,8 +3917,7 @@
    },
    "prevents": {
     "data": [
-     "no precipitation group still ahead in the TAF before the cutoff",
-     "point forecast stays under 15%% for the rest of the contract day"
+     "no precipitation group still ahead in the TAF before the cutoff"
     ],
     "discussion": []
    },
@@ -3967,9 +3934,9 @@
     "Also for Sunday daytime highs will be below late Sep normals with highs mainly in the 60s and 70s, quite nice, it could be warmer/hotter this time of year."
    ],
    "unavailable": [],
-   "inputs_hash": "7a6d44ad19d823ef",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "7c48148b82263e2e",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   },
   "KTTN": {
    "city": "TTN",
@@ -4009,12 +3976,12 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 10,
-     "peak_pct": 34,
-     "peak_local_hour": 19.0,
-     "peak_utc": "2026-09-27T00:00:00Z",
+     "peak_pct": 57,
+     "peak_local_hour": 14.0,
+     "peak_utc": "2026-09-26T19:00:00Z",
      "qpf_in": 0.02,
-     "first_30_local_hour": 15.0,
-     "wording": "Few Showers"
+     "first_30_local_hour": 14.0,
+     "wording": "Showers"
     }
    },
    "taf": {
@@ -4141,12 +4108,12 @@
     ]
    },
    "uncertainty": [
-    "The two airport forecasts disagree before the cutoff: NWS peak 89%, weather.com peak 34%."
+    "The two airport forecasts disagree before the cutoff: NWS peak 89%, weather.com peak 57%."
    ],
    "unavailable": [],
-   "inputs_hash": "82859f930ad23532",
-   "text_generated_utc": "2026-09-26T18:32:47Z",
-   "checked_utc": "2026-09-26T18:32:47Z"
+   "inputs_hash": "5e74f8e9c2dd25ed",
+   "text_generated_utc": "2026-09-26T18:47:47Z",
+   "checked_utc": "2026-09-26T18:47:47Z"
   }
  },
  "points": {
@@ -4357,12 +4324,12 @@
    "text": "\n000\nFXUS62 KFFC 261742\nAFDFFC\n\nArea Forecast Discussion\nNational Weather Service Peachtree City GA\n142 PM EDT Sat Sep 26 2026\n\n\n...New 18Z Aviation Discussion...\n\n.KEY MESSAGES...\n \n  - A cooler airmass will remain in place through the weekend \n    with highs in the 70s to low 80s.\n\n  - Mostly dry conditions expected through the middle of next \n    week.\n\n  - Warming trend back to above normal temperatures from early to\n    mid next week.\n\n&&\n\n.SHORT TERM...\n(Today through Sunday)\nIssued at 216 AM EDT Sat Sep 26 2026\n\nA weekend of pleasant 'fall-like' weather is on tap across North \nand Central GA as a dry and mild airmass spreads over the area. \nThe drivers of this setup are a mid-level ridge over the South- \nCentral US and a powerful stacked low off coast of the Mid- \nAtlantic. The northerly flow between these systems will bring in a\ndry airmass featuring well below normal PWAT values (~0.5\") and \ndewpoints (mid to upper 40s by Sunday). As a result, skies will be\nmostly clear outside of any patchy fog this morning. Temperatures\nwill feel a bit crisp in the mornings, falling to the low to mid \n50s for most areas. It's also worth mentioning that anyone getting\ntheir fall festivities on in the North GA mountains may want to \npack an extra layer, as these areas could see morning lows in the \nmid 40s! Afternoon high temps will rise to the upper 70s to low \n80s each day across most of the area.\n\n&&\n\n.LONG TERM...\n(Sunday night through Friday)\nIssued at 216 AM EDT Sat Sep 26 2026\n\nBy Monday, the mid-level ridge that supported a multi-day period \nof potent northwesterly flow retrogrades westward, with shortwave \ntroughing beginning to sweep across the Southeast. Despite a turn \ntoward the slightly-less-benign aloft, high pressure remains in \nplace at the surface -- the resultant subsidence sufficient to \nsupport continued near-negligible rain chances through midweek. \nWith a supremely dry airmass in place, portions of central Georgia\nmay approach critical relative humidity thresholds on Monday and \nTuesday. \n\nMoisture will be on the upswing by Thursday, flow turning \nsoutheasterly at the surface as a subtropical high nudges onshore.\nAfter multiple days with PWATs lingering near climatological \nminimums (between 0.4-0.7\" -- at times well below the 10th \npercentile), expect them to be dragged back above an inch. Chances\nfor isolated to scattered showers and thunderstorms will return \nas the airmass moderates back toward summerlike, bringing an end \nto our brief dry period for some. \n\nWhile comparatively much drier air will linger (dewpoints in the \n40s to 50s),temperatures will warm back into the upper 80s to \nlower 90s next week -- some 5 to 12 degrees above average. Morning\nlows will remain crisp through Wednesday, in the 40s for portions\nof northeast Georgia at elevation, and in the 50s elsewhere. As \nmoisture rebounds midweek, lows will return to the 60s to near 70,\n\n&&\n\n.AVIATION...\n(18Z TAFS)\nIssued at 139 PM EDT Sat Sep 26 2026\n\nVFR conditions are anticipated to persist through the period, with\na FEW cu between 050-060 this afternoon and Sunday afternoon.\nWinds have come up on the NW side and are expected to be 5-8 kts\nthrough the afternoon. Winds are forecast to be light and variable\nafter 01-02Z, becoming NW at 6-10 kts after 16Z on Sunday.\n\n//ATL Confidence...18Z Update...\nHigh confidence on all elements.\n\nKing\n\n&&\n\n.PRELIMINARY POINT TEMPS/POPS...\nAthens          83  53  84  53 /   0   0   0   0 \nAtlanta         81  57  81  55 /   0   0   0   0 \nBlairsville     77  47  76  46 /   0   0   0   0 \nCartersville    81  52  79  50 /   0   0   0   0 \nColumbus        84  58  84  55 /   0   0   0   0 \nGainesville     82  54  83  53 /   0   0   0   0 \nMacon           84  56  85  53 /   0   0   0   0 \nRome            81  54  80  51 /   0   0   0   0 \nPeachtree City  83  54  82  52 /   0   0   0   0 \nVidalia         82  57  87  55 /   0   0   0   0 \n\n&&\n\n.FFC WATCHES/WARNINGS/ADVISORIES...\nNone.\n&&\n\n$$\n\nSHORT TERM...Culver\nLONG TERM....96\nAVIATION...King\n"
   },
   "EWX": {
-   "id": "0a330857-9e8a-422c-ae58-295305fca377",
-   "issued_utc": "2026-09-26T17:18:00+00:00",
-   "url": "https://api.weather.gov/products/0a330857-9e8a-422c-ae58-295305fca377",
+   "id": "6e7c45b4-2bf4-4656-8a58-c4fe11b812f3",
+   "issued_utc": "2026-09-26T18:36:00+00:00",
+   "url": "https://api.weather.gov/products/6e7c45b4-2bf4-4656-8a58-c4fe11b812f3",
    "office": "EWX",
-   "fetched_utc": "2026-09-26T17:32:48Z",
-   "text": "\n000\nFXUS64 KEWX 261718\nAFDEWX\n\nArea Forecast Discussion\nNational Weather Service Austin/San Antonio TX\n1218 PM CDT Sat Sep 26 2026\n\n...New AVIATION...\n\n.KEY MESSAGES...\nUpdated at 1217 PM CDT Sat Sep 26 2026\n\n- Drier, with summer-like temperatures through the weekend.\n\n- A Pacific cold front may bring widespread rain next week.\n\n&&\n\n.SHORT TERM...\n(Today through Sunday)\nIssued at 1200 AM CDT Sat Sep 26 2026\n \nAnother day with the 500mb high centered over southeast TX and \na large amplitude ridge stretching from there to the northern \nplains. At the surface the weak frontal boundary that has been in \nthe region is across our eastern counties. This boundary is really\nnot having any affect on the weather. The low level flow across \nour CWA is from the southeast keeping a warm (hot), moist airmass \nin place. The upper high will drift to the southwest through the \nshort term period. Today it will suppress any convection keeping \nthe entire area dry. Sunday the upper high may be far enough south\nand west to allow a few showers or thunderstorms to develop \nduring the afternoon. If any storms do form it will most likely be\nover the Hill Country. Temperatures through the period will be \nabout the same as the last few days.\n\n&&\n\n.LONG TERM...\n(Sunday night through Friday)\nIssued at 1200 AM CDT Sat Sep 26 2026\n \nThe upper high will continue to shift to the south and west Monday. \nThe airmass over South-Central Texas will remain about the same with \nlow level flow from the east to southeast. Temperatures will be \nstagnant through the beginning of next week. It will continue to \nfeel like an endless summer rather than the start of fall. Models \nare still showing the first real Pacific cold front of the season \nmoving into TX, but the timing is not consistent. Now it's looking \nlater in the week. Despite this change there are still chances for \nwidespread rain starting Tuesday and extending into Friday. They are \nalso showing signs of possible heavy area at times during this \nperiod. Northerly to northeasterly winds will bring cooler, drier \nair. High temperatures for the second half of the week may be below \n90 for most of the CWA, but low temperatures have trended a little \nwarmer and mostly above 70.\n\n&&\n\n.AVIATION...\n(18Z TAFS)\nIssued at 1217 PM CDT Sat Sep 26 2026\n\nOnshore flow will generally remain under 12 knots through the period \nwith calm winds near I-35 terminals overnight. VFR conditions are \nexpected to prevail, though persistence would hint at some patchy \nMVFR ceilings tomorrow morning. With little signal in models for any \nlower cloud decks, kept skies BKN250 for now.\n\n&&\n\n.PRELIMINARY POINT TEMPS/POPS...\nAustin Camp Mabry              74  99  74  99 /   0  10  10   0 \nAustin Bergstrom Intl Airport  72  99  74  99 /   0  10  10   0 \nNew Braunfels Muni Airport     72  97  72  97 /   0   0   0   0 \nBurnet Muni Airport            71  95  72  95 /   0  20  20   0 \nDel Rio Intl Airport           77  99  76  99 /   0   0  10   0 \nGeorgetown Muni Airport        73  98  74  97 /   0  20  10   0 \nHondo Muni Airport             73  97  73  96 /   0   0   0   0 \nSan Marcos Muni Airport        71  98  72  98 /   0  10  10   0 \nLa Grange - Fayette Regional   71  99  73  99 /   0   0   0   0 \nSan Antonio Intl Airport       75  96  75  96 /   0   0   0   0 \nStinson Muni Airport           75  97  75  97 /   0   0   0   0 \n\n&&\n\n.EWX WATCHES/WARNINGS/ADVISORIES...\nNone.\n&&\n\n$$\n\nSHORT TERM...05\nLONG TERM....05\nAVIATION...27\n"
+   "fetched_utc": "2026-09-26T18:47:50Z",
+   "text": "\n000\nFXUS64 KEWX 261836\nAFDEWX\n\nArea Forecast Discussion\nNational Weather Service Austin/San Antonio TX\n136 PM CDT Sat Sep 26 2026\n\n...New SHORT TERM, LONG TERM...\n\n.KEY MESSAGES...\nUpdated at 135 PM CDT Sat Sep 26 2026\n\n- Summer-like temperatures continue into early next week.\n\n- Low chance for isolated storms Sunday afternoon and evening over\n  the Hill Country.\n\n- A Pacific cold front may bring widespread rain mid to late next\n  week.\n\n&&\n\n.SHORT TERM...\n(Tonight through Sunday night)\nIssued at 135 PM CDT Sat Sep 26 2026\n\nUpper-level ridging has reestablished itself over the RGV based on \nthe morning 12Z soundings and should continue its southwestward \ndrift through Sunday. Unseasonably hot conditions continue. A mid-\nlevel trough is noted over the Panhandle and Texas High Plains \nregion. The nearby ridge and accompanying subsidence should prevent \nisolated showers/storms from moving into our area, though a few \nfleeting showers could temporarily drift into the southern Edwards \nPlateau on their way to fizzling out this evening. \n\nSouth-Central Texas remains under southwestern heel of broadly \nhigher pressures over the Eastern US, so warm and humid air \ncontinues to cycle through the region. Highs Sunday will again be in \nthe mid to upper 90s for most, perhaps a few degrees higher than \ntoday as a warmer airmass over West Texas orients closer our area. \nBy Sunday afternoon, the upper-level wind will shift towards \nnorthwesterlies and this setup is slightly more favorable to a few \nisolated showers or storms entering or developing over the southern \nEdwards Plateau and Hill Country Sunday afternoon/evening. As is \ntypical in these conditions, the warm weather could aid storms in \nproducing locally gusty winds. A few of these storms could reach the \nAustin area, though the I-35 corridor is likely to be on the eastern \nedge of this activity.\n\n&&\n\n.LONG TERM...\n(Monday through next Saturday)\nIssued at 135 PM CDT Sat Sep 26 2026\n\nNext week starts off with the same summer-like heat and mostly dry \nconditions due to the nearby influence of the upper-level ridge. \nHowever, the ridge will start to weaken as a trough and accompanying \nPacific cold front approaches from the west. This clash of weather \nfeatures is forecast deliver a shift from the regionally monotonous \nsummer weather, including the potential for widespread rain and \ncooler temperatures during the latter half of the week.\n\nToday, that trough is taking shape over the northern Pacific, but it \nwon't be until about mid/late tomorrow when the core of the trough \narrives on the Pacific coast and is sampled in upper-air soundings. \nModels have gradually come to a little more agreement regarding the \ntiming of the trough as it moves over the southwestern US, but there \nis still some divergence in the models regarding its behavior as it \nenters Texas that could be pivotal in assessing the mid to late week \nweather here.\n\nRegardless of timing, there is good confidence that the trough will \npull ample amounts of tropical Pacific moisture into the \nsouthwestern and central US, and this will set up an opportunity of \nwidespread rain over Texas. So far, ensemble trends in the 500mb \nheights over the western US and the progression of the trough itself \nare consistent with favoring a slower-moving trough compared to \nearlier model outputs. This has caused the most favorable period of \nrainfall for South-Central Texas to shift slightly later in the \nforecast. The window of opportunity for widespread rains still \nstretches from early Wednesday through Friday, though the highest \nchances in the long-range grand ensemble have started to center \naround Thursday. \n\nRain chances should begin before the arrival of the Pacific front as \nmoist southerly flow accelerates during its approach. However, the \nfront will act as a focus for higher rain chances. With models \nsuggesting that the trough will weaken and slow down over the \nCentral Plains late in the week, the front may be slow-moving and \nthere is some potential that it could linger over our area and \nextend rain chances into Saturday. PWATs during this period are \nforecast to increase with the GEFS, ENS, and GEPS ensembles all \nshowing mean values of around 1.8-2.1\" (near or over the 95th \npercentile), underscoring the transport of moist Pacific air. Taken \naltogether, the setup is worth monitoring for the chance of heavy \nrain near or within the region, and the WPC has started to highlight \nthe potential for rains capable of flash flooding at some point \nmid/late next week over South-Central Texas. \n\nThe sluggish nature of the trough and continued moist inflow \nsuggests we won't be seeing a sharp plunge in temperatures from the \nPacific, but the cloud cover, rain, and post-frontal air mixed in \nwill be sufficient to drop temperatures towards near normal \nterritory. The current blend of models has highs in the mid 80s to \nlow 90s late next week. However, confidence in temperatures is \nlow due to uncertainties in the frontal timing, strength, and the \ninherent variability of rain-cooled air. The drop in overnight \nlows is not expected to be as steep due to the humid air, but will\nlikely see some decrease.\n\n&&\n\n.AVIATION...\n(18Z TAFS)\nIssued at 1217 PM CDT Sat Sep 26 2026\n\nOnshore flow will generally remain under 12 knots through the period \nwith calm winds near I-35 terminals overnight. VFR conditions are \nexpected to prevail, though persistence would hint at some patchy \nMVFR ceilings tomorrow morning. With little signal in models for any \nlower cloud decks, kept skies BKN250 for now.\n\n&&\n\n.PRELIMINARY POINT TEMPS/POPS...\nAustin Camp Mabry              74  99  74  99 /   0  10  10   0 \nAustin Bergstrom Intl Airport  72  99  74  99 /   0  10  10   0 \nNew Braunfels Muni Airport     72  97  72  97 /   0   0   0   0 \nBurnet Muni Airport            71  95  72  95 /   0  20  20   0 \nDel Rio Intl Airport           77  99  76  99 /   0   0  10   0 \nGeorgetown Muni Airport        73  98  74  97 /   0  20  10   0 \nHondo Muni Airport             73  97  73  96 /   0   0   0   0 \nSan Marcos Muni Airport        71  98  72  98 /   0  10  10   0 \nLa Grange - Fayette Regional   71  99  73  99 /   0   0   0   0 \nSan Antonio Intl Airport       75  96  75  96 /   0   0   0   0 \nStinson Muni Airport           75  97  75  97 /   0   0   0   0 \n\n&&\n\n.EWX WATCHES/WARNINGS/ADVISORIES...\nNone.\n&&\n\n$$\n\nSHORT TERM...Tran\nLONG TERM....Tran\nAVIATION...27\n"
   },
   "BOX": {
    "id": "24dfdeed-a1a3-43a7-8266-d79d499f9866",
@@ -4477,12 +4444,12 @@
    "text": "\n000\nFXUS61 KPHI 261818\nAFDPHI\n\nArea Forecast Discussion\nNational Weather Service Mount Holly NJ\n218 PM EDT Sat Sep 26 2026\n\n.WHAT HAS CHANGED...\nMinor flooding is expected along the Millstone River at Blackwells\nMills.\n\nThe Wind Advisory has been expanded north and west.\n\nThe existing High Wind Warnings and Wind Advisories have been \nextended in time with the exception of the Delaware Beaches.\n\nThe Storm Warnings/Gales have been extended in time with \nthe exception of lower Delaware Bay and the adjacent Atlantic.\n\n&&\n\n.KEY MESSAGES...\n1. The nor'easter will retrograde back towards New Jersey over the \nweekend before finally departing on Tuesday. This will bring periods \nof additonal rainfall and strong winds to the region.\n\n2. More Moderate to Minor tidal flooding expected for tonight \nand Sunday. Highest levels water levels will trend less as the \nstorm begins to weaken later Sunday. \n\n3. Dangerous rip currents and high surf are expected at the Jersey \nShore and Delaware Beaches through Sunday. Additional beach and dune \nerosion can be expected.\n\n&&\n\n.DISCUSSION...\n\nKEY MESSAGE 1...The nor'easter will retrograde back towards New \nJersey over the weekend before finally departing on Tuesday. This \nwill bring periods of additonal rainfall and strong winds to the \nregion.\n\nBroad high pressure remains centered over eastern Canada and extends\nback into the Great Lakes. While the high will weaken and lift into\nnorthern portions of the Province of Quebec, it will still be strong \nenough to create a tight pressure gradient between it and the low \noff the New Jersey coast. While we'll see a little bit of lull in \nthe winds overnight, an increase is once again expected tomorrow. \n\nWe will keep the High Wind Warnings and Wind Advisories in place, \nbut extend them into Sunday. We have posted new Wind Advisories for \nour remaining zones to the north and west. Given that trees still \nhave their leaves, the combination of these winds and heavy rain \nwill result in downed trees and also power lines. Property damage \ncannot be ruled at the coast where the winds are highest. \n\nWith the track closer to the coast, the higher PoPs that were \nintroduced early this morning will remain in place. PoPs are pretty \nmuch in the 80 to 100 percent range across the whole area tonight \nand Sunday. Event rainfall totals will be in the 1 to 2 inch range \nalong the I-95 corridor and points north and west with as much as 3 \ninches over much of eastern New Jersey. Locally heavier amounts are \npossible. This will be over a 48 to 60 hour timeframe, so widespread \nfreshwater flooding is not anticipated at this time. That said, the \nMillstone River at Griggstown is now expected to crest above flood \nstage. This is our only forecast point above flood stage. It goes \nwithout saying that and freshwater runoff will exacerbate the \nflooding along the coast. It simply will not be able to drain. We \ncannot rule out a few embedded thunderstorms.\n\nKEY MESSAGE 2...More Moderate to Minor tidal flooding expected \nfor tonight and Sunday. Highest levels water levels will trend\nless as the storm begins to weaken later Sunday. \n\nA slow moving Nor'easter offshore will remain into Sunday and\nbegin to weaken. Although this current/most recent high tide will\nbe/has been the most impactful, we're not out of the woods yet \nalong the coast and back bays. Additional flooding will occur \nover the next several high tides. There are no changes with the \nheadlines right now. While widespread major flooding is not \nexpected going forward, widespread moderate is. \n\nFor Delaware Bay communities, north/northeast winds will keep \npushing water to the west side of the Bay and onto the Delaware \ncoast. This will increase the water levels for those communities.\nThe Coastal Flood Warning remains in effect until 2 AM Sunday \nfor Kent and Sussex, DE. Moderate Flood levels are forecasted for \nCumberland and Salem, NJ as well as New Castle, DE, so the Warning \nwill remain in place across these areas. \n\nFor the tidal Delaware River, we expect the minor tidal flooding\nwill take place both with the upcoming high tide this afternoon\nand again early Sunday morning. The strong North to Northeast\nflow is for the most part keeping the water levels in check for\nthose areas. \n\nAs mentioned above,the north to northeast winds will limit the \ntidal flooding threat for the Chesapeake Bay. Some spotty minor \ntidal flooding is anticipated at Claiborne around dawn Sunday, \nbut nothing higher than that at this time. \n\nKEY MESSAGE 3...Dangerous rip currents and high surf are expected at \nthe Jersey Shore and Delaware Beaches through Sunday. Additional \nbeach and dune erosion can be expected.\n\nA nor'easter is bringing strong north to northeast winds and high \nseas for our marine zones. Breaking waves within the surf zone of 6 \nto 12 feet will occur through Sunday. Dangerous rip currents will \naccompany the high surf, making it extremely dangerous to enter the \nwater at any time through Sunday. The high surf and strong winds are \nresulting in areas of beach erosion across the Jersey Shore and \nDelaware Beaches. Across some locales, large breaking waves and run-\nup are also eroding dunes.\n\nThe High Risk for life threatening rip currents remains in effect\nthrough Sunday for all beaches. A High Surf Advisory is in effect\nfor all beaches through Sunday as well.\n\n\n&&\n\n.AVIATION /18Z SATURDAY THROUGH THURSDAY/...\nThe following discussion is for KPHL, KPNE, KTTN, KABE, KRDG, \nKILG, KMIV, KACY and surrounding areas.\n\nRest of this afternoon...Mainly MVFR conditions. A period of IFR \nconditions is possible. Winds northerly 15 to 25 knots gusts to 30-\n40 knots. Coastal locations gusting to 40+ knots. Numerous showers.\n\nTonight...Widespread MVFR and IFR conditions in rain, fog, and low \nCIGs. N winds 15 to 20 kt with 30 to 35 kt gusts inland and gusts as \nhigh as 40 kt from time to time at KACY.\n\nSunday...Widespread MVFR and IFR conditions in rain, fog, and low \nCIGs. NW to N winds 15 to 20 kt with 30 to 35 kt gusts. \n\nOutlook...\n\nSunday night...Continued MVFR/IFR conditions in lingering SHRA. \nDiminishing winds. \n\nMonday through Monday night...Conditions improve to MVFR, then \nto VFR late Monday and Monday night.\n\nTuesday through Thursday...VFR conditions expected.\n\n&&\n\n.MARINE...\nWidespread storm force winds can be expected across our central and \nnorthern nearshore and offshore waters through midday Sunday. For \nour southern waters and Delaware bay, storm force winds will \ncontinue through at least today and be followed up with Gales at \nsome point.\n\nFor our central and northern ocean zones, winds will average 35 to \n45 kt with gusts as high as 60 kt through tonight. On the Delaware \nBay for the remainder of the day, winds will average 20 to 30 kt \nwith gusts as high as 40 kt for the upper bay and up to 50 kt for \nthe lower bay.\n\nSeas will be very rough, as high as 15 to 20 ft on the ocean \nduring this time. VSBY restrictions in rain.\n\nSunday...Widespread Gales are expected with gusts of 35-45 kts, \ngradually diminishing below Gale criteria through late afternoon. \nSeas 8-12 feet early diminish to 6-8 feet late.\n\nOutlook... \n\nSunday night...Conditions expected to improve considerably. Small \nCraft Advisory conditions likely.\n\nMonday-Monday night...Conditions continue to improve. Seas may \nremain above advisory levels while winds continue to diminish \nbelow 25 knots.\n\nTuesday through Thursday...Conditions expected to be below advisory \nlevels.\n\nRip Currents...Please see Key Message 3 above.\n\n&&\n\n.PHI WATCHES/WARNINGS/ADVISORIES...\nPA...Wind Advisory until noon EDT Sunday for PAZ054-055-060>062-070-\n     071-101>106.\n     Coastal Flood Advisory until 5 AM EDT Sunday for PAZ070-071-\n     106.\nNJ...Coastal Flood Warning until 3 AM EDT Sunday for NJZ016.\n     Wind Advisory until noon EDT Sunday for NJZ001-007>010-012-013-\n     015>023-027.\n     Coastal Flood Warning until 2 PM EDT Sunday for NJZ012>014-\n     020>027.\n     High Risk for Rip Currents through Sunday evening for NJZ014-\n     024>026.\n     High Surf Advisory until 8 PM EDT Sunday for NJZ014-024>026.\n     High Wind Warning until noon EDT Sunday for NJZ014-024>026.\n     Coastal Flood Advisory until 5 AM EDT Sunday for NJZ017>019.\nDE...Coastal Flood Warning until 3 AM EDT Sunday for DEZ001.\n     Wind Advisory until noon EDT Sunday for DEZ001>003.\n     Coastal Flood Warning until 2 PM EDT Sunday for DEZ002>004.\n     High Wind Warning until 6 PM EDT this evening for DEZ004.\n     High Risk for Rip Currents through Sunday evening for DEZ004.\n     High Surf Advisory until 8 PM EDT Sunday for DEZ004.\nMD...None.\nMARINE...Gale Warning until noon EDT Sunday for ANZ430.\n     Storm Warning until 6 PM EDT this evening for ANZ431-454-455.\n     Storm Warning until noon EDT Sunday for ANZ450>453-480>483.\n     Storm Warning until midnight EDT tonight for ANZ485.\n\n&&\n\n$$\n\nDISCUSSION...Kruzdlo/PO/Robertson\nAVIATION...Kruzdlo/PO/Robertson\nMARINE...Kruzdlo/PO/Robertson\n"
   },
   "PSR": {
-   "id": "cc7ab124-967e-4ddd-b8bb-f7be3b9917d2",
-   "issued_utc": "2026-09-26T11:26:00+00:00",
-   "url": "https://api.weather.gov/products/cc7ab124-967e-4ddd-b8bb-f7be3b9917d2",
+   "id": "0abc1213-43ac-4cf1-a3fb-625fd53d2e11",
+   "issued_utc": "2026-09-26T18:32:00+00:00",
+   "url": "https://api.weather.gov/products/0abc1213-43ac-4cf1-a3fb-625fd53d2e11",
    "office": "PSR",
-   "fetched_utc": "2026-09-26T11:32:54Z",
-   "text": "\n000\nFXUS65 KPSR 261126\nAFDPSR\n\nArea Forecast Discussion\nNational Weather Service Phoenix AZ\n426 AM MST Sat Sep 26 2026\n\n.UPDATE...Updated 12Z Aviation Discussion.\n\n&&\n\n.KEY MESSAGES...\n\n- For tonight into Sunday, higher level moisture will surge back\n  into the region with skies becoming cloudy and eventual chances\n  for light rain later in the day on Sunday. \n\n- Rain is likely across much of Arizona on Monday and Tuesday with\n  the possibility of some strong to severe thunderstorms. Moderate\n  to heavy rainfall will also be possible, particularly across \n  the Arizona high terrain.\n\n- Temperatures will cool to below normal during the first half of\n  next week with highs only in the eighties for much of the lower\n  deserts.\n \n&&\n\n.SHORT TERM /TODAY THROUGH SUNDAY/... \nThe main forecast concern continues to be the potential for strong\nto severe storms, heavy rainfall, and flash flooding early next\nweek.  \n\nHowever, in the short term quiet weather conditions will continue\ntoday as westerly flow persists. Expect mostly sunny skies today \nwith a slight uptick in temperatures as afternoon highs top out in\nthe upper 90s in the Phoenix area to the lower 100s across the \nwestern lower deserts. \n\nThis will all begin to change tonight into Sunday as upper level \nmoisture gets peeled away from the decaying TC Odalys and advected\ninto our region. We should expect higher level clouds \noverspreading the area from the southwest starting this evening, \ngradually thickening up tonight with cloud bases dropping more \ninto the mid levels Sunday morning. The moisture advection will be\naided by a Pacific trough which is forecast to dive southeastward\ntoward the northern California coast on Sunday. There is still \nsome question for rain chances on Sunday as considerable dry air \nwill still be present in the lower levels. We do expect this \nstream of moisture to last long enough to result in decent top \ndown saturation with light rain eventually reaching the surface, \nbut only in narrow bands. PoPs gradually increase from 10-15% \nchances Sunday afternoon to 30-40% after midnight Sunday night. \nMost areas that do see measurable rainfall on Sunday should stay \nunder 0.05\". Daytime highs Sunday will also be held down due to \nthe cloudy skies with NBM forecast highs mostly in the mid 90s, \nbut it would not be surprising to struggle to make it past the \nlower 90s. \n\n&&\n\n.LONG TERM /MONDAY THROUGH FRIDAY/... \nModel guidance is still pointing toward the potential for a\nsignificant weather event occurring early next week as a strong\nPacific low pressure system moves into the region at the same time\nmoisture from TC Polo is forecast to advect northward into\nArizona. There have been some changes within the model runs over \nthe last 24 hours, noticeably with the low deepening further on \nMonday and potentially becoming a slow moving closed low for \nTuesday into early Wednesday. The latest NHC track of Polo still \nkeeps it well to our south and southeast with its eventual remnant\ncirculation missing Arizona. However, it is still expected to \nheavily influence our low and mid level moisture which will be one\nof the key ingredients needed for a big rainfall event.\n\nModel clusters heavily favor a closed low forming to our northwest\ngoing into Monday with further strengthening possible as it moves\ninto our region on Tuesday. This deepening would result in a \nslower moving system which has pushed back the timing of the best\nrain chances, now most likely occurring late Monday night and/or \non Tuesday. Scattered showers and isolated thunderstorms are still\nexpected during the first half of Monday, but they should favor \nthe central and eastern Arizona high terrain. Pockets of moderate \nrainfall will also be possible Monday, but the heavy rainfall \nthreat seems to have pushed back to Monday night and Tuesday. WPC \nstill maintains a Slight Risk for excessive rainfall for Monday \nand Monday night for most of Arizona, minus the southwestern \nportion. \n\nAssuming no big changes with the timing and the strength of the\nlow, Tuesday now looks to hold our best chances for widespread\nrainfall, likely moderate to heavy at times, and potentially a few\ndiscrete severe thunderstorms. As the Pacific low slowly moves\ninto our region, strong 35-55 kt mid level south to southwesterly\nflow will support very good upslope forced ascent into central and\neastern Arizona. At the same time, we are expecting to fall under\nstrong difluence aloft from as early as Monday evening through\nTuesday evening. One of the more uncertain ingredients for the \nsevere storm potential is the amount of instability that will be\navailable. Although model guidance suggests CAPE will struggle to\ntop 500 J/kg, it seems very possible a narrow corridor of better\ninstability closer to 1000 J/kg may develop later on Tuesday. If\nall the ingredients come together, a few severe storms producing \ndamaging winds and large hail will be possible. \n\nThe latest QPF amounts have risen over the south-central Arizona\nlower deserts with average amounts closer to 1.0\" in the Phoenix\narea to anywhere from 0.15-0.5\" across the western lower deserts.\nThe highest storm total rainfall amounts are expected over the\nhigh terrain north and east of Phoenix with current forecast \naverage amounts of 1-2\". Locally higher amounts will occur due to \ntraining of showers and storms with some areas potentially \nreaching 3\" for the two day period. The latest NBM guidance shows \nprobabilities of 2\" as high as 55% for the higher terrain north \nand east of Phoenix to 20% within Phoenix. NBM probabilities of \ngetting 3\" of rainfall lower to 10-20% for higher terrain areas. \nWe will have to wait and see if these rainfall probabilities hold,\nalthough even at this point it seems quite likely Flood Watches \nwill be needed for later Monday and Tuesday.\n\nDue to the likely deeper and slower progression of the Pacific \nlow, rain chances now extend through Tuesday night for the eastern\nhalf of Arizona and we anticipate PoPs to increase on Wednesday \nif the timing holds. Any rainfall Tuesday night and Wednesday\nshould be more scattered, but we can't rule out a few\nthunderstorms producing additional localized moderate rainfall. \nIf the cold core of the low hangs out over our area into Wednesday\nafternoon, we could easily see some afternoon storms that produce\nsmall hail. For the western portions of our area on Wednesday,\ndrier air is expected to quickly move in leaving clearing skies \nand quiet conditions.\n\nTemperatures during the first part of next week will definitely\ncool off with highs falling into the 80s for the south-central\nArizona lower deserts to the upper 80s and lower 90s for the\nwestern lower deserts. After the Pacific low finally ejects to the\neast late week, upper level ridging is favored to move in from the\nwest leading to gradual warming with highs potentially reaching\n100 degrees again by next weekend.\n\n&&\n\n.AVIATION...Updated at 1125Z. \n\nSouth Central Arizona including KPHX, KIWA, KSDL, and KDVT: \nNo aviation weather concerns are expected through the forecast\nperiod. Winds will follow light and diurnal trends with some\nvariability prior to directional shifts. A period of southerly\ncrosswinds (150v200) is also anticipated at KPHX and KDVT late \nthis morning/early afternoon prior to the westerly shift. High \nclouds will gradually increase in coverage through tonight.\n\nSoutheast California/Southwest Arizona including KIPL and KBLH: \nNo aviation concerns are expected during the next 24 hours. Winds\nwill fluctuate between westerly and southeasterly at KIPL and\nsoutherly to southwesterly at KBLH. Wind speeds at both terminals\nwill remain aob 10 kt. Gradually increasing high clouds can be\nexpected through this morning with mid level cloud decks starting\nto move into the region late in the period. \n\n&&\n\n.FIRE WEATHER...\nDry conditions will prevail today before higher level moisture\nmoves in on Sunday resulting in chances for mostly light rain.  \nMinRHs today will bottom out today at 15-20% across the lower\ndeserts to 20-30% over the eastern Arizona high terrain. Slow\nimprovement in RHs is expected on Sunday before much higher \nmoisture levels move in on Monday as rain chances quickly \nincrease and expand. Winds will generally follow the typical \ndiurnal tendencies with limited to no afternoon gusts this \nweekend. Rain and much cooler weather are expected for Monday and\nTuesday with heavy rainfall a decent possibility across the \neastern districts. Conditions should eventually dry out later \nnext week with temperatures returning to near normal.\n\n&&\n\n.PSR WATCHES/WARNINGS/ADVISORIES...\nAZ...None.\nCA...None.\n&&\n\n$$\n\nSHORT TERM...Kuhlman\nLONG TERM...Kuhlman\nAVIATION...Salerno\nFIRE WEATHER...Kuhlman\n"
+   "fetched_utc": "2026-09-26T18:48:05Z",
+   "text": "\n000\nFXUS65 KPSR 261832\nAFDPSR\n\nArea Forecast Discussion\nNational Weather Service Phoenix AZ\n1132 AM MST Sat Sep 26 2026\n\n.UPDATE...Updated 18Z Aviation Discussion.\n\n&&\n\n.KEY MESSAGES...\n\n- For tonight into Sunday, higher level moisture will surge back\n  into the region with skies becoming cloudy and eventual chances\n  for light rain later in the day on Sunday. \n\n- Rain is likely across much of Arizona on Monday and Tuesday with\n  the possibility of some strong to severe thunderstorms. Moderate\n  to heavy rainfall will also be possible, particularly across \n  the Arizona high terrain.\n\n- Temperatures will cool to below normal during the first half of\n  next week with highs only in the eighties for much of the lower\n  deserts.\n \n&&\n\n.SHORT TERM /TODAY THROUGH SUNDAY/... \nThe main forecast concern continues to be the potential for strong\nto severe storms, heavy rainfall, and flash flooding early next\nweek.  \n\nHowever, in the short term quiet weather conditions will continue\ntoday as westerly flow persists. Expect mostly sunny skies today \nwith a slight uptick in temperatures as afternoon highs top out in\nthe upper 90s in the Phoenix area to the lower 100s across the \nwestern lower deserts. \n\nThis will all begin to change tonight into Sunday as upper level \nmoisture gets peeled away from the decaying TC Odalys and advected\ninto our region. We should expect higher level clouds \noverspreading the area from the southwest starting this evening, \ngradually thickening up tonight with cloud bases dropping more \ninto the mid levels Sunday morning. The moisture advection will be\naided by a Pacific trough which is forecast to dive southeastward\ntoward the northern California coast on Sunday. There is still \nsome question for rain chances on Sunday as considerable dry air \nwill still be present in the lower levels. We do expect this \nstream of moisture to last long enough to result in decent top \ndown saturation with light rain eventually reaching the surface, \nbut only in narrow bands. PoPs gradually increase from 10-15% \nchances Sunday afternoon to 30-40% after midnight Sunday night. \nMost areas that do see measurable rainfall on Sunday should stay \nunder 0.05\". Daytime highs Sunday will also be held down due to \nthe cloudy skies with NBM forecast highs mostly in the mid 90s, \nbut it would not be surprising to struggle to make it past the \nlower 90s. \n\n&&\n\n.LONG TERM /MONDAY THROUGH FRIDAY/... \nModel guidance is still pointing toward the potential for a\nsignificant weather event occurring early next week as a strong\nPacific low pressure system moves into the region at the same time\nmoisture from TC Polo is forecast to advect northward into\nArizona. There have been some changes within the model runs over \nthe last 24 hours, noticeably with the low deepening further on \nMonday and potentially becoming a slow moving closed low for \nTuesday into early Wednesday. The latest NHC track of Polo still \nkeeps it well to our south and southeast with its eventual remnant\ncirculation missing Arizona. However, it is still expected to \nheavily influence our low and mid level moisture which will be one\nof the key ingredients needed for a big rainfall event.\n\nModel clusters heavily favor a closed low forming to our northwest\ngoing into Monday with further strengthening possible as it moves\ninto our region on Tuesday. This deepening would result in a \nslower moving system which has pushed back the timing of the best\nrain chances, now most likely occurring late Monday night and/or \non Tuesday. Scattered showers and isolated thunderstorms are still\nexpected during the first half of Monday, but they should favor \nthe central and eastern Arizona high terrain. Pockets of moderate \nrainfall will also be possible Monday, but the heavy rainfall \nthreat seems to have pushed back to Monday night and Tuesday. WPC \nstill maintains a Slight Risk for excessive rainfall for Monday \nand Monday night for most of Arizona, minus the southwestern \nportion. \n\nAssuming no big changes with the timing and the strength of the\nlow, Tuesday now looks to hold our best chances for widespread\nrainfall, likely moderate to heavy at times, and potentially a few\ndiscrete severe thunderstorms. As the Pacific low slowly moves\ninto our region, strong 35-55 kt mid level south to southwesterly\nflow will support very good upslope forced ascent into central and\neastern Arizona. At the same time, we are expecting to fall under\nstrong difluence aloft from as early as Monday evening through\nTuesday evening. One of the more uncertain ingredients for the \nsevere storm potential is the amount of instability that will be\navailable. Although model guidance suggests CAPE will struggle to\ntop 500 J/kg, it seems very possible a narrow corridor of better\ninstability closer to 1000 J/kg may develop later on Tuesday. If\nall the ingredients come together, a few severe storms producing \ndamaging winds and large hail will be possible. \n\nThe latest QPF amounts have risen over the south-central Arizona\nlower deserts with average amounts closer to 1.0\" in the Phoenix\narea to anywhere from 0.15-0.5\" across the western lower deserts.\nThe highest storm total rainfall amounts are expected over the\nhigh terrain north and east of Phoenix with current forecast \naverage amounts of 1-2\". Locally higher amounts will occur due to \ntraining of showers and storms with some areas potentially \nreaching 3\" for the two day period. The latest NBM guidance shows \nprobabilities of 2\" as high as 55% for the higher terrain north \nand east of Phoenix to 20% within Phoenix. NBM probabilities of \ngetting 3\" of rainfall lower to 10-20% for higher terrain areas. \nWe will have to wait and see if these rainfall probabilities hold,\nalthough even at this point it seems quite likely Flood Watches \nwill be needed for later Monday and Tuesday.\n\nDue to the likely deeper and slower progression of the Pacific \nlow, rain chances now extend through Tuesday night for the eastern\nhalf of Arizona and we anticipate PoPs to increase on Wednesday \nif the timing holds. Any rainfall Tuesday night and Wednesday\nshould be more scattered, but we can't rule out a few\nthunderstorms producing additional localized moderate rainfall. \nIf the cold core of the low hangs out over our area into Wednesday\nafternoon, we could easily see some afternoon storms that produce\nsmall hail. For the western portions of our area on Wednesday,\ndrier air is expected to quickly move in leaving clearing skies \nand quiet conditions.\n\nTemperatures during the first part of next week will definitely\ncool off with highs falling into the 80s for the south-central\nArizona lower deserts to the upper 80s and lower 90s for the\nwestern lower deserts. After the Pacific low finally ejects to the\neast late week, upper level ridging is favored to move in from the\nwest leading to gradual warming with highs potentially reaching\n100 degrees again by next weekend.\n\n&&\n\n.AVIATION...Updated at 1817Z. \n\nSouth Central Arizona including KPHX, KIWA, KSDL, and KDVT: \nNo major weather concerns are expected through the TAF period.\nWinds will follow typical diurnal tendencies with a brief period\nof VRB late tonight before setting back out of the east just past\nmidnight. Additionally, current southerly crosswinds (160v200) are\nexpected to continue at KPHX, KSDL and KDVT prior to the westerly\nshift this afternoon, however winds should remain aob 8 kts during\nthis time. High clouds will gradually increase in coverage through\ntonight resulting in BKN to near OVC coverage.\n\nSoutheast California/Southwest Arizona including KIPL and KBLH: \nNo major weather concerns are expected through the TAF period.\nWinds will fluctuate between southeasterly and westerly at KIPL\nand southerly to southwesterly at KBLH. Wind speeds at both terminals\nwill remain aob 10 kt. Gradually increasing high clouds, with mid\nlevel cloud decks starting to move into the region late in the \nperiod. \n\n&&\n\n.FIRE WEATHER...\nDry conditions will prevail today before higher level moisture\nmoves in on Sunday resulting in chances for mostly light rain.  \nMinRHs today will bottom out today at 15-20% across the lower\ndeserts to 20-30% over the eastern Arizona high terrain. Slow\nimprovement in RHs is expected on Sunday before much higher \nmoisture levels move in on Monday as rain chances quickly \nincrease and expand. Winds will generally follow the typical \ndiurnal tendencies with limited to no afternoon gusts this \nweekend. Rain and much cooler weather are expected for Monday and\nTuesday with heavy rainfall a decent possibility across the \neastern districts. Conditions should eventually dry out later \nnext week with temperatures returning to near normal.\n\n&&\n\n.PSR WATCHES/WARNINGS/ADVISORIES...\nAZ...None.\nCA...None.\n&&\n\n$$\n\nSHORT TERM...Kuhlman\nLONG TERM...Kuhlman\nAVIATION...Ryan\nFIRE WEATHER...Kuhlman\n"
   },
   "SEW": {
    "id": "1d99a1c3-2724-49d1-a224-d76b442085eb",
@@ -4509,12 +4476,12 @@
    "text": "\n000\nFXUS61 KILN 261728\nAFDILN\n\nArea Forecast Discussion\nNational Weather Service Wilmington OH\n128 PM EDT Sat Sep 26 2026\n\n.WHAT HAS CHANGED...\nNo significant changes.\n\n&&\n\n.KEY MESSAGES...\n1) A stretch of dry weather and seasonably cool temperatures can be\nexpected through the weekend and into early next week, before rain\nchances return to the forecast.\n\n&&\n\n.DISCUSSION...\nKEY MESSAGE 1) \n\nOutside some early morning fog each day, fair weather will continue \ninto the early part of the work week with dry northeast flow behind \nthe coastal low just off the East Coast. In time, the coastal low \nwill gradually dissipate, with shortwave energy across the northern \ntier of the United States bringing a chance for showers starting \nlate Wednesday into Thursday. High temperatures will slowly warm into\nthe mid to upper 70s as winds turn back to the south by mid-week.\n\n&&\n\n.AVIATION /18Z SATURDAY THROUGH THURSDAY/...\nVFR conditions are expected for the TAF period. The only exception \nwill be at KLUK, where river valley fog will likely develop once \nagain late tonight into early Sunday morning.\n\nWinds will remain out of the northeast today, shifting to northerly\non Sunday as surface ridging noses into the Ohio Valley from the\nupper Midwest.\n\nOUTLOOK...No significant weather is expected.\n\n&&\n\n.ILN WATCHES/WARNINGS/ADVISORIES...\nOH...None.\nKY...None.\nIN...None.\n\n&&\n\n$$\n\nDISCUSSION...04\nAVIATION...04\n"
   },
   "LMK": {
-   "id": "4ed25df2-bb48-4329-80b0-5808abf13fdc",
-   "issued_utc": "2026-09-26T17:20:00+00:00",
-   "url": "https://api.weather.gov/products/4ed25df2-bb48-4329-80b0-5808abf13fdc",
+   "id": "f1d2355b-484b-4f1a-a52f-f000faf4a976",
+   "issued_utc": "2026-09-26T18:31:00+00:00",
+   "url": "https://api.weather.gov/products/f1d2355b-484b-4f1a-a52f-f000faf4a976",
    "office": "LMK",
-   "fetched_utc": "2026-09-26T17:47:55Z",
-   "text": "\n000\nFXUS63 KLMK 261720\nAFDLMK\n\nArea Forecast Discussion\nNational Weather Service Louisville KY\n120 PM EDT Sat Sep 26 2026\n\n...Updated Aviation Discussion...\n\n.KEY MESSAGES...\n\n* Pleasant weather will continue through the weekend with highs in \n  the 70s.\n\n* A brief warmup will be seen early next week before the next \n  weather system arrives around mid-week.\n\n&&\n\n.SHORT TERM /THROUGH SUNDAY NIGHT/...\nIssued at 319 AM EDT Sat Sep 26 2026\n\nSaturday and Sunday\n\nSurface high pressure will persist over the area for the weekend, \nalong with northeastward flow. High temperatures will remain in the \nmid to upper 70s with nighttime lows in the mid 50s. Dry air near \nthe surface will keep dewpoints and humidity low. Mostly clear skies \nwill continue with lingering high level clouds. A lovely fall \nweekend ahead with the cooler temps and dry conditions.\n\n&&\n\n.LONG TERM /MONDAY THROUGH FRIDAY/...\nIssued at 319 AM EDT Sat Sep 26 2026\n\nMonday - Friday Night\n\nAs the high pressure begins to shift east of the Ohio Valley on \nTuesday, southerly flow will return. This will lead to increasing \ntemperatures back into the mid 80s by mid week. Moisture will also \nbegin to advect back into the area rising dewpoints back into the \n60s by Thursday. \n\nA shortwave disturbance is expected to move through the Great Lakes \nregion, while a low pressure system develops over the Plains. \nFrontal boundaries associated with both systems will bring precip \nchances back into the forecast Wednesday and Thursday. Rain showers \nwill likely move through the northern half of the area as the \nnorthern disturbance moves through. Additional rain showers are \nexpected to move across the area as the second boundary pushes \nthrough. This could linger into Friday night as the low pressure \nsystem begins to eject into the northern stream.\n\n&&\n\n.AVIATION /18Z TAFS THROUGH 00Z MONDAY/...\nIssued at 120 PM EDT Sat Sep 26 2026\n\nVFR conditions are expected to continue. High clouds will continue \nto stream over western Kentucky today and through the overnight. Dry \nconditions will help to prevent fog formation in the early morning. \nLight northeasterly winds will become calm to light overnight and \npick back up by mid-morning.\n\n&&\n\n.LMK WATCHES/WARNINGS/ADVISORIES...\nKY...None.\nIN...None.\n\n&&\n\n$$\n\nSHORT TERM...CAL\nLONG TERM...CAL\nAVIATION...SRW\n"
+   "fetched_utc": "2026-09-26T18:47:59Z",
+   "text": "\n000\nFXUS63 KLMK 261831\nAFDLMK\n\nArea Forecast Discussion\nNational Weather Service Louisville KY\n231 PM EDT Sat Sep 26 2026\n\n.KEY MESSAGES...\n\n* Pleasant and dry weather will continue through at least Tuesday \n  with highs in the mid to upper 70s and mostly clear skies.\n\n* Temperatures will begin to warm back into the 80s next week ahead \n  of rain chances returning mid to late week.\n\n&&\n\n.SHORT TERM /THROUGH MONDAY NIGHT/...\nIssued at 231 PM EDT Sat Sep 26 2026\n\nToday - Monday Night...\n\nThe lower Ohio Valley is being influenced by upper ridging and the \nnor'easter to the east. This has allowed cooler northeasterly flow \nto keep temperatures mild in the 70s today. This airmass is quite \ndry aloft, and coupled with ample mixing, is allowing for dry air to \nmix down to the surface. RH levels in the afternoon are crashing \ninto the upper 20% to mid 30% range and dew points are in the upper \n30s and low 40s. This type of set up is allowing for slightly \noverachieving temperatures and slightly breezy winds. These \nconditions are expected to continue each day through at least \nMonday. High clouds will stream over western Kentucky tonight, which \nwill prevent some cooling. Though wind protected valley areas in the \nBluegrass may dip into the low 40s Sunday morning.\n\n&&\n\n.LONG TERM /TUESDAY THROUGH FRIDAY/...\nIssued at 231 PM EDT Sat Sep 26 2026\n\nTuesday - Wednesday...\n\nOn Tuesday, surface high pressure will begin to shift east and \nsoutherly flow will return to the region. The remnant energy and \nmoisture from Hurricane Polo will get swept up by troughing swinging \nthrough the desert southwest. These features will slowly move east \nand deepen. This will cause ridging over the eastern CONUS to \namplify. Conditions will remain dry, though temperatures will \nincrease. Expecting to see temperatures in the upper 70s and low 80s \non Tuesday and mid-upper 80s on Wednesday. Dry air aloft and deep \nmixing (up to 800mb) may lead to dry air mix down and slightly \noverachieving temperatures and breezy winds. \n\nThere is higher confidence through Wednesday of dry conditions and \nwarming temperatures. Looking into ensembles and LREF clustering, \nthere is good agreement. \n\n\nWednesday Night - Friday Night...\n\nA shortwave is expected to move across the Great Lakes, while the \naforementioned western trough develops a surface low pressure over \nthe Plains. The front associated with the shortwave will stall over \nthe northern Ohio Valley and the low pressure in the Plains will \nbegin to ride that boundary northeast. Aloft, strong ridging over \nthe Southeast CONUS will battle for position over the approaching \ntrough. Given these features, precip chances will begin to increase \nlate Wednesday night/Thursday over the northwestern half of the \nregion. Precip chances will gradually increase to the southeast \ngoing into the weekend. Through Friday night, we are looking at \nabout 0.25 inches (SE areas) and up to 1 inch (NW areas). Over the \nweekend, we could see another 0.5-1 inch.\n\n&&\n\n.AVIATION /18Z TAFS THROUGH 00Z MONDAY/...\nIssued at 120 PM EDT Sat Sep 26 2026\n\nVFR conditions are expected to continue. High clouds will continue \nto stream over western Kentucky today and through the overnight. Dry \nconditions will help to prevent fog formation in the early morning. \nLight northeasterly winds will become calm to light overnight and \npick back up by mid-morning.\n\n&&\n\n.LMK WATCHES/WARNINGS/ADVISORIES...\nKY...None.\nIN...None.\n\n&&\n\n$$\n\nSHORT TERM...SRW\nLONG TERM...SRW\nAVIATION...SRW\n"
   },
   "MKX": {
    "id": "a7c68a85-49dc-4333-80ec-1adcde9e71e3",
