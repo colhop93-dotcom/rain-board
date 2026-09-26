@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-09-26T18:59:06.383817+00:00",
+ "checked_utc": "2026-09-26T19:04:06.402222+00:00",
  "files": [],
  "stations": {
   "KATL": {
@@ -56,7 +56,7 @@
     {
      "check": "forecast",
      "severity": "high",
-     "detail": "board headline 95% but weather.com, the settlement source, says 47%, a gap of 48 points"
+     "detail": "board headline 95% but weather.com, the settlement source, says 62%, a gap of 33 points"
     }
    ]
   },
@@ -81,19 +81,8 @@
    "discrepancies": []
   },
   "KMSP": {
-   "ok": false,
-   "discrepancies": [
-    {
-     "check": "forecast",
-     "severity": "med",
-     "detail": "board headline 90% but the board's OWN calibrated physics says 19%"
-    },
-    {
-     "check": "gauge",
-     "severity": "med",
-     "detail": "weather.com reports 0.06 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
-    }
-   ]
+   "ok": true,
+   "discrepancies": []
   },
   "KMKE": {
    "ok": true,
@@ -104,14 +93,8 @@
    "discrepancies": []
   },
   "KNYC": {
-   "ok": false,
-   "discrepancies": [
-    {
-     "check": "forecast",
-     "severity": "high",
-     "detail": "board headline 98% but weather.com, the settlement source, says 69%, a gap of 29 points"
-    }
-   ]
+   "ok": true,
+   "discrepancies": []
   },
   "KOKC": {
    "ok": false,
@@ -157,9 +140,9 @@
   }
  },
  "summary": {
-  "n_open": 7,
-  "n_stations_bad": 5,
-  "worst": "Newark: board headline 95% but weather.com, the settlement source, says 47%, a gap of 48 points",
+  "n_open": 4,
+  "n_stations_bad": 3,
+  "worst": "Newark: board headline 95% but weather.com, the settlement source, says 62%, a gap of 33 points",
   "files_stale": 0
  }
 }
