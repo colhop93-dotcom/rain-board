@@ -1,6 +1,6 @@
 {
  "schema": "019a.models/1",
- "generated_utc": "2026-09-26T18:29:54.059038+00:00",
+ "generated_utc": "2026-09-26T18:44:54.066795+00:00",
  "stations": {
   "KATL": {
    "day": "2026-09-26",
@@ -61,16 +61,60 @@
   },
   "KAUS": {
    "day": "2026-09-26",
-   "models": {},
-   "consensus": {
-    "median_pct": null,
-    "min_pct": null,
-    "max_pct": null,
-    "n_pct": 0,
-    "n_wet": 0,
-    "n_models": 0
+   "models": {
+    "ecmwf": {
+     "pct": 4,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "gfs": {
+     "pct": 1,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "icon": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "ukmo": {
+     "pct": 6,
+     "in": 0.004,
+     "wet": false,
+     "hours": 24
+    },
+    "gem": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "meteofrance": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "jma": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    }
    },
-   "error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
+   "consensus": {
+    "median_pct": 1,
+    "min_pct": 0,
+    "max_pct": 6,
+    "n_pct": 5,
+    "n_wet": 0,
+    "n_models": 7
+   },
+   "error": null,
+   "hours_in_day": 24
   },
   "KBOS": {
    "day": "2026-09-26",
@@ -83,7 +127,7 @@
     },
     "gfs": {
      "pct": 87,
-     "in": 0.543,
+     "in": 0.484,
      "wet": true,
      "hours": 24
     },
@@ -245,16 +289,60 @@
   },
   "KCMH": {
    "day": "2026-09-26",
-   "models": {},
-   "consensus": {
-    "median_pct": null,
-    "min_pct": null,
-    "max_pct": null,
-    "n_pct": 0,
-    "n_wet": 0,
-    "n_models": 0
+   "models": {
+    "ecmwf": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "gfs": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "icon": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "ukmo": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "gem": {
+     "pct": 0,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "meteofrance": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "jma": {
+     "pct": null,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    }
    },
-   "error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
+   "consensus": {
+    "median_pct": 0,
+    "min_pct": 0,
+    "max_pct": 0,
+    "n_pct": 5,
+    "n_wet": 0,
+    "n_models": 7
+   },
+   "error": null,
+   "hours_in_day": 24
   },
   "KDFW": {
    "day": "2026-09-26",
@@ -284,7 +372,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 6,
+     "pct": 0,
      "in": 0.0,
      "wet": false,
      "hours": 24
@@ -303,8 +391,8 @@
     }
    },
    "consensus": {
-    "median_pct": 3,
-    "min_pct": 1,
+    "median_pct": 1,
+    "min_pct": 0,
     "max_pct": 11,
     "n_pct": 5,
     "n_wet": 0,
@@ -324,7 +412,7 @@
     },
     "gfs": {
      "pct": 81,
-     "in": 0.244,
+     "in": 0.161,
      "wet": true,
      "hours": 24
     },
@@ -341,7 +429,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 38,
+     "pct": 84,
      "in": 0.169,
      "wet": true,
      "hours": 24
@@ -360,8 +448,8 @@
     }
    },
    "consensus": {
-    "median_pct": 80,
-    "min_pct": 38,
+    "median_pct": 81,
+    "min_pct": 72,
     "max_pct": 95,
     "n_pct": 5,
     "n_wet": 7,
@@ -438,7 +526,7 @@
     },
     "gfs": {
      "pct": 70,
-     "in": 0.315,
+     "in": 0.854,
      "wet": true,
      "hours": 24
     },
@@ -455,7 +543,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 95,
+     "pct": 100,
      "in": 0.272,
      "wet": true,
      "hours": 24
@@ -474,7 +562,7 @@
     }
    },
    "consensus": {
-    "median_pct": 98,
+    "median_pct": 100,
     "min_pct": 70,
     "max_pct": 100,
     "n_pct": 5,
@@ -512,7 +600,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 0,
+     "pct": 5,
      "in": 0.0,
      "wet": false,
      "hours": 24
@@ -531,7 +619,7 @@
     }
    },
    "consensus": {
-    "median_pct": 1,
+    "median_pct": 5,
     "min_pct": 0,
     "max_pct": 35,
     "n_pct": 5,
@@ -683,7 +771,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 5,
+     "pct": 0,
      "in": 0.0,
      "wet": false,
      "hours": 24
@@ -704,7 +792,7 @@
    "consensus": {
     "median_pct": 0,
     "min_pct": 0,
-    "max_pct": 5,
+    "max_pct": 1,
     "n_pct": 5,
     "n_wet": 0,
     "n_models": 7
@@ -797,7 +885,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 85,
+     "pct": 90,
      "in": 0.201,
      "wet": true,
      "hours": 24
@@ -816,7 +904,7 @@
     }
    },
    "consensus": {
-    "median_pct": 85,
+    "median_pct": 90,
     "min_pct": 50,
     "max_pct": 100,
     "n_pct": 5,
@@ -942,16 +1030,60 @@
   },
   "KNYC": {
    "day": "2026-09-26",
-   "models": {},
-   "consensus": {
-    "median_pct": null,
-    "min_pct": null,
-    "max_pct": null,
-    "n_pct": 0,
-    "n_wet": 0,
-    "n_models": 0
+   "models": {
+    "ecmwf": {
+     "pct": 98,
+     "in": 0.516,
+     "wet": true,
+     "hours": 24
+    },
+    "gfs": {
+     "pct": 76,
+     "in": 0.98,
+     "wet": true,
+     "hours": 24
+    },
+    "icon": {
+     "pct": 100,
+     "in": 1.386,
+     "wet": true,
+     "hours": 24
+    },
+    "ukmo": {
+     "pct": 100,
+     "in": 0.984,
+     "wet": true,
+     "hours": 24
+    },
+    "gem": {
+     "pct": 95,
+     "in": 0.409,
+     "wet": true,
+     "hours": 24
+    },
+    "meteofrance": {
+     "pct": null,
+     "in": 0.516,
+     "wet": true,
+     "hours": 24
+    },
+    "jma": {
+     "pct": null,
+     "in": 1.197,
+     "wet": true,
+     "hours": 24
+    }
    },
-   "error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
+   "consensus": {
+    "median_pct": 98,
+    "min_pct": 76,
+    "max_pct": 100,
+    "n_pct": 5,
+    "n_wet": 7,
+    "n_models": 7
+   },
+   "error": null,
+   "hours_in_day": 24
   },
   "KOKC": {
    "day": "2026-09-26",
@@ -981,7 +1113,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 43,
+     "pct": 57,
      "in": 0.157,
      "wet": true,
      "hours": 24
@@ -1000,9 +1132,9 @@
     }
    },
    "consensus": {
-    "median_pct": 43,
+    "median_pct": 44,
     "min_pct": 17,
-    "max_pct": 50,
+    "max_pct": 57,
     "n_pct": 5,
     "n_wet": 6,
     "n_models": 7
@@ -1021,7 +1153,7 @@
     },
     "gfs": {
      "pct": 80,
-     "in": 0.618,
+     "in": 0.571,
      "wet": true,
      "hours": 24
     },
@@ -1038,7 +1170,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 96,
+     "pct": 95,
      "in": 0.626,
      "wet": true,
      "hours": 24
@@ -1057,7 +1189,7 @@
     }
    },
    "consensus": {
-    "median_pct": 96,
+    "median_pct": 95,
     "min_pct": 80,
     "max_pct": 100,
     "n_pct": 5,
@@ -1192,7 +1324,7 @@
     },
     "gfs": {
      "pct": 88,
-     "in": 0.362,
+     "in": 0.421,
      "wet": true,
      "hours": 24
     },
@@ -1420,7 +1552,7 @@
     },
     "gfs": {
      "pct": 89,
-     "in": 0.26,
+     "in": 0.39,
      "wet": true,
      "hours": 24
     },
@@ -1437,7 +1569,7 @@
      "hours": 24
     },
     "gem": {
-     "pct": 95,
+     "pct": 90,
      "in": 0.528,
      "wet": true,
      "hours": 24
