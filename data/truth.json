@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-09-26T18:49:06.363527+00:00",
+ "checked_utc": "2026-09-26T18:54:06.370944+00:00",
  "files": [],
  "stations": {
   "KATL": {
@@ -42,7 +42,7 @@
     {
      "check": "gauge",
      "severity": "med",
-     "detail": "weather.com reports 0.11 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
+     "detail": "weather.com reports 0.13 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
     }
    ]
   },
@@ -91,7 +91,7 @@
     {
      "check": "gauge",
      "severity": "med",
-     "detail": "weather.com reports 0.04 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
+     "detail": "weather.com reports 0.05 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
     }
    ]
   },
@@ -152,19 +152,13 @@
    "discrepancies": []
   },
   "KTTN": {
-   "ok": false,
-   "discrepancies": [
-    {
-     "check": "forecast",
-     "severity": "high",
-     "detail": "board headline 89% but weather.com, the settlement source, says 41%, a gap of 48 points"
-    }
-   ]
+   "ok": true,
+   "discrepancies": []
   }
  },
  "summary": {
-  "n_open": 8,
-  "n_stations_bad": 6,
+  "n_open": 7,
+  "n_stations_bad": 5,
   "worst": "Newark: board headline 95% but weather.com, the settlement source, says 47%, a gap of 48 points",
   "files_stale": 0
  }
