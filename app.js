@@ -706,9 +706,10 @@
     var ca = candidates ? ageMin(candidates.generated_utc) : null, fresh = ca !== null && ca >= 0 && ca <= 5;
     var val = fresh ? (candidates.candidates || []).filter(candUsable) : null;
     function list(a) { return a.length ? esc(a.join(', ')) : 'none'; }
-    return '<b>Today at a glance</b>'
-      + '<span class="g"><b>already rained, YES expected:</b> ' + list(rained) + '</span>'
-      + '<span class="g"><b>raining now at an open gauge:</b> ' + list(wet) + '</span>'
+    // layout A (2026-09-25): this card opens the call band (the glance, the v3 value rows, the alerts), so its title is the band's
+    return '<b class="call-head" role="heading" aria-level="2">The call</b>'
+      + '<span class="g"><b>Already rained, YES expected:</b> ' + list(rained) + '</span>'
+      + '<span class="g"><b>Raining now at an open gauge:</b> ' + list(wet) + '</span>'
       + '<span class="g"><b>Value if v3 is right:</b> ' + (val === null ? '<b class="stale">prices not fresh</b>' : !val.length ? 'none' : 'first of ' + val.length + ': ' + esc(val[0].city) + ' ' + esc(val[0].side) + ' at ' + cents(val[0][val[0].side].executable.avg) + ' (' + (val.length - 1) + ' others below)') + '</span>';
   }
   /* Tomorrow (Colin, 2026-09-18): "I want a section for the next day's forecast", then "there is a
@@ -1129,7 +1130,7 @@
     var d = deskAlerts, sh, bh, hh;
     if (!d || !Array.isArray(d.pages) || !Array.isArray(d.health)) {
       hh = "";
-      sh = '<b>Alerts mirror not written yet, or this copy could not load it.</b><span>open</span>';
+      sh = '<b>Alerts mirror not written yet, or this copy could not load it.</b>';   // Expand / Collapse is the summary's own ::after (style.css)
       bh = '<p class="al-counts">Alerts mirror not written yet, or this copy could not load it.</p>';
     } else {
       var gen = Date.parse(String(d.generated_utc || "")), elapsed = isNaN(gen) ? 0 : Math.max(0, (Date.now() - gen) / 1000);
@@ -1138,7 +1139,7 @@
         + d.health.map(function (h) { return alChip(h, elapsed, ON_MIRROR && !mirrorStale); }).join("");
       var pages = d.pages, c = d.counts_24h || {}, first = pages[0];
       sh = '<b>' + esc(c.sent === undefined ? pages.length : c.sent) + ' page' + ((c.sent === undefined ? pages.length : c.sent) === 1 ? '' : 's') + ' in 24 h'
-        + (first ? ', last ' + esc(alWhen(first.ts_ct)) : ', none yet') + '</b><span>open</span>';
+        + (first ? ', last ' + esc(alWhen(first.ts_ct)) : ', none yet') + '</b>';
       var shown = 12, rest = Math.max(0, pages.length - shown);
       bh = (deskAlertsFail ? '<p class="al-counts al-fail">Refresh failed at ' + esc(ctFromMs(deskAlertsFail)) + '; this is the last good copy, and its ages keep growing.</p>' : '')
         + '<ul class="al-list' + (deskAlertsShowAll ? ' al-all' : '') + '">' + pages.map(function (p, i) {
@@ -1373,12 +1374,15 @@
     // its frozen "quote 2 s old". Past the refresh allowance the whole list is refused, not decorated.
     if (age === null || age < 0 || age > 5) return head + '<b class="stale">candidates.json is ' + (age === null ? 'undated' : age + ' m old') + ' (writer stopped?); nothing is priced until it refreshes.</b></small></div>';
     var priced = alertsPricedTxt();
-    head += 'priced ' + agoTxt(candidates.generated_utc) + ' for ' + candidates.qty + ' contracts, taker fees, ' + (bk === "LIVE" ? 'websocket book' : 'collector quotes only (book feed ' + esc(bk || 'off') + ')') + '. NO range 0 to 10%, YES range 90 to 100%. A row needs a fresh quote, a positive net after fees for the full quantity, and no sky conflict.</small></div>'
-      + (priced ? '<div class="grp alerts-priced"><small><b>' + esc(priced) + '</b></small></div>' : '');
+    head += 'priced ' + agoTxt(candidates.generated_utc) + ' for ' + candidates.qty + ' contracts, taker fees, ' + (bk === "LIVE" ? 'websocket book' : 'collector quotes only (book feed ' + esc(bk || 'off') + ')') + '. NO range 0 to 10%, YES range 90 to 100%. A row needs a fresh quote, a positive net after fees for the full quantity, and no sky conflict.</small></div>';
     var idw = candIdentityWord();
     if (idw) return head + '<div class="grp"><b class="stale">' + esc(idw) + '</b><small> ' + rows.length + ' priced row' + (rows.length === 1 ? '' : 's') + ' and the in-range list are withheld, without their numbers, until the v3 feed identifies itself.</small></div>';
     var shown = rows.filter(candUsable), withheld = rows.filter(function (c) { return !candUsable(c); });
-    var body = shown.length ? shown.map(valueRow).join("") : '<div class="grp"><small>nothing clears value right now' + (candidates.reason ? ' <b class="stale">(' + esc(candidates.reason) + ')</b>' : '') + '</small></div>';
+    /* layout A (2026-09-25): the band's answer outranks its method. "nothing clears value right now" is the state, so it is
+       set at body size in runway white (it was the smallest, dimmest line under the method paragraph); the pricing note
+       follows the rows it describes, muted when it only says v3 priced everything (design critic on 661e587) */
+    var body = shown.length ? shown.map(valueRow).join("") : '<div class="grp v3-none">nothing clears value right now' + (candidates.reason ? ' <b class="stale">(' + esc(candidates.reason) + ')</b>' : '') + '</div>';
+    if (priced) body += '<div class="grp alerts-priced' + (priced === "alerts: priced by v3" ? ' plain' : '') + '"><small><b>' + esc(priced) + '</b></small></div>';
     if (withheld.length) body += '<details class="grp withheld-details"><summary>Withheld after newer evidence (' + withheld.length + ')</summary><small>' + withheld.map(function (c) { return esc(c.city) + ' (' + esc(candWithheldWord(c)) + ')'; }).join(' &middot; ') + '</small></details>';
     var blocked = (candidates.stations || []).filter(function (x) { return candUsable(x) && !x.side && x.p_yes_pct !== null && x.p_yes_pct !== undefined && (x.p_yes_pct <= 10 || x.p_yes_pct >= 90); });
     var blockedWithheld = (candidates.stations || []).filter(function (x) { return !candUsable(x) && !x.side && x.p_yes_pct !== null && x.p_yes_pct !== undefined; });
@@ -1440,11 +1444,11 @@
     }
     var feedTxt = physStale() ? '<b class="stale">' + esc(physStale()) + '</b>' : (physics ? 'v3 ' + physAgoTxt() : '<b class="stale">v3 unavailable: feed missing</b>');
     return '<div class="sechead"><b>What v3 says today</b><small>' + feedTxt + ', newest selected quote ' + agoTxt(stations().map(function (s) { var q = marketQuoteDetails(s.market, "ask"); return q && q.fetched_utc; }).filter(Boolean).sort().pop()) + '; live book up to 2 min, snapshots up to 15 min</small></div>'
-      + '<div class="grp"><small><b>LOW MODELLED PROBABILITY</b> (0 to 10%, NO candidates' + (rl ? '; on unseen dates this bucket rained ' + rl.actual_pct + '% of the time, n=' + rl.n : '; this bucket: unmeasured on this fit') + '). The chip is the SKY, the number is the MODEL; a flagged chip is a conflict to read before anything else.</small>' + (lo.length ? '<div class="model-chips">' + lo.map(function (x) { return chip(x); }).join("") + '</div>' : '<small>none</small>') + '</div>'
-      + '<div class="grp"><small><b>HIGH MODELLED PROBABILITY</b> (90 to 100%, YES candidates' + (r9 ? '; 90s settled YES ' + r9.actual_pct + '% at n=' + r9.n + (r9.n < 20 ? ', thin' : '') : '; 90 and up: unmeasured on this fit') + ')</small>' + (hi.length ? '<div class="model-chips">' + hi.map(function (x) { return chip(x); }).join("") + '</div>' : '<small>none right now</small>') + '</div>'
+      + '<div class="grp"><small><b>Low modelled probability</b> (0 to 10%, NO candidates' + (rl ? '; on unseen dates this bucket rained ' + rl.actual_pct + '% of the time, n=' + rl.n : '; this bucket: unmeasured on this fit') + '). The chip is the SKY, the number is the MODEL; a flagged chip is a conflict to read before anything else.</small>' + (lo.length ? '<div class="model-chips">' + lo.map(function (x) { return chip(x); }).join("") + '</div>' : '<small>none</small>') + '</div>'
+      + '<div class="grp"><small><b>High modelled probability</b> (90 to 100%, YES candidates' + (r9 ? '; 90s settled YES ' + r9.actual_pct + '% at n=' + r9.n + (r9.n < 20 ? ', thin' : '') : '; 90 and up: unmeasured on this fit') + ')</small>' + (hi.length ? '<div class="model-chips">' + hi.map(function (x) { return chip(x); }).join("") + '</div>' : '<small>none right now</small>') + '</div>'
 
       + '<details class="grp market-details"><summary>Market differs from v3 by 15+ points (' + dis.length + ')</summary>' + (dis.length ? dis.map(gapRow).join("") : '<small>no gap of 15 points anywhere</small>') + '</details>'
-      + '<div class="grp"><small><b>IN BETWEEN</b> (11 to 89%, neither probability range): ' + (mid.length ? mid.sort(function (a, b) { return b.pct - a.pct; }).map(function (x) { return '<span data-icao="' + x.s.icao + '" style="cursor:pointer">' + esc(x.s.city) + ' v3 ' + pct(x.pct) + ' ' + esc(v3Rec(x.pct, x.s)) + '</span>'; }).join(', ') : 'none') + '</small></div>';
+      + '<div class="grp"><small><b>In between</b> (11 to 89%, neither probability range): ' + (mid.length ? mid.sort(function (a, b) { return b.pct - a.pct; }).map(function (x) { return '<span data-icao="' + x.s.icao + '" style="cursor:pointer">' + esc(x.s.city) + ' v3 ' + pct(x.pct) + ' ' + esc(v3Rec(x.pct, x.s)) + '</span>'; }).join(', ') : 'none') + '</small></div>';
   }
 
   /* 3. the queue */
@@ -1457,13 +1461,18 @@
   }
   function priceHTML(s) {
     var m = s.market || {};
-    return '<div class="price num">YES ask ' + quoteCents(marketQuote(m, "ask")) + '<small>bid ' + quoteCents(marketQuote(m, "bid")) + '</small><small>' + quoteFreshness(m) + '</small></div>';
+    return '<div class="price num">YES ask ' + quoteCents(marketQuote(m, "ask")) + '<small>bid ' + quoteCents(marketQuote(m, "bid")) + '</small></div>';
   }
+  /* layout A (2026-09-25), a departures-board line: the code and the price on top, the state plaque beside the bid, then
+     ONE left-aligned line with the quote's freshness and the minutes left (both kept word for word). The freshness
+     used to sit inside the price block as right-aligned prose over two or three lines, which made every row 23 %
+     taller than before A (design critic on 661e587). */
   function rowHTML(s, w, extra) {
     var g = gaugeTxt(s), a = obAge(s), p = isLocked(s) ? null : physPct(s);
     return '<div class="row' + (w.overdue ? ' ovl' : '') + (s.icao === liveSel ? ' sel' : '') + '" data-icao="' + s.icao + '">'
-      + '<div><div class="city">' + esc(s.city) + '<small>' + s.icao + '</small></div>' + stateChip(w) + (!isLocked(s) ? '<small>' + remainingWord(s) + '</small>' : '') + '</div>'
+      + '<div><div class="city">' + esc(s.city) + '<small>' + s.icao + '</small></div>' + stateChip(w) + '</div>'
       + '<div class="right">' + priceHTML(s) + '</div>'
+      + '<div class="qline"><small class="qfresh">' + quoteFreshness(s.market || {}) + '</small>' + (!isLocked(s) ? '<small class="qleft">' + remainingWord(s) + '</small>' : '') + '</div>'
       + '<div class="line gauge">Gauge <b>' + g + '</b>' + (a !== null ? ' (' + a + ' min)' : '') + '</div>'
       + '<div class="line timing">' + (isLocked(s) ? 'YES expected; official result pending' : 'Will it rain: ' + (p !== null ? 'v3 <b>' + pct(p) + '</b>' + v3Tag(p, s) : '<b class="stale">' + esc(physWord(s) || 'v3 unavailable') + '</b>') + '. Next: ' + esc(timingPhrase(s, w))) + '</div>'
       + (extra || '') + '</div>';
@@ -1478,7 +1487,9 @@
     var counts = { ALL: S.length, WET: S.filter(function (s) { var k = wetState(s).k; return k === "WET_NOW" || k === "WET_IMMINENT" || k === "LOCKED"; }).length,
       OVERDUE: S.filter(function (s) { var w = wetState(s); return w.overdue || w.k === "OVERDUE"; }).length,
       NEXT3H: S.filter(function (s) { var e = nextEvent(s); return e && e.ms - Date.now() <= 3 * 3600000 && !isLocked(s); }).length };
-    $("queue-filters").innerHTML = ["ALL", "WET", "NEXT3H", "OVERDUE"].map(function (k) { return '<button data-f="' + k + '" class="' + (queueFilter === k ? "on" : "") + '">' + (k === "NEXT3H" ? "DUE 3 H" : k) + ' ' + counts[k] + '</button>'; }).join("");
+    // layout A (2026-09-25): sentence case with the count in bold ("DUE 3 H 7" read as one number, critic on 661e587)
+    var FW = { ALL: "All", WET: "Wet", NEXT3H: "Due in 3 h", OVERDUE: "Overdue" };
+    $("queue-filters").innerHTML = ["ALL", "WET", "NEXT3H", "OVERDUE"].map(function (k) { return '<button data-f="' + k + '" class="' + (queueFilter === k ? "on" : "") + '">' + FW[k] + ' <b class="num">' + counts[k] + '</b></button>'; }).join("");
     $("queue-filters").querySelectorAll("button").forEach(function (b) { b.onclick = function () { queueFilter = b.dataset.f; localStorage.setItem("rb.filter", queueFilter); renderQueue(); }; });
     var rows = S.filter(function (s) { var w = wetState(s), e = nextEvent(s); if (queueFilter === "WET") return w.k === "WET_NOW" || w.k === "WET_IMMINENT" || w.k === "LOCKED"; if (queueFilter === "OVERDUE") return w.overdue || w.k === "OVERDUE"; if (queueFilter === "NEXT3H") return e && e.ms - Date.now() <= 3 * 3600000 && !isLocked(s); return true; });
     var recorded = rows.filter(isLocked), open = rows.filter(function (s) { return !isLocked(s); });
@@ -1876,6 +1887,9 @@
     var m = new maplibregl.Map(Object.assign({ container: id, attributionControl: false, cooperativeGestures: matchMedia("(pointer: coarse)").matches, style: style }, opts));
     m.addControl(new maplibregl.AttributionControl({ compact: true }), "top-right");
     m.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    // the (i) opens the attribution over the map's top: the warnings key moves under it at once, not at the next pan
+    var ab = m.getContainer().querySelector(".maplibregl-ctrl-attrib-button"), wk = id === "map-live" ? "live" : "airport";
+    if (ab) ab.addEventListener("click", function () { requestAnimationFrame(function () { if (m.getContainer().querySelector(".warnkey")) warnKey(wk); }); });
     m.on("styleimagemissing", function (e) { var c = document.createElement("canvas"); c.width = c.height = 2; m.addImage(e.id, c.getContext("2d").getImageData(0, 0, 2, 2)); });
     /* a forecast tile that fails or arrives is counted: the key and the control only say an hour is drawn once one of
        its tiles has come in, and a failed one sends the board back to the service's time list at once */
@@ -2023,11 +2037,12 @@
   }
   function radarCtl(mapKey) {
     var R = maps[mapKey + "R"], el = $("ctl-" + mapKey);
-    el.innerHTML = '<div class="prodsel" role="group" aria-label="what the radar picture shows"><button data-p="refl">reflectivity</button><button data-p="daa">1-hour rain</button><button data-p="dta">storm total</button><button data-p="fcst">forecast</button><button data-more class="more" aria-expanded="false">more</button></div>'
+    // layout A (2026-09-25): the valid time and its source come first, the picture choice and play after; reading order is visual order
+    el.innerHTML = '<span class="ft">radar loading</span><span class="src"></span>'
+      + '<div class="prodsel" role="group" aria-label="what the radar picture shows"><button data-p="refl">reflectivity</button><button data-p="daa">1-hour rain</button><button data-p="dta">storm total</button><button data-p="fcst">forecast</button><button data-more class="more" aria-expanded="false">more</button></div>'
       + '<div class="prodsel prodmore" role="group" aria-label="more radar pictures"><button data-p2="eet">echo tops</button><button data-p2="vel">velocity</button></div>'
       + '<button data-a="play">play</button><button data-a="live" class="on">LIVE</button><button data-a="prev">&#9664;</button><button data-a="next">&#9654;</button>'
-      + '<div class="scrubwrap"><input type="range" min="0" max="0" value="0" aria-label="radar frame"><div class="zones"><span>24 H OBSERVED</span><span>NOW</span><span class="fczone">HRRR FORECAST</span></div></div>'
-      + '<span class="ft">radar loading</span><span class="src"></span>';
+      + '<div class="scrubwrap"><input type="range" min="0" max="0" value="0" aria-label="radar frame"><div class="zones"><span>24 h observed</span><span>Now</span><span class="fczone">HRRR forecast</span></div></div>';
     var scrub = el.querySelector("input"), play = el.querySelector('[data-a="play"]');
     function stop() { R.playing = false; clearTimeout(R.playT); play.textContent = "play"; }
     play.onclick = function () { R.playing = !R.playing; play.textContent = R.playing ? "pause" : "play"; if (R.playing) anim(mapKey); else clearTimeout(R.playT); };
@@ -2038,6 +2053,10 @@
     // data-p2: the second tier, a separate mark so "[data-p]" stays the four first-tier choices
     el.querySelectorAll("[data-p], [data-p2]").forEach(function (b) { b.onclick = function () { setRadarProd(b.dataset.p || b.dataset.p2); }; });
     el.querySelector("[data-more]").onclick = function () { moreOpen = !moreOpen; ["live", "airport"].forEach(function (k) { moreButtons($("ctl-" + k)); }); };
+    /* the stored choice's mode at once, the same two toggles as show() and applyRadarProd(): show() waits for a loading
+       style, 1 to 3 s on a slow phone, and until then a remembered rain picture showed the scrubber and play buttons
+       (jules on c0de59d; the same on main) */
+    el.classList.toggle("prodmode", radarProd !== "refl"); el.classList.toggle("fcmode", radarProd === "fcst");
     prodButtons(el);
   }
   function setupRadar(mapKey) {
@@ -2059,8 +2078,9 @@
     var split = R.frames.length > 1 ? (100 * R.nowIdx / (R.frames.length - 1)).toFixed(1) + "%" : "100%";
     scrub.style.background = "linear-gradient(90deg, #1f2a44 0%, #1f2a44 " + split + ", rgba(251,191,36,.35) " + split + ", rgba(251,191,36,.35) 100%)";
     var last = R.frames[R.frames.length - 1], zone = el.querySelector(".fczone");
-    if (zone) zone.textContent = last && last.kind === "fc" ? "HRRR FORECAST " + Math.round((last.ms - now) / 3600000) + " H"
-      : hrrrRun.err || hrrrRun.frames ? "FORECAST UNAVAILABLE" : "FORECAST LOADING";
+    // layout A (2026-09-25): sentence case, like every label on the page; the radar clock keeps its capitals (LIVE, OBSERVED)
+    if (zone) zone.textContent = last && last.kind === "fc" ? "HRRR forecast " + Math.round((last.ms - now) / 3600000) + " h"
+      : hrrrRun.err || hrrrRun.frames ? "forecast unavailable" : "forecast loading";
     show(mapKey, R.idx);
   }
   function ensure(mapKey, i) {
@@ -2078,6 +2098,26 @@
   function offsetText(ms) {
     var lead = Math.round((ms - Date.now()) / 60000), a = Math.abs(lead);
     return (lead < 0 ? "-" : "+") + (a >= 60 ? Math.floor(a / 60) + " h " + (a % 60) + " m" : a + " m");
+  }
+  /* layout A (2026-09-25): the radar's valid time is the page's one loud line, so the time and its age are two spans
+     ("LIVE 9:12 AM CT" large, "(1 min ago)" beside it). The words are exactly frameText's: textContent is the same
+     string, only the part from the first " (" on is its own span. Rebuilt only when the words change. The clock time
+     that ends the large part ("12:54 AM CT", or "Thu 1:00 AM CT") is one unbreakable span, so a long product word
+     wraps before the time and "CT" never sits alone on a line (phone QA on 661e587). */
+  function setFt(ft, text) {
+    if (ft.textContent === text) return;
+    var i = text.indexOf(" (");
+    if (i <= 0) { ft.textContent = text; return; }
+    var t = document.createElement("span"), a = document.createElement("span"), head = text.slice(0, i);
+    var c = /(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) )?\d{1,2}:\d{2} [AP]M CT$/.exec(head);
+    t.className = "ft-t";
+    if (c) {
+      var clock = document.createElement("span"); clock.className = "ft-clock"; clock.textContent = c[0];
+      if (c.index) t.append(document.createTextNode(head.slice(0, c.index)));
+      t.append(clock);
+    } else t.textContent = head;
+    a.className = "ft-age"; a.textContent = text.slice(i + 1);
+    ft.replaceChildren(t, document.createTextNode(" "), a);
   }
   function frameText(f) {
     if (f.kind === "fc") return "FORECAST " + ctDay(f.ms) + " (" + offsetText(f.ms) + "), " + f.src;
@@ -2109,7 +2149,7 @@
     else if (refl) {
       var old = f.kind === "live" && f.scan && Date.now() - f.ms > 20 * 60000;
       ft.className = "ft" + (f.kind === "fc" ? " fc" : "") + (old ? " stale" : "");
-      ft.textContent = frameText(f);
+      setFt(ft, frameText(f));
       el.querySelector(".src").textContent = f.src + (f.kind === "live" ? ", 2-minute mosaic" : "");
     } else if (T2[radarProd]) t2CtlText(mapKey);
     else rainCtlText(mapKey);
@@ -2345,9 +2385,9 @@
     if (!ft || !src) return;
     var ok = P && P.state === "ok", a = ok ? rainAge(P.img) : null;
     ft.className = "ft" + ((P && P.state === "failed") || (a && a.stale) ? " stale" : "");
-    ft.textContent = !P || P.state === "idle" || P.state === "loading" ? word + " loading"
+    setFt(ft, !P || P.state === "idle" || P.state === "loading" ? word + " loading"
       : !ok ? word + " unavailable, nothing drawn (" + P.err + ")"
-      : word + (a ? " made " + ctFromMs(P.img.lastMod) + " (" + a.txt + (a.stale ? ", stale" : "") + ")" : ", time unknown");
+      : word + (a ? " made " + ctFromMs(P.img.lastMod) + " (" + a.txt + (a.stale ? ", stale" : "") + ")" : ", time unknown"));
     src.textContent = R.name + ", latest image: " + R.what + "; the scrubber is for reflectivity";
   }
   function rainLegend(el, key, opacity) {
@@ -2588,7 +2628,7 @@
       src.textContent = x.id ? x.id + " single radar, storm-relative velocity (IEM N0S), latest scan" : "one radar's velocity, drawn around a picked gauge";
     }
     ft.className = "ft" + (bad ? " stale" : "");
-    ft.textContent = txt;
+    setFt(ft, txt);
   }
   function eetLegend(el, key, opacity) {
     var drawn = key === "EET", op = Math.round(100 * (opacity || 0.82));
@@ -2817,7 +2857,7 @@
     el.insertAdjacentHTML("beforeend", '<div class="fcbar"><div class="prodsel fcsel" role="group" aria-label="which forecast">'
       + FC_ORDER.map(function (k) { return '<button data-fc="' + k + '">' + FC_FIELDS[k].word + '</button>'; }).join("") + '</div>'
       + '<button data-fa="play">play</button><div class="fcscrub"><input type="range" min="0" max="0" value="0" aria-label="forecast time">'
-      + '<div class="zones"><span>NOW</span><span class="fcend">+72 H</span></div></div></div>');
+      + '<div class="zones"><span>Now</span><span class="fcend">+72 h</span></div></div></div>');
     el.querySelectorAll("[data-fc]").forEach(function (b) { b.onclick = function () { setFcField(b.dataset.fc); }; });
     el.querySelector('[data-fa="play"]').onclick = function () { fcPlay(!fc.playing); };
     el.querySelector(".fcscrub input").oninput = function () { fcPlay(false); var t = fcTimes()[+this.value]; if (t) { fc.t = fcMoment(t); applyFc(); } };
@@ -2838,7 +2878,7 @@
     el.querySelector(".src").textContent = "NWS forecast grids (NDFD), issue time not published"
       + (F.arrows && cur && !arrowsAt(cur.t.ms) ? "; wind arrows unavailable for this hour" : "");
     rg.max = String(cur ? cur.list.length - 1 : 0); rg.value = String(cur ? cur.i : 0); rg.disabled = !cur;
-    el.querySelector(".fcend").textContent = cur ? "+" + Math.round((cur.list[cur.list.length - 1].ms - Date.now()) / 3600000) + " H" : "+72 H";
+    el.querySelector(".fcend").textContent = cur ? "+" + Math.round((cur.list[cur.list.length - 1].ms - Date.now()) / 3600000) + " h" : "+72 h";
   }
   function rgbaOf(hex, o) { return "rgba(" + [1, 3, 5].map(function (i) { return parseInt(hex.substr(i, 2), 16); }).join(", ") + ", " + o + ")"; }
   function fcBadWhy(B) { return B.state === "checking" ? "this hour is no longer offered by the NWS service" : "the NWS service did not draw this hour"; }
@@ -3245,6 +3285,19 @@
     registerRainProtocol(); registerSmoothProtocol();
     maps.live = makeMap("map-live", baseStyle(basemap), { center: [-96.9, 38.4], zoom: 3.5, minZoom: 1.8, maxZoom: 13 });
     maps.live.on("load", function () { setupRadar("live"); renderMarkers(); if (!restoreView()) fitAll(false); if (camsOnMap) loadNatCams(); ensureNatCams(maps.live); warnMapReady(maps.live, "live"); });
+    /* layout A (2026-09-25): on a phone this map is the page's full-bleed picture, and MapLibre's attribution opens by
+       itself as a two or three line box over its top until the first drag; with the warnings key under it that was a
+       quarter of the map on the first screen (critics on 661e587). There it starts folded to its (i) button, as it
+       already folds under a camera popup or a city card; one tap on (i) shows the credit and the key moves under it. */
+    if (matchMedia("(max-width: 899px)").matches) {
+      var foldAttrib = function () {
+        if (!maps.live.getContainer().querySelector(".maplibregl-ctrl-attrib.maplibregl-compact-show")) return;
+        collapseAttrib(maps.live);
+        ["styledata", "sourcedata", "idle"].forEach(function (ev) { maps.live.off(ev, foldAttrib); });
+        if (maps.live.getContainer().querySelector(".warnkey")) warnKey("live");
+      };
+      ["styledata", "sourcedata", "idle"].forEach(function (ev) { maps.live.on(ev, foldAttrib); });
+    }
     bindNatCams(maps.live);
     window.addEventListener("resize", function () { if (maps.live && !liveSel) fitAll(false); });
     document.addEventListener("board:layout", function () {
@@ -4174,21 +4227,32 @@
     textSize(this.value);
     try { localStorage.setItem('rb.type.v1', this.value); } catch (_) { /* Current choice still applies. */ }
   };
-  function theme() { var light = localStorage.getItem("rb.theme") === "light"; document.body.classList.toggle("light", light); $("theme").textContent = light ? "dark" : "light"; }
+  /* the theme rides on the root too (layout A fix, 2026-09-25): the root paints the canvas past the body's first screen,
+     and the phone's browser bar follows the page (theme-color) */
+  function theme() {
+    var light = localStorage.getItem("rb.theme") === "light";
+    document.body.classList.toggle("light", light); document.documentElement.classList.toggle("light", light);
+    var tc = document.querySelector('meta[name="theme-color"]'); if (tc) tc.setAttribute("content", light ? "#F2F4F6" : "#12181E");
+    $("theme").textContent = light ? "dark" : "light";
+  }
   $("theme").onclick = function () { var light = !document.body.classList.contains("light"); localStorage.setItem("rb.theme", light ? "light" : "dark"); theme(); };
   theme();
   // 2026-09-19, Colin: "top of the page is covered by something". The jump bar was pinned at a fixed
   // 54 px, the header's height at one width and zoom; when the header grew (a longer freshness pill,
   // a wider zoom) it slid over the bar. The bar and the anchors now follow the header's REAL height.
+  /* layout A (2026-09-25): on a phone only the header stays pinned (the feed pills and find, the whole page long); the
+     two-row jump bar scrolls with the page, so it counts 0 in the offsets the anchors and the find box use. The stale
+     banner's height is measured too: the map gives it back, so the radar clock stays on the first screen under it. */
   (function pinUnderHeader() {
-    var top = $("top"), jump = $("jump"), root = document.documentElement;
+    var top = $("top"), jump = $("jump"), banner = $("stale-banner"), root = document.documentElement;
     if (!top || !jump) return;
     function measure() {
       root.style.setProperty("--top-h", Math.ceil(top.getBoundingClientRect().height) + "px");
-      root.style.setProperty("--jump-h", Math.ceil(jump.getBoundingClientRect().height) + "px");
+      root.style.setProperty("--jump-h", (getComputedStyle(jump).position === "sticky" ? Math.ceil(jump.getBoundingClientRect().height) : 0) + "px");
+      root.style.setProperty("--banner-h", (banner ? Math.ceil(banner.getBoundingClientRect().height) : 0) + "px");
     }
     measure();
-    if (typeof ResizeObserver !== "undefined") { var ro = new ResizeObserver(measure); ro.observe(top); ro.observe(jump); }
+    if (typeof ResizeObserver !== "undefined") { var ro = new ResizeObserver(measure); ro.observe(top); ro.observe(jump); if (banner) ro.observe(banner); }
     window.addEventListener("resize", measure);
   })();
   /* ---------------- find a city ----------------
@@ -4233,9 +4297,18 @@
         + '<span class="r num"><i>' + STATES[w.k].icon + '</i> ' + esc(gaugeAmt(s)) + ' &middot; YES ' + esc(quoteCents(marketYes(s))) + '</span></button>';
     }).join("");
   }
+  /* layout A (2026-09-25): on a phone the jump bar scrolls with the page, so the box sits right under whichever of the
+     header and the bar is lower on screen now: under the bar at the top of the page, under the header further down */
+  function placeFind() {
+    var box = $("find"), top = $("top"), jump = $("jump"); if (!box || !top) return;
+    var y = top.getBoundingClientRect().bottom;
+    if (jump) y = Math.max(y, jump.getBoundingClientRect().bottom);
+    box.style.top = Math.max(0, Math.round(y)) + "px";
+  }
   function findOpen(on) {
     var box = $("find"), btn = $("findbtn"), input = $("find-q");
     if (!box) return;
+    if (on) placeFind();
     box.classList.toggle("hidden", !on);
     if (btn) btn.setAttribute("aria-expanded", on ? "true" : "false");
     if (!on) return;
@@ -4274,6 +4347,8 @@
       if (!findIsOpen() || $("find").contains(ev.target) || btn.contains(ev.target)) return;
       findOpen(false);
     });
+    window.addEventListener("scroll", function () { if (findIsOpen()) placeFind(); }, { passive: true });
+    window.addEventListener("resize", function () { if (findIsOpen()) placeFind(); });
   })();
   load().then(route);
   loadChecks();
@@ -4285,34 +4360,60 @@
   loadTomorrow();
   setInterval(function () { if (document.visibilityState !== "hidden") loadTomorrow(); }, 60000);
 })();
-/* Device-local card controls. Original content nodes stay alive through refresh/reorder. */
+/* The board map's colour key, layout A (2026-09-25): the heading, the source line (it carries the units) and the strips
+   with their dBZ or inch words stay on screen under the controls; the notes and the gauge pin colours fold behind one
+   button, so the key no longer pushes the call off the second screen. A note with a swatch is a key entry and stays. The key's HTML is rebuilt by the radar code, so the fold is a class on its box
+   (classList survives the rebuild). Remembered on this device only; the station page's key never folds. */
 (function () {
   'use strict';
-  var key='rb.layout.v1', main=document.querySelector('main'), edit=document.getElementById('layout-edit');
+  var b=document.getElementById('legend-more'), k=document.getElementById('legend-live'), open=false;
+  if (!b || !k) return;
+  try {open=localStorage.getItem('rb.keynotes.v1')==='open';} catch(e){}
+  function set(v){open=v;k.classList.toggle('rl-brief',!open);b.setAttribute('aria-expanded',String(open));b.textContent=(open?'Hide':'Show')+' key notes and gauge pins';}
+  b.addEventListener('click',function(){set(!open);try{localStorage.setItem('rb.keynotes.v1',open?'open':'folded');}catch(e){}requestAnimationFrame(function(){document.dispatchEvent(new Event('board:layout'));});});
+  set(open);
+})();
+/* Device-local card controls. Original content nodes stay alive through refresh/reorder.
+   LAYOUT A (Colin, 2026-09-25, "and a for the layout"): below the desktop grid (899 px and narrower) the default
+   order is the map first, then the call (glance, v3 value rows, alerts), every gauge, and the evidence folded:
+   Tomorrow, Desk read and the Sentinel (reduced to its status line) as collapsed cards, Scorecard and Diagnostics
+   as their own closed details. From 900 px the desktop grid keeps its three columns, nothing folded.
+   Saved under a NEW key: a phone that saved an order under rb.layout.v1 (Sentinel pinned first) sees A once, and a
+   custom order saved after that keeps working. The Sentinel is no longer pinned first: it moves and folds like any
+   card, and it still cannot be hidden.
+   A card's fold is true, false (his choice, kept everywhere) or null (the default for this width), so a phone
+   that never touched Tomorrow sees it folded and the same browser at desktop width sees it open. */
+(function () {
+  'use strict';
+  var key='rb.layout.v2', main=document.querySelector('main'), edit=document.getElementById('layout-edit');
   if (!main || !edit) return;
-  var definitions=[['glance','Today at a glance'],['sentinel-top','Rain Sentinel'],['alerts','Alerts'],['model','v3 and value'],['deskread','Desk read'],['stations','Every gauge'],['tomorrow','Tomorrow'],['mapsec','Map'],['score','Scorecard'],['deskdiag','Diagnostics']];
+  var definitions=[['mapsec','Map'],['glance','The call'],['model','v3 and value'],['alerts','Alerts'],['stations','Every gauge'],['tomorrow','Tomorrow'],['deskread','Desk read'],['sentinel-top','Rain Sentinel'],['score','Scorecard'],['deskdiag','Diagnostics']];
+  var FOLDED=['tomorrow','deskread','sentinel-top'];   // folded by default below the desktop grid; each keeps a Collapse / Expand row
+  var narrow=window.matchMedia('(max-width: 899px)');
   var ids=definitions.map(function(x){return x[0];}), tiles={}, homes={}, focused=null, focusReturn=null, editing=false, drag=null;
-  var panel=document.getElementById('layout-panel'), status=document.getElementById('layout-status');
-  function defaults(){return {version:1,custom:false,order:ids.slice(),cards:{}};}
+  var panel=document.getElementById('layout-panel'), status=document.getElementById('layout-status'), tools=document.getElementById('layout-tools');
+  function defaults(){return {version:2,custom:false,order:ids.slice(),cards:{}};}
   function normalize(value){
     var out=defaults();
-    if (!value || value.version!==1 || !Array.isArray(value.order)) return out;
+    if (!value || value.version!==2 || !Array.isArray(value.order)) return out;
     out.custom=value.custom===true;
     out.order=value.order.filter(function(id,i,a){return ids.indexOf(id)>=0 && a.indexOf(id)===i;});
-    // a card added since this layout was saved goes right after its predecessor in the default order
-    // (a saved 8-card order gets Alerts after the Sentinel, not after Diagnostics), else at the end
+    // a card added since this layout was saved goes right after its predecessor in the default order, else at the end
     ids.forEach(function(id,i){if(out.order.indexOf(id)>=0)return;var at=out.order.length;for(var j=i-1;j>=0;j--){var k=out.order.indexOf(ids[j]);if(k>=0){at=k+1;break;}}out.order.splice(at,0,id);});
-    out.order=pin(out.order);
     ids.forEach(function(id){
       var c=value.cards && Object.prototype.hasOwnProperty.call(value.cards,id) ? value.cards[id] : null;
-      out.cards[id]={size:c && ['s','m','l'].indexOf(c.size)>=0 ? c.size : 'm',hidden:!!(c && c.hidden===true && id!=='sentinel-top'),collapsed:!!(c && c.collapsed===true && id!=='sentinel-top')};
+      out.cards[id]={size:c && ['s','m','l'].indexOf(c.size)>=0 ? c.size : 'm',hidden:!!(c && c.hidden===true && id!=='sentinel-top'),
+        collapsed:c && typeof c.collapsed==='boolean' ? c.collapsed : null};
     });
     return out;
   }
-  function pin(order){var out=order.filter(function(id){return id!=='sentinel-top';});out.splice(out[0]==='glance'?1:0,0,'sentinel-top');return out;}
   var layout;
   try {layout=normalize(JSON.parse(localStorage.getItem(key)));} catch(e){layout=defaults();}
-  function card(id){return layout.cards[id] || (layout.cards[id]={size:'m',hidden:false,collapsed:false});}
+  function card(id){return layout.cards[id] || (layout.cards[id]={size:'m',hidden:false,collapsed:null});}
+  /* a jump-bar link opens its card for THIS visit only (revealed): saving collapsed:false there unwound A's folds one
+     ordinary tap at a time (phone QA and the tests critic on 661e587). Expand and Collapse are choices, and are saved. */
+  var revealed={};
+  function folded(id){if(revealed[id])return false;var c=card(id).collapsed;return typeof c==='boolean' ? c : narrow.matches && FOLDED.indexOf(id)>=0;}
   function save(message){
     try {localStorage.setItem(key,JSON.stringify(layout));status.textContent=message || 'Layout saved on this device.';}
     catch(e){status.textContent='Layout changed for this visit. This browser could not save it.';}
@@ -4321,36 +4422,35 @@
   function button(text,label,fn){var b=document.createElement('button');b.type='button';b.textContent=text;b.setAttribute('aria-label',label);b.title=label;b.addEventListener('click',fn);return b;}
   definitions.forEach(function(def){
     var id=def[0],node=document.getElementById(id),shell=document.createElement('section'),bar=document.createElement('div');
-    shell.className='board-tile';shell.dataset.tile=id;shell.setAttribute('aria-label',def[1]);
+    shell.className='board-tile'+(FOLDED.indexOf(id)>=0?' tile-foldable':'');shell.dataset.tile=id;shell.setAttribute('aria-label',def[1]);
     homes[id]=document.createComment('home of '+id);node.before(homes[id],shell);
     bar.className='tile-tools';
     var title=document.createElement('strong');title.textContent=def[1];bar.append(title);
-    if(id!=='sentinel-top'){
-      var handle=button('Drag','Drag '+def[1]+' to reorder',function(){});handle.className='tile-drag';handle.dataset.drag=id;bar.append(handle);
-      var up=button('Up','Move '+def[1]+' earlier',function(){move(id,-1);}),down=button('Down','Move '+def[1]+' later',function(){move(id,1);});
-      up.dataset.moveStep='-1';down.dataset.moveStep='1';bar.append(up,down);
-    } else {var fixed=document.createElement('small');fixed.textContent='First and open';bar.append(fixed);}
+    var handle=button('Drag','Drag '+def[1]+' to reorder',function(){});handle.className='tile-drag';handle.dataset.drag=id;bar.append(handle);
+    var up=button('Up','Move '+def[1]+' earlier',function(){move(id,-1);}),down=button('Down','Move '+def[1]+' later',function(){move(id,1);});
+    up.dataset.moveStep='-1';down.dataset.moveStep='1';bar.append(up,down);
     var size=document.createElement('select');size.setAttribute('aria-label',def[1]+' size');
     [['s','S'],['m','M'],['l','L']].forEach(function(x){var o=document.createElement('option');o.value=x[0];o.textContent=x[1];size.append(o);});
     size.addEventListener('change',function(){card(id).size=size.value;layout.custom=true;apply();save();});bar.append(size);
-    if(id!=='sentinel-top'){
-      var collapse=button('Collapse','Collapse '+def[1],function(){card(id).collapsed=!card(id).collapsed;apply();save();});collapse.className='tile-collapse';bar.append(collapse);
-      bar.append(button('Hide','Hide '+def[1],function(){card(id).hidden=true;apply();visibility();save();edit.focus();}));
-    }
+    var collapse=button('Collapse','Collapse '+def[1],function(){card(id).collapsed=!folded(id);delete revealed[id];apply();save();});collapse.className='tile-collapse';bar.append(collapse);
+    if(id!=='sentinel-top')bar.append(button('Hide','Hide '+def[1],function(){card(id).hidden=true;apply();visibility();save();edit.focus();}));
     bar.append(button('Focus','Focus '+def[1],function(){focus(id);}));
     var close=button('Back to board','Exit focused card',unfocus);close.className='tile-unfocus';bar.append(close);
     shell.append(bar,node);tiles[id]=shell;
   });
   function apply(){
+    var phone=narrow.matches;
     main.classList.toggle('layout-custom',layout.custom);
-    if(layout.custom){layout.order=pin(layout.order);layout.order.forEach(function(id){main.append(tiles[id]);});}
-    else ids.forEach(function(id){homes[id].after(tiles[id]);});
+    if(layout.custom)layout.order.forEach(function(id){main.append(tiles[id]);});
+    else if(phone)ids.forEach(function(id){main.append(tiles[id]);});          // layout A, in reading order: DOM, focus and screen agree
+    else ids.forEach(function(id){homes[id].after(tiles[id]);});               // the desktop grid: each card back in its column
+    if(phone)main.append(tools);else main.prepend(tools);                      // on a phone the map is the first thing under the jump bar
     ids.forEach(function(id){
-      var c=card(id),tile=tiles[id];tile.hidden=c.hidden;tile.dataset.size=c.size;
-      tile.classList.toggle('tile-collapsed',c.collapsed);tile.querySelector('select').value=c.size;
-      var b=tile.querySelector('.tile-collapse');if(b){b.textContent=c.collapsed?'Expand':'Collapse';b.setAttribute('aria-expanded',String(!c.collapsed));b.setAttribute('aria-label',(c.collapsed?'Expand ':'Collapse ')+tile.getAttribute('aria-label'));}
-      var movable=layout.order.filter(function(x){return x!=='sentinel-top';}),at=movable.indexOf(id);
-      tile.querySelectorAll('[data-move-step]').forEach(function(control){control.disabled=+control.dataset.moveStep<0?at===0:at===movable.length-1;});
+      var c=card(id),tile=tiles[id],f=folded(id);tile.hidden=c.hidden;tile.dataset.size=c.size;
+      tile.classList.toggle('tile-collapsed',f);tile.querySelector('select').value=c.size;
+      var b=tile.querySelector('.tile-collapse');b.textContent=f?'Expand':'Collapse';b.setAttribute('aria-expanded',String(!f));b.setAttribute('aria-label',(f?'Expand ':'Collapse ')+tile.getAttribute('aria-label'));b.title=b.getAttribute('aria-label');
+      var at=layout.order.indexOf(id);
+      tile.querySelectorAll('[data-move-step]').forEach(function(control){control.disabled=+control.dataset.moveStep<0?at===0:at===layout.order.length-1;});
     });resize();
   }
   function visibility(){
@@ -4364,17 +4464,17 @@
   edit.addEventListener('click',function(){setEditing(!editing);});
   document.getElementById('layout-done').addEventListener('click',function(){setEditing(false);edit.focus();});
   document.getElementById('layout-reset').addEventListener('click',function(){
-    unfocus();layout=defaults();apply();visibility();save('Default layout restored.');
+    unfocus();layout=defaults();revealed={};apply();visibility();save('Default layout restored.');
   });
   function reorder(id,target){
-    if(id===target || id==='sentinel-top')return;
+    if(id===target)return;
     var next=layout.order.filter(function(x){return x!==id;}),at=next.indexOf(target);
-    next.splice(at<0?next.length:at,0,id);layout.order=pin(next);layout.custom=true;apply();save('Card order saved.');
+    next.splice(at<0?next.length:at,0,id);layout.order=next;layout.custom=true;apply();save('Card order saved.');
   }
   function move(id,step){
-    var next=layout.order.filter(function(x){return x!=='sentinel-top';}),at=next.indexOf(id),to=Math.max(0,Math.min(next.length-1,at+step));
+    var next=layout.order.slice(),at=next.indexOf(id),to=Math.max(0,Math.min(next.length-1,at+step));
     if(at<0 || to===at)return;
-    next.splice(at,1);next.splice(to,0,id);layout.order=pin(next);layout.custom=true;apply();save('Card order saved.');
+    next.splice(at,1);next.splice(to,0,id);layout.order=next;layout.custom=true;apply();save('Card order saved.');
     tiles[id].querySelector('.tile-drag').focus();
   }
   main.addEventListener('pointerdown',function(e){
@@ -4432,10 +4532,12 @@
   });
   document.getElementById('jump').addEventListener('click',function(e){
     var a=e.target.closest('a[href^="#top-"]');if(!a)return;
-    var map={'top-sentinel':'sentinel-top','top-alerts':'alerts','top-model':'model','top-deskread':'deskread','top-gauges':'stations','top-tomorrow':'tomorrow','top-map':'mapsec','top-score':'score'},id=map[a.hash.slice(1)];
-    if(!id)return;card(id).hidden=false;card(id).collapsed=false;apply();if(editing)visibility();save(); // codex on #199: the customize panel's checkbox must follow the reveal
+    var map={'top-call':'glance','top-sentinel':'sentinel-top','top-alerts':'alerts','top-model':'model','top-deskread':'deskread','top-gauges':'stations','top-tomorrow':'tomorrow','top-map':'mapsec','top-score':'score'},id=map[a.hash.slice(1)];
+    if(!id)return;card(id).hidden=false;if(folded(id))revealed[id]=true;apply();if(editing)visibility();save(); // codex on #199: the customize panel's checkbox must follow the reveal
     // Anchors remain at their original group for reset; a moved tile is the destination.
     e.preventDefault();tiles[id].scrollIntoView({block:'start'});
   });
+  // crossing 900 px (a rotated tablet, a resized window) switches between layout A and the desktop grid
+  if(narrow.addEventListener)narrow.addEventListener('change',apply);else if(narrow.addListener)narrow.addListener(apply);
   apply();
 })();

@@ -1,35 +1,59 @@
 /* Rain Station Board. Phone first. One physical wetness state per station. No colour without text.
    2026-09-16 redesign: readable type (15px body, nothing under 12.5px), generous spacing, one set of
-   controls, the station page answers five questions on its first screen, radar and cameras large. */
+   controls, the station page answers five questions on its first screen, radar and cameras large.
+   2026-09-25, LAYOUT A, "flight deck at night": the calm density of an airport departures board. The chrome is
+   neutral graphite and colour is data: hue appears only as weather (the radar and its measured key) or as state
+   (--locked ... --neg, unchanged in value and meaning). A control that is on is an inverse fill, not a borrowed
+   hue; --accent is only the focus ring and the slider. One loud thing: the radar clock under the map. Rows, not
+   cards: the map full bleed, the call as a band with a left rule, every gauge as a row between hairlines, the
+   evidence as plain disclosure rows. Controls keep an 8 px radius; bands and lists have none. */
 :root {
-  --canvas: #08111F; --surface: #111C2E; --raised: #17243A; --border: #2A3A52;
-  --text: #F8FAFC; --muted: #B4BFCF; --dim: #7E8CA3;
+  /* wet asphalt, runway white; every pairing checked for WCAG AA (dim raised to #8793A0 so it holds 4.5:1 on raised) */
+  --canvas: #12181E; --surface: #182028; --raised: #212A34; --border: #2E3945;
+  --text: #ECF0F3; --muted: #A3AFBB; --dim: #8793A0;
   --locked: #22D3EE; --wet: #60A5FA; --imminent: #E879F9; --approaching: #A78BFA;
   --nearby: #FBBF24; --overdue: #F87171; --quiet: #94A3B8; --unknown: #64748B;
-  --pos: #34D399; --neg: #FB7185; --accent: #38BDF8;
-  --font: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --nav-h: 0px; --tap: 44px; --radius: 14px;
+  --pos: #34D399; --neg: #FB7185; --accent: #7CC4FF;
+  --font: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display: "Barlow Condensed", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;   /* codes, headings, the radar clock, numbers */
+  --nav-h: 0px; --tap: 44px; --radius: 8px;
   --type-scale: 1; --fs: calc(15px * var(--type-scale)); --fs-small: max(13px, calc(13px * var(--type-scale))); --fs-h3: var(--fs); --lh: 1.45;
+  /* the scale: 13 small (never smaller), 15 body, 17 card head, 22 section head, 38 the radar clock (the plan's 34 to 40) */
+  --fs-card: calc(17px * var(--type-scale)); --fs-sec: calc(22px * var(--type-scale)); --fs-clock: calc(38px * var(--type-scale));
+  --gutter: 14px;
   /* the national DOT camera dots on the map (2026-09-24). White with a dark ring on purpose: every radar colour is taken
      (blue, green, yellow, orange, magenta), and the map's basemaps do not change with the page theme, so neither does this. */
   --natcam: #FFFFFF; --natcam-edge: #0B3A55;
 }
-body.light {
-  --canvas: #F4F7FB; --surface: #FFFFFF; --raised: #EAF0F7; --border: #CBD5E1;
-  --text: #0F172A; --muted: #4B5A70; --dim: #6B7A90;
+/* the light tokens sit on the root as well as the body (app.js theme() sets both): the root paints the page's canvas,
+   and with the tokens on body alone every part of a long page past the first screen showed the dark root under
+   ink-dark text (critics on 661e587, the light-theme blocker) */
+:root.light, body.light {
+  /* chart paper, cool (not cream); dim darkened to #5D6874 for 4.5:1 on raised */
+  --canvas: #F2F4F6; --surface: #FFFFFF; --raised: #E7EBEF; --border: #C9D1D9;
+  --text: #111A22; --muted: #46525E; --dim: #5D6874;
   --locked: #0E7490; --wet: #1D4ED8; --imminent: #A21CAF; --approaching: #6D28D9;
   --nearby: #B45309; --overdue: #B91C1C; --quiet: #64748B; --unknown: #94A3B8;
-  --pos: #047857; --neg: #BE123C; --accent: #0369A1;
+  --pos: #047857; --neg: #BE123C; --accent: #0B5CAD;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; background: var(--canvas); color: var(--text); font-family: var(--font); font-size: var(--fs); line-height: var(--lh); -webkit-text-size-adjust: 100%; }
+/* no height: 100%: a body one screen tall is the box its sticky header lives in, so the header (the feed pills, find)
+   scrolled away after the first screen (design critic on 661e587, also on main); the body grows with the page */
+html, body { margin: 0; background: var(--canvas); color: var(--text); font-family: var(--font); font-size: var(--fs); line-height: var(--lh); -webkit-text-size-adjust: 100%; }
 body { display: flex; flex-direction: column; min-height: 100dvh; }
-a { color: var(--accent); text-decoration: none; }
+/* links read as text with an underline; the accent hue is kept for the focus ring */
+a { color: var(--text); text-decoration: underline; text-decoration-color: var(--dim); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 b { font-weight: 700; }
-button { font: inherit; color: inherit; background: var(--raised); border: 1px solid var(--border); border-radius: 10px; padding: 8px 14px; cursor: pointer; min-height: var(--tap); }
-button.on { background: var(--accent); color: #041018; border-color: var(--accent); font-weight: 700; }
+button { font: inherit; color: inherit; background: var(--raised); border: 1px solid var(--border); border-radius: var(--radius); padding: 8px 14px; cursor: pointer; min-height: var(--tap); }
+/* on: the inverse fill, runway white on graphite (ink on paper in light), never a borrowed hue */
+button.on { background: var(--text); color: var(--canvas); border-color: var(--text); font-weight: 700; }
 button:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 input[type=range] { width: 100%; accent-color: var(--accent); }
+.vh { position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
 .num { font-variant-numeric: tabular-nums; }
 small { font-size: var(--fs-small); color: var(--muted); line-height: 1.4; }
 ul { margin: 6px 0 0; padding-left: 18px; }
@@ -39,20 +63,23 @@ li { margin: 3px 0; }
 .pos { color: var(--pos); } .neg { color: var(--neg); }
 
 /* header, freshness, the banner */
-#top { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 20; }
-#top .brand { font-weight: 800; letter-spacing: .02em; font-size: calc(16px * var(--type-scale)); }
-#top .brand span { color: var(--muted); font-weight: 500; margin-left: 8px; font-size: var(--fs-small); }
+#top { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--border); background: var(--canvas); position: sticky; top: 0; z-index: 20; }
+/* the wordmark is a sign, so it is set like one: the display face, tight, in capitals */
+#top .brand { font-family: var(--display); font-weight: 700; letter-spacing: .03em; font-size: calc(19px * var(--type-scale)); line-height: 1; }
+#top .brand span { font-family: var(--font); color: var(--muted); font-weight: 400; letter-spacing: 0; margin-left: 10px; font-size: var(--fs-small); }
 #top .feed-pills { margin-left: auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
-#top .feed-pill { min-height: 44px; min-width: 0; padding: 3px 7px; border-radius: 9px; font-size: var(--fs); line-height: 1.25; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow-wrap: anywhere; }
-.feed-name { color: var(--text); }
-.feed-short { display: none; color: var(--text); }
-.feed-age { font-variant-numeric: tabular-nums; font-weight: 700; }
+#top .feed-pill { min-height: 44px; min-width: 0; padding: 3px 7px; border-radius: var(--radius); background: transparent; font-size: var(--fs); line-height: 1.2; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow-wrap: anywhere; }
+.feed-name { color: var(--muted); }
+.feed-short { display: none; color: var(--muted); }
+/* a feed's age is a reading on the departures board: the display face, tabular */
+.feed-age { font-family: var(--display); font-variant-numeric: tabular-nums; font-weight: 700; font-size: calc(16px * var(--type-scale)); letter-spacing: .01em; }
 .feed-good { color: var(--pos); }
 .feed-aged { color: var(--nearby); }
 .feed-bad { color: var(--overdue); }
 .feed-off { color: var(--muted); }
-#top .feed-pill[aria-expanded="true"] { border-color: var(--accent); }
-.feed-detail { position: absolute; top: 100%; right: 8px; width: min(480px, calc(100% - 16px)); padding: 14px; background: var(--surface); color: var(--text); border: 1px solid var(--accent); border-radius: 10px; box-shadow: 0 8px 24px #0005; font-size: var(--fs-small); overflow-wrap: anywhere; }
+#top .feed-pill[aria-expanded="true"] { border-color: var(--text); background: var(--raised); }
+body.light #top .feed-pill[aria-expanded="true"] { background: var(--surface); }   /* amber STALE held 4.2:1 on light raised; 5.0 on white */
+.feed-detail { position: absolute; top: 100%; right: 8px; width: min(480px, calc(100% - 16px)); padding: 14px; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 10px 28px rgba(0,0,0,.45); font-size: var(--fs-small); overflow-wrap: anywhere; }
 #top button { min-height: 34px; padding: 4px 12px; font-size: var(--fs); }
 .banner { background: #3b1d1d; color: #fecaca; border-bottom: 1px solid var(--overdue); padding: 8px 14px; font-size: var(--fs); line-height: 1.45; }
 body.light .banner { background: #fee2e2; color: #7f1d1d; }
@@ -65,37 +92,45 @@ body.light .banner { background: #fee2e2; color: #7f1d1d; }
    the bar to its padding, 13 px, on every screen wider than a phone: a strip of cut-off pills.
    Neither the header nor the bar may be squeezed. */
 #top, #jump { flex-shrink: 0; }
-#jump a { flex: 1 0 auto; white-space: nowrap; display: flex; align-items: center; justify-content: center; min-height: var(--tap); text-align: center; font-size: var(--fs); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); padding: 4px 10px; border-radius: 8px; background: var(--raised); }
-#jump a:active { color: var(--text); }
+/* layout A: sentence case, no tracking. The links read as links, text with an underline (no chip per link: eleven
+   outlined boxes were the loudest thing on the first screen, design critic on 661e587); only the two controls, theme
+   and text size, keep a control's outline. Every link at least 44 px wide. */
+#jump a { flex: 1 0 auto; white-space: nowrap; display: flex; align-items: center; justify-content: center; min-height: var(--tap); min-width: var(--tap); text-align: center; font-size: var(--fs); font-weight: 700; color: var(--text); text-decoration: underline; text-decoration-color: var(--dim); text-underline-offset: 5px; text-decoration-thickness: 1px; padding: 4px 10px; border-radius: var(--radius); background: transparent; border: 0; }
+#jump a:active { background: var(--raised); }
+#jump #theme { text-transform: capitalize; background: transparent; }
 /* find a city (2026-09-19): the box is an OVERLAY under the sticky bars, so it costs the phone no
    permanent height and the board underneath is never left half filtered. z-index 96 puts it ABOVE
    the station panel (80), a full-screen map (70) and the camera sheet (90): jules, PR #171, found
    it rendering UNDER the open station panel while "/" still opened it, which is a box that has
    the keyboard and cannot be seen. Jumping city to city with a card open is when he will use it. */
-#top #findbtn { padding: 6px 10px; font-size: var(--fs); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; color: var(--muted); }
-#top #findbtn[aria-expanded="true"] { color: var(--text); border-color: var(--accent); }
+#top #findbtn { padding: 6px 10px; font-size: var(--fs); font-weight: 700; white-space: nowrap; color: var(--text); background: transparent; }
+#top #findbtn[aria-expanded="true"] { background: var(--text); color: var(--canvas); border-color: var(--text); }
+#top #findbtn { display: inline-flex; align-items: center; justify-content: center; }
+#findbtn .find-ico { flex: none; display: block; }   /* a drawn magnifier: the old glyph (U+26B2) did not read as search on a phone */
 .find { position: fixed; top: calc(var(--top-h, 54px) + var(--jump-h, 44px)); left: 0; right: 0; z-index: 96; background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 12px 10px; box-shadow: 0 10px 26px rgba(0,0,0,.45); }
-.find input { width: 100%; font-size: max(16px, calc(16px * var(--type-scale))); min-height: var(--tap); padding: 8px 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--raised); color: var(--text); }   /* 16px: anything smaller makes iOS zoom the page on focus */
+.find input { width: 100%; font-size: max(16px, calc(16px * var(--type-scale))); min-height: var(--tap); padding: 8px 12px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--canvas); color: var(--text); }   /* 16px: anything smaller makes iOS zoom the page on focus */
 .find-hits { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; max-height: 52vh; overflow-y: auto; }
 .find-hit { display: flex; align-items: baseline; gap: 8px; width: 100%; text-align: left; padding: 8px 10px; font-size: var(--fs); }
 .find-hit small { color: var(--muted); }
 .find-hit .r { margin-left: auto; white-space: nowrap; color: var(--muted); }
 .find-hit i { font-style: normal; margin-right: 4px; }
-.find-hit.on { border-color: var(--accent); }
+.find-hit.on { border-color: var(--text); background: var(--canvas); color: var(--text); box-shadow: inset 0 0 0 1px var(--text); }   /* the picked hit: a white outline; button.on's inverse fill would put canvas text on canvas */
 .find .empty { color: var(--muted); padding: 10px 2px; }
 .anchor { display: block; position: relative; top: calc(-1 * (var(--top-h, 54px) + var(--jump-h, 64px))); visibility: hidden; height: 0; }   /* 2026-09-19: follows the measured header and bar (app.js pinUnderHeader) */
 
-main { flex: 1; padding: 12px 12px 28px; max-width: 1280px; width: 100%; margin: 0 auto; }
-h2 { font-size: calc(20px * var(--type-scale)); margin: 4px 0 10px; }
-h3 { font-size: var(--fs-h3); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin: 20px 0 10px; }
-h4 { margin: 0 0 6px; font-size: var(--fs); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+main { flex: 1; padding: 0 var(--gutter) 28px; max-width: 1280px; width: 100%; margin: 0 auto; }
+/* headings: the display face, sentence case, no tracking. 22 a section, 17 a part of one, 15 a label */
+h2 { font-family: var(--display); font-weight: 600; font-size: var(--fs-sec); line-height: 1.15; letter-spacing: .005em; margin: 4px 0 10px; }
+h3 { font-family: var(--display); font-weight: 600; font-size: var(--fs-card); line-height: 1.2; color: var(--text); margin: 22px 0 8px; }
+h4 { margin: 0 0 6px; font-size: var(--fs); color: var(--muted); font-weight: 700; }
 h5 { margin: 0 0 6px; font-size: var(--fs); color: var(--muted); font-weight: 700; }
 h5 small { margin-left: 6px; font-weight: 500; }
 .note { color: var(--muted); font-size: var(--fs-small); margin: 6px 0 10px; }
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-bottom: 12px; }
+/* rows, not cards: a section is a band between hairlines, not a floating box */
+.card { background: transparent; border: 0; border-top: 1px solid var(--border); border-radius: 0; padding: 16px 0; margin: 0; }
 
-/* state chips */
-.st { display: inline-flex; align-items: center; gap: 6px; font-weight: 750; font-size: var(--fs); letter-spacing: .03em; padding: 6px 10px; border-radius: 999px; border: 1px solid transparent; white-space: nowrap; min-height: 32px; }
+/* state chips: the status cell of a departures board, a squared plaque with its word */
+.st { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: var(--fs); letter-spacing: .01em; padding: 5px 9px; border-radius: 3px; border: 1px solid transparent; white-space: nowrap; min-height: 32px; }
 .st i { font-style: normal; font-size: var(--fs); }
 .st.LOCKED { color: #041018; background: var(--locked); }
 .st.WET_NOW { color: #041018; background: var(--wet); }
@@ -105,7 +140,7 @@ h5 small { margin-left: 6px; font-weight: 500; }
 .st.OVERDUE { color: #fff; background: var(--overdue); }
 .st.QUIET { color: var(--text); background: transparent; border-color: var(--border); }
 .st.UNKNOWN { color: var(--text); background: repeating-linear-gradient(45deg, var(--raised), var(--raised) 4px, var(--border) 4px, var(--border) 8px); }
-.st .q { opacity: .7; font-size: var(--fs); margin-left: 2px; }
+.st .q { font-weight: 400; font-size: var(--fs); margin-left: 2px; }   /* no opacity: at .7 it fell under AA on the light plaques */
 .st.conflict { outline: 2px solid var(--overdue); outline-offset: 1px; }
 .st .cf { color: var(--overdue); margin-left: 4px; font-weight: 800; }
 .why { display: block; font-size: var(--fs); color: var(--muted); background: var(--raised); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; margin: 6px 0; white-space: normal; line-height: 1.45; }
@@ -116,76 +151,88 @@ h5 small { margin-left: 6px; font-weight: 500; }
 #model .grp > small { display: block; margin-bottom: 8px; max-width: 78ch; line-height: 1.5; }
 #model .grp > small b { color: var(--text); }
 #model .st { margin: 3px 6px 3px 0; white-space: normal; line-height: 1.3; }
-#model .st small { color: inherit; opacity: .85; margin-left: 4px; font-size: var(--fs-small); }
-#model .dis { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 10px 0; border-top: 1px dashed var(--border); font-size: var(--fs); cursor: pointer; align-items: start; }
+#model .st small { color: inherit; margin-left: 4px; font-size: var(--fs-small); }
+#model .dis { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 10px 0; border-top: 1px solid var(--border); font-size: var(--fs); cursor: pointer; align-items: start; }
 #model .dis:first-of-type { border-top: 0; }
 #model .dis b { font-size: calc(15px * var(--type-scale)); }
 #model .dis .r { text-align: right; white-space: nowrap; }
 #model .dis .when { grid-column: 1 / -1; color: var(--muted); font-size: var(--fs); line-height: 1.45; max-width: 90ch; }
 #model .grp span[data-icao]:not(.st) { display: inline-block; padding: 4px 6px; margin: 2px 0; border-radius: 6px; background: var(--raised); }
-.dis.val .side { padding: 2px 8px; border-radius: 6px; margin-left: 6px; font-size: var(--fs); }
+.dis.val .side { padding: 2px 8px; border-radius: 3px; margin-left: 6px; font-size: var(--fs); }
 .dis.val .side.no { background: var(--pos); color: #041018; }
 .dis.val .side.yes { background: var(--wet); color: #041018; }
 
-/* station rows */
-.queue { display: flex; flex-direction: column; gap: 10px; }
-.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; cursor: pointer; }
+/* station rows: a departures board. One row per gauge between hairlines, the code large in the display face on
+   the left, the price large on the right, the lines under both. An overdue gauge carries a red rule on its left
+   edge; the selected city a white one. */
+.queue { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--border); }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; background: transparent; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; padding: 12px 0; cursor: pointer; }
 .row:active { background: var(--raised); }
-.row .city { font-size: calc(17px * var(--type-scale)); font-weight: 800; }
-.row .city small { margin-left: 6px; font-weight: 500; }
+.row .city { font-family: var(--display); font-size: calc(26px * var(--type-scale)); font-weight: 600; line-height: 1.05; letter-spacing: .01em; margin-bottom: 6px; }
+.row .city small { font-family: var(--font); margin-left: 8px; font-weight: 400; letter-spacing: 0; }
 .row .line { color: var(--muted); font-size: var(--fs); grid-column: 1 / -1; line-height: 1.45; }
 .row .line b { color: var(--text); }
 .row .right { text-align: right; }
-.row .price { font-size: calc(15px * var(--type-scale)); font-weight: 800; }
-.row .price small { display: block; color: var(--muted); font-weight: 500; }
+.row .price { font-family: var(--display); font-size: calc(21px * var(--type-scale)); font-weight: 600; line-height: 1.15; }
+.row .price small { font-family: var(--font); display: block; color: var(--muted); font-weight: 400; }
 .row .gauge { font-size: var(--fs); }
 .row .gauge b.lock { color: var(--locked); }
-.row.ovl { box-shadow: inset 0 0 0 2px var(--overdue); }
-.row.sel { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
-.chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 10px; }
-.chips button { min-height: 40px; padding: 6px 14px; border-radius: 999px; font-size: var(--fs); }
-.empty { color: var(--muted); padding: 16px; text-align: center; border: 1px dashed var(--border); border-radius: 12px; }
+.row.ovl { box-shadow: inset 3px 0 0 var(--overdue); padding-left: 12px; }
+.row.sel { background: var(--raised); box-shadow: inset 3px 0 0 var(--text); padding-left: 12px; }
+.row.sel.ovl { box-shadow: inset 3px 0 0 var(--overdue); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 10px; }
+.chips button { min-height: 40px; padding: 6px 12px; border-radius: var(--radius); font-size: var(--fs); background: transparent; }
+.chips button.on { background: var(--text); }
+.empty { color: var(--muted); padding: 16px; text-align: center; border: 1px dashed var(--border); border-radius: var(--radius); }
 .maptop { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 16px 0 8px; flex-wrap: wrap; }
 .maptop h3 { margin: 0; }
 .maptop .chips { margin: 0; }
 
 /* maps */
-.mapbox { position: relative; height: 50vh; min-height: 300px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); background: #000; }
-.mapbox.big { height: 62vh; min-height: 360px; border-radius: 18px; box-shadow: 0 10px 40px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.06); }
+.mapbox { position: relative; height: 50vh; min-height: 300px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: #000; }
+.mapbox.big { height: 62vh; min-height: 360px; }
 #map-airport.mapbox { height: 58vh; }
 .maplibregl-ctrl-attrib { font-size: var(--fs-small); }
-.radarctl { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 10px 12px; }
+/* the radar control: no box, it is the strip of instruments under the picture */
+.radarctl { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px; background: transparent; border: 0; border-radius: 0; padding: 0; }
 .radarctl button { min-height: 40px; padding: 6px 12px; font-size: var(--fs); }
-.radarctl .ft { font-size: var(--fs); font-weight: 700; flex: 1 1 100%; }
+.radarctl .ft { font-size: var(--fs); font-weight: 700; flex: 1 1 100%; font-variant-numeric: tabular-nums; }
 .radarctl .ft.fc { color: var(--nearby); }
 .radarctl .ft.stale { color: var(--overdue); }
-.radarctl .src { font-size: var(--fs-small); color: var(--muted); }
+.radarctl .src { font-size: var(--fs-small); color: var(--muted); margin-top: -6px; }   /* 2 px under the clock, as on the board map, not the 8 px row gap: the picture choice below moves up 6 px */
 .radarctl input[type=range] { flex: 1 1 220px; }
 .scrubwrap { position: relative; flex: 1 1 220px; }
-/* the radar picture choice (2026-09-24): one row at the top of the control; a rain product hides the reflectivity timeline */
-.prodsel { display: flex; flex-wrap: wrap; gap: 6px; flex: 1 1 100%; min-width: 0; }
-.prodsel button { flex: 1 1 auto; min-height: 44px; }
+/* the radar picture choice (2026-09-24): one row at the top of the control; a rain product hides the reflectivity timeline.
+   Layout A: a segmented control. The hairlines between segments are the group's own background showing through a
+   1 px gap, so a group that wraps to a second row on a narrow phone keeps its lines. */
+.prodsel { display: flex; flex-wrap: wrap; gap: 1px; flex: 1 1 100%; min-width: 0; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.prodsel button { flex: 1 1 auto; min-height: 44px; border: 0; border-radius: 0; background: var(--canvas); font-family: var(--display); font-weight: 600; font-size: calc(16px * var(--type-scale)); padding: 6px 8px; }
+.prodsel button.on { background: var(--text); color: var(--canvas); }
+/* a segment's focus ring is drawn inside it: the group's overflow: hidden (its rounded corners) clipped the outline to
+   nothing (design critic on 661e587). Accent ring, then a canvas ring, so it shows on the white "on" segment too. */
+.prodsel button:focus-visible, #queue-filters button:focus-visible { outline: 0; box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 4px var(--canvas); }
+/* the map canvas clips its own outline (.maplibregl-map is overflow: hidden): drawn inside instead */
+.maplibregl-canvas:focus-visible { outline-offset: -3px; }
 .radarctl.prodmode .scrubwrap, .radarctl.prodmode button[data-a] { display: none; }
 /* echo tops and velocity (2026-09-25): a second row behind a small "more" toggle, so the phone control keeps its height */
-.prodsel button.more { flex: 0 0 auto; min-width: 44px; padding: 6px 8px; }
+.prodsel button.more { flex: 1 0 auto; min-width: 44px; padding: 6px 8px; }   /* layout A: grows, so a wrapped segmented row has no gap */
 .prodmore { display: none; }
 .radarctl.moreopen .prodmore { display: flex; }
 .vk { display: grid; gap: 2px; min-width: 0; }
-/* forecast mode (2026-09-24): its own field choice, play and time slider, under the picture choice, then the step's words */
+/* forecast mode (2026-09-24): its own field choice, play and time slider, under the picture choice. Layout A: the step's
+   words stay first, as in every mode, since the time line leads the control */
 .fcbar { display: none; flex: 1 1 100%; flex-wrap: wrap; gap: 8px; align-items: center; min-width: 0; }
 .radarctl.fcmode .fcbar { display: flex; order: 1; }
-.radarctl.fcmode .ft { order: 2; }
-.radarctl.fcmode .src { order: 3; }
 .fcsel button { min-height: 44px; }
 .fcscrub { position: relative; flex: 1 1 200px; min-width: 0; }
 .fcscrub input[type=range] { width: 100%; margin: 0; }
-.fcscrub .zones { display: flex; justify-content: space-between; font-size: var(--fs-small); color: var(--muted); letter-spacing: .06em; margin-top: 2px; }
+.fcscrub .zones { display: flex; justify-content: space-between; font-size: var(--fs-small); color: var(--muted); margin-top: 2px; }
 .fc-ticks { position: relative; height: 1.4em; margin: 0 1px; }
 .fc-ticks span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
 .fc-ticks span.l { transform: none; }
 .fc-ticks span.r { transform: translateX(-100%); }
 /* NWS warnings key, on the map (2026-09-24) */
-.warnkey { position: absolute; top: 10px; left: 10px; z-index: 4; max-width: calc(100% - 70px); pointer-events: none; background: rgba(8,17,31,.84); color: #F8FAFC; border: 1px solid rgba(255,255,255,.18); border-radius: 10px; padding: 4px 8px; font-size: max(12px, calc(12px * var(--type-scale))); line-height: 1.35; overflow-wrap: anywhere; }
+.warnkey { position: absolute; top: 10px; left: 10px; z-index: 4; max-width: calc(100% - 70px); pointer-events: none; background: rgba(18,24,30,.84); color: #F8FAFC; border: 1px solid rgba(255,255,255,.18); border-radius: 10px; padding: 4px 8px; font-size: max(13px, calc(13px * var(--type-scale))); line-height: 1.3; overflow-wrap: anywhere; }
 body.light .warnkey { background: rgba(255,255,255,.92); color: #0F172A; border-color: #CBD5E1; }
 .warnkey .wk-types { display: flex; flex-wrap: wrap; gap: 0 10px; }
 .warnkey i, .warnpop i { display: inline-block; width: 14px; height: 0; border-top: 3px solid; vertical-align: middle; margin-right: 4px; box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px rgba(15,23,42,.55); }
@@ -196,8 +243,8 @@ body.light .warnkey { background: rgba(255,255,255,.92); color: #0F172A; border-
 .mapbox.full .warnkey, .mapbox.full:has(.maplibregl-ctrl-attrib.maplibregl-compact-show) .warnkey { top: 60px; }
 .warnpop { padding: 10px 44px 10px 12px; font-size: var(--fs-small); line-height: 1.4; max-width: min(320px, 80vw); }
 .warnpop .wp-one + .wp-one { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); }
-.scrubwrap .zones { display: flex; justify-content: space-between; font-size: var(--fs-small); color: var(--muted); letter-spacing: .06em; margin-top: 2px; }
-.legend { display: flex; gap: 10px 14px; align-items: center; flex-wrap: wrap; font-size: var(--fs-small); color: var(--muted); margin-top: 8px; }
+.scrubwrap .zones { display: flex; justify-content: space-between; font-size: var(--fs-small); color: var(--muted); margin-top: 2px; }
+.legend { display: flex; gap: 10px 14px; align-items: center; flex-wrap: wrap; font-size: var(--fs-small); color: var(--muted); margin-top: 12px; }
 .legend .sw { display: inline-block; width: 14px; height: 10px; border-radius: 2px; vertical-align: middle; margin-right: 4px; }
 .legend b { color: var(--text); }
 /* the radar key: one row per band, the source's own colours first (a strip, 0.5 dBZ per step), words after */
@@ -215,12 +262,12 @@ body.light .warnkey { background: rgba(255,255,255,.92); color: #0F172A; border-
 .legend .sw.mk-QUIET { background: #1f2937; border: 1px solid var(--border); } .legend .sw.mk-UNKNOWN { background: repeating-linear-gradient(45deg, #374151, #374151 3px, #6b7280 3px, #6b7280 6px); }
 
 /* the card that floats over the big map for the selected city */
-.mapcard { position: absolute; left: 10px; bottom: 10px; z-index: 5; width: min(440px, calc(100% - 20px)); background: rgba(17,28,46,.95); backdrop-filter: blur(8px); border: 1px solid var(--border); border-radius: 14px; padding: 12px 14px; box-shadow: 0 8px 30px rgba(0,0,0,.5); font-size: var(--fs); max-height: 68%; overflow: auto; }
+.mapcard { position: absolute; left: 10px; bottom: 10px; z-index: 5; width: min(440px, calc(100% - 20px)); background: rgba(24,32,40,.95); backdrop-filter: blur(8px); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; box-shadow: 0 8px 30px rgba(0,0,0,.5); font-size: var(--fs); max-height: 68%; overflow: auto; }
 body.light .mapcard { background: rgba(255,255,255,.95); }
 .mapcard .mc-top { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
-.mapcard .mc-city { font-size: calc(19px * var(--type-scale)); }
-.mapcard .mc-big { font-size: calc(28px * var(--type-scale)); font-weight: 750; text-align: right; line-height: 1; }
-.mapcard .mc-big small { display: block; font-size: var(--fs-small); font-weight: 500; margin-top: 4px; text-align: right; }
+.mapcard .mc-city { font-family: var(--display); font-weight: 600; font-size: calc(22px * var(--type-scale)); }
+.mapcard .mc-big { font-family: var(--display); font-size: calc(30px * var(--type-scale)); font-weight: 600; text-align: right; line-height: 1; }
+.mapcard .mc-big small { font-family: var(--font); display: block; font-size: var(--fs-small); font-weight: 400; margin-top: 4px; text-align: right; }
 .mapcard .mc-ev { margin: 8px 0 4px; font-size: var(--fs); font-weight: 700; padding: 6px 8px; border-radius: 8px; border-left: 4px solid var(--quiet); background: var(--raised); }
 .mapcard .mc-ev.LOCKED { border-left-color: var(--locked); } .mapcard .mc-ev.WET_NOW { border-left-color: var(--wet); }
 .mapcard .mc-ev.RAIN_NEARBY { border-left-color: var(--nearby); } .mapcard .mc-ev.UNKNOWN { border-left-color: var(--overdue); }
@@ -230,7 +277,7 @@ body.light .mapcard { background: rgba(255,255,255,.95); }
 .mapcard .mc-grid span:nth-child(odd) { color: var(--dim); }
 .mapcard .mc-btns { display: flex; gap: 6px; margin-top: 10px; }
 .mapcard .mc-btns button { min-height: 40px; padding: 6px 10px; font-size: var(--fs); flex: 1; }
-.mapcard .mc-btns button:first-child { background: var(--accent); color: #041018; font-weight: 700; flex: 2; }
+.mapcard .mc-btns button:first-child { background: var(--text); color: var(--canvas); border-color: var(--text); font-weight: 700; flex: 2; }
 /* shrink to one line, or hide (Colin, 2026-09-24): the city, its rings and the zoom stay put */
 /* the state chip has its own full-width line: squeezed beside the percent and the two buttons it
    ran under both on a 360 px phone (review of e6869ce); it may wrap rather than spill */
@@ -251,10 +298,10 @@ body.light .mapcard { background: rgba(255,255,255,.95); }
 .mapcard .mc-mini .st { flex: 0 1 auto; min-width: 0; min-height: 26px; padding: 2px 8px; gap: 4px; font-size: var(--fs-small); line-height: 1.2; }
 .mapcard .mc-mini .st i { font-size: var(--fs-small); }
 .mapcard .mc-mini .st .w { min-width: 0; overflow-wrap: anywhere; }
-.mapcard .mc-chev { margin-left: auto; padding-left: 2px; color: var(--accent); font-size: 18px; flex: none; }
+.mapcard .mc-chev { margin-left: auto; padding-left: 2px; color: var(--muted); font-size: 18px; flex: none; }
 .mapcard:not(.mini) .mc-minirow, .mapcard.mini .mc-full { display: none; }
 .mapcard.mini { width: auto; max-width: calc(100% - 20px); padding: 4px; overflow: hidden; }
-.mapchip { position: absolute; left: 10px; bottom: 10px; z-index: 5; min-height: 44px; padding: 6px 14px; border-radius: 22px; background: rgba(17,28,46,.95); color: var(--text); border: 1px solid var(--accent); font-weight: 700; box-shadow: 0 4px 16px rgba(0,0,0,.45); }
+.mapchip { position: absolute; left: 10px; bottom: 10px; z-index: 5; min-height: 44px; padding: 6px 14px; border-radius: var(--radius); background: rgba(24,32,40,.95); color: var(--text); border: 1px solid var(--text); font-weight: 700; box-shadow: 0 4px 16px rgba(0,0,0,.45); }
 body.light .mapchip { background: rgba(255,255,255,.95); }
 
 /* map markers */
@@ -285,20 +332,23 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 .camk.ring { border-radius: 50%; border-color: #ffb300; width: 12px; height: 12px; }
 .camk.ring.approach { border-style: double; }
 
-/* the station page */
-.panel { position: fixed; inset: 0; background: var(--canvas); z-index: 80; overflow: auto; -webkit-overflow-scrolling: touch; }
+/* the station page. --paneltop-h is the pinned bar's own height: its 8 px padding top and bottom and 1 px border around a
+   44 px tap target, or around one line of text in a button's padding and border when that is taller (the large text
+   size). scroll-padding-top keeps anything scrolled into view (a tapped picture choice, keyboard focus) out from under
+   the bar, with 11 px of air (jules on c0de59d: in a wide font a tap on the station map landed on the bar) */
+.panel { --paneltop-h: calc(max(var(--tap), var(--fs) * var(--lh) + 18px) + 17px); position: fixed; inset: 0; background: var(--canvas); z-index: 80; overflow: auto; -webkit-overflow-scrolling: touch; scroll-padding-top: calc(var(--paneltop-h) + 11px); }
 .paneltop { position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 12px; display: flex; gap: 8px; align-items: center; z-index: 2; }
 .paneltop .selector { flex: 1; margin: 0; min-width: 0; }
 .panelbody { padding: 12px 12px 32px; max-width: 1280px; margin: 0 auto; }
 .selector { display: flex; gap: 6px; align-items: center; margin-bottom: 10px; }
 .selector select { flex: 1 1 0; min-width: 0; max-width: 100%; font: inherit; background: var(--raised); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 8px; min-height: var(--tap); }
 .decision { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-bottom: 12px; }
-.decision .name { font-size: calc(24px * var(--type-scale)); font-weight: 800; line-height: 1.2; }
-.decision .name small { font-weight: 500; display: block; font-size: var(--fs); line-height: 1.3; }
-.decision .big { font-size: calc(34px * var(--type-scale)); font-weight: 750; text-align: right; line-height: 1; }
-.decision .big small { display: block; font-size: var(--fs-small); font-weight: 500; margin-top: 6px; }
+.decision .name { font-family: var(--display); font-size: calc(28px * var(--type-scale)); font-weight: 600; line-height: 1.1; }
+.decision .name small { font-family: var(--font); font-weight: 400; display: block; font-size: var(--fs); line-height: 1.3; }
+.decision .big { font-family: var(--display); font-size: calc(36px * var(--type-scale)); font-weight: 600; text-align: right; line-height: 1; }
+.decision .big small { font-family: var(--font); display: block; font-size: var(--fs-small); font-weight: 400; margin-top: 6px; }
 .decision .sub { grid-column: 1 / -1; color: var(--muted); font-size: var(--fs); line-height: 1.45; }
-.decision .contract { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: var(--fs); color: var(--muted); border-top: 1px dashed var(--border); padding-top: 10px; line-height: 1.5; }
+.decision .contract { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: var(--fs); color: var(--muted); border-top: 1px solid var(--border); padding-top: 10px; line-height: 1.5; }
 .decision .contract b { color: var(--text); }
 .decision .contract small { display: inline; }
 
@@ -306,7 +356,7 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 .answers { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 12px; }
 .tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; font-size: var(--fs); line-height: 1.45; }
 .tile.warn { border-color: var(--overdue); }
-.tile .big { font-size: calc(24px * var(--type-scale)); font-weight: 750; line-height: 1.15; margin: 2px 0 4px; }
+.tile .big { font-family: var(--display); font-size: calc(26px * var(--type-scale)); font-weight: 600; line-height: 1.1; margin: 2px 0 4px; }
 .tile .lead { font-size: calc(15px * var(--type-scale)); font-weight: 700; margin: 2px 0 6px; line-height: 1.4; }
 .tile ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
 .tile li b { color: var(--text); }
@@ -314,28 +364,28 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 .tile .evlabel.LOCKED { border-left-color: var(--locked); } .tile .evlabel.WET_NOW { border-left-color: var(--wet); }
 .tile .evlabel.RAIN_NEARBY { border-left-color: var(--nearby); } .tile .evlabel.UNKNOWN { border-left-color: var(--overdue); }
 .tile .quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-.tile .quotes span { display: flex; flex-direction: column; background: var(--raised); border-radius: 10px; padding: 8px 10px; }
-.tile .quotes span > b { font-size: calc(22px * var(--type-scale)); line-height: 1.1; margin: 2px 0; }
+.tile .quotes span { display: flex; flex-direction: column; background: var(--raised); border-radius: var(--radius); padding: 8px 10px; }
+.tile .quotes span > b { font-family: var(--display); font-weight: 600; font-size: calc(24px * var(--type-scale)); line-height: 1.1; margin: 2px 0; }
 .tile .quotes span small { font-size: var(--fs-small); }
 .fresh-list li { display: flex; justify-content: space-between; gap: 8px; }
 
 /* the briefing */
 .brief { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-bottom: 12px; font-size: var(--fs); line-height: 1.5; }
 .brief-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
-.brief-title { font-size: var(--fs); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
-.brief-title small { text-transform: none; letter-spacing: 0; font-weight: 500; margin-left: 6px; }
+.brief-title { font-family: var(--display); font-size: var(--fs-card); color: var(--text); font-weight: 600; }
+.brief-title small { font-family: var(--font); font-weight: 400; margin-left: 6px; }
 .brief-fresh { font-size: var(--fs-small); color: var(--muted); }
 .brief-fresh.stale { color: #fff; background: var(--overdue); border-radius: 999px; padding: 2px 10px; font-weight: 700; }
-.brief-headline { font-size: calc(19px * var(--type-scale)); font-weight: 800; line-height: 1.3; margin: 8px 0 6px; }
+.brief-headline { font-size: calc(18px * var(--type-scale)); font-weight: 700; line-height: 1.3; margin: 8px 0 6px; }
 .brief-summary { margin: 0 0 10px; color: var(--text); max-width: 90ch; }
 .brief-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 6px 0 10px; }
-.brief-cols .col { background: var(--raised); border-radius: 10px; padding: 10px 12px; }
+.brief-cols .col { background: var(--raised); border-radius: var(--radius); padding: 10px 12px; }
 .brief-cols .col.after { opacity: .8; }
-.brief-cols .big { font-size: calc(26px * var(--type-scale)); font-weight: 750; line-height: 1.1; margin: 2px 0 4px; }
+.brief-cols .big { font-family: var(--display); font-size: calc(28px * var(--type-scale)); font-weight: 600; line-height: 1.1; margin: 2px 0 4px; }
 .brief-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
 .brief-grid ul { margin: 0; padding-left: 18px; color: var(--muted); }
-.brief-grid li small { display: inline-block; color: var(--accent); font-weight: 700; font-size: var(--fs-small); text-transform: uppercase; letter-spacing: .04em; margin-right: 4px; }
-.brief-src { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); font-size: var(--fs-small); color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
+.brief-grid li small { display: inline-block; color: var(--text); font-weight: 700; font-size: var(--fs-small); margin-right: 4px; }
+.brief-src { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); font-size: var(--fs-small); color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
 .brief-src b { color: var(--text); }
 .brief-empty { color: var(--muted); }
 
@@ -357,7 +407,7 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 .hoursel { min-height: 18px; font-size: var(--fs); color: var(--text); margin-top: 6px; }
 
 /* the evidence drawers */
-.stack details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 8px; }
+.stack details { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 8px; }
 .stack summary { cursor: pointer; padding: 12px 14px; font-weight: 700; font-size: var(--fs); list-style: none; display: flex; justify-content: space-between; gap: 10px; min-height: var(--tap); align-items: center; }
 .stack summary::-webkit-details-marker { display: none; }
 .stack summary span { color: var(--muted); font-weight: 500; text-align: right; }
@@ -368,7 +418,7 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 
 /* cameras: a grid, never a clipped carousel */
 .camgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
-.camgrid .cam, .camstrip .cam { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.camgrid .cam, .camstrip .cam { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .cam .ph { height: 180px; background: var(--raised); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: var(--fs); cursor: pointer; text-align: center; padding: 10px; }
 .cam img, .cam iframe { width: 100%; height: 180px; object-fit: cover; border: 0; display: block; }
 .cam .cap { padding: 8px 10px; font-size: var(--fs-small); color: var(--muted); line-height: 1.4; }
@@ -378,7 +428,7 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 .camk.frozen { opacity: .55; }   /* 2026-09-16: a frozen camera's marker is drawn but does not compete with a live one */
 .camstrip { display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 10px; scroll-snap-type: x proximity; scroll-padding-left: 2px; }
 .camstrip .cam { flex: 0 0 min(300px, 84vw); scroll-snap-align: start; }
-.rings { margin: 8px 0 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.rings { margin: 8px 0 16px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
 .rings > summary { cursor: pointer; padding: 12px 14px; font-size: var(--fs); color: var(--text); list-style: none; min-height: var(--tap); }
 .rings > summary::-webkit-details-marker { display: none; }
 .rings > summary::before { content: "\25B8 "; color: var(--muted); }
@@ -390,12 +440,12 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 .rings .sector h4 { margin: 8px 0 6px; font-size: var(--fs); color: var(--muted); font-weight: 600; text-transform: none; letter-spacing: 0; }
 .rings .sector h4 b { color: var(--text); font-size: var(--fs); margin-right: 6px; }
 .rings .band { display: inline-block; font-size: var(--fs-small); padding: 1px 6px; border-radius: 6px; border: 1px solid var(--border); color: var(--muted); margin-right: 4px; vertical-align: middle; }
-.rings .band.approach { border-color: var(--accent); color: var(--accent); }
+.rings .band.approach { border-color: var(--text); color: var(--text); }
 .rings .cam .cap small { display: block; color: var(--muted); font-size: var(--fs-small); margin-top: 2px; white-space: normal; }
 .rings .gap { font-size: var(--fs-small); color: var(--muted); padding: 2px 14px 8px; }
 
 /* camera popup on the map, anchored on the camera's box */
-.maplibregl-popup-content { padding: 0; border-radius: 12px; overflow: hidden; background: var(--surface); color: var(--text); box-shadow: 0 8px 30px rgba(0,0,0,.6); }
+.maplibregl-popup-content { padding: 0; border-radius: var(--radius); overflow: hidden; background: var(--surface); color: var(--text); box-shadow: 0 8px 30px rgba(0,0,0,.6); }
 .maplibregl-popup-close-button { color: #fff; font-size: calc(22px * var(--type-scale)); padding: 2px 10px; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; background: rgba(0,0,0,.45); border-radius: 0 12px 0 8px; z-index: 2; }
 .campop { width: min(420px, 88vw); }
 .campop img, .campop iframe { width: 100%; height: 250px; object-fit: cover; display: block; border: 0; background: #000; }
@@ -417,21 +467,21 @@ body.light .mapchip { background: rgba(255,255,255,.95); }
 /* scorecard */
 table.sc { width: 100%; border-collapse: collapse; font-size: var(--fs); }
 table.sc th, table.sc td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--border); }
-table.sc th { color: var(--muted); font-weight: 600; font-size: var(--fs); text-transform: uppercase; letter-spacing: .05em; }
+table.sc th { color: var(--muted); font-weight: 700; font-size: var(--fs); }
 table.sc td.thin { color: var(--overdue); }
 #sc-details summary { cursor: pointer; display: flex; justify-content: space-between; list-style: none; min-height: var(--tap); align-items: center; }
 #sc-details summary::-webkit-details-marker { display: none; }
 #sc-details summary span { color: var(--muted); }
 
 /* sheets, toasts, full screen */
-.sheet { position: fixed; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: 1px solid var(--border); border-radius: 16px 16px 0 0; padding: 12px; z-index: 90; max-height: 60vh; overflow: auto; }
+.sheet { position: fixed; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: 1px solid var(--border); border-radius: var(--radius) var(--radius) 0 0; box-shadow: 0 -10px 28px rgba(0,0,0,.4); padding: 12px; z-index: 90; max-height: 60vh; overflow: auto; }
 .sheet .x { float: right; }
-#toast { position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%); background: var(--raised); border: 1px solid var(--border); padding: 8px 12px; border-radius: 10px; font-size: var(--fs); opacity: 0; transition: opacity .2s; z-index: 95; pointer-events: none; }
+#toast { position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%); background: var(--raised); border: 1px solid var(--border); padding: 8px 12px; border-radius: var(--radius); font-size: var(--fs); opacity: 0; transition: opacity .2s; z-index: 95; pointer-events: none; }
 #toast.show { opacity: 1; }
 .mapbox.full { position: fixed !important; inset: 0 !important; height: 100vh !important; height: 100dvh !important; width: 100vw !important; border-radius: 0 !important; z-index: 70; }
-.radarctl.fullctl { position: fixed; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); z-index: 71; margin: 0; background: rgba(17,28,46,.92); backdrop-filter: blur(6px); }
+.radarctl.fullctl { position: fixed; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); z-index: 71; margin: 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(18,24,30,.92); backdrop-filter: blur(6px); }
 body.light .radarctl.fullctl { background: rgba(255,255,255,.92); }
-.fsx { position: absolute; top: 10px; left: 10px; z-index: 72; background: rgba(17,28,46,.9); color: #fff; border: 1px solid var(--border); min-height: 40px; font-size: var(--fs); }
+.fsx { position: absolute; top: 10px; left: 10px; z-index: 72; background: rgba(18,24,30,.9); color: #fff; border: 1px solid var(--border); min-height: 40px; font-size: var(--fs); }
 body.mapfull { overflow: hidden; }
 /* the top stays 66 px down, clear of the exit-full-screen button (phone landscape put that button over the city) */
 .mapbox.full .mapcard { bottom: calc(var(--fs-ctl, 124px) + 16px); max-height: min(50%, calc(100% - var(--fs-ctl, 124px) - 16px - 66px)); }
@@ -469,11 +519,11 @@ body.mapfull { overflow: hidden; }
 
 .sentinel-stats { white-space:pre-line; font-size:var(--fs-small); line-height:1.45; overflow-wrap:anywhere; }
 .sentinel-compact { margin-top:.25rem; grid-column:1 / -1; }
-.experimental { margin:1rem 0; padding:.7rem; border:1px solid var(--line); border-radius:8px; }
+.experimental { margin:1rem 0; padding:.7rem; border:1px solid var(--border); border-radius:var(--radius); }
 
 .GAUGE_PRECIP { color: #72d3ee; }
 
-.expansion-panel {padding: 12px; border: 1px solid #536476; margin: 12px 0;}
+.expansion-panel {padding: 12px; border: 1px solid var(--border); margin: 12px 0;}
 .expansion-panel pre {white-space: pre-wrap; overflow-wrap: anywhere; font: inherit;}
 .expansion-panel select, .expansion-panel button {margin: 6px; padding: 6px;}
 .expansion-panel table {font-size: var(--fs); width: 100%;}
@@ -491,11 +541,11 @@ body.mapfull { overflow: hidden; }
 #sentinel-top table.sen-table { font-size: var(--fs); }
 #sentinel-top table.sen-table td, #sentinel-top table.sen-table th { padding: 6px 5px; white-space: nowrap; }
 #sentinel-top table.sen-table tr.sen-wet td { background: var(--raised); font-weight: 700; }
-#sentinel-top table.sen-table tr.sen-wet td:first-child { box-shadow: inset 3px 0 0 #2f8ce0; }
+#sentinel-top table.sen-table tr.sen-wet td:first-child { box-shadow: inset 3px 0 0 var(--wet); }
 #sentinel-top details.sen-all { margin-top: 10px; }
 #sentinel-top details.sen-all > summary { cursor: pointer; color: var(--muted); font-size: var(--fs-small); padding: 6px 0; }
 /* today at a glance: one line per fact on a phone, one row on a wide screen */
-.glance { margin: 8px 0; padding: 10px 12px; font-size: var(--fs); line-height: 1.5; }
+.glance { margin: 0; font-size: var(--fs); line-height: 1.5; }
 .glance:empty { display: none; }
 .glance .g { display: block; }
 @media (min-width: 900px) { .glance .g { display: inline; margin-left: 14px; } }
@@ -503,8 +553,8 @@ body.mapfull { overflow: hidden; }
 table.sc.tm-table { margin-top: 6px; font-size: var(--fs); }
 table.sc.tm-table td, table.sc.tm-table th { padding: 6px 5px; vertical-align: top; }
 table.sc.tm-table td:first-child, table.sc.tm-table td:last-child { white-space: normal; }
-.tm-new { display: inline-block; font-size: var(--fs); font-weight: 700; letter-spacing: .04em; padding: 1px 5px;
-  border-radius: 4px; background: #2f8ce0; color: #fff; vertical-align: middle; }
+.tm-new { display: inline-block; font-size: var(--fs); font-weight: 700; padding: 1px 5px;
+  border-radius: 3px; background: var(--text); color: var(--canvas); vertical-align: middle; }
 /* the v3 "in range but not a candidate" list, a table instead of a run-on sentence */
 table.sc.inrange { margin-top: 6px; font-size: var(--fs); }
 table.sc.inrange td, table.sc.inrange th { padding: 6px 5px; vertical-align: top; }
@@ -529,8 +579,11 @@ table.sc.inrange tbody tr:active td { background: var(--raised); }
   /* jules on #218, 2026-09-24: with the alerts and desk links the bar made 3 rows at 360 px in a wide font (Verdana,
      and jules' Linux default) while the Windows default made 2. Slightly smaller type and padding keep it at 2. */
   #jump { gap: 3px; padding: 6px 6px; }
-  #jump a { font-size: calc(var(--fs) * .86); padding: 4px 1px; }
-  #jump #theme, #jump #text-size { padding-left: 4px; padding-right: 4px; font-size: calc(var(--fs) * .86); }
+  #jump a { font-size: max(13px, calc(var(--fs) * .9)); padding: 4px 1px; }
+  /* layout A: on a phone only the header stays pinned; the two-row bar scrolls away with the page (app.js pinUnderHeader
+     then counts it 0 for the anchors and the find box), so 107 px of screen is not held for the whole page */
+  #jump { position: static; }
+  #jump #theme, #jump #text-size { padding-left: 4px; padding-right: 4px; font-size: max(13px, calc(var(--fs) * .9)); }
   .find-hit { flex-wrap: wrap; }
   .find-hit .r { margin-left: 0; width: 100%; }
 }
@@ -544,15 +597,15 @@ table.sc.inrange tbody tr:active td { background: var(--raised); }
 .st.WET_IMMINENT, .st.APPROACHING, .st.OVERDUE { color: #041018; }
 body.light .st.WET_IMMINENT, body.light .st.APPROACHING, body.light .st.OVERDUE,
 body.light .st.LOCKED, body.light .st.WET_NOW, body.light .st.RAIN_NEARBY { color: #fff; }
-body.light button.on { color: #fff; }
 #sentinel-top table.sen-table td, #sentinel-top table.sen-table th { white-space: normal; overflow-wrap: anywhere; }
 #sentinel-top .sen-grid { grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); }
 @media (max-width: 480px) {
   #top { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: 0 6px; padding: 4px 8px; min-height: 60px; }
-  #top .brand { grid-column: 1 / -1; font-size: var(--fs); line-height: 16px; white-space: nowrap; }
+  #top .brand { grid-column: 1 / -1; font-size: calc(17px * var(--type-scale)); line-height: 16px; white-space: nowrap; }   /* 16 px line: test_takeover_phone pins the header at 70 px or less in Verdana */
   #top .brand span { display: none; }
   #top .feed-pills { grid-row: 2; grid-column: 1; margin: 0; gap: 2px; }
   #top .feed-pill { padding: 2px 1px; font-size: var(--fs); }
+  #top .feed-age { font-size: var(--fs); }   /* layout A: 16 px wrapped STALE in a 60 px pill in a wide font (Verdana); 15 fits as before */
   #top .feed-name, #top .find-word { display: none; }
   #top .feed-short { display: block; }
   #top #findbtn { grid-row: 2; grid-column: 2; }
@@ -564,9 +617,9 @@ body.light button.on { color: #fff; }
   .mapbox.big { height: 48vh; min-height: 280px; }
   /* Colin, 2026-09-24, the premium radar feel: on a phone the board map runs edge to edge (main's 12px gutters given
      back) and takes most of the screen; the play bar and the key stay under it. Full screen keeps its own box. */
-  #mapsec .mapbox.big { height: 64vh; min-height: 340px; margin: 0 -12px; border-radius: 0; border-left: 0; border-right: 0; }
+  #mapsec .mapbox.big { height: 64vh; min-height: 340px; margin: 0 calc(-1 * var(--gutter)); border-radius: 0; border-left: 0; border-right: 0; }
   #mapsec .mapbox.big.full { margin: 0; }
-  .card { padding: 12px; min-width: 0; }
+  .card { padding: 14px 0; min-width: 0; }
   table.sc { max-width: 100%; }
   #sentinel-top table.sen-table { display: table; width: 100%; table-layout: fixed; font-size: var(--fs); }
   #sentinel-top table.sen-table td, #sentinel-top table.sen-table th { padding: 6px 3px; }
@@ -591,7 +644,7 @@ table.sc.tm-table th:last-child { width: 20%; }
 
 /* Reading controls and touch targets. Source notes keep their separate 13px floor. */
 body { font-variant-numeric: tabular-nums; }
-#text-size { min-height: 44px; max-width: 100%; flex: 0 0 auto; font: inherit; color: var(--text); background: var(--raised); border: 1px solid var(--border); border-radius: 8px; padding: 4px; }
+#text-size { min-height: 44px; max-width: 100%; flex: 0 0 auto; font: inherit; color: var(--text); background: var(--canvas); border: 1px solid var(--border); border-radius: var(--radius); padding: 4px; }
 button, select, input, summary, [role=button], a[href], [onclick], [data-icao], .mk, .camk { min-height: 44px; }
 summary { align-content: center; }
 a[href] { display: inline-flex; align-items: center; }
@@ -602,10 +655,14 @@ input[type=range] { height: 44px; margin-top: 0; margin-bottom: 0; }
 .mk .lbl { top: 46px; }
 .camk, .camk.ring { width: 44px; height: 44px; }
 .maplibregl-ctrl-attrib.maplibregl-compact { min-height: 44px; min-width: 44px; padding: 0 44px 0 0; }
+.maplibregl-ctrl-attrib.maplibregl-compact-show { padding: 4px 44px 4px 10px; font-size: var(--fs-small); line-height: 1.35; }   /* open, its words clear the box edge (critic on 661e587) */
+/* folded, it is only its 44 px (i): the min-width above plus the padding made an 88 px box whose empty white half sat
+   under the warnings key, now that a phone opens with it folded */
+.maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) { min-width: 0; }
 .maplibregl-ctrl-attrib-button { width: 44px; height: 44px; background-repeat: no-repeat; background-position: center; } /* one info icon, not four tiled ones, now that a camera popup folds the attribution */
 .maplibregl-ctrl-group button { width: 44px; height: 44px; } /* codex on #197: the library's 29px zoom buttons kept their width */
 #sentinel-top details.sen-all > summary { font-size: var(--fs); }
-.sechead > b { font-size: calc(16px * var(--type-scale)); }
+.sechead > b { font-family: var(--display); font-weight: 600; font-size: var(--fs-card); line-height: 1.2; }
 .st[data-why] { min-height: 44px; cursor: pointer; }
 .st[data-why]:focus-visible, .hour-controls :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .hours i:not(.cutoff) { cursor: default; }
@@ -613,7 +670,7 @@ input[type=range] { height: 44px; margin-top: 0; margin-bottom: 0; }
 .hour-controls button { min-width: 44px; padding: 2px; }
 .hour-controls select { min-width: 44px; width: 100%; font-size: max(16px, var(--fs)); }
 
-/* Independent desktop columns; phone document order and the open Sentinel stay intact. */
+/* Independent desktop columns from 900 px (the markup's grouping); below that app.js lays the cards out as layout A. */
 .board-primary, .board-gauges { display: contents; }
 @media (min-width: 900px) {
   main { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -629,7 +686,7 @@ input[type=range] { height: 44px; margin-top: 0; margin-bottom: 0; }
   #score { grid-area: score; position: relative; }
   #deskdiag { grid-area: diagnostics; }
   #tomorrow > .anchor, #mapsec > .anchor, #score > .anchor { position: absolute; }
-  main .card { padding: 12px; }
+  main .card { padding: 14px 0; }
   #score table.sc { display: block; max-width: 100%; overflow-x: auto; }
   main .maptop { align-items: start; flex-wrap: wrap; }
   main .maptop h3 { margin-top: 0; }
@@ -641,7 +698,7 @@ input[type=range] { height: 44px; margin-top: 0; margin-bottom: 0; }
   #sentinel-top table.sen-table { width: 100%; table-layout: fixed; }
   #sentinel-top table.sen-table td, #sentinel-top table.sen-table th { padding: 6px 3px; }
   #stations .row { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 10px 0; gap: 4px 8px; }
-  #stations .row .st { display: inline-block; max-width: 100%; white-space: normal; overflow-wrap: normal; }
+  #stations .row .st { display: inline-flex; flex-wrap: wrap; align-items: center; max-width: 100%; white-space: normal; overflow-wrap: normal; }   /* flex, so the icon keeps its gap and the words sit centred in the 44 px plaque (critic on 661e587) */
   #stations .row .st .q { white-space: nowrap; }
 }
 @media (min-width: 1300px) {
@@ -650,7 +707,7 @@ input[type=range] { height: 44px; margin-top: 0; margin-bottom: 0; }
     grid-template-rows: min-content min-content 1fr; }
   #mapsec { position: sticky; top: calc(var(--top-h, 69px) + var(--jump-h, 64px) + 16px);
     height: calc(100dvh - var(--top-h, 69px) - var(--jump-h, 64px) - 32px); min-height: min(540px, calc(100dvh - var(--top-h, 69px) - var(--jump-h, 64px) - 32px));
-    display: grid; grid-template-rows: auto minmax(220px, 1fr) auto auto; overflow: auto; }
+    display: grid; grid-template-rows: minmax(220px, 1fr) auto auto auto auto; overflow: auto; }   /* layout A: map, clock and controls, key, key notes button, basemap row */
   #mapsec .mapbox.big { height: 100%; min-height: 220px; }
   body.mapfull #mapsec { position: relative; z-index: 70; overflow: visible; height: auto; }
 }
@@ -658,7 +715,7 @@ input[type=range] { height: 44px; margin-top: 0; margin-bottom: 0; }
 /* Card arrangement is local to this browser. Controls appear in customize mode. */
 #layout-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; max-width: none; }
 #layout-status { color: var(--muted); font-size: var(--fs-small); }
-#layout-panel { flex: 1 0 100%; min-width: 0; padding: 14px; background: var(--surface); border: 1px solid var(--accent); border-radius: var(--radius); }
+#layout-panel { flex: 1 0 100%; min-width: 0; padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
 #layout-panel p { margin-top: 0; }
 #layout-visibility { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 8px; }
 #layout-visibility label { display: flex; align-items: center; min-height: 44px; gap: 6px; }
@@ -666,9 +723,9 @@ input[type=range] { height: 44px; margin-top: 0; margin-bottom: 0; }
 .board-tile { min-width: 0; scroll-margin-top: calc(var(--top-h, 69px) + var(--jump-h, 105px) + 12px); }
 body.mapfull .board-tile[data-tile=mapsec] { z-index: 70; }
 .board-tile[hidden] { display: none !important; }
-.tile-tools { display: none; flex-wrap: wrap; align-items: center; gap: 4px; padding: 8px; border: 1px solid var(--border); background: var(--raised); border-radius: var(--radius) var(--radius) 0 0; }
+.tile-tools { display: none; flex-wrap: wrap; align-items: center; gap: 4px; padding: 8px; border: 0; border-top: 1px solid var(--border); background: var(--raised); border-radius: 0; }
 .tile-tools strong { flex: 1 0 100%; }
-.tile-tools button, .tile-tools select { min-height: 44px; padding: 6px 8px; font: inherit; color: var(--text); border: 1px solid var(--border); background: var(--surface); border-radius: 8px; }
+.tile-tools button, .tile-tools select { min-height: 44px; padding: 6px 10px; font: inherit; color: var(--text); border: 1px solid var(--border); background: var(--canvas); border-radius: var(--radius); }
 .tile-tools .tile-unfocus { display: none; }
 .layout-editing .tile-tools, .tile-collapsed > .tile-tools { display: flex; }
 .tile-collapsed > :not(.tile-tools) { display: none !important; }
@@ -680,7 +737,7 @@ body:not(.layout-editing) .tile-collapsed > .tile-tools > :not(strong):not(.tile
 body.tile-focus-open { overflow: hidden; }
 .board-tile.tile-focused { position: fixed !important; inset: 8px; width: auto !important; max-width: none !important;
   height: auto !important; max-height: none !important; min-height: 0 !important; margin: 0; padding: 12px;
-  z-index: 120; overflow: auto; background: var(--canvas); border: 1px solid var(--accent); border-radius: var(--radius); }
+  z-index: 120; overflow: auto; background: var(--canvas); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0,0,0,.55); }
 .board-tile.tile-focused > .tile-tools { display: flex; position: sticky; top: -12px; z-index: 2; }
 .board-tile.tile-focused > .tile-tools strong { flex: 1; }
 .board-tile.tile-focused > .tile-tools > :not(strong):not(.tile-unfocus) { display: none; }
@@ -716,14 +773,14 @@ body.tile-focus-open { overflow: hidden; }
 
 /* 9am market bands (2026-09-23) */
 .band { margin: 6px 0 10px; line-height: 1.5; }
-.band .chip { display: inline-block; padding: 2px 8px; margin: 2px 2px 0 0; border-radius: 10px; background: var(--raised); border: 1px solid var(--border); color: var(--text); font-size: 0.92em; }
+.band .chip { display: inline-block; padding: 2px 8px; margin: 2px 2px 0 0; border-radius: 3px; background: var(--raised); border: 1px solid var(--border); color: var(--text); font-size: 0.92em; }
 .band .chip.wet { border-color: var(--locked); color: var(--locked); }
 
 /* the desk read card (2026-09-23): the answer keeps its line breaks and wraps inside the card on a phone */
 #deskread .dr-head { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: baseline; }
 #deskread .dr-answer { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; margin: 8px 0 0; line-height: 1.5; max-width: 90ch; }
 #deskread .dr-ask { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 12px; }
-#deskread .dr-ask button { background: var(--accent); color: #041018; font-weight: 700; }
+#deskread .dr-ask button { background: var(--text); color: var(--canvas); border-color: var(--text); font-weight: 700; }
 #deskread .dr-ask .note { margin: 0; flex: 1 1 200px; }
 #deskread .dr-body p { overflow-wrap: anywhere; }
 #deskread .dr-topic { font-size: var(--fs-small); }
@@ -737,17 +794,16 @@ body.tile-focus-open { overflow: hidden; }
 #alerts h2 small { display: block; font-weight: 500; font-size: var(--fs-small); color: var(--muted); margin-top: 2px; }
 .al-health { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px; }
 .al-health:empty { display: none; }
-.al-chip { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; max-width: 100%; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); background: var(--raised); color: var(--muted); font-size: var(--fs-small); font-weight: 700; white-space: normal; overflow-wrap: anywhere; }
+.al-chip { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; max-width: 100%; padding: 4px 9px; border-radius: 3px; border: 1px solid var(--border); background: var(--raised); color: var(--muted); font-size: var(--fs-small); font-weight: 700; white-space: normal; overflow-wrap: anywhere; }
 .al-chip .al-name { min-width: 0; overflow-wrap: anywhere; }
 .al-chip b { flex: none; color: var(--text); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .al-counts.al-fail { color: var(--overdue); }
 .al-chip.al-ok { border-color: var(--pos); color: var(--pos); }
 .al-chip.al-unk { border-color: var(--nearby); color: var(--nearby); }
 .al-chip.al-bad { border-color: var(--overdue); color: var(--overdue); background: transparent; box-shadow: inset 0 0 0 1px var(--overdue); }
+body.light .al-chip { background: var(--surface); }   /* "lock arm ?" in amber held 4.2:1 on light raised (critics on 661e587); 5.0 on white */
 .al-details > summary { cursor: pointer; display: flex; justify-content: space-between; gap: 10px; align-items: center; list-style: none; min-height: var(--tap); }
 .al-details > summary::-webkit-details-marker { display: none; }
-.al-details > summary span { color: var(--muted); font-weight: 500; }
-.al-details[open] > summary span { visibility: hidden; }
 .al-list { list-style: none; margin: 6px 0 0; padding: 0; }
 .al-list li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 10px; padding: 8px 0; border-top: 1px solid var(--border); font-size: var(--fs); }
 .al-list .al-t { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
@@ -760,3 +816,149 @@ body.tile-focus-open { overflow: hidden; }
 .al-hlist { list-style: none; padding: 0; margin: 8px 0 0; font-size: var(--fs-small); color: var(--muted); }
 .al-hlist li { padding: 4px 0; overflow-wrap: anywhere; }
 .al-hlist b { color: var(--text); }
+
+/* ==================================================================================================================
+   LAYOUT A (Colin, 2026-09-25, "and a for the layout"): the map first, then the call, every gauge, the evidence
+   folded. The order itself is app.js's (the layout code moves the cards below 900 px); this is how each part reads.
+   ================================================================================================================== */
+
+/* 1. the map: full bleed below the desktop grid, half the screen, no card around it */
+@media (max-width: 899px) {
+  /* the stale banner's height (app.js pinUnderHeader, --banner-h) comes out of the map, so with every feed stale the radar
+     clock still lands on the first screen (360 x 800 in Verdana, 390 x 844 at A+; audit on 661e587) */
+  #mapsec .mapbox.big { height: calc(50vh - var(--banner-h, 0px)); min-height: 300px; margin: 0 calc(-1 * var(--gutter)); border: 0; border-bottom: 1px solid var(--border); border-radius: 0; }
+  #mapsec .mapbox.big.full { margin: 0; }
+}
+
+/* 2. THE RADAR CLOCK, the page's one loud line: the valid time large in the display face, its age beside it in
+   tabular figures, the source small under it. The words are the board's own (app.js setFt splits them, unchanged). */
+#ctl-live { margin-top: 14px; row-gap: 10px; }
+#mapsec .ft { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; font-family: var(--display); font-weight: 600; font-size: calc(22px * var(--type-scale)); line-height: 1.1; }
+#mapsec .ft-t { font-size: min(var(--fs-clock), 9.8vw); line-height: 1.05; letter-spacing: .005em; text-wrap: balance; }   /* 38 px at 390, 35 at 360 */
+#mapsec .ft-clock { white-space: nowrap; }
+#mapsec .ft-age { font-weight: 500; font-size: calc(21px * var(--type-scale)); font-variant-numeric: tabular-nums; }
+#mapsec .ft:not(.stale):not(.fc) .ft-age { color: var(--muted); }
+#mapsec .radarctl .src { flex: 1 1 100%; margin: -6px 0 2px; }
+#mapsec .prodsel { margin-top: 2px; }
+
+/* 3. the key: the strips and their words (dBZ, inches, kft, knots) stay under the controls; the notes and the gauge
+   pin colours fold behind the button under it. A key with no strip yet (loading, unavailable, pick a gauge) keeps
+   its notes, because then a note is the status. */
+#legend-live.legend.rl { gap: 5px; line-height: 1.3; margin-top: 16px; }
+#legend-live .rl-band { grid-template-columns: 56px minmax(0, 1fr); gap: 10px; }
+#legend-live.rl-brief:has(.rl-strip) .rl-note:not(.sat-note):not(:has(.sw)), #legend-live.rl-brief .rl-pins { display: none; }   /* a note with a swatch is a key entry (the DOT camera dot, velocity's range fold) and stays */
+.rl-head b { color: var(--text); }
+.legend-more { display: flex; align-items: center; gap: 8px; width: 100%; margin-top: 4px; padding: 6px 0; background: transparent; border: 0; border-radius: 0; color: var(--muted); font-size: var(--fs-small); text-align: left; }
+.legend-more::before { content: "\25B8"; color: var(--dim); }
+.legend-more[aria-expanded="true"]::before { content: "\25BE"; }
+.legend-more:active { color: var(--text); }
+#mapsec > .maptop { margin: 6px 0 0; }
+#mapsec #basemap { gap: 6px; }
+
+/* 4. THE CALL: the glance, the v3 value rows and the alerts read as one band, marked by a runway-white rule on its
+   left edge, on the surface tone, edge to edge on a phone */
+#glance, #model, #alerts { background: var(--surface); border-top: 0; border-left: 3px solid var(--text); padding: 14px var(--gutter) 14px calc(var(--gutter) - 3px); }
+#model, #alerts { box-shadow: inset 0 1px 0 var(--border); }
+#glance { margin-top: 22px; padding-top: 16px; }
+.call-head { display: block; font-family: var(--display); font-weight: 600; font-size: var(--fs-sec); line-height: 1.15; margin-bottom: 8px; }
+/* the answer outranks its label (design critic on 661e587): the label muted and regular, the answer ("DEN, OKC, SEA",
+   "none") in runway white and bold; a stale flag in the answer keeps its red */
+.glance .g { font-weight: 700; color: var(--text); }
+.glance .g > b:first-child { font-weight: 400; color: var(--muted); }
+#model .v3-none { font-size: var(--fs); font-weight: 700; color: var(--text); margin-top: 14px; }
+#model .alerts-priced.plain small b { font-weight: 400; color: var(--muted); }
+#model .v3-label { color: var(--muted); font-size: var(--fs-small); }
+#model .v3-label b { color: var(--text); }
+#alerts h2 { font-size: var(--fs-card); margin: 0 0 4px; }
+#alerts h2 small { font-family: var(--font); font-weight: 400; }
+/* the band's own folds (withheld, why not a candidate, every v3 forecast) as disclosure rows between hairlines */
+#model details.grp, #model details.forecast-details { margin: 0; border-top: 1px solid var(--border); }
+#model details > summary { padding: 12px 0; min-height: 48px; }
+#model details[open] > summary { padding-bottom: 6px; }
+@media (max-width: 899px) {
+  #glance, #model, #alerts { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); }
+}
+
+/* 5. every gauge: the section head, its filters, then the rows (above) */
+#stations { margin-top: 28px; }
+#stations > .maptop { margin: 0 0 10px; }
+#stations > .maptop h3 { font-size: var(--fs-sec); }
+#stations .row.ovl, #stations .row.sel { padding-left: 12px; }
+
+/* 6. the evidence, folded: a plain disclosure row per card, its name in the display face and one button. Tomorrow,
+   Desk read and the Sentinel keep that row open or shut; the Sentinel shut still shows its status line. */
+body:not(.layout-editing) .tile-foldable:not(.tile-focused) > .tile-tools,
+body:not(.layout-editing) .tile-collapsed:not(.tile-focused) > .tile-tools { display: flex; flex-wrap: nowrap; gap: 10px; padding: 6px 0; background: transparent; }
+body:not(.layout-editing) .tile-foldable > .tile-tools > :not(strong):not(.tile-collapse) { display: none; }
+body:not(.layout-editing) .tile-foldable > .tile-tools strong,
+body:not(.layout-editing) .tile-collapsed > .tile-tools strong { flex: 1 1 auto; min-width: 0; font-family: var(--display); font-weight: 600; font-size: calc(20px * var(--type-scale)); line-height: 1.15; }
+.tile-tools .tile-collapse { flex: none; min-width: 88px; background: transparent; }
+body:not(.layout-editing) .tile-tools .tile-collapse { width: 88px; padding-left: 0; padding-right: 0; }
+body:not(.layout-editing) .tile-foldable:not(.tile-focused) > .card { border-top: 0; padding-top: 4px; }
+body:not(.layout-editing) .tile-foldable:not(.tile-focused) > .card > h2 { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.board-tile[data-tile=sentinel-top].tile-collapsed:not(.tile-focused) > #sentinel-top { display: block !important; padding: 0 0 14px; }
+/* folded, the Sentinel keeps its status line, any stale flag, and the row that opens its full 28-gauge table, so that table
+   stays ONE tap away as it was before A (the brief's rule; three critics on 661e587). Expand shows the rest. */
+.board-tile[data-tile=sentinel-top].tile-collapsed:not(.tile-focused) > #sentinel-top > :not(#sentinel-status):not(#sentinel-rows) { display: none !important; }
+.board-tile[data-tile=sentinel-top].tile-collapsed:not(.tile-focused) #sentinel-rows > :not(details.sen-all):not(.stale) { display: none !important; }   /* a stale flag ("refresh failed") stays too */
+.board-tile[data-tile=sentinel-top].tile-collapsed:not(.tile-focused) #sentinel-rows > details.sen-all { margin-top: 4px; }
+.board-tile[data-tile=sentinel-top].tile-collapsed #sentinel-status { font-weight: 400; color: var(--muted); margin: 0; white-space: pre-line; }
+.board-tile[data-tile=tomorrow] { margin-top: 28px; }
+#score > details.card, #deskdiag > details.card { padding: 0; }
+#sc-details > summary, #deskdiag > details > summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 56px; padding: 6px 0; list-style: none; cursor: pointer; font-family: var(--display); font-weight: 600; font-size: calc(20px * var(--type-scale)); line-height: 1.15; }
+#sc-details > summary b { font-weight: 600; }
+#sc-details > summary::-webkit-details-marker, #deskdiag > details > summary::-webkit-details-marker { display: none; }
+/* every fold row on the page says the same two words in the same box as the cards' own button: Expand, and Collapse
+   once open (it was "Expand", a boxed "open", a bare "open", and no way to shut Diagnostics; critic on 661e587) */
+#sc-details > summary::after, #deskdiag > details > summary::after, .al-details > summary::after { content: "Expand"; flex: none; box-sizing: border-box; width: 88px; font-family: var(--font); font-weight: 400; font-size: var(--fs); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 11px 0; text-align: center; line-height: 1.2; }
+#sc-details[open] > summary::after, #deskdiag > details[open] > summary::after, .al-details[open] > summary::after { content: "Collapse"; }
+#sc-details[open], #deskdiag > details[open] { padding-bottom: 14px; }   /* the scorecard's own row only: its inner details keep their look */
+#deskdiag { border-bottom: 1px solid var(--border); }
+
+/* the gauge rows, a departures board line (app.js rowHTML): the code and the price on top, the state plaque beside the
+   bid, then one left-aligned line with the quote's freshness and the minutes left, then the gauge and the forecast.
+   The price block is only the ask and the bid now, so it keeps to 45 % and the code and its ICAO never squeeze
+   (the freshness prose inside it once broke KMIA into "KM / IA" and ran the plaque over the price). */
+.row .city small { white-space: nowrap; }
+.row .qline { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0 14px; line-height: 1.4; }
+.row .qline small { min-width: 0; }
+@media (max-width: 480px) {
+  #stations .row > div:first-child { display: contents; }
+  #stations .row .city { grid-column: 1; grid-row: 1; margin-bottom: 0; }
+  #stations .row .right { grid-column: 2; grid-row: 1 / span 2; max-width: 45vw; }
+  #stations .row > div:first-child > .st { grid-column: 1; grid-row: 2; justify-self: start; align-self: center; max-width: 100%; white-space: normal; }
+  #stations .row .why { grid-column: 1 / -1; }   /* opened under the plaque (the first free full row), before the quote line */
+  .row .price small { overflow-wrap: normal; }
+}
+/* the gauge filters are one choice of four: a segmented control like the picture choice */
+#queue-filters { flex: 1 1 100%; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }   /* the full width, like the picture choice */
+#queue-filters button { flex: 1 1 auto; border: 0; border-radius: 0; background: var(--canvas); min-height: 44px; padding: 6px 8px; }
+#queue-filters button.on { background: var(--text); }
+
+/* the jump bar on a phone: two rows, broken after "Gauges" by a zero-height spacer, each link as wide as its words
+   (grow by label length, basis 0 so the words may wrap before a third row ever appears) */
+.jump-break { display: none; }
+@media (max-width: 480px) {
+  .jump-break { display: block; flex: 0 0 100%; height: 0; }
+  #jump a[href="#top-map"] { flex-grow: 4; }
+  #jump a[href="#top-deskread"] { flex-grow: 4.5; }
+  #jump a[href="#top-call"], #jump a[href="#top-tomorrow"], #jump a[href="#top-sentinel"], #jump a[href="v3/"] { flex-grow: 8; }
+  #jump a[href="#top-alerts"], #jump a[href="#top-gauges"] { flex-grow: 6; }
+  #jump a[href="#top-score"] { flex-grow: 5; }
+  #jump #theme { flex: 5 1 0; }
+  #jump #text-size { flex: 4 1 0; min-width: 52px; }
+}
+
+/* 7. Customize cards: last on a phone, where it no longer stands between the jump bar and the map */
+@media (max-width: 899px) {
+  #layout-tools { margin: 28px 0 0; }
+}
+
+/* 8. wide screens keep the desktop grid, in the same tokens: wider gutters between columns now the boxes are gone */
+@media (min-width: 900px) {
+  main { column-gap: 28px; }
+  #glance { margin-top: 0; }
+  #stations { margin-top: 0; }
+  .board-tile[data-tile=tomorrow] { margin-top: 0; }
+  .glance .g { display: block; margin-left: 0; }   /* the call's column is about 400 px wide: one fact per line, as on a phone */
+}

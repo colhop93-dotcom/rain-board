@@ -3,25 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#08111F">
+<meta name="theme-color" content="#12181E">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Rain Station Board</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2360a5fa'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%2308111F'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2360a5fa'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%2312181E'/%3E%3C/svg%3E">
+<!-- layout A type (2026-09-25): Barlow Condensed for codes, headings, the radar clock and the numbers (its forms come
+     from highway and airport signage); Atkinson Hyperlegible Next for reading. The font stylesheet loads as "print" and
+     switches itself on when it arrives, so the page never waits on it: a plain stylesheet link blocks the first paint,
+     and with fonts.googleapis.com hanging the board stayed blank (phone QA on 661e587). display=swap and style.css's
+     stacks ending in system-ui mean a slow or blocked font only changes the face. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-<link rel="stylesheet" href="style.css?v=caac0afbdc">
+<link rel="stylesheet" href="style.css?v=1ab94ee334">
 </head>
 <body>
 <header id="top">
   <div class="brand">RAIN BOARD<span>27 settlement gauges</span></div>
   <div id="fresh" class="feed-pills" aria-label="Feed health">Loading feeds</div>
-  <button id="findbtn" type="button" aria-expanded="false" aria-controls="find" aria-label="find a city" title="find a city">&#9906;<span class="find-word"> find</span></button>
+  <button id="findbtn" type="button" aria-expanded="false" aria-controls="find" aria-label="find a city" title="find a city"><svg class="find-ico" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="8.5" cy="8.5" r="5.75" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12.8 12.8 18 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><span class="find-word"> find</span></button>
   <div id="feed-detail" class="feed-detail hidden" role="status"></div>
 </header>
 <div id="stale-banner" class="banner hidden"></div>
 
-<nav id="jump"><button id="theme" title="dark or light">light</button><select id="text-size" aria-label="Text size" title="Text size, saved on this device"><option value="small">A-</option><option value="normal" selected>A</option><option value="large">A+</option></select><a href="#top-sentinel">sentinel</a><a href="#top-alerts">alerts</a><a href="#top-model">v3</a><a href="#top-deskread">desk</a><a href="v3/">v3 table</a><a href="#top-gauges">gauges</a><a href="#top-tomorrow">tomorrow</a><a href="#top-map">map</a><a href="#top-score">score</a></nav>
-<!-- 2026-09-23: "v3", not "v3 today": with the desk link that label pushed the bar to a third row at 360 px
-     in the default font. test_card_layout pins two rows. -->
+<nav id="jump"><button id="theme" title="dark or light">light</button><select id="text-size" aria-label="Text size" title="Text size, saved on this device"><option value="small">A-</option><option value="normal" selected>A</option><option value="large">A+</option></select><a href="#top-map">Map</a><a href="#top-call">The call</a><a href="#top-alerts">Alerts</a><a href="#top-gauges">Gauges</a><span class="jump-break" aria-hidden="true"></span><a href="#top-tomorrow">Tomorrow</a><a href="#top-deskread">Desk</a><a href="#top-sentinel">Sentinel</a><a href="v3/">v3 table</a><a href="#top-score">Score</a></nav>
+<!-- 2026-09-25, layout A: the links follow the page from the top (map, the call, then down), in sentence case. The
+     theme and text size stay first, where test_takeover_phone pins the theme button (under 160 px even with the stale
+     banner up). "The call" lands on the band's first line; the v3 value rows sit inside that band, so the old "v3"
+     link went with it. On a phone the bar breaks after Gauges; test_card_layout and test_layout_a pin two rows at
+     360 px, in the default font and in Verdana. -->
 <!-- Colin, 2026-09-19: "I want a search function as well". It jumps, it does not filter: the board
      reloads every 60 s and the gauge queue has its own ALL/WET/DUE buttons, so a half-filtered page
      is a state that can hide a city from him. -->
@@ -32,25 +44,28 @@
 </div>
 <main>
   <div id="layout-tools"><button id="layout-edit" type="button" aria-expanded="false" aria-controls="layout-panel">Customize cards</button><span id="layout-status" role="status"></span>
-    <div id="layout-panel" class="hidden" aria-label="Card layout"><p>Saved on this device. Drag a card handle or use its move buttons. Sentinel stays first and open.</p><div id="layout-visibility"></div><button id="layout-reset" type="button">Reset layout</button><button id="layout-done" type="button">Done</button></div>
+    <div id="layout-panel" class="hidden" aria-label="Card layout"><p>Saved on this device. Drag a card handle or use its move buttons. The Rain Sentinel can move and fold; it cannot be hidden.</p><div id="layout-visibility"></div><button id="layout-reset" type="button">Reset layout</button><button id="layout-done" type="button">Done</button></div>
   </div>
+  <!-- LAYOUT A (Colin, 2026-09-25, "and a for the layout"). This markup is the DESKTOP grid's grouping (three
+       columns from 900 px). Below 900 px the layout code in app.js moves the cards into A's order: the map, the
+       call (this glance, the v3 value rows, the alerts), every gauge, then Tomorrow, Desk read, the Sentinel as its
+       status line, Scorecard and Diagnostics, folded. Customize cards sits last on a phone. -->
   <div class="board-primary">
   <!-- today at a glance (Colin, 2026-09-18): what already rained, what is raining at an open gauge,
-       and what is worth something at a real price, before any scroll. Filled by glanceHTML(). -->
+       and what is worth something at a real price, before any scroll. Filled by glanceHTML(); in layout A it heads
+       the call band, so its first line reads "The call". -->
+  <span id="top-call" class="anchor"></span>
   <p id="glance" class="glance card"></p>
 
-  <!-- 0. the Rain Sentinel (Colin, 2026-09-18): the intended forecaster, at the top and open. It has
-       no validated probability yet, so the status line says so and only live readings show. -->
-  <span id="top-sentinel" class="anchor"></span>
-  <section id="sentinel-top" class="card">
-    <h2>Rain Sentinel</h2>
-    <p id="sentinel-status" class="sen-status">Rain Sentinel forecast: loading.</p>
-    <div id="sentinel-rows"></div>
-  </section>
+  <!-- 1. what the model says today: will not rain, will rain, where the market disagrees, and when. Layout A: the
+       markup follows the call band (the glance, these v3 value rows, the alerts) so the desktop column reads it as one
+       band too; the Sentinel follows the band (design critic on 661e587: at 1280 it split the band in two). -->
+  <span id="top-model" class="anchor"></span>
+  <section id="model" class="card"></section>
 
   <!-- the alerts mirror (Colin, 2026-09-23: "a mirrored canary alert thing on my board"): every page that
-       reached his phone, and whether the alarms themselves are alive. Right after the Sentinel because the
-       layout code pins the Sentinel first. Filled by renderAlerts() from data/desk_alerts.json, which the box
+       reached his phone, and whether the alarms themselves are alive. In layout A it closes the call band, after
+       the v3 value rows. Filled by renderAlerts() from data/desk_alerts.json, which the box
        serves from live/ and, by Colin's order of 2026-09-24, the public mirror carries too; the card says
        "not written yet" only when the file is absent.
        Nothing here re-rates a market: it is a mirror of what was sent. -->
@@ -58,12 +73,18 @@
   <section id="alerts" class="card">
     <h2>Alerts<small>what reached the phone, and whether the alarms are alive</small></h2>
     <div id="alerts-health" class="al-health" aria-label="Alarm health"></div>
-    <details id="alerts-details" class="al-details"><summary id="alerts-sum"><b>Loading the alert mirror.</b><span>open</span></summary><div id="alerts-body"></div></details>
+    <details id="alerts-details" class="al-details"><summary id="alerts-sum"><b>Loading the alert mirror.</b></summary><div id="alerts-body"></div></details>
   </section>
 
-  <!-- 1. what the model says today: will not rain, will rain, where the market disagrees, and when -->
-  <span id="top-model" class="anchor"></span>
-  <section id="model" class="card"></section>
+  <!-- 0. the Rain Sentinel (Colin, 2026-09-18): the intended forecaster. It has no validated probability
+       yet, so the status line says so and only live readings show. Layout A folds it on a phone to that status
+       line and the row that opens its full table; Expand shows the rest. -->
+  <span id="top-sentinel" class="anchor"></span>
+  <section id="sentinel-top" class="card">
+    <h2>Rain Sentinel</h2>
+    <p id="sentinel-status" class="sen-status">Rain Sentinel forecast: loading.</p>
+    <div id="sentinel-rows"></div>
+  </section>
 
   <!-- the desk read (Colin, 2026-09-23): one AI read of the board's current data, asked from the phone
        through a private ntfy topic and answered by build/desk_read.py. The file is box only, never
@@ -93,22 +114,25 @@
     <div id="tomorrow-body">Loading tomorrow's markets.</div>
   </section>
 
-  <!-- 2. the map -->
+  <!-- 2. the map. Layout A: the picture first, then its valid time and source (the radar clock, the one loud line
+       on the page), the picture choice, play and the time slider, the colour key with its notes one tap away, and the
+       basemap row last. Source order is reading order, so the keyboard walks it the same way. -->
   <section id="mapsec">
     <span id="top-map" class="anchor"></span>
-    <div class="maptop">
-      <h3>The map</h3>
-      <div class="chips" id="basemap"><button data-b="sat" class="on">satellite</button><button data-b="dark">dark</button><button data-b="radar-only">radar only</button><button id="cams-toggle" class="on" title="show or hide the camera pictures on the map">photos on</button><button id="warn-toggle" class="on" aria-pressed="true" title="show or hide NWS warning outlines on the map">warnings on</button><button id="clouds-toggle" aria-pressed="false" title="show or hide GOES satellite clouds under the radar">clouds off</button><button id="fs-live" data-fs="map-live" title="full screen">&#x26F6; full screen</button></div>
-    </div>
+    <h3 class="vh">The map</h3>
     <div id="map-live" class="mapbox big"><div id="mapcard" class="mapcard hidden"></div><button id="mapcard-chip" class="mapchip hidden" type="button"></button></div>
     <div class="radarctl" id="ctl-live"></div>
-    <div class="legend" id="legend-live"></div>
+    <div class="legend rl-brief" id="legend-live"></div>
+    <button id="legend-more" class="legend-more" type="button" aria-expanded="false" aria-controls="legend-live">Show key notes and gauge pins</button>
+    <div class="maptop">
+      <div class="chips" id="basemap" role="group" aria-label="Map picture and overlays"><button data-b="sat" class="on">satellite</button><button data-b="dark">dark</button><button data-b="radar-only">radar only</button><button id="cams-toggle" class="on" title="show or hide the camera pictures on the map">photos on</button><button id="warn-toggle" class="on" aria-pressed="true" title="show or hide NWS warning outlines on the map">warnings on</button><button id="clouds-toggle" aria-pressed="false" title="show or hide GOES satellite clouds under the radar">clouds off</button><button id="fs-live" data-fs="map-live" title="full screen">&#x26F6; full screen</button></div>
+    </div>
   </section>
 
   <!-- 4. the scorecard, folded -->
   <section id="score">
     <span id="top-score" class="anchor"></span>
-    <details class="card" id="sc-details"><summary><b>Scorecard: what settled, and what v3's numbers have been worth</b><span>open</span></summary>
+    <details class="card" id="sc-details"><summary><b>Scorecard: what settled, and what v3's numbers have been worth</b></summary>
       <h3>Today, rain reported (official results shown separately)</h3>
       <div id="sc-today"></div>
       <h3>9am market bands: under 10c and 90c and up, with the market's own record</h3>
@@ -162,7 +186,7 @@
 <script src="evidence.js?v=7292dc76c3"></script>
 
 <script src="expansion_ui.js?v=dd7a832977"></script>
-<script src="sentinel_ui.js?v=a7d8d81063"></script>
-<script src="app.js?v=bcb106a9bf"></script>
+<script src="sentinel_ui.js?v=60aa0462ff"></script>
+<script src="app.js?v=921f1155a9"></script>
 </body>
 </html>

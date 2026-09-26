@@ -106,7 +106,7 @@
     var list = stations || [], n = 0;
     if (!feedProblem(feed, now)) list.forEach(function (s) { var row = currentRow(feed, s, now); if (row && validated(row.forecast, now)) n++; });
     var head = n ? "Rain Sentinel forecast: validated for " + n + " of " + list.length + " stations."
-                 : "No Sentinel forecast yet. v3 below is the backup.";
+                 : "No Sentinel forecast yet. v3 is the backup.";   // no "below": layout A puts v3 above this card (2026-09-25)
     var days = feed && feed.schema === SCHEMA && feed.synthetic === false ? trainingDays(feed) : null;
     return head + (days === null ? ""
                                  : " Training data: " + days + " independent days collected.");
