@@ -1,6 +1,6 @@
 {
  "schema": "019a.models/1",
- "generated_utc": "2026-10-04T00:44:53.226086+00:00",
+ "generated_utc": "2026-10-04T00:59:53.303762+00:00",
  "stations": {
   "KATL": {
    "day": "2026-10-03",
@@ -973,117 +973,29 @@
   },
   "KMKE": {
    "day": "2026-10-03",
-   "models": {
-    "ecmwf": {
-     "pct": 71,
-     "in": 0.047,
-     "wet": true,
-     "hours": 24
-    },
-    "gfs": {
-     "pct": 7,
-     "in": 0.0,
-     "wet": false,
-     "hours": 24
-    },
-    "icon": {
-     "pct": 13,
-     "in": 0.004,
-     "wet": false,
-     "hours": 24
-    },
-    "ukmo": {
-     "pct": 72,
-     "in": 0.043,
-     "wet": true,
-     "hours": 24
-    },
-    "gem": {
-     "pct": 13,
-     "in": 0.0,
-     "wet": false,
-     "hours": 24
-    },
-    "meteofrance": {
-     "pct": null,
-     "in": 0.024,
-     "wet": true,
-     "hours": 24
-    },
-    "jma": {
-     "pct": null,
-     "in": 0.0,
-     "wet": false,
-     "hours": 24
-    }
-   },
+   "models": {},
    "consensus": {
-    "median_pct": 13,
-    "min_pct": 7,
-    "max_pct": 72,
-    "n_pct": 5,
-    "n_wet": 3,
-    "n_models": 7
+    "median_pct": null,
+    "min_pct": null,
+    "max_pct": null,
+    "n_pct": 0,
+    "n_wet": 0,
+    "n_models": 0
    },
-   "error": null,
-   "hours_in_day": 24
+   "error": "<HTTPError 503: 'Service Unavailable'>"
   },
   "KMSY": {
    "day": "2026-10-03",
-   "models": {
-    "ecmwf": {
-     "pct": 100,
-     "in": 0.358,
-     "wet": true,
-     "hours": 24
-    },
-    "gfs": {
-     "pct": 80,
-     "in": 1.004,
-     "wet": true,
-     "hours": 24
-    },
-    "icon": {
-     "pct": 93,
-     "in": 0.61,
-     "wet": true,
-     "hours": 24
-    },
-    "ukmo": {
-     "pct": 89,
-     "in": 1.291,
-     "wet": true,
-     "hours": 24
-    },
-    "gem": {
-     "pct": 71,
-     "in": 0.539,
-     "wet": true,
-     "hours": 24
-    },
-    "meteofrance": {
-     "pct": null,
-     "in": 0.535,
-     "wet": true,
-     "hours": 24
-    },
-    "jma": {
-     "pct": null,
-     "in": 0.551,
-     "wet": true,
-     "hours": 24
-    }
-   },
+   "models": {},
    "consensus": {
-    "median_pct": 89,
-    "min_pct": 71,
-    "max_pct": 100,
-    "n_pct": 5,
-    "n_wet": 7,
-    "n_models": 7
+    "median_pct": null,
+    "min_pct": null,
+    "max_pct": null,
+    "n_pct": 0,
+    "n_wet": 0,
+    "n_models": 0
    },
-   "error": null,
-   "hours_in_day": 24
+   "error": "<HTTPError 503: 'Service Unavailable'>"
   },
   "KNYC": {
    "day": "2026-10-03",
@@ -1429,16 +1341,60 @@
   },
   "KSAT": {
    "day": "2026-10-03",
-   "models": {},
-   "consensus": {
-    "median_pct": null,
-    "min_pct": null,
-    "max_pct": null,
-    "n_pct": 0,
-    "n_wet": 0,
-    "n_models": 0
+   "models": {
+    "ecmwf": {
+     "pct": 100,
+     "in": 0.236,
+     "wet": true,
+     "hours": 24
+    },
+    "gfs": {
+     "pct": 23,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "icon": {
+     "pct": 73,
+     "in": 0.098,
+     "wet": true,
+     "hours": 24
+    },
+    "ukmo": {
+     "pct": 56,
+     "in": 0.083,
+     "wet": true,
+     "hours": 24
+    },
+    "gem": {
+     "pct": 29,
+     "in": 0.0,
+     "wet": false,
+     "hours": 24
+    },
+    "meteofrance": {
+     "pct": null,
+     "in": 0.083,
+     "wet": true,
+     "hours": 24
+    },
+    "jma": {
+     "pct": null,
+     "in": 0.024,
+     "wet": true,
+     "hours": 24
+    }
    },
-   "error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
+   "consensus": {
+    "median_pct": 56,
+    "min_pct": 23,
+    "max_pct": 100,
+    "n_pct": 5,
+    "n_wet": 5,
+    "n_models": 7
+   },
+   "error": null,
+   "hours_in_day": 24
   },
   "KSEA": {
    "day": "2026-10-03",
