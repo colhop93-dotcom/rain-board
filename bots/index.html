@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12181E">
+<meta name="referrer" content="no-referrer">
+<title>Bots | Rain Board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2360a5fa'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../style.css?v=5a1a3931db">
+<link rel="stylesheet" href="style.css?v=0475516de3">
+<script src="app.js?v=afba13256b" defer></script>
+</head>
+<body class="bots-page">
+<header class="bots-header">
+  <a href="../">Rain Board</a>
+  <span class="privacy-label">Your Tailscale devices</span>
+  <button id="theme" type="button" title="Dark or light theme">Light</button>
+</header>
+<main id="bots-main">
+  <div class="bots-heading"><h1>Bots</h1><button id="refresh" type="button">Refresh</button></div>
+  <p class="intro">Open tier, Lock and the night-before Evening NO bot are live. Prime is paper only. All entry times are Central time.</p>
+  <p id="load-status" role="status">Loading the ledgers.</p>
+  <div id="warnings" role="status"></div>
+  <nav class="bot-tabs" role="tablist" aria-label="Bot ledgers">
+    <button id="tab-open" role="tab" type="button" aria-selected="true" aria-controls="panel-open" tabindex="0">Open tier <span>LIVE</span></button>
+    <button id="tab-lock" role="tab" type="button" aria-selected="false" aria-controls="panel-lock" tabindex="-1">Lock bot <span>LIVE</span></button>
+    <button id="tab-prime" role="tab" type="button" aria-selected="false" aria-controls="panel-prime" tabindex="-1">Prime bot <span>PAPER</span></button>
+    <button id="tab-evening" role="tab" type="button" aria-selected="false" aria-controls="panel-evening" tabindex="-1">Evening NO <span>LIVE</span></button>
+    <button id="tab-tests" role="tab" type="button" aria-selected="false" aria-controls="panel-tests" tabindex="-1">Paper tests <span>PAPER</span></button>
+  </nav>
+  <section id="panel-open" class="bot-panel" role="tabpanel" aria-labelledby="tab-open" tabindex="0">
+    <h2>Open tier <small>LIVE</small></h2>
+    <div id="open-summary" class="ledger-summary"></div>
+    <div id="open-positions" class="ledger-rows"></div>
+  </section>
+  <section id="panel-lock" class="bot-panel" role="tabpanel" aria-labelledby="tab-lock" tabindex="0" hidden>
+    <h2>Lock bot <small>LIVE</small></h2>
+    <div id="lock-summary" class="ledger-summary"></div>
+    <div id="lock-positions" class="ledger-rows"></div>
+    <h2 class="paper-history-heading">Lock bot paper history <small>PAPER</small></h2>
+    <p class="paper-note">Historical hypothetical fills at displayed depth. Paper money is kept out of the live Lock totals above.</p>
+    <div id="lock-paper-summary" class="ledger-summary"></div>
+    <div id="lock-paper-positions" class="ledger-rows"></div>
+  </section>
+  <section id="panel-prime" class="bot-panel" role="tabpanel" aria-labelledby="tab-prime" tabindex="0" hidden>
+    <h2>Prime bot <small>PAPER</small></h2>
+    <p class="paper-note">Hypothetical fills at displayed depth, including historical paper shadows. Retries are grouped by market and tier, as in the bot's summary.</p>
+    <div id="prime-summary" class="ledger-summary"></div>
+    <div id="prime-positions" class="ledger-rows"></div>
+  </section>
+  <section id="panel-evening" class="bot-panel" role="tabpanel" aria-labelledby="tab-evening" tabindex="0" hidden>
+    <h2>Evening NO <small>LIVE</small></h2>
+    <p class="paper-note">The separate night-before NO buy first went live September 23 to 24, 2026 (including the real AUS September 24 fill). It paused to paper September 25 to 30 and is live again since 2026-10-01 at $50 a market and $200 a day, with an order limit no higher than 99c. Fill averages below include cost / contracts rounding. Real exchange fills only.</p>
+    <div id="evening-summary" class="ledger-summary"></div>
+    <div id="evening-positions" class="ledger-rows"></div>
+    <h2 class="paper-history-heading">Evening NO paper history <small>PAPER</small></h2>
+    <p class="paper-note">Hypothetical fills at displayed depth, including nights the bot ran live with the evening send switched off. Paper money is kept out of the live Evening totals above.</p>
+    <div id="evening-paper-summary" class="ledger-summary"></div>
+    <div id="evening-paper-positions" class="ledger-rows"></div>
+  </section>
+  <section id="panel-tests" class="bot-panel" role="tabpanel" aria-labelledby="tab-tests" tabindex="0" hidden>
+    <h2>Paper tests <small>PAPER</small></h2>
+    <p class="paper-note">Three fixed 14 contract-day tests using hypothetical fills. Daily totals count completed days only. Live comparisons may be partial until all live positions settle. Entries group fills by market and side; paired contracts split their $1 payout equally.</p>
+    <div id="shadow-comparison" class="ledger-summary"></div>
+    <div id="shadow-tests" class="ledger-rows"></div>
+  </section>
+  <noscript>This page needs JavaScript to load the private ledgers.</noscript>
+  <p class="method">Capital includes buy fees. As traded includes sell proceeds less sell fees, plus settlement of unsold contracts when the sell is resolved. If held uses the same contracts and capital at settlement. Pending results stay out of each P&amp;L total and its denominator. Settled results follow the bot ledger and the tracker's cached public market results.</p>
+</main>
+</body>
+</html>

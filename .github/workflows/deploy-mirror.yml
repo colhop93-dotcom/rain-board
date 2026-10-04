@@ -1,0 +1,46 @@
+# Deploys the rain board mirror (colhop93-dotcom/rain-board, branch gh-pages) with GitHub Actions.
+#
+# WHY (Colin, 2026-09-22, chose "Switch to GitHub Actions"): the legacy Pages builder has a soft
+# limit of about 10 builds an hour and the box publishes every minute. Measured that morning: 19
+# builds in a row errored ("Page build failed", 14:23Z to 14:41Z), so github.io served a copy 15+
+# minutes old while the branch itself was current. Builds done by an Actions workflow are not under
+# that limit. publish_pages.py copies this file into the published tree on every push, because the
+# publisher squashes the branch to one orphan commit and a file it does not write would vanish.
+#
+# One deploy at a time, and a running deploy is NEVER cancelled (jules on PR #180): a deploy takes
+# longer than the minute between pushes, so cancel-in-progress would cancel every deploy before it
+# finished and the mirror would never update at all. With it off, GitHub keeps one deploy running
+# and at most one waiting; a newer push replaces the waiting one, so each finished deploy is followed
+# by the newest minute. GitHub's own Pages starter workflow sets it the same way.
+# Pure ASCII. No em dash, no en dash.
+name: deploy-mirror
+on:
+  push:
+    branches: [gh-pages]
+  workflow_dispatch: {}
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # jules round 2: a run that waited in the queue checks out the branch TIP as it stands
+          # when the run starts, never the orphan SHA that triggered it, which a later squash and
+          # force-push may have removed (a failed checkout, or worse, a stale deploy).
+          ref: gh-pages
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

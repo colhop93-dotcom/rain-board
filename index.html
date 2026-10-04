@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12181E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Rain Station Board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2360a5fa'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%2312181E'/%3E%3C/svg%3E">
+<!-- layout A type (2026-09-25): Barlow Condensed for codes, headings, the radar clock and the numbers (its forms come
+     from highway and airport signage); Atkinson Hyperlegible Next for reading. The font stylesheet loads as "print" and
+     switches itself on when it arrives, so the page never waits on it: a plain stylesheet link blocks the first paint,
+     and with fonts.googleapis.com hanging the board stayed blank (phone QA on 661e587). display=swap and style.css's
+     stacks ending in system-ui mean a slow or blocked font only changes the face. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="style.css?v=5a1a3931db">
+</head>
+<body>
+<header id="top">
+  <div class="brand">RAIN BOARD<span>27 settlement gauges</span></div>
+  <div id="fresh" class="feed-pills" aria-label="Feed health">Loading feeds</div>
+  <button id="findbtn" type="button" aria-expanded="false" aria-controls="find" aria-label="find a city" title="find a city"><svg class="find-ico" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="8.5" cy="8.5" r="5.75" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12.8 12.8 18 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><span class="find-word"> find</span></button>
+  <div id="feed-detail" class="feed-detail hidden" role="status"></div>
+</header>
+<div id="stale-banner" class="banner hidden"></div>
+<section id="decision-summary" aria-label="Decision summary" aria-live="polite"><p>Loading gauge reports, comparisons and bot activity.</p></section>
+
+<nav id="jump"><button id="theme" title="dark or light">light</button><select id="text-size" aria-label="Text size" title="Text size, saved on this device"><option value="small">A-</option><option value="normal" selected>A</option><option value="large">A+</option></select><a href="#top-map">Map</a><a href="#top-call">The call</a><a href="#top-alerts">Alerts</a><a href="#top-gauges">Gauges</a><span class="jump-break" aria-hidden="true"></span><a href="#top-tomorrow">Tomorrow</a><a href="#top-deskread">Desk</a><a href="#top-sentinel">Sentinel</a><a href="v3/">v3 table</a><a href="#top-score">Score</a><a href="bots/">Bots</a></nav>
+<!-- 2026-09-25, layout A: the links follow the page from the top (map, the call, then down), in sentence case. The
+     theme and text size stay first, where test_takeover_phone pins the theme button (under 160 px even with the stale
+     banner up). "The call" lands on the band's first line; the v3 value rows sit inside that band, so the old "v3"
+     link went with it. On a phone the bar breaks after Gauges; test_card_layout and test_layout_a pin two rows at
+     360 px, in the default font and in Verdana. -->
+<!-- Colin, 2026-09-19: "I want a search function as well". It jumps, it does not filter: the board
+     reloads every 60 s and the gauge queue has its own ALL/WET/DUE buttons, so a half-filtered page
+     is a state that can hide a city from him. -->
+<div id="find" class="find hidden" role="dialog" aria-label="Find a city">
+  <input id="find-q" type="search" autocomplete="off" autocorrect="off" spellcheck="false"
+         placeholder="city, code, airport or state: denver, den, kden, colorado" aria-label="Find a city">
+  <div id="find-hits" class="find-hits"></div>
+</div>
+<main>
+  <div id="layout-tools"><button id="layout-edit" type="button" aria-expanded="false" aria-controls="layout-panel">Customize cards</button><span id="layout-status" role="status"></span>
+    <div id="layout-panel" class="hidden" aria-label="Card layout"><p>Saved on this device. Drag a card handle or use its move buttons. The Rain Sentinel can move and fold; it cannot be hidden.</p><div id="layout-visibility"></div><button id="layout-reset" type="button">Reset layout</button><button id="layout-done" type="button">Done</button></div>
+  </div>
+  <!-- LAYOUT A (Colin, 2026-09-25, "and a for the layout"). This markup is the DESKTOP grid's grouping (three
+       columns from 900 px). Below 900 px the layout code in app.js moves the cards into A's order: the map, the
+       call (this glance, the v3 value rows, the alerts), every gauge, then Tomorrow, Desk read, the Sentinel as its
+       status line, Scorecard and Diagnostics, folded. Customize cards sits last on a phone. -->
+  <div class="board-primary">
+  <!-- today at a glance (Colin, 2026-09-18): what already rained, what is raining at an open gauge,
+       and what is worth something at a real price, before any scroll. Filled by glanceHTML(); in layout A it heads
+       the call band, so its first line reads "The call". -->
+  <span id="top-call" class="anchor"></span>
+  <p id="glance" class="glance card"></p>
+
+  <!-- 1. what the model says today: will not rain, will rain, where the market disagrees, and when. Layout A: the
+       markup follows the call band (the glance, these v3 value rows, the alerts) so the desktop column reads it as one
+       band too; the Sentinel follows the band (design critic on 661e587: at 1280 it split the band in two). -->
+  <span id="top-model" class="anchor"></span>
+  <section id="model" class="card"></section>
+
+  <!-- the alerts mirror (Colin, 2026-09-23: "a mirrored canary alert thing on my board"): every page that
+       reached his phone, and whether the alarms themselves are alive. In layout A it closes the call band, after
+       the v3 value rows. Filled by renderAlerts() from data/desk_alerts.json, which the box
+       serves from live/ and, by Colin's order of 2026-09-24, the public mirror carries too; the card says
+       "not written yet" only when the file is absent.
+       Nothing here re-rates a market: it is a mirror of what was sent. -->
+  <span id="top-alerts" class="anchor"></span>
+  <section id="alerts" class="card">
+    <h2>Alerts<small>what reached the phone, and whether the alarms are alive</small></h2>
+    <div id="alerts-health" class="al-health" aria-label="Alarm health"></div>
+    <details id="alerts-details" class="al-details"><summary id="alerts-sum"><b>Loading the alert mirror.</b></summary><div id="alerts-body"></div></details>
+  </section>
+
+  <!-- 0. the Rain Sentinel (Colin, 2026-09-18): the intended forecaster. It has no validated probability
+       yet, so the status line says so and only live readings show. Layout A folds it on a phone to that status
+       line and the row that opens its full table; Expand shows the rest. -->
+  <span id="top-sentinel" class="anchor"></span>
+  <section id="sentinel-top" class="card">
+    <h2>Rain Sentinel</h2>
+    <p id="sentinel-status" class="sen-status">Rain Sentinel forecast: loading.</p>
+    <div id="sentinel-rows"></div>
+  </section>
+
+  <!-- the desk read (Colin, 2026-09-23): one AI read of the board's current data, asked from the phone
+       through a private ntfy topic and answered by build/desk_read.py. The file is box only, never
+       published, and serve.py refuses it on the public funnel; the card says so. Filled by renderDeskRead(). -->
+  <span id="top-deskread" class="anchor"></span>
+  <section id="deskread" class="card">
+    <h2>Desk read</h2>
+    <div id="deskread-body" class="dr-body">Loading the desk read.</div>
+    <div class="dr-ask"><button id="deskread-ask" type="button">Ask the desk</button><a href="#top-deskread" id="deskread-topic" class="dr-topic">change ask topic</a><span id="deskread-note" class="note" role="status"></span></div>
+  </section>
+  </div>
+
+  <!-- 3. every gauge, sorted by what needs attention, with filters -->
+  <div class="board-gauges">
+  <span id="top-gauges" class="anchor"></span>
+  <section id="stations">
+    <div class="maptop"><h3>Every gauge</h3><div class="chips" id="queue-filters"></div></div>
+    <div id="live-queue" class="queue"></div>
+  </section>
+  </div>
+
+  <!-- tomorrow (Colin, 2026-09-18): every city in Kalshi's "Where will it rain on <day>?" event,
+       the NWS forecast beside the price, filled by tomorrowHTML() from data/tomorrow.json -->
+  <section id="tomorrow" class="card">
+    <span id="top-tomorrow" class="anchor"></span>
+    <h2>Tomorrow</h2>
+    <div id="tomorrow-body">Loading tomorrow's markets.</div>
+    <div id="tomorrow-help"></div>
+    <details id="models-panel" class="models-panel">
+      <summary><b>Models</b> - tomorrow at each gauge</summary>
+      <p>Tomorrow: model chances and spread for the market day.</p>
+
+      <div id="models-help"></div>
+      <div id="models-body">Open to load models.</div>
+      <p class="note">Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, CC BY 4.0. Fetched on opening. Complete successes are cached for 30 minutes; failures retry on reopening. Model issue times are not supplied here.</p>
+    </details>
+  </section>
+
+  <!-- 2. the map. Layout A: the picture first, then its valid time and source (the radar clock, the one loud line
+       on the page), the picture choice, play and the time slider, the colour key with its notes one tap away, and the
+       basemap row last. Source order is reading order, so the keyboard walks it the same way. -->
+  <section id="mapsec">
+    <span id="top-map" class="anchor"></span>
+    <h3 class="vh">The map</h3>
+    <div id="map-live" class="mapbox big"><div id="mapcard" class="mapcard hidden"></div><button id="mapcard-chip" class="mapchip hidden" type="button"></button><div class="map-floatbar"><button id="layers-live" class="map-float" type="button" aria-expanded="false" aria-controls="layers-sheet-live">Layers</button><button id="fs-live" class="map-float" data-fs="map-live" title="full screen">&#x26F6; Full screen</button></div></div>
+    <div id="layers-sheet-live" class="map-layer-sheet hidden" role="dialog" aria-modal="false" aria-hidden="true" aria-labelledby="layers-title-live">
+      <div class="layer-sheet-head"><h4 id="layers-title-live">Map layers</h4><button type="button" data-layer-close="live">Close</button></div>
+      <section class="layer-section"><h5>Main picture</h5><div id="product-live"></div></section>
+      <section class="layer-section"><h5>Map style</h5><div class="chips" id="basemap" role="group" aria-label="Map style"><button data-b="sat" class="on">Satellite</button><button data-b="dark">Dark</button><button data-b="radar-only">Radar only</button></div></section>
+      <section class="layer-section"><h5>Overlays</h5><div class="chips layer-toggles" role="group" aria-label="Map overlays"><button id="stations-toggle" class="on" aria-pressed="true">Stations on</button><button id="cams-toggle" class="on" aria-pressed="true" title="show or hide the camera pictures on the map">Photos on</button><button id="warn-toggle" class="on" aria-pressed="true" title="show or hide NWS warning outlines on the map">Warnings on</button><button id="clouds-toggle" aria-pressed="false" title="show or hide GOES satellite clouds under the radar">Clouds off</button></div></section>
+      <section class="layer-section opacity-control"><label for="radar-opacity-live"><span>Radar opacity</span><output id="radar-opacity-value-live">82%</output></label><input id="radar-opacity-live" type="range" min="50" max="100" step="1" value="82"></section>
+      <p class="layer-note" id="layer-note-live">Clouds use full radar opacity so the source colors stay exact.</p>
+    </div>
+    <div class="radarctl" id="ctl-live"></div>
+    <button id="legend-more" class="legend-more" type="button" aria-expanded="false" aria-controls="legend-live">Show radar key</button>
+    <div class="legend" id="legend-live"></div>
+    <div id="forecast-help-live"></div>
+  </section>
+
+  <!-- 4. the scorecard, folded -->
+  <section id="score">
+    <span id="top-score" class="anchor"></span>
+    <details class="card" id="sc-details"><summary><b>Scorecard: what settled, and what v3's numbers have been worth</b></summary>
+      <h3>Today, rain reported (official results shown separately)</h3>
+      <div id="sc-today"></div>
+      <h3>9am market bands: under 10c and 90c and up, with the market's own record</h3>
+      <div id="sc-bands"></div>
+      <h3>v3 model, its measured records (unmeasured where none exists)</h3>
+      <div id="sc-physics"></div>
+      <p class="note" id="sc-note"></p>
+      <h3>Every source, from 9am snapshots</h3>
+      <div id="sc-sources"></div>
+    </details>
+  </section>
+  <section id="deskdiag"><details class="card"><summary>Desk diagnostics (not for trading)</summary><div id="desk-checks"></div></details></section>
+</main>
+
+<!-- the station page: one gauge, full screen, opened from any marker or row. Its first screen answers
+     the five questions in order: observed, complete?, still to come, models and market, freshness. -->
+<div id="airport" class="panel hidden">
+  <div class="paneltop">
+    <button id="ap-close">&#8592; board</button>
+    <div class="selector"><button id="ap-prev" title="previous gauge">&#9664;</button><select id="ap-select"></select><button id="ap-next" title="next gauge">&#9654;</button></div>
+  </div>
+  <div class="panelbody">
+    <div id="ap-decision" class="decision"></div>
+    <details class="experimental"><summary>Experimental station weather statistics</summary><div id="ap-expansion" class="expansion-panel"></div><div id="ap-sentinel" class="sentinel-stats" aria-label="Sentinel weather statistics"></div></details>
+    <div id="ap-answers" class="answers"></div>
+    <div id="station-forecast-help"></div>
+    <div id="ap-checks" class="card"></div>
+    <section id="ap-brief" class="brief"></section>
+    <h3>Radar and cameras around the gauge</h3>
+    <div id="map-airport" class="mapbox"><div class="map-floatbar"><button id="layers-airport" class="map-float" type="button" aria-expanded="false" aria-controls="layers-sheet-airport">Layers</button><button id="fs-airport" class="map-float" data-fs="map-airport" title="full screen">&#x26F6; Full screen</button></div></div>
+    <div id="layers-sheet-airport" class="map-layer-sheet hidden" role="dialog" aria-modal="false" aria-hidden="true" aria-labelledby="layers-title-airport">
+      <div class="layer-sheet-head"><h4 id="layers-title-airport">Map layers</h4><button type="button" data-layer-close="airport">Close</button></div>
+      <section class="layer-section"><h5>Main picture</h5><div id="product-airport"></div></section>
+      <section class="layer-section"><h5>Overlays</h5><div class="chips layer-toggles" role="group" aria-label="Map overlays"><button id="stations-toggle-ap" class="on" aria-pressed="true">Stations on</button><button id="cams-toggle-ap" class="on" aria-pressed="true" title="show or hide the camera pictures on the map">Photos on</button><button id="warn-toggle-ap" class="on" aria-pressed="true" title="show or hide NWS warning outlines on the map">Warnings on</button><button id="clouds-toggle-ap" aria-pressed="false" title="show or hide GOES satellite clouds under the radar">Clouds off</button></div></section>
+      <section class="layer-section opacity-control"><label for="radar-opacity-airport"><span>Radar opacity</span><output id="radar-opacity-value-airport">82%</output></label><input id="radar-opacity-airport" type="range" min="50" max="100" step="1" value="82"></section>
+      <p class="layer-note" id="layer-note-airport">Clouds use full radar opacity so the source colors stay exact.</p>
+    </div>
+    <div class="radarctl" id="ctl-airport"></div>
+    <button id="legend-more-airport" class="legend-more" type="button" aria-expanded="false" aria-controls="legend-airport">Show radar key</button>
+    <div class="legend" id="legend-airport"></div>
+    <div id="forecast-help-airport"></div>
+    <h3>Today by the hour, with the contract cutoff</h3>
+    <div id="ap-hours"></div>
+    <h3>Cameras near the gauge</h3>
+    <div id="ap-cams" class="camgrid"></div>
+    <details id="ap-rings" class="rings">
+      <summary id="ap-rings-sum">Approach cameras, 12 to 80 mi out</summary>
+      <div class="ringctl"><button id="ap-rings-fit">fit the ring on the map</button><button id="ap-rings-back">back to the gauge</button><span id="ap-rings-note" class="note"></span></div>
+      <div id="ap-rings-body"></div>
+    </details>
+    <h3>Evidence, in full</h3>
+    <div id="ap-stack" class="stack"></div>
+  </div>
+</div>
+
+<div id="sheet" class="sheet hidden"></div>
+<div id="toast"></div>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="hours.js?v=6506d81bc2"></script>
+<script src="evidence.js?v=7292dc76c3"></script>
+
+<script src="expansion_ui.js?v=dd7a832977"></script>
+<script src="sentinel_ui.js?v=60aa0462ff"></script>
+<script src="forecast_help.js?v=d3e90220c5"></script>
+<script src="model_panel.js?v=3a8a180bb4"></script>
+<script src="app.js?v=2571220d3e"></script>
+</body>
+</html>
