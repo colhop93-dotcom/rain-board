@@ -1,0 +1,3102 @@
+{
+ "schema": "019a.settle/1",
+ "generated_utc": "2026-10-11T04:55:01.763441+00:00",
+ "stations": {
+  "KATL": {
+   "role": "leading",
+   "precip1h": null,
+   "precip6h": null,
+   "precip24h": null,
+   "wx": null,
+   "valid_local": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": "URLError(TimeoutError('_ssl.c:993: The handshake operation timed out'))",
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 20.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "4b61a404f558b9c1",
+    "ring_tiles": {
+     "135,204": "dd6cb45962bccb3a",
+     "135,205": "0fefe14e310b9ee8",
+     "136,205": "ec267ccd682f0c9d"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 102.2,
+      "bearing": "ENE",
+      "dbz": 43,
+      "kt": 35,
+      "radar": "JGX",
+      "valid": "2026-10-11T04:42:59Z",
+      "heading": "NNE",
+      "closest_km": 102.5,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 1.38,
+   "today_src": "carried",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-10T23:51:01.299693+00:00",
+   "cellin_last_utc": "2026-10-11T00:11:01.460134+00:00"
+  },
+  "KAUS": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Fair",
+   "valid_local": "2026-10-10T23:46:06-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      2,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": null,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "1ef13342c7917a49",
+    "ring_tiles": {
+     "116,210": "dd6cb45962bccb3a",
+     "116,211": "332ef1ffa354f3a7",
+     "117,210": "dd6cb45962bccb3a",
+     "117,211": "045265baad165401"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-04T16:50:01.646062+00:00",
+   "cellin_last_utc": "2026-10-04T17:15:01.807440+00:00"
+  },
+  "KBOS": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Mostly Cloudy",
+   "valid_local": "2026-10-11T00:39:33-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 4.3,
+    "pct60": 8.8,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 31.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "da06a8b52e5c4a2a",
+    "ring_tiles": {
+     "154,189": "1fe67e60dd1cf195",
+     "155,189": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 99.7,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 4.3% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-03T05:57:01.510719+00:00",
+   "cellin_last_utc": "2026-10-03T06:02:01.479955+00:00"
+  },
+  "KORD": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Partly Cloudy",
+   "valid_local": "2026-10-10T23:45:57-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Partly Cloudy",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 15.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "55451f25fea79a28",
+    "ring_tiles": {
+     "130,189": "dd6cb45962bccb3a",
+     "130,190": "97d6e506af6db595",
+     "131,189": "dd6cb45962bccb3a",
+     "131,190": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 99.9,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-09T17:47:01.225653+00:00",
+   "cellin_last_utc": "2026-10-09T18:47:01.849526+00:00"
+  },
+  "KDFW": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-10T23:39:17-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": null,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "62bdd68a2c03d3dc",
+    "ring_tiles": {
+     "117,206": "92531fe6b9be7efc",
+     "118,206": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-05T13:36:01.789682+00:00",
+   "cellin_last_utc": "2026-10-05T13:40:01.830429+00:00"
+  },
+  "KDCA": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Light Rain",
+   "valid_local": "2026-10-11T00:50:13-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 22.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "681b580b560ceacc",
+    "ring_tiles": {
+     "146,195": "3c7ce6997ae71e45",
+     "146,196": "fb28669ae7057035"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 51.8,
+      "bearing": "N",
+      "dbz": 38,
+      "kt": 23,
+      "radar": "LWX",
+      "valid": "2026-10-11T04:43:53Z",
+      "heading": "NNE",
+      "closest_km": 51.8,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [
+      {
+       "km": 51.8,
+       "bearing": "N",
+       "dbz": 38,
+       "kt": 23,
+       "radar": "LWX",
+       "valid": "2026-10-11T04:43:53Z",
+       "heading": "NNE",
+       "closest_km": 51.8,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 121.1,
+       "bearing": "SW",
+       "dbz": 39,
+       "kt": 16,
+       "radar": "LWX",
+       "valid": "2026-10-11T04:43:53Z",
+       "heading": "NE",
+       "closest_km": 0.4,
+       "eta_min": null,
+       "status": "on a line, far",
+       "eta_far_min": 245
+      }
+     ],
+     "n_within_60": 1,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-04T15:20:02.002877+00:00",
+   "cellin_last_utc": "2026-10-04T15:56:02.205673+00:00"
+  },
+  "KDEN": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Partly Cloudy",
+   "valid_local": "2026-10-10T22:43:50-0600",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      23,
+      0,
+      0.0,
+      "Mostly Clear",
+      "2026-10-10T23:00:00-0600"
+     ],
+     [
+      24,
+      0,
+      0.0,
+      "Partly Cloudy",
+      "2026-10-11T00:00:00-0600"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.1,
+    "pct60": 0.1,
+    "pct30_strong": 0.0,
+    "pct10_any": 1.2,
+    "max_dbz10": 19.0,
+    "max_dbz30": 28.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "1f5c83857a01b25f",
+    "ring_tiles": {
+     "106,194": "7c70bc6b3bf05569",
+     "107,193": "dd6cb45962bccb3a",
+     "107,194": "31eaadce6c5a5ddf"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.1% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-09-30T20:29:01.183303+00:00",
+   "cellin_last_utc": "2026-09-30T20:54:01.427365+00:00"
+  },
+  "KEWR": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Mostly Cloudy",
+   "valid_local": "2026-10-11T00:45:02-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.2,
+    "pct30": 10.4,
+    "pct60": 17.4,
+    "pct30_strong": 0.0,
+    "pct10_any": 3.2,
+    "max_dbz10": 21.0,
+    "max_dbz30": 31.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "1f2bd1ac8f4024f4",
+    "ring_tiles": {
+     "150,192": "a0d7dddcd3715c13"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 10.4% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-03T06:03:01.483497+00:00",
+   "cellin_last_utc": "2026-10-03T06:48:01.809784+00:00"
+  },
+  "KHOU": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-10T23:38:55-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      2,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.1,
+    "pct60": 0.4,
+    "pct30_strong": 0.0,
+    "pct10_any": 2.6,
+    "max_dbz10": 19.0,
+    "max_dbz30": 24.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "bbad22ee992fd03d",
+    "ring_tiles": {
+     "120,211": "d801eb06f71ab366"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.1% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-06T01:39:01.622873+00:00",
+   "cellin_last_utc": "2026-10-06T01:43:01.654356+00:00"
+  },
+  "KLAX": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.02,
+   "precip24h": 0.03,
+   "wx": "Mostly Cloudy",
+   "valid_local": "2026-10-10T21:45:09-0700",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      22,
+      24,
+      0.0,
+      "Mostly Cloudy",
+      "2026-10-10T22:00:00-0700"
+     ],
+     [
+      23,
+      24,
+      0.0,
+      "Cloudy",
+      "2026-10-10T23:00:00-0700"
+     ],
+     [
+      24,
+      24,
+      0.0,
+      "Cloudy",
+      "2026-10-11T00:00:00-0700"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 10.5,
+    "pct60": 8.4,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 40.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "048ba8c0331df720",
+    "ring_tiles": {
+     "87,204": "0cd6abe63b3f491a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 110.9,
+      "bearing": "ENE",
+      "dbz": 40,
+      "kt": 43,
+      "radar": "SOX",
+      "valid": "2026-10-11T04:39:22Z",
+      "heading": "NW",
+      "closest_km": 101.4,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 10.5% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.02,
+   "today_src": "6h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T02:53:01.837245+00:00",
+   "cellin_last_utc": "2026-10-11T02:58:01.805706+00:00"
+  },
+  "KLAS": {
+   "role": "leading",
+   "precip1h": 0.01,
+   "precip6h": 0.01,
+   "precip24h": 0.01,
+   "wx": "Showers in the Vicinity",
+   "valid_local": "2026-10-10T21:43:41-0700",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      22,
+      89,
+      0.05,
+      "Rain",
+      "2026-10-10T22:00:00-0700"
+     ],
+     [
+      23,
+      96,
+      0.08,
+      "Rain",
+      "2026-10-10T23:00:00-0700"
+     ],
+     [
+      24,
+      99,
+      0.22,
+      "Rain",
+      "2026-10-11T00:00:00-0700"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 46.5,
+    "pct30": 49.5,
+    "pct60": 35.3,
+    "pct30_strong": 0.1,
+    "pct10_any": 100.0,
+    "max_dbz10": 33.5,
+    "max_dbz30": 44.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "c9287d22ea46c456",
+    "ring_tiles": {
+     "92,200": "af6c983b38b31b81",
+     "92,201": "331b39bb1462bff2"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 25.5,
+      "bearing": "ENE",
+      "dbz": 44,
+      "kt": 14,
+      "radar": "ESX",
+      "valid": "2026-10-11T04:39:46Z",
+      "heading": "NE",
+      "closest_km": 25.6,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [
+      {
+       "km": 25.5,
+       "bearing": "ENE",
+       "dbz": 44,
+       "kt": 14,
+       "radar": "ESX",
+       "valid": "2026-10-11T04:39:46Z",
+       "heading": "NE",
+       "closest_km": 25.6,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 26.2,
+       "bearing": "SE",
+       "dbz": 39,
+       "kt": 41,
+       "radar": "ESX",
+       "valid": "2026-10-11T04:39:46Z",
+       "heading": "NE",
+       "closest_km": 26.2,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 35.2,
+       "bearing": "E",
+       "dbz": 38,
+       "kt": 39,
+       "radar": "ESX",
+       "valid": "2026-10-11T04:39:46Z",
+       "heading": "NNE",
+       "closest_km": 35.3,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 53.6,
+       "bearing": "E",
+       "dbz": 41,
+       "kt": 54,
+       "radar": "ESX",
+       "valid": "2026-10-11T04:39:46Z",
+       "heading": "NNE",
+       "closest_km": 53.7,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 53.7,
+       "bearing": "ESE",
+       "dbz": 38,
+       "kt": 45,
+       "radar": "ESX",
+       "valid": "2026-10-11T04:39:46Z",
+       "heading": "NNW",
+       "closest_km": 32.0,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 58.1,
+       "bearing": "ENE",
+       "dbz": 39,
+       "kt": 27,
+       "radar": "ESX",
+       "valid": "2026-10-11T04:39:46Z",
+       "heading": "NE",
+       "closest_km": 58.2,
+       "eta_min": null,
+       "status": "passing wide"
+      }
+     ],
+     "n_within_60": 6,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "nearest cell 25.5 km ENE (44 dBZ), moving NE at 14 kt, NOT on track for the gauge"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.01,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T03:50:01.250463+00:00",
+   "cellin_last_utc": "2026-10-11T04:45:01.699561+00:00"
+  },
+  "KMIA": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Partly Cloudy",
+   "valid_local": "2026-10-11T00:44:33-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.5,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 32.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "5891d382d7f297b2",
+    "ring_tiles": {
+     "141,217": "dd6cb45962bccb3a",
+     "141,218": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 68.0,
+      "bearing": "SE",
+      "dbz": 48,
+      "kt": 12,
+      "radar": "BYX",
+      "valid": "2026-10-11T04:44:13Z",
+      "heading": "NNW",
+      "closest_km": 19.3,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T03:45:01.239940+00:00",
+   "cellin_last_utc": "2026-10-11T03:59:01.297202+00:00"
+  },
+  "KMSP": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-10T23:43:07-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": null,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "cce8d3896d6694c5",
+    "ring_tiles": {
+     "123,184": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-03T21:18:01.781517+00:00",
+   "cellin_last_utc": "2026-10-03T23:25:01.991153+00:00"
+  },
+  "KMSY": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.03,
+   "wx": "Clear",
+   "valid_local": "2026-10-10T23:45:19-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      2,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 37.2,
+    "pct30": 37.8,
+    "pct60": 18.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 100.0,
+    "max_dbz10": 29.0,
+    "max_dbz30": 42.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "ceb616ece46c8383",
+    "ring_tiles": {
+     "127,211": "2b2dc86bfca0e98b"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 37.8% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 10.0,
+    "since_utc": "2026-10-11T04:45:01.699561+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.03,
+   "today_src": "carried",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-05T03:51:01.959437+00:00",
+   "cellin_last_utc": "2026-10-05T04:32:01.369425+00:00"
+  },
+  "KNYC": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-11T00:41:30-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 23.2,
+    "pct30": 25.7,
+    "pct60": 28.5,
+    "pct30_strong": 0.0,
+    "pct10_any": 71.9,
+    "max_dbz10": 27.5,
+    "max_dbz30": 36.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "1f2bd1ac8f4024f4",
+    "ring_tiles": {
+     "150,192": "a0d7dddcd3715c13"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 25.7% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-03T05:08:02.205833+00:00",
+   "cellin_last_utc": "2026-10-03T06:53:01.843313+00:00"
+  },
+  "KOKC": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Fair",
+   "valid_local": "2026-10-10T23:45:02-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": null,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "5891d382d7f297b2",
+    "ring_tiles": {
+     "117,201": "dd6cb45962bccb3a",
+     "117,202": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-01T14:44:01.950205+00:00",
+   "cellin_last_utc": "2026-10-01T14:55:01.905913+00:00"
+  },
+  "KPHL": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Cloudy",
+   "valid_local": "2026-10-11T00:36:18-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.2,
+    "pct60": 0.2,
+    "pct30_strong": 0.0,
+    "pct10_any": 1.7,
+    "max_dbz10": 14.5,
+    "max_dbz30": 22.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "4322f314456a4f47",
+    "ring_tiles": {
+     "148,193": "de7791dc590a6603",
+     "148,194": "5317d3b29a57e24e",
+     "149,193": "03380695accca76a",
+     "149,194": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 138.5,
+      "bearing": "W",
+      "dbz": 35,
+      "kt": 27,
+      "radar": "DOX",
+      "valid": "2026-10-11T04:43:02Z",
+      "heading": "NE",
+      "closest_km": 88.2,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.2% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-03T06:49:01.828509+00:00",
+   "cellin_last_utc": "2026-10-03T08:25:01.581546+00:00"
+  },
+  "KPHX": {
+   "role": "leading",
+   "precip1h": 0.02,
+   "precip6h": 0.02,
+   "precip24h": 0.09,
+   "wx": "Light Rain",
+   "valid_local": "2026-10-10T21:40:53-0700",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      22,
+      85,
+      0.01,
+      "Thunderstorms",
+      "2026-10-10T22:00:00-0700"
+     ],
+     [
+      23,
+      37,
+      0.0,
+      "Showers",
+      "2026-10-10T23:00:00-0700"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 47.5,
+    "pct30": 70.2,
+    "pct60": 43.5,
+    "pct30_strong": 0.5,
+    "pct10_any": 89.1,
+    "max_dbz10": 38.0,
+    "max_dbz30": 49.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "cf7211f4f2ee77ce",
+    "ring_tiles": {
+     "96,205": "1b63d38daa86b7ea"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 16.7,
+      "bearing": "NE",
+      "dbz": 38,
+      "kt": 31,
+      "radar": "IWA",
+      "valid": "2026-10-11T04:43:27Z",
+      "heading": "N",
+      "closest_km": 16.7,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [
+      {
+       "km": 16.7,
+       "bearing": "NE",
+       "dbz": 38,
+       "kt": 31,
+       "radar": "IWA",
+       "valid": "2026-10-11T04:43:27Z",
+       "heading": "N",
+       "closest_km": 16.7,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 33.0,
+       "bearing": "ENE",
+       "dbz": 40,
+       "kt": 0,
+       "radar": "IWA",
+       "valid": "2026-10-11T04:43:27Z",
+       "heading": null,
+       "closest_km": null,
+       "eta_min": null,
+       "status": "stationary"
+      },
+      {
+       "km": 36.9,
+       "bearing": "ESE",
+       "dbz": 48,
+       "kt": 47,
+       "radar": "IWA",
+       "valid": "2026-10-11T04:43:27Z",
+       "heading": "NNE",
+       "closest_km": 36.9,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 40.3,
+       "bearing": "WNW",
+       "dbz": 42,
+       "kt": 82,
+       "radar": "IWA",
+       "valid": "2026-10-11T04:43:27Z",
+       "heading": "NNW",
+       "closest_km": 40.4,
+       "eta_min": null,
+       "status": "passing wide"
+      }
+     ],
+     "n_within_60": 4,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "nearest cell 16.7 km NE (38 dBZ), moving N at 31 kt, NOT on track for the gauge"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.08,
+   "today_src": "carried",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T02:53:01.837245+00:00",
+   "cellin_last_utc": "2026-10-11T04:29:01.553801+00:00"
+  },
+  "KSAT": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Fair",
+   "valid_local": "2026-10-10T23:42:13-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      2,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.1,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 3.9,
+    "max_dbz10": 14.5,
+    "max_dbz30": 23.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "e66197ac5aea4557",
+    "ring_tiles": {
+     "115,211": "6685d36db78ea511",
+     "115,212": "dd6cb45962bccb3a",
+     "116,211": "332ef1ffa354f3a7",
+     "116,212": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.1% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-05T07:07:01.560040+00:00",
+   "cellin_last_utc": "2026-10-05T07:16:01.627989+00:00"
+  },
+  "KSEA": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.11,
+   "precip24h": 0.13,
+   "wx": "Mostly Cloudy",
+   "valid_local": "2026-10-10T21:38:21-0700",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      22,
+      2,
+      0.0,
+      "Partly Cloudy",
+      "2026-10-10T22:00:00-0700"
+     ],
+     [
+      23,
+      2,
+      0.0,
+      "Partly Cloudy",
+      "2026-10-10T23:00:00-0700"
+     ],
+     [
+      24,
+      2,
+      0.0,
+      "Mostly Clear",
+      "2026-10-11T00:00:00-0700"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.1,
+    "pct30": 0.6,
+    "pct60": 0.4,
+    "pct30_strong": 0.0,
+    "pct10_any": 3.5,
+    "max_dbz10": 21.0,
+    "max_dbz30": 25.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "72d39fab00ffdb50",
+    "ring_tiles": {
+     "81,178": "35e462a3c2cf9a8e",
+     "81,179": "e68bfcc4ee0fd0f3",
+     "82,178": "2dee52e8bc5f498a",
+     "82,179": "712d69f283b4891b"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 98.7,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.6% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.11,
+   "today_src": "6h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T00:34:01.638655+00:00",
+   "cellin_last_utc": "2026-10-11T00:38:01.647125+00:00"
+  },
+  "KSFO": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-10T21:38:44-0700",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      22,
+      2,
+      0.0,
+      "Clear",
+      "2026-10-10T22:00:00-0700"
+     ],
+     [
+      23,
+      2,
+      0.0,
+      "Clear",
+      "2026-10-10T23:00:00-0700"
+     ],
+     [
+      24,
+      2,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0700"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.1,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": null,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "6eb709db6041580c",
+    "ring_tiles": {
+     "81,198": "c59a2deba08852a3",
+     "82,198": "0341b54846648038"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10"
+  },
+  "KTTN": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-11T00:35:57-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.2,
+    "pct60": 0.3,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 26.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "41c8d37ae10fca8c",
+    "ring_tiles": {
+     "149,193": "03380695accca76a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.2% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-04T17:06:01.734359+00:00",
+   "cellin_last_utc": "2026-10-04T17:10:01.935086+00:00"
+  },
+  "KCMH": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.04,
+   "precip24h": 0.15,
+   "wx": "Cloudy",
+   "valid_local": "2026-10-11T00:39:33-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.4,
+    "pct60": 3.5,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 32.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "c91b114ff8476f60",
+    "ring_tiles": {
+     "137,193": "4270283756cb4927",
+     "138,193": "dd6cb45962bccb3a",
+     "138,194": "23c63d2ddc6df221"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 45.1,
+      "bearing": "SE",
+      "dbz": 36,
+      "kt": 27,
+      "radar": "ILN",
+      "valid": "2026-10-11T04:45:02Z",
+      "heading": "NNE",
+      "closest_km": 35.0,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [
+      {
+       "km": 45.1,
+       "bearing": "SE",
+       "dbz": 36,
+       "kt": 27,
+       "radar": "ILN",
+       "valid": "2026-10-11T04:45:02Z",
+       "heading": "NNE",
+       "closest_km": 35.0,
+       "eta_min": null,
+       "status": "passing wide"
+      }
+     ],
+     "n_within_60": 1,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.4% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.15,
+   "today_src": "carried",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-10T17:56:01.574300+00:00",
+   "cellin_last_utc": "2026-10-10T22:42:01.722576+00:00"
+  },
+  "KMKE": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Partly Cloudy",
+   "valid_local": "2026-10-10T23:45:19-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Partly Cloudy",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 4.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "5891d382d7f297b2",
+    "ring_tiles": {
+     "130,188": "dd6cb45962bccb3a",
+     "131,188": "dd6cb45962bccb3a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 99.7,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-09T18:53:01.959454+00:00",
+   "cellin_last_utc": "2026-10-09T22:25:01.537258+00:00"
+  },
+  "KLEX": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.07,
+   "precip24h": 0.29,
+   "wx": "Showers in the Vicinity",
+   "valid_local": "2026-10-11T00:37:23-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 2.4,
+    "pct60": 2.2,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.8,
+    "max_dbz10": 12.5,
+    "max_dbz30": 32.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "2ddf7478f407181d",
+    "ring_tiles": {
+     "135,197": "9fa08beaa6405525"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 52.7,
+      "bearing": "ENE",
+      "dbz": 38,
+      "kt": 31,
+      "radar": "JKL",
+      "valid": "2026-10-11T04:45:30Z",
+      "heading": "N",
+      "closest_km": 52.8,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [
+      {
+       "km": 52.7,
+       "bearing": "ENE",
+       "dbz": 38,
+       "kt": 31,
+       "radar": "JKL",
+       "valid": "2026-10-11T04:45:30Z",
+       "heading": "N",
+       "closest_km": 52.8,
+       "eta_min": null,
+       "status": "passing wide"
+      }
+     ],
+     "n_within_60": 1,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 2.4% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.22,
+   "today_src": "carried",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T04:30:01.665068+00:00",
+   "cellin_last_utc": "2026-10-11T04:35:01.595932+00:00"
+  },
+  "KCLL": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-10T23:47:16-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.0,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 20.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "2b4a405412a28647",
+    "ring_tiles": {
+     "118,210": "033c2c4bc2cc5798",
+     "119,210": "cf1f42945adff61a"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 10.0,
+    "since_utc": "2026-10-11T04:45:01.699561+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-05T01:09:01.668364+00:00",
+   "cellin_last_utc": "2026-10-05T01:13:01.824008+00:00"
+  },
+  "KPVD": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Partly Cloudy",
+   "valid_local": "2026-10-11T00:39:40-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.3,
+    "pct60": 1.7,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 25.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "2af3b7a730837369",
+    "ring_tiles": {
+     "154,190": "0b224a1728951749"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.3% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-04T19:53:02.068247+00:00",
+   "cellin_last_utc": "2026-10-04T20:02:02.168251+00:00"
+  },
+  "KPIT": {
+   "role": "leading",
+   "precip1h": 0.02,
+   "precip6h": 0.17,
+   "precip24h": 0.17,
+   "wx": "Light Rain",
+   "valid_local": "2026-10-11T00:45:08-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 100.0,
+    "pct30": 93.0,
+    "pct60": 74.1,
+    "pct30_strong": 7.2,
+    "pct10_any": 100.0,
+    "max_dbz10": 43.5,
+    "max_dbz30": 50.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "bf849d2d3507ea20",
+    "ring_tiles": {
+     "141,192": "dbf612159cd0ee6e",
+     "141,193": "77874189c2ff9a32",
+     "142,192": "fbfe1773281ef89c",
+     "142,193": "4098c7030ee78652"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 7.1,
+      "bearing": "SW",
+      "dbz": 46,
+      "kt": 0,
+      "radar": "PBZ",
+      "valid": "2026-10-11T04:43:39Z",
+      "heading": null,
+      "closest_km": null,
+      "eta_min": null,
+      "status": "stationary"
+     },
+     "inbound": {
+      "km": 72.4,
+      "bearing": "SSW",
+      "dbz": 42,
+      "kt": 27,
+      "radar": "PBZ",
+      "valid": "2026-10-11T04:43:39Z",
+      "heading": "NNE",
+      "closest_km": 6.5,
+      "eta_min": 87,
+      "status": "closing"
+     },
+     "n_inbound": 1,
+     "cells": [
+      {
+       "km": 7.1,
+       "bearing": "SW",
+       "dbz": 46,
+       "kt": 0,
+       "radar": "PBZ",
+       "valid": "2026-10-11T04:43:39Z",
+       "heading": null,
+       "closest_km": null,
+       "eta_min": null,
+       "status": "stationary"
+      },
+      {
+       "km": 24.8,
+       "bearing": "WSW",
+       "dbz": 48,
+       "kt": 21,
+       "radar": "PBZ",
+       "valid": "2026-10-11T04:43:39Z",
+       "heading": "WNW",
+       "closest_km": 24.8,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 36.3,
+       "bearing": "SW",
+       "dbz": 43,
+       "kt": 0,
+       "radar": "CLE",
+       "valid": "2026-10-11T04:44:54Z",
+       "heading": null,
+       "closest_km": null,
+       "eta_min": null,
+       "status": "stationary"
+      },
+      {
+       "km": 49.8,
+       "bearing": "W",
+       "dbz": 38,
+       "kt": 49,
+       "radar": "CLE",
+       "valid": "2026-10-11T04:44:54Z",
+       "heading": "NE",
+       "closest_km": 34.6,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 51.9,
+       "bearing": "ESE",
+       "dbz": 40,
+       "kt": 35,
+       "radar": "PBZ",
+       "valid": "2026-10-11T04:43:39Z",
+       "heading": "ENE",
+       "closest_km": 51.9,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 53.1,
+       "bearing": "W",
+       "dbz": 42,
+       "kt": 21,
+       "radar": "PBZ",
+       "valid": "2026-10-11T04:43:39Z",
+       "heading": "NNE",
+       "closest_km": 47.6,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 55.8,
+       "bearing": "S",
+       "dbz": 48,
+       "kt": 23,
+       "radar": "PBZ",
+       "valid": "2026-10-11T04:43:39Z",
+       "heading": "NNE",
+       "closest_km": 21.4,
+       "eta_min": null,
+       "status": "passing wide"
+      },
+      {
+       "km": 59.0,
+       "bearing": "SSE",
+       "dbz": 43,
+       "kt": 0,
+       "radar": "PBZ",
+       "valid": "2026-10-11T04:43:39Z",
+       "heading": null,
+       "closest_km": null,
+       "eta_min": null,
+       "status": "stationary"
+      }
+     ],
+     "n_within_60": 9,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "42 dBZ core arrives in about 87 min, passing 6.5 km from the gauge (now 72.4 km SSW, moving NNE at 27 kt)"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.17,
+   "today_src": "6h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T03:39:02.185097+00:00",
+   "cellin_last_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KABQ": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Mostly Cloudy",
+   "valid_local": "2026-10-10T22:40:06-0600",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [
+     [
+      23,
+      2,
+      0.0,
+      "Mostly Cloudy",
+      "2026-10-10T23:00:00-0600"
+     ],
+     [
+      24,
+      31,
+      0.0,
+      "Isolated Thunderstorms",
+      "2026-10-11T00:00:00-0600"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.4,
+    "pct30": 3.0,
+    "pct60": 4.2,
+    "pct30_strong": 0.1,
+    "pct10_any": 8.2,
+    "max_dbz10": 21.0,
+    "max_dbz30": 58.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "bc173368115826c5",
+    "ring_tiles": {
+     "104,202": "49a20327d5565ef1"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": {
+      "km": 49.8,
+      "bearing": "NNW",
+      "dbz": 46,
+      "kt": 25,
+      "radar": "ABX",
+      "valid": "2026-10-11T04:43:34Z",
+      "heading": "NE",
+      "closest_km": 49.8,
+      "eta_min": null,
+      "status": "passing wide"
+     },
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [
+      {
+       "km": 49.8,
+       "bearing": "NNW",
+       "dbz": 46,
+       "kt": 25,
+       "radar": "ABX",
+       "valid": "2026-10-11T04:43:34Z",
+       "heading": "NE",
+       "closest_km": 49.8,
+       "eta_min": null,
+       "status": "passing wide"
+      }
+     ],
+     "n_within_60": 1,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 3.0% in the 30 km ring, 0.1% of it heavy"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10"
+  },
+  "KSGF": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Clear",
+   "valid_local": "2026-10-10T23:37:23-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:51:01.935825+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Clear",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.3,
+    "pct30": 0.7,
+    "pct60": 4.7,
+    "pct30_strong": 0.0,
+    "pct10_any": 1.1,
+    "max_dbz10": 26.0,
+    "max_dbz30": 33.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "4c9ed65b2489ac4c",
+    "ring_tiles": {
+     "123,198": "143c37984610e0f3",
+     "123,199": "df1135d56c6c7b9c"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.7% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10"
+  },
+  "KIND": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.13,
+   "precip24h": 0.13,
+   "wx": "Cloudy",
+   "valid_local": "2026-10-11T00:39:43-0400",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+    "hours": [],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.0,
+    "pct60": 0.4,
+    "pct30_strong": 0.0,
+    "pct10_any": 0.0,
+    "max_dbz10": null,
+    "max_dbz30": 26.5,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "fae44307990bf0c2",
+    "ring_tiles": {
+     "133,194": "18be004c8f4acd3d"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "no cell on track and no composite echo within 30 km"
+   },
+   "tile": {
+    "unchanged_min": 1.0,
+    "since_utc": "2026-10-11T04:54:01.801633+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.13,
+   "today_src": "6h",
+   "today_day": "2026-10-10",
+   "cellin_episode_utc": "2026-10-11T00:01:01.363331+00:00",
+   "cellin_last_utc": "2026-10-11T02:01:01.382404+00:00"
+  },
+  "KSTL": {
+   "role": "leading",
+   "precip1h": 0.0,
+   "precip6h": 0.0,
+   "precip24h": 0.0,
+   "wx": "Partly Cloudy",
+   "valid_local": "2026-10-10T23:41:44-0500",
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00",
+   "error": null,
+   "fc": {
+    "fetched_utc": "2026-10-11T04:51:01.935825+00:00",
+    "hours": [
+     [
+      24,
+      1,
+      0.0,
+      "Partly Cloudy",
+      "2026-10-11T00:00:00-0500"
+     ]
+    ],
+    "day": "2026-10-10",
+    "day_pct": null,
+    "day_label": null
+   },
+   "radar": {
+    "pct10": 0.0,
+    "pct30": 0.3,
+    "pct60": 2.5,
+    "pct30_strong": 0.0,
+    "pct10_any": 1.2,
+    "max_dbz10": 18.5,
+    "max_dbz30": 29.0,
+    "rain_grade_dbz": 20.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "source": "IEM NEXRAD composite (N0Q)",
+    "scan_valid_utc": "2026-10-11T04:50:00Z",
+    "read_utc": "2026-10-11T04:51:02Z",
+    "tiles_sha": "8cbd24749e069937",
+    "ring_tiles": {
+     "127,195": "4ae4c6de67ed7c4c",
+     "127,196": "16aff9f63700f256"
+    },
+    "radar_quorum": "143/147",
+    "scan_meta_error": null,
+    "coverage10_pct": 100.0,
+    "coverage30_pct": 100.0,
+    "coverage60_pct": 100.0,
+    "product_note": "rings: IEM N0Q composite tiles, base reflectivity mosaic, counting rain-grade echo (20 dBZ and up, the legend's own floor) with the any-echo share beside it; the airport map draws NWS MRMS conus_cref_qcd, a QC'd composite reflectivity. Same physical quantity, different product, resolution and latency; neither is rainfall and neither is the gauge.",
+    "error": null,
+    "cells": {
+     "nearest": null,
+     "inbound": null,
+     "n_inbound": 0,
+     "cells": [],
+     "n_within_60": 0,
+     "source": "IEM NEXRAD storm attributes",
+     "checked_utc": "2026-10-11T04:52:01Z"
+    },
+    "verdict": "composite echo 0.3% in the 30 km ring"
+   },
+   "tile": {
+    "unchanged_min": 4.0,
+    "since_utc": "2026-10-11T04:51:01.935825+00:00",
+    "site_block_stale": false,
+    "frame_age_min": 5.0,
+    "frame_utc": "2026-10-11T04:50:00Z",
+    "stale": false
+   },
+   "today_in": 0.0,
+   "today_src": "1h",
+   "today_day": "2026-10-10"
+  }
+ },
+ "feeds": {
+  "synoptic": {
+   "disabled": null,
+   "note": "HALT file present",
+   "heartbeat_utc": "2026-10-11T04:51:40.694291+00:00",
+   "stale": false,
+   "seen_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "radar": {
+   "computed_utc": "2026-10-11T04:51:01.935825+00:00",
+   "error": null,
+   "n": 32,
+   "record": {
+    "schema": "019a.ring_record/1",
+    "generated_utc": "2026-09-23T22:28:39Z",
+    "source": "research/ring_floor_study/REPORT.md, the clocks cut (the ruled one)",
+    "product": "MRMS PrecipRate crops in Marshall-Palmer proxy bands, 2026-09-17 to 2026-09-23; NOT the board's IEM N0Q rings",
+    "events": 43,
+    "stations": 13,
+    "dry_cycles": 45744,
+    "bands": {
+     "20": {
+      "precision": 0.24,
+      "n_fired": 2984,
+      "recall": 0.708
+     },
+     "30": {
+      "precision": 0.305,
+      "n_fired": 1804,
+      "recall": 0.546
+     }
+    },
+    "verdict": "FLOOR_STAYS (RAIN_GRADE_DBZ = 20)",
+    "rerun": "2026-10-08 on live/rings_<date>.ndjson, the board's own rings",
+    "note": "precision = the share of cycles with echo in the 6 mi ring at the band or above, with no tip in the prior hour (a today_in-only condition: not proof the gauge was reporting no rain), that were followed by a 0.01 in tip within 60 minutes; recall = the share of tips the band fired on. Cycles are 2 minutes apart, so n_fired overstates independent trials; the episode table is the board's unit and the event count is the honest n.",
+    "episodes": {
+     "gap_min": 12,
+     "note": "an episode is a contiguous run of fired 2-minute cycles at one station (12 min gap tolerance), the unit the board's arrival alert fires on; from REPORT.md's episode table on the clocks cut",
+     "20": {
+      "precision": 0.328,
+      "episodes": 131,
+      "wet": 43,
+      "caught": 39
+     },
+     "30": {
+      "precision": 0.308,
+      "episodes": 117,
+      "wet": 36,
+      "caught": 32
+     }
+    }
+   }
+  }
+ },
+ "climate": {
+  "KABQ": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KATL": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KAUS": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KBOS": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KCLL": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KCMH": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KDCA": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KDEN": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KDFW": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KEWR": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KHOU": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KIND": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KLAS": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KLAX": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KLEX": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KMIA": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KMKE": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KMSP": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KMSY": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KNYC": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KOKC": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KORD": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KPHL": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KPHX": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KPIT": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KPVD": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KSAT": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KSEA": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KSFO": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KSGF": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KSTL": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  },
+  "KTTN": {
+   "date": "2026-10-10",
+   "status": "no_report",
+   "reportDate": null,
+   "precip": null,
+   "issueTime": null,
+   "isOfficial": null,
+   "fetched_utc": "2026-10-11T04:55:01.763441+00:00"
+  }
+ }
+}

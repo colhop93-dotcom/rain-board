@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12181E">
+<meta name="referrer" content="no-referrer">
+<title>Bots | Rain Board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2360a5fa'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../style.css?v=5a1a3931db">
+<link rel="stylesheet" href="style.css?v=a5b9efaff0">
+<script src="app.js?v=cb10c4848e" defer></script>
+</head>
+<body class="bots-page">
+<header class="bots-header">
+  <a href="../">Rain Board</a>
+  <span class="privacy-label">Your Tailscale devices</span>
+  <button id="theme" type="button" title="Dark or light theme">Light</button>
+</header>
+<main id="bots-main">
+  <div class="bots-heading"><h1>Bots</h1><button id="refresh" type="button">Refresh</button></div>
+  <p class="intro">Real money, paper strategies and hypothetical results shown separately. Entry times are Central time (CT); contract dates belong to the station's local day.</p>
+  <p id="load-status" role="status">Loading the ledgers.</p>
+  <div id="warnings" role="status"></div>
+  <nav class="bot-tabs" role="tablist" aria-label="Bot views">
+    <button id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0">Overview</button>
+    <button id="tab-real" role="tab" aria-selected="false" aria-controls="panel-real" tabindex="-1">Real money</button>
+    <button id="tab-paper" role="tab" aria-selected="false" aria-controls="panel-paper" tabindex="-1">Paper</button>
+    <button id="tab-tests" role="tab" aria-selected="false" aria-controls="panel-tests" tabindex="-1">Experiments</button>
+    <a href="../">Weather &amp; health</a>
+  </nav>
+  <section id="panel-overview" class="bot-panel" role="tabpanel" aria-labelledby="tab-overview"><h2>What is risking real money?</h2><div id="overview" class="ledger-summary"></div>  <details id="definitions"><summary>What these numbers mean</summary><dl class="definitions">
+    <dt>Forecast gap</dt><dd>Forecast chance of rain minus market price, in points. Forecast 74%, market 47c = a 27-point gap.</dd>
+    <dt>Settlement</dt><dd>The official end of a contract. Final daily airport rain of 0.01 inch or more pays YES $1 per contract; otherwise NO pays $1.</dd>
+    <dt>Fees</dt><dd>Exchange charges per order, included in amount spent and subtracted from profit.</dd>
+    <dt>Amount spent</dt><dd>Buy cost including buy fees.</dd><dt>Profit</dt><dd>Sell proceeds or settlement payout, minus sell fees and amount spent. Actual profit counts finished trades.</dd>
+    <dt>ROI</dt><dd>Profit divided by amount spent on those same finished trades.</dd><dt>If held (hypothetical)</dt><dd>The alternative result with no early sale, held to settlement. Never added to actual profit.</dd>
+    <dt>Total spent so far</dt><dd>Every buy, open or closed. This is not current risk or available cash.</dd><dt>Open right now</dt><dd>Amount spent on positions not yet sold or settled; money at risk. Resting buy reservations are not included.</dd>
+  </dl></details><h2>Needs attention</h2><div id="attention"></div><h2>At a glance</h2><div id="at-glance" class="ledger-summary"></div><h2>What each bot does</h2><div id="bot-guide"></div></section>
+  <section id="panel-real" class="bot-panel" role="tabpanel" aria-labelledby="tab-real" hidden>
+    <section id="panel-open"><h2>Open tier</h2><div id="open-summary" class="ledger-summary"></div><div id="open-positions" class="ledger-rows"></div></section>
+    <section id="panel-lock"><h2>Rain lock</h2><div id="lock-summary" class="ledger-summary"></div><div id="lock-positions" class="ledger-rows"></div></section>
+  </section>
+  <section id="panel-paper" class="bot-panel" role="tabpanel" aria-labelledby="tab-paper" hidden>
+    <h2>Rain lock paper history</h2><div id="lock-paper-summary" class="ledger-summary"></div><div id="lock-paper-positions" class="ledger-rows"></div>
+  </section>
+  <section id="panel-tests" class="bot-panel" role="tabpanel" aria-labelledby="tab-tests" hidden><h2>Experiments (paper only)</h2><p>Fixed 14-day tests and open-ended size tests use different starting cash and fill methods. Compare within each group.</p><div id="shadow-index" class="ledger-summary"></div><div id="shadow-comparison" class="ledger-summary"></div><div id="shadow-tests" class="ledger-rows"></div></section>
+  <section id="retired"><h2>Retired 2026-10-10</h2><p>Finished results only; ledgers and strategy pins retained for history.</p><div id="retired-results"></div></section>
+  <noscript>This page needs JavaScript to load the private ledgers.</noscript>
+
+  <p class="method">Capital includes buy fees. As traded includes sell proceeds less sell fees, plus settlement of unsold contracts when the sell is resolved. If held uses the same contracts and capital at settlement. Pending results stay out of each P&amp;L total and its denominator. Settled results follow the bot ledger and the tracker's cached public market results.</p>
+</main>
+</body>
+</html>
