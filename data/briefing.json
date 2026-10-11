@@ -1,6 +1,6 @@
 {
  "schema": "019a.briefing/1",
- "generated_utc": "2026-10-11T04:47:47Z",
+ "generated_utc": "2026-10-11T05:02:47Z",
  "n": 32,
  "errors": 0,
  "method": "deterministic: templates over the NWS point forecast, the TAF and active alerts, plus verbatim keyword-selected sentences from the office's AFD; no generated prose",
@@ -20,10 +20,10 @@
     "url": "https://api.weather.gov/gridpoints/ABQ/99,119/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 3,
+     "hours": 2,
      "peak_pct": 21,
-     "peak_local_hour": 21.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 22.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Slight Chance Showers And Thunderstorms"
@@ -43,7 +43,7 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 2,
-     "peak_pct": 32,
+     "peak_pct": 31,
      "peak_local_hour": 23.0,
      "peak_utc": "2026-10-11T06:00:00Z",
      "qpf_in": 0,
@@ -124,9 +124,9 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "A low chance before the cutoff: the point forecast peaks at 21% around 11:00 PM CT.",
+   "headline": "A low chance before the cutoff: the point forecast peaks at 21% around 12:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 21% around 11:00 PM CT (slight chance showers and thunderstorms).",
+    "Before the cutoff the NWS point forecast peaks at 21% around 12:00 AM CT (slight chance showers and thunderstorms).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 15% around 2:00 AM CT.",
     "The TAF for KABQ (issued 6:35 PM CT) carries -SHRA 5:00 PM CT to 7:00 PM CT (PROB), after the cutoff."
    ],
@@ -157,16 +157,16 @@
     "Some light showers are trying to reach into western NM this morning, but will not have more appreciable coverage until later this afternoon."
    ],
    "unavailable": [],
-   "inputs_hash": "0c8ab2c13c5a4d21",
-   "text_generated_utc": "2026-10-11T04:47:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "70ed4f07eb4dc213",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KATL": {
    "city": "ATL",
    "icao": "KATL",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -176,22 +176,35 @@
     "url": "https://api.weather.gov/gridpoints/FFC/49,81/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 17,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
-     "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Slight Chance Rain Showers"
-    },
-    "after_cutoff": {
-     "hours": 12,
+     "hours": 24,
      "peak_pct": 12,
-     "peak_local_hour": 29.0,
+     "peak_local_hour": 5.0,
      "peak_utc": "2026-10-11T10:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Mostly Cloudy"
+    },
+    "after_cutoff": {
+     "hours": 12,
+     "peak_pct": 0,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
+     "qpf_in": null,
+     "first_30_local_hour": null,
+     "wording": "Mostly Clear"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 22,
+     "peak_local_hour": 7.0,
+     "peak_utc": "2026-10-11T12:00:00Z",
+     "qpf_in": 0,
+     "first_30_local_hour": null,
+     "wording": "Cloudy"
     }
    },
    "taf": {
@@ -245,10 +258,10 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
+   "headline": "Little rain signal before the cutoff (point forecast peak 12%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 17% around 11:00 PM CT (slight chance rain showers).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 12% around 5:00 AM CT.",
+    "Before the cutoff the NWS point forecast peaks at 12% around 5:00 AM CT (mostly cloudy).",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
     "The TAF for KATL (issued 10:48 PM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
@@ -261,7 +274,8 @@
    },
    "prevents": {
     "data": [
-     "no precipitation group still ahead in the TAF before the cutoff"
+     "no precipitation group still ahead in the TAF before the cutoff",
+     "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
      "Post Tropical Cyclone Isaias continues to bring isolated to scattered impacts to the area through early Sunday, with gusty winds, heavy rain with isolated flooding, and the potential for a brief spin-up tornado or two.",
@@ -284,9 +298,9 @@
     "Will continue to evaluate and potentially cancel early if needed."
    ],
    "unavailable": [],
-   "inputs_hash": "1470c892143e9e89",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "1b8662cae96d25f8",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KAUS": {
    "city": "AUS",
@@ -303,10 +317,10 @@
     "url": "https://api.weather.gov/gridpoints/EWX/158,87/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -377,7 +391,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KAUS (issued 9:55 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -405,16 +419,16 @@
    },
    "uncertainty": [],
    "unavailable": [],
-   "inputs_hash": "02639791bd239f4e",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "09f94c23cb5271d2",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KBOS": {
    "city": "BOS",
    "icao": "KBOS",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -424,22 +438,35 @@
     "url": "https://api.weather.gov/gridpoints/BOX/73,101/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 0,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 99,
+     "peak_local_hour": 22.0,
+     "peak_utc": "2026-10-12T03:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Partly Cloudy"
+     "first_30_local_hour": 18.0,
+     "wording": "Rain Showers"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 2,
-     "peak_local_hour": 35.0,
-     "peak_utc": "2026-10-11T16:00:00Z",
+     "peak_pct": 98,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Cloudy"
+     "first_30_local_hour": 24.0,
+     "wording": "Rain Showers"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 21.0,
+     "peak_utc": "2026-10-12T02:00:00Z",
+     "qpf_in": 0.66,
+     "first_30_local_hour": 17.0,
+     "wording": "Rain"
     }
    },
    "taf": {
@@ -456,12 +483,12 @@
       "wx": "-SHRA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 43.0,
-      "to_local_hour": 46.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 19.0,
+      "to_local_hour": 22.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-12T03:00:00Z",
@@ -469,12 +496,12 @@
       "wx": "-SHRA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 46.0,
-      "to_local_hour": 49.0,
-      "before_cutoff": false,
+      "from_local_hour": 22.0,
+      "to_local_hour": 25.0,
+      "before_cutoff": true,
       "after_cutoff": true,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KBOS"
@@ -517,14 +544,17 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 99% around 10:00 PM CT. The TAF carries -SHRA BR from 7:00 PM CT to 10:00 PM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (partly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 2% around 11:00 AM CT.",
-    "The TAF for KBOS (issued 6:28 PM CT) carries -SHRA BR 7:00 PM CT to 10:00 PM CT (FM), after the cutoff; -SHRA BR 10:00 PM CT to 11:00 PM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 99% around 10:00 PM CT (rain showers); the first hour at 30% or more is 6:00 PM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 98% around 12:00 AM CT.",
+    "The TAF for KBOS (issued 6:28 PM CT) carries -SHRA BR 7:00 PM CT to 10:00 PM CT (FM); -SHRA BR 10:00 PM CT to 1:00 AM CT (FM)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "NWS point forecast reaches 99% before the cutoff",
+     "TAF carries -SHRA BR before the cutoff"
+    ],
     "discussion": [
      "Round of showers Tuesday into Wednesday morning, then dry through Thursday night.",
      "Another round of showers possible some time Friday into Saturday.",
@@ -532,10 +562,7 @@
     ]
    },
    "prevents": {
-    "data": [
-     "no precipitation group still ahead in the TAF before the cutoff",
-     "point forecast stays under 15%% for the rest of the contract day"
-    ],
+    "data": [],
     "discussion": [
      "Potential for rain to last a bit longer Monday, especially across the south coast, Cape and Islands.",
      "PWATs will likely surge to near 2.0\", mostly along the south coast, Cape, and Islands."
@@ -554,9 +581,9 @@
     "The forecast for next Friday and Saturday is uncertain."
    ],
    "unavailable": [],
-   "inputs_hash": "39aca3a5a78d5890",
-   "text_generated_utc": "2026-10-11T04:47:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "5d9b670d59650aa4",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KORD": {
    "city": "CHI",
@@ -573,10 +600,10 @@
     "url": "https://api.weather.gov/gridpoints/LOT/65,76/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Partly Cloudy"
@@ -646,7 +673,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (partly cloudy).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (partly cloudy).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 6% around 4:00 AM CT.",
     "The TAF for KORD (issued 9:51 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -675,9 +702,9 @@
     "A few pieces of deterministic guidance, as well as a handful of members from various ensembles, still suggest a brief light shower may be possible."
    ],
    "unavailable": [],
-   "inputs_hash": "d8af2b3431554538",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "7234f4ea4a64dbaa",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KCLL": {
    "city": "CLL",
@@ -694,10 +721,10 @@
     "url": "https://api.weather.gov/gridpoints/HGX/25,131/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -774,7 +801,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KCLL (issued 6:20 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -808,16 +835,16 @@
     "Since it is still pretty far out in the forecast, the actual temps and timing of the front are uncertain."
    ],
    "unavailable": [],
-   "inputs_hash": "9954b35afb7662db",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "1ae21befc4f10cff",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KCMH": {
    "city": "CMH",
    "icao": "KCMH",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -827,22 +854,35 @@
     "url": "https://api.weather.gov/gridpoints/ILN/89,83/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 81,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 94,
+     "peak_local_hour": 2.0,
+     "peak_utc": "2026-10-11T07:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 23.0,
-     "wording": "Rain Showers"
+     "first_30_local_hour": 0.0,
+     "wording": "Showers And Thunderstorms"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 94,
-     "peak_local_hour": 26.0,
-     "peak_utc": "2026-10-11T07:00:00Z",
+     "peak_pct": 0,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 24.0,
-     "wording": "Showers And Thunderstorms"
+     "first_30_local_hour": null,
+     "wording": "Mostly Cloudy"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 76,
+     "peak_local_hour": 4.0,
+     "peak_utc": "2026-10-11T09:00:00Z",
+     "qpf_in": 0.17,
+     "first_30_local_hour": 2.0,
+     "wording": "Rain"
     }
    },
    "taf": {
@@ -859,8 +899,8 @@
       "wx": "-SHRA",
       "change": null,
       "prob": null,
-      "from_local_hour": 19.0,
-      "to_local_hour": 23.0,
+      "from_local_hour": -5.0,
+      "to_local_hour": -1.0,
       "before_cutoff": true,
       "after_cutoff": false,
       "elapsed": true,
@@ -872,10 +912,10 @@
       "wx": "-SHRA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 23.0,
-      "to_local_hour": 27.0,
+      "from_local_hour": -1.0,
+      "to_local_hour": 3.0,
       "before_cutoff": true,
-      "after_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
       "still_before_cutoff": true
      },
@@ -885,12 +925,12 @@
       "wx": "-SHRA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 27.0,
-      "to_local_hour": 35.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 3.0,
+      "to_local_hour": 11.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T16:00:00Z",
@@ -898,12 +938,12 @@
       "wx": "-SHRA",
       "change": "PROB",
       "prob": 30,
-      "from_local_hour": 35.0,
-      "to_local_hour": 41.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 11.0,
+      "to_local_hour": 17.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KCMH"
@@ -939,15 +979,15 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 94% around 2:00 AM CT. The TAF carries -SHRA from 11:00 PM CT to 3:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 81% around 11:00 PM CT (rain showers); the first hour at 30% or more is 11:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 94% around 2:00 AM CT.",
-    "The TAF for KCMH (issued 6:20 PM CT) carries -SHRA 11:00 PM CT to 3:00 AM CT (FM); -SHRA BR 3:00 AM CT to 11:00 AM CT (FM), after the cutoff; -SHRA 11:00 AM CT to 5:00 PM CT (PROB), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 94% around 2:00 AM CT (showers and thunderstorms); the first hour at 30% or more is 12:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KCMH (issued 6:20 PM CT) carries -SHRA 11:00 PM CT to 3:00 AM CT (FM); -SHRA BR 3:00 AM CT to 11:00 AM CT (FM); -SHRA 11:00 AM CT to 5:00 PM CT (PROB)."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 81% before the cutoff",
+     "NWS point forecast reaches 94% before the cutoff",
      "TAF carries -SHRA before the cutoff"
     ],
     "discussion": [
@@ -970,9 +1010,9 @@
    },
    "uncertainty": [],
    "unavailable": [],
-   "inputs_hash": "0aeda3f98424d676",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "9cd52f111e1a0bf5",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KDFW": {
    "city": "DAL",
@@ -984,15 +1024,15 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-10-11T04:02:04+00:00",
+    "generated_utc": "2026-10-11T05:02:48+00:00",
     "updated_utc": "2026-10-10T23:06:44+00:00",
     "url": "https://api.weather.gov/gridpoints/FWD/81,109/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -1069,7 +1109,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KDFW (issued 9:54 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -1102,16 +1142,16 @@
     "As a result, our confidence is higher that the front will bring notably cooler temps to North TX compared to Central TX."
    ],
    "unavailable": [],
-   "inputs_hash": "6bb21bf188c5a815",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "4150d5fc3a8b1ccf",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KDCA": {
    "city": "DC",
    "icao": "KDCA",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -1121,22 +1161,35 @@
     "url": "https://api.weather.gov/gridpoints/LWX/97,69/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 17,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 7.0,
+     "peak_utc": "2026-10-11T12:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Slight Chance Rain Showers"
+     "first_30_local_hour": 1.0,
+     "wording": "Rain Showers"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 100,
-     "peak_local_hour": 31.0,
-     "peak_utc": "2026-10-11T12:00:00Z",
+     "peak_pct": 69,
+     "peak_local_hour": 26.0,
+     "peak_utc": "2026-10-12T07:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 25.0,
-     "wording": "Rain Showers"
+     "first_30_local_hour": 24.0,
+     "wording": "Showers And Thunderstorms Likely"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 4.0,
+     "peak_utc": "2026-10-11T09:00:00Z",
+     "qpf_in": 1.51,
+     "first_30_local_hour": 0.0,
+     "wording": "Rain"
     }
    },
    "taf": {
@@ -1153,12 +1206,12 @@
       "wx": "-RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 24.0,
-      "to_local_hour": 26.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 0.0,
+      "to_local_hour": 2.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T07:00:00Z",
@@ -1166,12 +1219,12 @@
       "wx": "RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 26.0,
-      "to_local_hour": 29.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 2.0,
+      "to_local_hour": 5.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T10:00:00Z",
@@ -1179,12 +1232,12 @@
       "wx": "RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 29.0,
-      "to_local_hour": 39.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 5.0,
+      "to_local_hour": 15.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T20:00:00Z",
@@ -1192,12 +1245,12 @@
       "wx": "-RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 39.0,
-      "to_local_hour": 43.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 15.0,
+      "to_local_hour": 19.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T20:00:00Z",
@@ -1205,12 +1258,12 @@
       "wx": "-TSRA",
       "change": "PROB",
       "prob": 30,
-      "from_local_hour": 39.0,
-      "to_local_hour": 43.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 15.0,
+      "to_local_hour": 19.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-12T00:00:00Z",
@@ -1218,12 +1271,12 @@
       "wx": "-DZ BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 43.0,
-      "to_local_hour": 49.0,
-      "before_cutoff": false,
+      "from_local_hour": 19.0,
+      "to_local_hour": 25.0,
+      "before_cutoff": true,
       "after_cutoff": true,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-12T00:00:00Z",
@@ -1231,12 +1284,12 @@
       "wx": "SHRA",
       "change": "PROB",
       "prob": 30,
-      "from_local_hour": 43.0,
-      "to_local_hour": 47.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 19.0,
+      "to_local_hour": 23.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KDCA"
@@ -1281,14 +1334,17 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "A low chance before the cutoff: the point forecast peaks at 17% around 11:00 PM CT.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 100% around 7:00 AM CT. The TAF carries -RA from 12:00 AM CT to 2:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 17% around 11:00 PM CT (slight chance rain showers).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 100% around 7:00 AM CT.",
-    "The TAF for KDCA (issued 10:07 PM CT) carries -RA 12:00 AM CT to 2:00 AM CT (FM), after the cutoff; RA 2:00 AM CT to 5:00 AM CT (FM), after the cutoff; RA 5:00 AM CT to 3:00 PM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 100% around 7:00 AM CT (rain showers); the first hour at 30% or more is 1:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 69% around 2:00 AM CT.",
+    "The TAF for KDCA (issued 10:07 PM CT) carries -RA 12:00 AM CT to 2:00 AM CT (FM); RA 2:00 AM CT to 5:00 AM CT (FM); RA 5:00 AM CT to 3:00 PM CT (FM)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "NWS point forecast reaches 100% before the cutoff",
+     "TAF carries -RA before the cutoff"
+    ],
     "discussion": [
      "1) Remnants of Post-Tropical Cyclone Isaias to bring rain, breezy to windy conditions, and the threat of tornadoes Sunday.",
      "2) Above normal temperatures Tuesday will fall the second half of the week as moisture starved fronts move through.",
@@ -1296,9 +1352,7 @@
     ]
    },
    "prevents": {
-    "data": [
-     "no precipitation group still ahead in the TAF before the cutoff"
-    ],
+    "data": [],
     "discussion": [
      "A Flood Watch remains in effect for Sunday from the Blue Ridge eastward to just west of the D.C. metro area.",
      "This system has weakened considerably after last evening's landfall while losing all tropical characteristics."
@@ -1318,9 +1372,9 @@
     "Some eastward expansion may be necessary if models trends hold on or show further upticks."
    ],
    "unavailable": [],
-   "inputs_hash": "3e52cbd96f4c906e",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "2b79ac1cf844e4f5",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KDEN": {
    "city": "DEN",
@@ -1337,10 +1391,10 @@
     "url": "https://api.weather.gov/gridpoints/BOU/75,66/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 3,
+     "hours": 2,
      "peak_pct": 4,
-     "peak_local_hour": 21.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 22.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Mostly Cloudy"
@@ -1365,7 +1419,7 @@
      "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": 0,
      "first_30_local_hour": null,
-     "wording": "Partly Cloudy"
+     "wording": "Mostly Clear"
     }
    },
    "taf": {
@@ -1419,7 +1473,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 4%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 4% around 11:00 PM CT (mostly cloudy).",
+    "Before the cutoff the NWS point forecast peaks at 4% around 12:00 AM CT (mostly cloudy).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 4% around 2:00 AM CT.",
     "The TAF for KDEN (issued 9:32 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -1457,16 +1511,16 @@
     "Main precipitation chances hold off until at least late Tuesday, but uncertainty remains."
    ],
    "unavailable": [],
-   "inputs_hash": "ac7a921002243958",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "395281c5ac89134f",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KEWR": {
    "city": "EWR",
    "icao": "KEWR",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -1476,22 +1530,35 @@
     "url": "https://api.weather.gov/gridpoints/OKX/28,40/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 0,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 16.0,
+     "peak_utc": "2026-10-11T21:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Mostly Cloudy"
+     "first_30_local_hour": 7.0,
+     "wording": "Periods Of Rain"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 91,
-     "peak_local_hour": 35.0,
-     "peak_utc": "2026-10-11T16:00:00Z",
+     "peak_pct": 79,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 31.0,
-     "wording": "Periods Of Light Rain"
+     "first_30_local_hour": 24.0,
+     "wording": "Periods Of Rain"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 99,
+     "peak_local_hour": 16.0,
+     "peak_utc": "2026-10-11T21:00:00Z",
+     "qpf_in": 1.34,
+     "first_30_local_hour": 6.0,
+     "wording": "Rain"
     }
    },
    "taf": {
@@ -1508,12 +1575,12 @@
       "wx": "-SHRA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 30.0,
-      "to_local_hour": 33.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 6.0,
+      "to_local_hour": 9.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T14:00:00Z",
@@ -1521,12 +1588,12 @@
       "wx": "-RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 33.0,
-      "to_local_hour": 36.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 9.0,
+      "to_local_hour": 12.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T17:00:00Z",
@@ -1534,12 +1601,12 @@
       "wx": "RA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 36.0,
-      "to_local_hour": 39.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 12.0,
+      "to_local_hour": 15.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T20:00:00Z",
@@ -1547,12 +1614,12 @@
       "wx": "RA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 39.0,
-      "to_local_hour": 46.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 15.0,
+      "to_local_hour": 22.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-12T03:00:00Z",
@@ -1560,12 +1627,12 @@
       "wx": "RA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 46.0,
-      "to_local_hour": 49.0,
-      "before_cutoff": false,
+      "from_local_hour": 22.0,
+      "to_local_hour": 25.0,
+      "before_cutoff": true,
       "after_cutoff": true,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KEWR"
@@ -1610,14 +1677,17 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 0%). Chances rise after the cutoff, to 91% around 11:00 AM CT.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 100% around 4:00 PM CT. The TAF carries -SHRA from 6:00 AM CT to 9:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 91% around 11:00 AM CT.",
-    "The TAF for KEWR (issued 9:37 PM CT) carries -SHRA 6:00 AM CT to 9:00 AM CT (FM), after the cutoff; -RA 9:00 AM CT to 12:00 PM CT (FM), after the cutoff; RA BR 12:00 PM CT to 3:00 PM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 100% around 4:00 PM CT (periods of rain); the first hour at 30% or more is 7:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 79% around 12:00 AM CT.",
+    "The TAF for KEWR (issued 9:37 PM CT) carries -SHRA 6:00 AM CT to 9:00 AM CT (FM); -RA 9:00 AM CT to 12:00 PM CT (FM); RA BR 12:00 PM CT to 3:00 PM CT (FM)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "NWS point forecast reaches 100% before the cutoff",
+     "TAF carries -SHRA before the cutoff"
+    ],
     "discussion": [
      "3) Chance of showers and possible thunderstorms Tuesday night into early Wednesday with a quick moving system.",
      "A strong mid level trough approaches Sunday into Sunday night.",
@@ -1625,10 +1695,7 @@
     ]
    },
    "prevents": {
-    "data": [
-     "no precipitation group still ahead in the TAF before the cutoff",
-     "point forecast stays under 15%% for the rest of the contract day"
-    ],
+    "data": [],
     "discussion": [
      "While the storm system moves far enough away later Monday into Monday night, the weak high pressure moving in will present a lack of sufficient offshore flow."
     ]
@@ -1645,9 +1712,9 @@
     "Some of the nearshore waves could reach near 7 to 10 feet so some localized ocean beach erosion will be possible."
    ],
    "unavailable": [],
-   "inputs_hash": "bc68b174cab15daa",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "3d5e28458c97361f",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KHOU": {
    "city": "HOU",
@@ -1664,10 +1731,10 @@
     "url": "https://api.weather.gov/gridpoints/HGX/66,90/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -1743,7 +1810,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KHOU (issued 10:07 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -1776,16 +1843,16 @@
     "Since it is still pretty far out in the forecast, the actual temps and timing of the front are uncertain."
    ],
    "unavailable": [],
-   "inputs_hash": "03df3b7504221c70",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "86ac79404267afce",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KIND": {
    "city": "IND",
    "icao": "KIND",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -1795,22 +1862,35 @@
     "url": "https://api.weather.gov/gridpoints/IND/54,67/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 50,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 42,
+     "peak_local_hour": 0.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 23.0,
+     "first_30_local_hour": 0.0,
      "wording": "Chance Rain Showers"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 42,
+     "peak_pct": 0,
      "peak_local_hour": 24.0,
-     "peak_utc": "2026-10-11T05:00:00Z",
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 24.0,
-     "wording": "Chance Rain Showers"
+     "first_30_local_hour": null,
+     "wording": "Partly Cloudy"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 20,
+     "peak_local_hour": 1.0,
+     "peak_utc": "2026-10-11T06:00:00Z",
+     "qpf_in": 0,
+     "first_30_local_hour": null,
+     "wording": "Cloudy"
     }
    },
    "taf": {
@@ -1827,12 +1907,12 @@
       "wx": "-RA",
       "change": null,
       "prob": null,
-      "from_local_hour": 21.0,
-      "to_local_hour": 24.0,
+      "from_local_hour": -3.0,
+      "to_local_hour": 0.0,
       "before_cutoff": true,
       "after_cutoff": false,
-      "elapsed": false,
-      "still_before_cutoff": true
+      "elapsed": true,
+      "still_before_cutoff": false
      },
      {
       "from_utc": "2026-10-11T05:00:00Z",
@@ -1840,12 +1920,12 @@
       "wx": "VCSH",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 24.0,
-      "to_local_hour": 30.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 0.0,
+      "to_local_hour": 6.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KIND"
@@ -1877,16 +1957,16 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
+   "headline": "Rain possible before the cutoff: the point forecast peaks at 42% around 12:00 AM CT. The TAF carries VCSH from 12:00 AM CT to 6:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 50% around 11:00 PM CT (chance rain showers); the first hour at 30% or more is 11:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 42% around 12:00 AM CT.",
-    "The TAF for KIND (issued 9:22 PM CT) carries -RA 9:00 PM CT to 12:00 AM CT; VCSH 12:00 AM CT to 6:00 AM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 42% around 12:00 AM CT (chance rain showers); the first hour at 30% or more is 12:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KIND (issued 9:22 PM CT) carries VCSH 12:00 AM CT to 6:00 AM CT (FM)."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 50% before the cutoff",
-     "TAF carries -RA before the cutoff"
+     "NWS point forecast reaches 42% before the cutoff",
+     "TAF carries VCSH before the cutoff"
     ],
     "discussion": [
      "Light rain arriving late day into tonight as tropical remnants move into the Ohio Valley with a likely sharp cutoff in rainfall on the western edge.",
@@ -1904,11 +1984,13 @@
     "discussion": [],
     "aviation": []
    },
-   "uncertainty": [],
+   "uncertainty": [
+    "The two airport forecasts disagree before the cutoff: NWS peak 42%, weather.com peak 20%."
+   ],
    "unavailable": [],
-   "inputs_hash": "a6463a9171e93810",
-   "text_generated_utc": "2026-10-11T04:32:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "652f8f087b2a99ce",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KLAX": {
    "city": "LAX",
@@ -1920,12 +2002,12 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-10-11T03:47:51+00:00",
+    "generated_utc": "2026-10-11T04:43:00+00:00",
     "updated_utc": "2026-10-10T20:57:19+00:00",
     "url": "https://api.weather.gov/gridpoints/LOX/149,41/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 4,
+     "hours": 3,
      "peak_pct": 69,
      "peak_local_hour": 22.0,
      "peak_utc": "2026-10-11T06:00:00Z",
@@ -1948,12 +2030,12 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 3,
-     "peak_pct": 35,
+     "peak_pct": 24,
      "peak_local_hour": 21.0,
      "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": 0,
-     "first_30_local_hour": 21.0,
-     "wording": "Showers"
+     "first_30_local_hour": null,
+     "wording": "Mostly Cloudy"
     }
    },
    "taf": {
@@ -2122,19 +2204,19 @@
     ]
    },
    "uncertainty": [
-    "The two airport forecasts disagree before the cutoff: NWS peak 69%, weather.com peak 35%."
+    "The two airport forecasts disagree before the cutoff: NWS peak 69%, weather.com peak 24%."
    ],
    "unavailable": [],
-   "inputs_hash": "bccb0c70b667c4bc",
-   "text_generated_utc": "2026-10-11T04:47:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "9f537177b43ecc9c",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KLEX": {
    "city": "LEX",
    "icao": "KLEX",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -2144,22 +2226,35 @@
     "url": "https://api.weather.gov/gridpoints/LMK/91,71/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 30,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 76,
+     "peak_local_hour": 8.0,
+     "peak_utc": "2026-10-11T13:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 23.0,
-     "wording": "Chance Showers And Thunderstorms"
+     "first_30_local_hour": 0.0,
+     "wording": "Showers And Thunderstorms"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 76,
-     "peak_local_hour": 32.0,
-     "peak_utc": "2026-10-11T13:00:00Z",
+     "peak_pct": 1,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 24.0,
-     "wording": "Showers And Thunderstorms"
+     "first_30_local_hour": null,
+     "wording": "Mostly Cloudy"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 89,
+     "peak_local_hour": 2.0,
+     "peak_utc": "2026-10-11T07:00:00Z",
+     "qpf_in": 0.23,
+     "first_30_local_hour": 1.0,
+     "wording": "Rain"
     }
    },
    "taf": {
@@ -2176,10 +2271,10 @@
       "wx": "-SHRA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 23.0,
-      "to_local_hour": 29.0,
+      "from_local_hour": -1.0,
+      "to_local_hour": 5.0,
       "before_cutoff": true,
-      "after_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
       "still_before_cutoff": true
      },
@@ -2189,12 +2284,12 @@
       "wx": "-SHRA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 29.0,
-      "to_local_hour": 31.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 5.0,
+      "to_local_hour": 7.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T12:00:00Z",
@@ -2202,12 +2297,12 @@
       "wx": "-RA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 31.0,
-      "to_local_hour": 37.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 7.0,
+      "to_local_hour": 13.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T18:00:00Z",
@@ -2215,12 +2310,12 @@
       "wx": "-DZ BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 37.0,
-      "to_local_hour": 43.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 13.0,
+      "to_local_hour": 19.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KLEX"
@@ -2261,15 +2356,15 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 76% around 8:00 AM CT. The TAF carries -SHRA BR from 11:00 PM CT to 5:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 30% around 11:00 PM CT (chance showers and thunderstorms); the first hour at 30% or more is 11:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 76% around 8:00 AM CT.",
-    "The TAF for KLEX (issued 6:20 PM CT) carries -SHRA BR 11:00 PM CT to 5:00 AM CT (FM); -SHRA BR 5:00 AM CT to 7:00 AM CT (FM), after the cutoff; -RA BR 7:00 AM CT to 1:00 PM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 76% around 8:00 AM CT (showers and thunderstorms); the first hour at 30% or more is 12:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 1% around 12:00 AM CT.",
+    "The TAF for KLEX (issued 6:20 PM CT) carries -SHRA BR 11:00 PM CT to 5:00 AM CT (FM); -SHRA BR 5:00 AM CT to 7:00 AM CT (FM); -RA BR 7:00 AM CT to 1:00 PM CT (FM)."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 30% before the cutoff",
+     "NWS point forecast reaches 76% before the cutoff",
      "TAF carries -SHRA BR before the cutoff"
     ],
     "discussion": [
@@ -2298,9 +2393,9 @@
     "This could blow around unsecured, lightweight outdoor objects. * Dry and warm weather will return Monday into Tuesday, with highs in the mid to locally upper 80s each day."
    ],
    "unavailable": [],
-   "inputs_hash": "a8d042a849338305",
-   "text_generated_utc": "2026-10-11T04:32:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "e5117e2e489ab7ba",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KLAS": {
    "city": "LV",
@@ -2317,12 +2412,12 @@
     "url": "https://api.weather.gov/gridpoints/VEF/121,94/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 4,
+     "hours": 3,
      "peak_pct": 91,
      "peak_local_hour": 23.0,
      "peak_utc": "2026-10-11T07:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 20.0,
+     "first_30_local_hour": 21.0,
      "wording": "Showers And Thunderstorms"
     },
     "after_cutoff": {
@@ -2343,7 +2438,7 @@
      "peak_pct": 99,
      "peak_local_hour": 23.0,
      "peak_utc": "2026-10-11T07:00:00Z",
-     "qpf_in": 0.34,
+     "qpf_in": 0.35,
      "first_30_local_hour": 21.0,
      "wording": "Rain"
     }
@@ -2519,7 +2614,7 @@
    ],
    "headline": "Rain likely before the cutoff: the point forecast peaks at 91% around 2:00 AM CT. The TAF carries VCSH from 9:00 PM CT to 2:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 91% around 2:00 AM CT (showers and thunderstorms); the first hour at 30% or more is 11:00 PM CT.",
+    "Before the cutoff the NWS point forecast peaks at 91% around 2:00 AM CT (showers and thunderstorms); the first hour at 30% or more is 12:00 AM CT.",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 96% around 3:00 AM CT.",
     "The TAF for KLAS (issued 6:24 PM CT) carries VCSH 9:00 PM CT to 2:00 AM CT (FM); -SHRA 9:00 PM CT to 2:00 AM CT (PROB); -SHRA 2:00 AM CT to 9:00 AM CT (FM).",
     "Active alert: Wind Advisory; Flood Watch. A watch is a watch, not a gauge hit."
@@ -2547,16 +2642,16 @@
    },
    "uncertainty": [],
    "unavailable": [],
-   "inputs_hash": "a0de68cc9d3da753",
-   "text_generated_utc": "2026-10-11T04:47:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "f7372e605b4dfae9",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KMIA": {
    "city": "MIA",
    "icao": "KMIA",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -2566,22 +2661,35 @@
     "url": "https://api.weather.gov/gridpoints/MFL/106,51/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 24,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
-     "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Slight Chance Showers And Thunderstorms"
-    },
-    "after_cutoff": {
-     "hours": 12,
+     "hours": 24,
      "peak_pct": 26,
-     "peak_local_hour": 24.0,
+     "peak_local_hour": 0.0,
      "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Chance Showers And Thunderstorms"
+    },
+    "after_cutoff": {
+     "hours": 12,
+     "peak_pct": 6,
+     "peak_local_hour": 31.0,
+     "peak_utc": "2026-10-12T12:00:00Z",
+     "qpf_in": null,
+     "first_30_local_hour": null,
+     "wording": "Mostly Sunny"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 52,
+     "peak_local_hour": 2.0,
+     "peak_utc": "2026-10-11T07:00:00Z",
+     "qpf_in": 0,
+     "first_30_local_hour": 2.0,
+     "wording": "Scattered Thunderstorms"
     }
    },
    "taf": {
@@ -2630,10 +2738,10 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "A low chance before the cutoff: the point forecast peaks at 24% around 11:00 PM CT.",
+   "headline": "A low chance before the cutoff: the point forecast peaks at 26% around 12:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 24% around 11:00 PM CT (slight chance showers and thunderstorms).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 26% around 12:00 AM CT.",
+    "Before the cutoff the NWS point forecast peaks at 26% around 12:00 AM CT (chance showers and thunderstorms).",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 6% around 7:00 AM CT.",
     "The TAF for KMIA (issued 9:54 PM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
@@ -2659,12 +2767,13 @@
    },
    "uncertainty": [
     "Accordingly, convection moving from south to north focused along a band could create the risk for a few rounds of heavy rainfall.",
-    "If coincident with a previously saturated area, this could lead to some ponding of water or even minor flooding."
+    "If coincident with a previously saturated area, this could lead to some ponding of water or even minor flooding.",
+    "The two airport forecasts disagree before the cutoff: NWS peak 26%, weather.com peak 52%."
    ],
    "unavailable": [],
-   "inputs_hash": "b29acfff1aca1dd9",
-   "text_generated_utc": "2026-10-11T04:32:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "96718d33c8db1a28",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KMSP": {
    "city": "MIN",
@@ -2676,15 +2785,15 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-10-11T03:57:02+00:00",
-    "updated_utc": "2026-10-11T02:26:33+00:00",
+    "generated_utc": "2026-10-11T04:53:17+00:00",
+    "updated_utc": "2026-10-11T04:36:40+00:00",
     "url": "https://api.weather.gov/gridpoints/MPX/110,68/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -2755,7 +2864,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KMSP (issued 9:39 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -2785,9 +2894,9 @@
     "So, we are still carrying the same amount of uncertainty mentioned in the previous discussion."
    ],
    "unavailable": [],
-   "inputs_hash": "62ef4dade2193243",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "99aedc48c84f55b2",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KMKE": {
    "city": "MKE",
@@ -2804,10 +2913,10 @@
     "url": "https://api.weather.gov/gridpoints/MKX/89,61/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Partly Cloudy"
@@ -2883,7 +2992,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (partly cloudy).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (partly cloudy).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KMKE (issued 9:15 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -2916,9 +3025,9 @@
     "Much colder temperatures may move in next weekend, with frost potential developing."
    ],
    "unavailable": [],
-   "inputs_hash": "f469dcf1d574aac3",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "f79a6e8905313da9",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KMSY": {
    "city": "NOLA",
@@ -2935,10 +3044,10 @@
     "url": "https://api.weather.gov/gridpoints/LIX/60,90/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -3008,7 +3117,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KMSY (issued 6:21 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -3035,16 +3144,16 @@
    },
    "uncertainty": [],
    "unavailable": [],
-   "inputs_hash": "9871bc86b69d815d",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "76ade7b37c3e6dc5",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KNYC": {
    "city": "NYC",
    "icao": "KNYC",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -3054,22 +3163,35 @@
     "url": "https://api.weather.gov/gridpoints/OKX/34,45/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 0,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 16.0,
+     "peak_utc": "2026-10-11T21:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Partly Cloudy"
+     "first_30_local_hour": 7.0,
+     "wording": "Periods Of Rain"
     },
     "after_cutoff": {
      "hours": 12,
      "peak_pct": 81,
-     "peak_local_hour": 35.0,
-     "peak_utc": "2026-10-11T16:00:00Z",
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 31.0,
-     "wording": "Periods Of Light Rain"
+     "first_30_local_hour": 24.0,
+     "wording": "Periods Of Rain"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 98,
+     "peak_local_hour": 14.0,
+     "peak_utc": "2026-10-11T19:00:00Z",
+     "qpf_in": 1.21,
+     "first_30_local_hour": 6.0,
+     "wording": "Rain"
     }
    },
    "taf": null,
@@ -3113,13 +3235,15 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 0%). Chances rise after the cutoff, to 81% around 11:00 AM CT.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 100% around 4:00 PM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (partly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 81% around 11:00 AM CT."
+    "Before the cutoff the NWS point forecast peaks at 100% around 4:00 PM CT (periods of rain); the first hour at 30% or more is 7:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 81% around 12:00 AM CT."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "NWS point forecast reaches 100% before the cutoff"
+    ],
     "discussion": [
      "3) Chance of showers and possible thunderstorms Tuesday night into early Wednesday with a quick moving system.",
      "A strong mid level trough approaches Sunday into Sunday night.",
@@ -3127,9 +3251,7 @@
     ]
    },
    "prevents": {
-    "data": [
-     "point forecast stays under 15%% for the rest of the contract day"
-    ],
+    "data": [],
     "discussion": [
      "While the storm system moves far enough away later Monday into Monday night, the weak high pressure moving in will present a lack of sufficient offshore flow."
     ]
@@ -3148,9 +3270,9 @@
    "unavailable": [
     "TAF: no row for KNYC in this run"
    ],
-   "inputs_hash": "1d9c8a4daade34c9",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "c385df74aebea5db",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KOKC": {
    "city": "OKC",
@@ -3167,10 +3289,10 @@
     "url": "https://api.weather.gov/gridpoints/OUN/94,90/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -3245,7 +3367,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KOKC (issued 6:20 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -3276,16 +3398,16 @@
     "(Tuesday through Friday) Issued at 140 AM CDT Sat Oct 10 2026 Aforementioned storm systems still look to bring about more changeable weather, including the return of rain/storm chances, though focused areas and timing remain rather uncertain at this point."
    ],
    "unavailable": [],
-   "inputs_hash": "914adc8ab36a12a4",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "e6ab2204ca45ab55",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KPHL": {
    "city": "PHIL",
    "icao": "KPHL",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -3295,21 +3417,34 @@
     "url": "https://api.weather.gov/gridpoints/PHI/48,75/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 2,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 14.0,
+     "peak_utc": "2026-10-11T19:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Mostly Cloudy"
+     "first_30_local_hour": 6.0,
+     "wording": "Rain"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 96,
-     "peak_local_hour": 35.0,
-     "peak_utc": "2026-10-11T16:00:00Z",
+     "peak_pct": 80,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 30.0,
+     "first_30_local_hour": 24.0,
+     "wording": "Showers And Thunderstorms"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 99,
+     "peak_local_hour": 9.0,
+     "peak_utc": "2026-10-11T14:00:00Z",
+     "qpf_in": 1.3,
+     "first_30_local_hour": 3.0,
      "wording": "Rain"
     }
    },
@@ -3327,12 +3462,12 @@
       "wx": "-RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 31.0,
-      "to_local_hour": 34.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 7.0,
+      "to_local_hour": 10.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T15:00:00Z",
@@ -3340,12 +3475,12 @@
       "wx": "-RA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 34.0,
-      "to_local_hour": 44.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 10.0,
+      "to_local_hour": 20.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-12T01:00:00Z",
@@ -3353,12 +3488,12 @@
       "wx": "VCSH",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 44.0,
-      "to_local_hour": 49.0,
-      "before_cutoff": false,
+      "from_local_hour": 20.0,
+      "to_local_hour": 25.0,
+      "before_cutoff": true,
       "after_cutoff": true,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KPHL"
@@ -3401,14 +3536,17 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 2%). Chances rise after the cutoff, to 96% around 11:00 AM CT.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 100% around 2:00 PM CT. The TAF carries -RA from 7:00 AM CT to 10:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 2% around 11:00 PM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 96% around 11:00 AM CT.",
-    "The TAF for KPHL (issued 10:00 PM CT) carries -RA 7:00 AM CT to 10:00 AM CT (FM), after the cutoff; -RA BR 10:00 AM CT to 8:00 PM CT (FM), after the cutoff; VCSH 8:00 PM CT to 11:00 PM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 100% around 2:00 PM CT (rain); the first hour at 30% or more is 6:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 80% around 12:00 AM CT.",
+    "The TAF for KPHL (issued 10:00 PM CT) carries -RA 7:00 AM CT to 10:00 AM CT (FM); -RA BR 10:00 AM CT to 8:00 PM CT (FM); VCSH 8:00 PM CT to 1:00 AM CT (FM)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "NWS point forecast reaches 100% before the cutoff",
+     "TAF carries -RA before the cutoff"
+    ],
     "discussion": [
      "As this occurs, it is forecast to weaken further with the closed mid level low opening up more into a trough.",
      "This will enhance the lift (strong 700-850 mb frontogenesis) as the low to mid level flow veers with height.",
@@ -3416,10 +3554,7 @@
     ]
    },
    "prevents": {
-    "data": [
-     "no precipitation group still ahead in the TAF before the cutoff",
-     "point forecast stays under 15%% for the rest of the contract day"
-    ],
+    "data": [],
     "discussion": [
      "The remnants of Isaias Sunday and Sunday night brings rain, some potentially heavy at times, gusty winds and a low risk for an isolated severe thunderstorm.",
      "KEY MESSAGE 1...The remnants of Isaias Sunday and Sunday night brings rain, some potentially heavy at times, gusty winds and a low risk for an isolated severe thunderstorm."
@@ -3438,9 +3573,9 @@
     "If rainfall rates become high enough for a time, then some urban/roadway flooding will also be possible."
    ],
    "unavailable": [],
-   "inputs_hash": "20afd18145807421",
-   "text_generated_utc": "2026-10-11T04:32:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "805bc2201375add7",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KPHX": {
    "city": "PHX",
@@ -3457,12 +3592,12 @@
     "url": "https://api.weather.gov/gridpoints/PSR/161,57/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 3,
+     "hours": 2,
      "peak_pct": 71,
      "peak_local_hour": 22.0,
      "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 21.0,
+     "first_30_local_hour": 22.0,
      "wording": "Showers And Thunderstorms Likely"
     },
     "after_cutoff": {
@@ -3480,10 +3615,10 @@
     "source": "The Weather Company hourly (settlement family)",
     "before_cutoff": {
      "hours": 2,
-     "peak_pct": 94,
+     "peak_pct": 85,
      "peak_local_hour": 22.0,
      "peak_utc": "2026-10-11T05:00:00Z",
-     "qpf_in": 0.03,
+     "qpf_in": 0.01,
      "first_30_local_hour": 22.0,
      "wording": "Thunderstorms"
     }
@@ -3626,7 +3761,7 @@
    ],
    "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 71% around 12:00 AM CT (showers and thunderstorms likely); the first hour at 30% or more is 11:00 PM CT.",
+    "Before the cutoff the NWS point forecast peaks at 71% around 12:00 AM CT (showers and thunderstorms likely); the first hour at 30% or more is 12:00 AM CT.",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 83% around 4:00 AM CT.",
     "The TAF for KPHX (issued 10:08 PM CT) carries VCSH 10:00 PM CT to 1:00 AM CT; -TSRA 10:00 PM CT to 1:00 AM CT (PROB); VCSH 4:00 AM CT to 9:00 AM CT (FM), after the cutoff.",
     "Active alert: Wind Advisory. A watch is a watch, not a gauge hit."
@@ -3661,20 +3796,19 @@
    },
    "uncertainty": [
     "Additionally, a dry slot behind the remnant Rachel circulation may add to the wind threat, as there will be additional mixing through the BL during the Day on Sunday, helping tap the higher momentum air aloft.",
-    "Wind gusts this high could certainty result in areas of blowing dust in the dust prone areas.",
-    "The two airport forecasts disagree before the cutoff: NWS peak 71%, weather.com peak 94%."
+    "Wind gusts this high could certainty result in areas of blowing dust in the dust prone areas."
    ],
    "unavailable": [],
-   "inputs_hash": "9c2db7225e718632",
-   "text_generated_utc": "2026-10-11T04:47:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "8203e1bd3abe6ec0",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KPIT": {
    "city": "PIT",
    "icao": "KPIT",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -3684,22 +3818,35 @@
     "url": "https://api.weather.gov/gridpoints/PBZ/70,67/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 59,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 95,
+     "peak_local_hour": 5.0,
+     "peak_utc": "2026-10-11T10:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 23.0,
-     "wording": "Rain Showers Likely"
+     "first_30_local_hour": 0.0,
+     "wording": "Showers And Thunderstorms"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 95,
-     "peak_local_hour": 29.0,
-     "peak_utc": "2026-10-11T10:00:00Z",
+     "peak_pct": 7,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 24.0,
-     "wording": "Showers And Thunderstorms"
+     "first_30_local_hour": null,
+     "wording": "Mostly Cloudy"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 0.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
+     "qpf_in": 1.57,
+     "first_30_local_hour": 0.0,
+     "wording": "Rain"
     }
    },
    "taf": {
@@ -3716,10 +3863,10 @@
       "wx": "-RA",
       "change": null,
       "prob": null,
-      "from_local_hour": 23.0,
-      "to_local_hour": 26.0,
+      "from_local_hour": -1.0,
+      "to_local_hour": 2.0,
       "before_cutoff": true,
-      "after_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
       "still_before_cutoff": true
      },
@@ -3729,10 +3876,10 @@
       "wx": "-RA",
       "change": "TEMPO",
       "prob": null,
-      "from_local_hour": 23.0,
-      "to_local_hour": 26.0,
+      "from_local_hour": -1.0,
+      "to_local_hour": 2.0,
       "before_cutoff": true,
-      "after_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
       "still_before_cutoff": true
      },
@@ -3742,12 +3889,12 @@
       "wx": "-RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 26.0,
-      "to_local_hour": 32.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 2.0,
+      "to_local_hour": 8.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T11:00:00Z",
@@ -3755,12 +3902,12 @@
       "wx": "-RA",
       "change": "TEMPO",
       "prob": null,
-      "from_local_hour": 30.0,
-      "to_local_hour": 32.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 6.0,
+      "to_local_hour": 8.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T13:00:00Z",
@@ -3768,12 +3915,12 @@
       "wx": "-RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 32.0,
-      "to_local_hour": 38.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 8.0,
+      "to_local_hour": 14.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T19:00:00Z",
@@ -3781,12 +3928,12 @@
       "wx": "BR VCSH",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 38.0,
-      "to_local_hour": 49.0,
-      "before_cutoff": false,
+      "from_local_hour": 14.0,
+      "to_local_hour": 25.0,
+      "before_cutoff": true,
       "after_cutoff": true,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KPIT"
@@ -3824,15 +3971,15 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 95% around 5:00 AM CT. The TAF carries -RA from 11:00 PM CT to 2:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 59% around 11:00 PM CT (rain showers likely); the first hour at 30% or more is 11:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 95% around 5:00 AM CT.",
-    "The TAF for KPIT (issued 10:36 PM CT) carries -RA 11:00 PM CT to 2:00 AM CT; -RA 11:00 PM CT to 2:00 AM CT (TEMPO); -RA 2:00 AM CT to 8:00 AM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 95% around 5:00 AM CT (showers and thunderstorms); the first hour at 30% or more is 12:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 7% around 12:00 AM CT.",
+    "The TAF for KPIT (issued 10:36 PM CT) carries -RA 11:00 PM CT to 2:00 AM CT; -RA 11:00 PM CT to 2:00 AM CT (TEMPO); -RA 2:00 AM CT to 8:00 AM CT (FM)."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 59% before the cutoff",
+     "NWS point forecast reaches 95% before the cutoff",
      "TAF carries -RA before the cutoff"
     ],
     "discussion": [
@@ -3857,16 +4004,16 @@
     "There is still a question of if this occurs or not based on the exact thermodynamics, but though the risk was prudent enough to upgrade, particularly with the worst- case scenario of winds near Uniontown of 60mph."
    ],
    "unavailable": [],
-   "inputs_hash": "efa2f8efaf9b6586",
-   "text_generated_utc": "2026-10-11T04:32:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "645338ead452d33a",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KPVD": {
    "city": "PVD",
    "icao": "KPVD",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -3876,22 +4023,35 @@
     "url": "https://api.weather.gov/gridpoints/BOX/64,70/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 0,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 100,
+     "peak_local_hour": 21.0,
+     "peak_utc": "2026-10-12T02:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Partly Cloudy"
+     "first_30_local_hour": 16.0,
+     "wording": "Rain Showers"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 5,
-     "peak_local_hour": 35.0,
-     "peak_utc": "2026-10-11T16:00:00Z",
+     "peak_pct": 91,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Cloudy"
+     "first_30_local_hour": 24.0,
+     "wording": "Rain Showers"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 98,
+     "peak_local_hour": 20.0,
+     "peak_utc": "2026-10-12T01:00:00Z",
+     "qpf_in": 0.71,
+     "first_30_local_hour": 14.0,
+     "wording": "Rain"
     }
    },
    "taf": {
@@ -3908,12 +4068,12 @@
       "wx": "-SHRA",
       "change": "PROB",
       "prob": 30,
-      "from_local_hour": 40.0,
-      "to_local_hour": 42.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 16.0,
+      "to_local_hour": 18.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T23:00:00Z",
@@ -3921,12 +4081,12 @@
       "wx": "-SHRA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 42.0,
-      "to_local_hour": 43.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 18.0,
+      "to_local_hour": 19.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KPVD"
@@ -3969,14 +4129,17 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 100% around 9:00 PM CT. The TAF carries -SHRA from 4:00 PM CT to 6:00 PM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (partly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 5% around 11:00 AM CT.",
-    "The TAF for KPVD (issued 6:28 PM CT) carries -SHRA 4:00 PM CT to 6:00 PM CT (PROB), after the cutoff; -SHRA BR 6:00 PM CT to 7:00 PM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 100% around 9:00 PM CT (rain showers); the first hour at 30% or more is 4:00 PM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 91% around 12:00 AM CT.",
+    "The TAF for KPVD (issued 6:28 PM CT) carries -SHRA 4:00 PM CT to 6:00 PM CT (PROB); -SHRA BR 6:00 PM CT to 7:00 PM CT (FM)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "NWS point forecast reaches 100% before the cutoff",
+     "TAF carries -SHRA before the cutoff"
+    ],
     "discussion": [
      "Round of showers Tuesday into Wednesday morning, then dry through Thursday night.",
      "Another round of showers possible some time Friday into Saturday.",
@@ -3984,10 +4147,7 @@
     ]
    },
    "prevents": {
-    "data": [
-     "no precipitation group still ahead in the TAF before the cutoff",
-     "point forecast stays under 15%% for the rest of the contract day"
-    ],
+    "data": [],
     "discussion": [
      "Potential for rain to last a bit longer Monday, especially across the south coast, Cape and Islands.",
      "PWATs will likely surge to near 2.0\", mostly along the south coast, Cape, and Islands."
@@ -4006,9 +4166,9 @@
     "The forecast for next Friday and Saturday is uncertain."
    ],
    "unavailable": [],
-   "inputs_hash": "977f7b2817b416a0",
-   "text_generated_utc": "2026-10-11T04:47:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "2e9ea15f5e15554f",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KSAT": {
    "city": "SATX",
@@ -4025,13 +4185,13 @@
     "url": "https://api.weather.gov/gridpoints/EWX/127,60/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Clear"
+     "wording": "Mostly Clear"
     },
     "after_cutoff": {
      "hours": 12,
@@ -4099,7 +4259,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (mostly clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KSAT (issued 9:55 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -4127,9 +4287,9 @@
    },
    "uncertainty": [],
    "unavailable": [],
-   "inputs_hash": "955eb2466f2ca8f3",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "e76798ea67550ac9",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KSEA": {
    "city": "SEA",
@@ -4146,13 +4306,13 @@
     "url": "https://api.weather.gov/gridpoints/SEW/124,60/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 4,
+     "hours": 3,
      "peak_pct": 3,
-     "peak_local_hour": 20.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 21.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Partly Cloudy"
+     "wording": "Mostly Clear"
     },
     "after_cutoff": {
      "hours": 12,
@@ -4260,7 +4420,7 @@
    ],
    "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 3% around 11:00 PM CT (partly cloudy).",
+    "Before the cutoff the NWS point forecast peaks at 3% around 12:00 AM CT (mostly clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 3% around 4:00 AM CT.",
     "The TAF for KSEA (issued 9:17 PM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Frost Advisory. A watch is a watch, not a gauge hit."
@@ -4295,9 +4455,9 @@
     "Low level moisture may still result in isolated patches of fog, especially in the more prone areas of the SW interior."
    ],
    "unavailable": [],
-   "inputs_hash": "5564069eafde626d",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "02e414a49a2df63c",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KSFO": {
    "city": "SFO",
@@ -4314,10 +4474,10 @@
     "url": "https://api.weather.gov/gridpoints/MTR/85,98/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 4,
+     "hours": 3,
      "peak_pct": 0,
-     "peak_local_hour": 20.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 21.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -4358,9 +4518,9 @@
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS MTR Area Forecast Discussion",
-    "issued_utc": "2026-10-11T04:07:00+00:00",
-    "url": "https://api.weather.gov/products/71af04b8-8836-4365-a332-3ef50f786b1d",
-    "product_id": "71af04b8-8836-4365-a332-3ef50f786b1d",
+    "issued_utc": "2026-10-11T05:00:00+00:00",
+    "url": "https://api.weather.gov/products/3697df44-f496-47b5-9fa0-5f1182b659c6",
+    "product_id": "3697df44-f496-47b5-9fa0-5f1182b659c6",
     "sections": [
      "KEY MESSAGES",
      "SHORT TERM",
@@ -4385,9 +4545,9 @@
       "Some higher elevations in the Diablo and Gabilan Ranges, the Cholame Hills, Sierra de Salinas, and Santa Lucia could see lows dip into the upper 30s to low 40s."
      ],
      "aviation": [
-      "As a result, moderate to high confidence for VFR conditions to prevail this TAF period at most terminals.",
-      "Vicinity of SFO...VFR with strong gusts around 20 to 30 kt gradually diminishing through the evening.",
-      "High confidence for VFR to prevail through the TAF period."
+      "Everywhere else should remain VFR through the TAF cycle with a few to scattered stratocumulus decks.",
+      "Vicinity of SFO...VFR through the TAF period with potential for some scattered decks overnight.",
+      "These are expected to be short-lived, therefore they were not mentioned in the official TAF."
      ]
     },
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
@@ -4402,7 +4562,7 @@
    ],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 3:00 AM CT.",
     "The TAF for KSFO (issued 9:48 PM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Coastal Flood Advisory. A watch is a watch, not a gauge hit."
@@ -4427,9 +4587,9 @@
    "timing": {
     "discussion": [],
     "aviation": [
-     "As a result, moderate to high confidence for VFR conditions to prevail this TAF period at most terminals.",
-     "Vicinity of SFO...VFR with strong gusts around 20 to 30 kt gradually diminishing through the evening.",
-     "High confidence for VFR to prevail through the TAF period."
+     "Everywhere else should remain VFR through the TAF cycle with a few to scattered stratocumulus decks.",
+     "Vicinity of SFO...VFR through the TAF period with potential for some scattered decks overnight.",
+     "These are expected to be short-lived, therefore they were not mentioned in the official TAF."
     ]
    },
    "uncertainty": [
@@ -4437,9 +4597,9 @@
     "Some higher elevations in the Diablo and Gabilan Ranges, the Cholame Hills, Sierra de Salinas, and Santa Lucia could see lows dip into the upper 30s to low 40s."
    ],
    "unavailable": [],
-   "inputs_hash": "31d991b5b4e95c42",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "215ea4d7059e7622",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KSGF": {
    "city": "SGF",
@@ -4451,15 +4611,15 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-10-11T03:47:56+00:00",
+    "generated_utc": "2026-10-11T04:47:54+00:00",
     "updated_utc": "2026-10-11T03:40:55+00:00",
     "url": "https://api.weather.gov/gridpoints/SGF/64,36/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
      "wording": "Clear"
@@ -4536,7 +4696,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (clear).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (clear).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KSGF (issued 6:20 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -4569,9 +4729,9 @@
     "Dry agricultural conditions paired with daily humidity values dropping into the 20-35% range may increase the chance for fire starts."
    ],
    "unavailable": [],
-   "inputs_hash": "996a835589af5890",
-   "text_generated_utc": "2026-10-11T04:02:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "b5bc7e5fe2ed2ca3",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KSTL": {
    "city": "STL",
@@ -4583,18 +4743,18 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-10-11T04:17:56+00:00",
+    "generated_utc": "2026-10-11T05:02:55+00:00",
     "updated_utc": "2026-10-11T03:26:20+00:00",
-    "url": "https://api.weather.gov/gridpoints/LSX/90,80/forecast/hourly",
+    "url": "https://api.weather.gov/gridpoints/LSX/91,80/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 2,
+     "hours": 1,
      "peak_pct": 0,
-     "peak_local_hour": 22.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "peak_local_hour": 23.0,
+     "peak_utc": "2026-10-11T05:00:00Z",
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Mostly Cloudy"
+     "wording": "Partly Cloudy"
     },
     "after_cutoff": {
      "hours": 12,
@@ -4667,7 +4827,7 @@
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (mostly cloudy).",
+    "Before the cutoff the NWS point forecast peaks at 0% around 12:00 AM CT (partly cloudy).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
     "The TAF for KSTL (issued 10:10 PM CT) carries no precipitation group still ahead in its period."
    ],
@@ -4700,16 +4860,16 @@
     "The uncertainty is largely driven by the intensity and amplitude of the trough driving this front and subsequently the trajectory of cold air behind it."
    ],
    "unavailable": [],
-   "inputs_hash": "5f68772705918fe0",
-   "text_generated_utc": "2026-10-11T04:32:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "7978dfe98881dab4",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   },
   "KTTN": {
    "city": "TTN",
    "icao": "KTTN",
-   "day": "2026-10-10",
+   "day": "2026-10-11",
    "utc_offset_std": -5,
-   "cutoff_utc": "2026-10-11T05:00:00Z",
+   "cutoff_utc": "2026-10-12T05:00:00Z",
    "cutoff_note": "local standard midnight (1 am on the civil clock while daylight time is on)",
    "point_forecast": {
     "kind": "airport forecast",
@@ -4719,21 +4879,34 @@
     "url": "https://api.weather.gov/gridpoints/PHI/60,95/forecast/hourly",
     "note": null,
     "before_cutoff": {
-     "hours": 1,
-     "peak_pct": 0,
-     "peak_local_hour": 23.0,
-     "peak_utc": "2026-10-11T04:00:00Z",
+     "hours": 24,
+     "peak_pct": 99,
+     "peak_local_hour": 15.0,
+     "peak_utc": "2026-10-11T20:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Mostly Cloudy"
+     "first_30_local_hour": 7.0,
+     "wording": "Rain"
     },
     "after_cutoff": {
      "hours": 12,
-     "peak_pct": 88,
-     "peak_local_hour": 35.0,
-     "peak_utc": "2026-10-11T16:00:00Z",
+     "peak_pct": 70,
+     "peak_local_hour": 24.0,
+     "peak_utc": "2026-10-12T05:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": 31.0,
+     "first_30_local_hour": 24.0,
+     "wording": "Showers And Thunderstorms Likely"
+    }
+   },
+   "twc_forecast": {
+    "kind": "airport forecast",
+    "source": "The Weather Company hourly (settlement family)",
+    "before_cutoff": {
+     "hours": 24,
+     "peak_pct": 99,
+     "peak_local_hour": 10.0,
+     "peak_utc": "2026-10-11T15:00:00Z",
+     "qpf_in": 1.49,
+     "first_30_local_hour": 4.0,
      "wording": "Rain"
     }
    },
@@ -4751,12 +4924,12 @@
       "wx": "-RA",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 32.0,
-      "to_local_hour": 35.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 8.0,
+      "to_local_hour": 11.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      },
      {
       "from_utc": "2026-10-11T16:00:00Z",
@@ -4764,12 +4937,12 @@
       "wx": "-RA BR",
       "change": "FM",
       "prob": null,
-      "from_local_hour": 35.0,
-      "to_local_hour": 43.0,
-      "before_cutoff": false,
-      "after_cutoff": true,
+      "from_local_hour": 11.0,
+      "to_local_hour": 19.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
       "elapsed": false,
-      "still_before_cutoff": false
+      "still_before_cutoff": true
      }
     ],
     "url": "https://aviationweather.gov/data/taf/?id=KTTN"
@@ -4812,14 +4985,17 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Little rain signal before the cutoff (point forecast peak 0%). Chances rise after the cutoff, to 88% around 11:00 AM CT.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 99% around 3:00 PM CT. The TAF carries -RA from 8:00 AM CT to 11:00 AM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 0% around 11:00 PM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 88% around 11:00 AM CT.",
-    "The TAF for KTTN (issued 6:21 PM CT) carries -RA 8:00 AM CT to 11:00 AM CT (FM), after the cutoff; -RA BR 11:00 AM CT to 7:00 PM CT (FM), after the cutoff."
+    "Before the cutoff the NWS point forecast peaks at 99% around 3:00 PM CT (rain); the first hour at 30% or more is 7:00 AM CT.",
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 70% around 12:00 AM CT.",
+    "The TAF for KTTN (issued 6:21 PM CT) carries -RA 8:00 AM CT to 11:00 AM CT (FM); -RA BR 11:00 AM CT to 7:00 PM CT (FM)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "NWS point forecast reaches 99% before the cutoff",
+     "TAF carries -RA before the cutoff"
+    ],
     "discussion": [
      "As this occurs, it is forecast to weaken further with the closed mid level low opening up more into a trough.",
      "This will enhance the lift (strong 700-850 mb frontogenesis) as the low to mid level flow veers with height.",
@@ -4827,10 +5003,7 @@
     ]
    },
    "prevents": {
-    "data": [
-     "no precipitation group still ahead in the TAF before the cutoff",
-     "point forecast stays under 15%% for the rest of the contract day"
-    ],
+    "data": [],
     "discussion": [
      "The remnants of Isaias Sunday and Sunday night brings rain, some potentially heavy at times, gusty winds and a low risk for an isolated severe thunderstorm.",
      "KEY MESSAGE 1...The remnants of Isaias Sunday and Sunday night brings rain, some potentially heavy at times, gusty winds and a low risk for an isolated severe thunderstorm."
@@ -4849,9 +5022,9 @@
     "If rainfall rates become high enough for a time, then some urban/roadway flooding will also be possible."
    ],
    "unavailable": [],
-   "inputs_hash": "dc8ba06c85a2d3aa",
-   "text_generated_utc": "2026-10-11T04:17:47Z",
-   "checked_utc": "2026-10-11T04:47:47Z"
+   "inputs_hash": "96d7c65b960d9088",
+   "text_generated_utc": "2026-10-11T05:02:47Z",
+   "checked_utc": "2026-10-11T05:02:47Z"
   }
  },
  "points": {
@@ -5233,12 +5406,12 @@
    "text": "\n000\nFXUS66 KSEW 110324\nAFDSEW\n\nArea Forecast Discussion\nNational Weather Service Seattle WA\n822 PM PDT Sat Oct 10 2026\n\n.SYNOPSIS...\nSlowly exiting low pressure will move southeastward tonight, \nallowing showers to come to an end tonight. High pressure building \noverhead brings drier conditions and near-normal temperatures into \nearly next week. Cooler and unsettled conditions may return mid-week \nas series of systems move inland aimed at Vancouver Island. High \npressure will return by the end of the week, allowing for drier and \nwarmer conditions Thursday and Friday.\n\n&&\n\n.SHORT TERM /TONIGHT THROUGH MONDAY NIGHT/...\nCurrent radar showing only a few blobs of precip left over W WA this \nevening over central and eastern portions of King and Pierce \ncounties. Satellite shows clouds lingering over the east and south \nSound areas while western Whatcom and Skagit counties as well as \nmuch of the coast seeing clear skies. Low level moisture may still \nresult in isolated patches of fog, especially in the more prone \nareas of the SW interior. All that said, inherited forecast remains \non track and no evening updates are required. For further forecast \ndetails, please refer to the Previous Discussion section below.  18\n\nFrom Previous Discussion...A low pressure system will slowly meander \nsoutheastward into Sunday, with wrap around moisture maintaining \nlight shower activity across the Pacific Northwest through the \nevening. Most areas across western Washington will see high \ntemperatures shy of 60 degrees today. As the upper low moves \nsoutheastward, dry northeast flow aloft filling in behind will bring \nin cooler air with lows expected to dip into the mid 30s to mid 40s. \nThis will likely allow frost to form early Sunday morning for \nportions of the southern Cascade foothills and valleys and areas \nsouth of the Olympics, and a Frost Advisory remains in effect for \nSunday morning.\n\nWeak ridging will build into British Columbia on Sunday with\ncontinued dry northeast flow aloft over western Washington, \nbringing slightly warmer daytime temperatures in the mid 50s to\nlower 60s. Skies will be mostly clear Sunday into Sunday night,\nwith even cooler overnight temperatures generally in the 30s for\nmost areas. Frost will likely be more widespread early Monday\nmorning, and a Frost Advisory remains in effect for most areas\nsouth of Seattle and along the Hood Canal and North Coast for \nMonday morning.\n\nThe upper level ridge axis over British Columbia will shift \nsouthward over the Pacific Northwest on Monday, bringing more\nwarming to the region. Highs will peak near normal under sunny\nskies, reaching the upper 50s to mid 60s.\n\n&&\n\n.LONG TERM /TUESDAY THROUGH SATURDAY/...\nCloud cover will increase over western Washington on Tuesday as\na weak atmospheric river brings ample moisture to British \nColumbia. While the majority of the precipitation is expected to\nstay north, chances for rain increase on Tuesday along the \ncoast and over higher terrain. The decaying atmospheric river \nsystem is set to shift southward late Tuesday into Wednesday, \nbringing increasing chances for rain across western Washington. \nHowever, the path of the atmospheric river remains fairly \nuncertain at this time, with many ensemble members keeping \nwestern Washington on the dry side.\n\nA high pressure ridge will then build into the Pacific Northwest\non Thursday as another atmospheric river system traverses well\nto the north. This will bring a few days of warming and drying,\nwith low level offshore flow and highs reaching the lower 70s by\nFriday. Some uncertainty remains over how long the high pressure\nwill remain in place, with potential for troughing to break down\nthe ridge by the weekend and bring in some more rainfall and \ncooler temperatures.\n\n15\n\n&&\n\n.AVIATION...\nVFR conditions favored this evening and tomorrow. Scattered showers \nwill subside this evening. Fog may form Sunday morning, with the \nhighest chances of seeing LIFR conditions in the southern interior \nand mountain valleys. Northerly winds trending lighter overnight. \nBreezy conditions expected again Sunday afternoon across Puget Sound \nand northern interior with winds 8-12 kt and gusts 20-25 kt.  \n\nKSEA...VFR conditions tonight and tomorrow. Northerlies easing late \nthis evening to 2-5 kt. Northerly winds will increase again Sunday \nafternoon to 8-11 kt and gusts to 20 kt. Fog may form near the \nterminal, but not expected to bring direct impacts to the terminal. \n\n29/41\n\n&&\n\n&&\n\n.MARINE...\nHigh pressure building over the interior of British Columbia will \nlead to increasing northerly or offshore flow tonight into Sunday. \nThis will result in enhanced winds over the Northern Inland Waters \nnear the San Juan Islands, for which a Small Craft Advisory has been \nissued. Additionally northerly winds will increase across Puget \nSound Sunday afternoon, with the 70-80% possibility for wind gusts \nto exceed 21 kt. Winds will ease early next week as high pressure \nover British Columbia weakens and broad surface ridging remaining \noffshore. A weak frontal system will move across the waters late \nTuesday night into Wednesday. \n\nSeas will hover around 6-9 feet this weekend, decreasing to 4-6 feet \nearly next week. Seas will briefly build on Wednesday but will \nremain below 10 feet.\n\n29/27/41\n\n&&\n\n.SEW WATCHES/WARNINGS/ADVISORIES...\nWA...Frost Advisory from midnight tonight to 8 AM PDT Sunday for \n     Foothills and Valleys of Pierce and Southern King \n     Counties-Foothills and Valleys of Thurston and Lewis \n     Counties-Middle Chehalis River Valley.\n\n     Frost Advisory from midnight Sunday night to 8 AM PDT Monday \n     for Eastern Kitsap County-Foothills and Valleys of Pierce \n     and Southern King Counties-Foothills and Valleys of \n     Thurston and Lewis Counties-Foothills of the Western and \n     Southern Olympic Peninsula-Lake Crescent Area Including \n     US 101-Lowlands of Lewis and Southern Thurston Counties-\n     Lowlands of Pierce and Southern King Counties-Middle \n     Chehalis River Valley-Northern Hood Canal-Northern \n     Washington Coast-Olympia and Southern Puget Sound-\n     Southern Hood Canal-Willapa and Black Hills.\n\nPZ...Small Craft Advisory until 5 AM PDT Sunday for Northern Inland \n     Waters Including The San Juan Islands.\n\n&&\n\n$$\n"
   },
   "MTR": {
-   "id": "71af04b8-8836-4365-a332-3ef50f786b1d",
-   "issued_utc": "2026-10-11T04:07:00+00:00",
-   "url": "https://api.weather.gov/products/71af04b8-8836-4365-a332-3ef50f786b1d",
+   "id": "3697df44-f496-47b5-9fa0-5f1182b659c6",
+   "issued_utc": "2026-10-11T05:00:00+00:00",
+   "url": "https://api.weather.gov/products/3697df44-f496-47b5-9fa0-5f1182b659c6",
    "office": "MTR",
-   "fetched_utc": "2026-10-11T04:17:56Z",
-   "text": "\n000\nFXUS66 KMTR 110407\nAFDMTR\n\nArea Forecast Discussion\nNational Weather Service San Francisco CA\n907 PM PDT Sat Oct 10 2026\n\n...New KEY MESSAGES...\n\n.KEY MESSAGES...\nUpdated at 901 PM PDT Sat Oct 10 2026\n\n - Sharp cool-down through early week\n\n - Coastal flooding during high tides and large swell through\n   Monday\n\n - Beach Hazards until Monday evening \n\n - Very light rain possible southernmost Monterey County Sunday-\n   Monday \n\n&&\n\n.SHORT TERM...\nIssued at 151 PM PDT Sat Oct 10 2026\n(This evening through Sunday night)\n\nWater vapor imagery this afternoon is quite fascinating as you can \nsee the upper level troughing moving into northern California, while \nTropical Storm Rachel moves towards Baja California. Visible \nsatellite imagery shows some high clouds from TS Rachel starting to \ninfiltrate the southern most skies in the Central COast while the \nmajority of the region observes mostly clear skies due to drier air \nthat has worked into the region. Though a few areas are still seeing \nsome stratocumulus clouds lingering. The forecast generally appears \nto be on track as high temperatures generally sit in the upper 50s \nto low 60s along the coast, the low 60s to low 70s for interior \nvalley locations, and the warmer temperatures, generally in the mid \n70s for the thermal belts.\n\nTonight, skies should clear for much of the region. Coastal stratus \nmight try to around and south of Half Moon Bay,sneaking into the \nnorthern Salinas Valley. Temperatures tonight will cooler than last, \nwith the 40s expected for most interior valley locations, and the \nupper 40s to low 50s for those near the coast or influenced by the \nstratus. Some higher elevations in the Diablo and Gabilan Ranges, \nthe Cholame Hills, Sierra de Salinas, and Santa Lucia could see \nlows dip into the upper 30s to low 40s. \n\nSunday and Monday, upper level troughing continues to dominate the \nweather. Unseasonably cool high temperatures are forecast for the \nentire region, generally ranging from 5 to 15 degrees below their \nnormals. Sunday looks to be dry for much of the period. Some showers \nmight try to sneak up into southern Monterey and perhaps even into \nsouthern San Benito counties late Sunday into Monday morning. Models \nfrom the 12Z suite still showed this, though the NBM had continued to \npull chances southward and out of the region. This continues to be \nseen with the 18Z model runs, which means chances may continue to \ntrend south of our region. For now, kept the 15-40% chance of rain \nin the grids, favoring the Santa Lucia and Monterey/San Luis Obispo \ncounty lines. Precip amounts continue to be light and have trended \nto 0-0.05\". \n\n&&\n\n.LONG TERM...\nIssued at 151 PM PDT Sat Oct 10 2026\n(Monday through next Friday)\n\nUpper level troughing slowly exits the region on Tuesday as an \neastern Pacific High builds. One more day of cooler weather is \nexpected, though temperatures should be several degrees higher than \nMonday. As upper level ridging moves in Wednesday and is then \nexpected to hold through the end of the work week with cluster \nanalysis supporting ridging into the weekend. Warmer and more \nseasonal weather is expected for mid week, with above normal \ntemperatures expected for the weekend. Currently, no record high \ntemperatures are at risk of being broken. \n\n&&\n\n.AVIATION...\n(00Z TAFS)\nIssued at 509 PM PDT Sat Oct 10 2026\n\nGusty onshore winds continue this afternoon and ease post sunset. No \nmarine layer is expected tonight as dry air from the cold front has \nmixed it out completely. There is potential for a few to scattered \nstratocumulus cloud decks, but not currently expecting significant \nimpacts to operations. As a result, moderate to high confidence for \nVFR conditions to prevail this TAF period at most terminals. \nMonterey Bay terminals may develop MVFR stratus overnight though low \nconfidence on the exact ceiling heights and timing. Light winds \novernight increase to moderate onshore Sunday afternoon with a lower \nchance for widespread gusts.\n\nVicinity of SFO...VFR with strong gusts around 20 to 30 kt gradually \ndiminishing through the evening. High confidence for VFR to prevail \nthrough the TAF period. Sunday afternoon may have one last round of \nstrong gusts with a 40-60% chance of exceeding 20-25 kt.\n\nSFO Bridge Approach...Similar to SFO.\n\nMonterey Bay Terminals...Moderate onshore winds gradually diminish \nthis evening with VFR conditions prevailing. Low to medium \nconfidence on MVFR stratus overnight given the presence of dry air \nmixing in the post-frontal environment. If a stratus deck does \ndevelop, it will likely be high-end/borderline MVFR ceilings. \nOtherwise, VFR prevails Sunday morning as moderate onshore winds \nincrease to 10-15 kt. \n\n&&\n\n.MARINE...\n(Tonight through next Friday)\nIssued at 509 PM PDT Sat Oct 10 2026\n\nHazardous marine environment this weekend due to fresh breezes to\nGale force northwest winds over the waters. Expect frequent gale\nforce gusts in exposed waters north of Pigeon Point. The stronger\nwinds will result in rough to very rough seas. A confused sea\nstater will persist due to strong winds, rough seas, and several\nswells from several directions impacting the coastal waters.\n\n&&\n\n.BEACHES...\nIssued at 1055 AM PDT Sat Oct 10 2026\n\nHeading to the beach this weekend? The sun will be out, but\nbeaches conditions will be less than ideal. A cold front will\nbring gusty winds over the coastal waters and nearby beaches. \nMore importantly, the surf zone will remain very energetic. Long \nperiod southerly swell from distant Tropical Storm Rachel will \nbuild in height through the weekend, bringing an increased risk of\nsneaker waves and strong rip currents. Long period westerly swell\nfrom a gale force low in the Central North Pacific will arrive \nSunday, bringing breaking waves 13-16 feet. The large tidal swings\nwill also result in coastal erosion as water and waves are \nbrought farther up the beach than normal, especially during high \ntide. Remain off jetties, piers, rocks, and other waterside \ninfrastructure as waves can sweep across the shoreline without \nwarning, pulling people into the sea. Remain out of the water to \navoid hazardous surf and strong rip currents and never turn your \nback on the ocean!\n\nMM\n\n&&\n\n.MTR WATCHES/WARNINGS/ADVISORIES...\nCA...Beach Hazards Statement through Monday evening for CAZ006-505-\n     509-529-530.\n\n     Coastal Flood Advisory until 3 PM PDT Tuesday for CAZ006-508-529-\n     530.\n\n     Coastal Flood Advisory until 4 PM PDT Wednesday for CAZ506.\n\nPZ...Small Craft Advisory until 9 AM PDT Sunday for Mry Bay-Pt Reyes \n     to Pigeon Pt 0-10 nm.\n\n     Small Craft Advisory until 9 PM PDT Sunday for Pt Arena to Pt \n     Reyes 0-10 nm.\n\n     Small Craft Advisory until 3 PM PDT Sunday for Pigeon Pt to Pt \n     Pinos 0-10 nm-Pt Pinos to Pt Piedras Blancas 0-10 nm.\n\n     Gale Warning until 3 PM PDT Sunday for Pt Arena to Pt Reyes 10-\n     60 NM.\n\n     Small Craft Advisory until 3 AM PDT Monday for Pigeon Pt to Pt \n     Pinos 10-60 NM.\n\n&&\n\n$$\n\nSHORT TERM...KR\nLONG TERM....KR\nAVIATION...Navarrete\nMARINE...MM\n\nVisit us at www.weather.gov/sanfrancisco\n\nFollow us on Facebook, X, and YouTube at:\nwww.facebook.com/nwsbayarea\nx.com/nwsbayarea\nwww.youtube.com/nwsbayarea\n"
+   "fetched_utc": "2026-10-11T05:02:55Z",
+   "text": "\n000\nFXUS66 KMTR 110500\nAFDMTR\n\nArea Forecast Discussion\nNational Weather Service San Francisco CA\n1000 PM PDT Sat Oct 10 2026\n\n...New AVIATION, MARINE...\n\n.KEY MESSAGES...\nUpdated at 901 PM PDT Sat Oct 10 2026\n\n - Sharp cool-down through early week\n\n - Coastal flooding during high tides and large swell through\n   Monday\n\n - Beach Hazards until Monday evening \n\n - Very light rain possible southernmost Monterey County Sunday-\n   Monday \n\n&&\n\n.SHORT TERM...\nIssued at 151 PM PDT Sat Oct 10 2026\n(This evening through Sunday night)\n\nWater vapor imagery this afternoon is quite fascinating as you can \nsee the upper level troughing moving into northern California, while \nTropical Storm Rachel moves towards Baja California. Visible \nsatellite imagery shows some high clouds from TS Rachel starting to \ninfiltrate the southern most skies in the Central COast while the \nmajority of the region observes mostly clear skies due to drier air \nthat has worked into the region. Though a few areas are still seeing \nsome stratocumulus clouds lingering. The forecast generally appears \nto be on track as high temperatures generally sit in the upper 50s \nto low 60s along the coast, the low 60s to low 70s for interior \nvalley locations, and the warmer temperatures, generally in the mid \n70s for the thermal belts.\n\nTonight, skies should clear for much of the region. Coastal stratus \nmight try to around and south of Half Moon Bay,sneaking into the \nnorthern Salinas Valley. Temperatures tonight will cooler than last, \nwith the 40s expected for most interior valley locations, and the \nupper 40s to low 50s for those near the coast or influenced by the \nstratus. Some higher elevations in the Diablo and Gabilan Ranges, \nthe Cholame Hills, Sierra de Salinas, and Santa Lucia could see \nlows dip into the upper 30s to low 40s. \n\nSunday and Monday, upper level troughing continues to dominate the \nweather. Unseasonably cool high temperatures are forecast for the \nentire region, generally ranging from 5 to 15 degrees below their \nnormals. Sunday looks to be dry for much of the period. Some showers \nmight try to sneak up into southern Monterey and perhaps even into \nsouthern San Benito counties late Sunday into Monday morning. Models \nfrom the 12Z suite still showed this, though the NBM had continued to \npull chances southward and out of the region. This continues to be \nseen with the 18Z model runs, which means chances may continue to \ntrend south of our region. For now, kept the 15-40% chance of rain \nin the grids, favoring the Santa Lucia and Monterey/San Luis Obispo \ncounty lines. Precip amounts continue to be light and have trended \nto 0-0.05\". \n\n&&\n\n.LONG TERM...\nIssued at 151 PM PDT Sat Oct 10 2026\n(Monday through next Friday)\n\nUpper level troughing slowly exits the region on Tuesday as an \neastern Pacific High builds. One more day of cooler weather is \nexpected, though temperatures should be several degrees higher than \nMonday. As upper level ridging moves in Wednesday and is then \nexpected to hold through the end of the work week with cluster \nanalysis supporting ridging into the weekend. Warmer and more \nseasonal weather is expected for mid week, with above normal \ntemperatures expected for the weekend. Currently, no record high \ntemperatures are at risk of being broken. \n\n&&\n\n.AVIATION...\n(06Z TAFS)\nIssued at 1000 PM PDT Sat Oct 10 2026\n\nMVFR ceilings already developed at HAF and MRY which is expected to \nbe followed by SNS later tonight. Conditions are expected to improve \nearly Sunday morning at these terminals. Everywhere else should \nremain VFR through the TAF cycle with a few to scattered \nstratocumulus decks. Light winds prevail overnight before increasing \nto moderate (10 to 15 kt) by Sunday afternoon. Low confidence for \nMVFR ceilings to return Sunday evening at coastal terminals, \nmoderate confidence for VFR to continue to prevail elsewhere.\n\nVicinity of SFO...VFR through the TAF period with potential for some \nscattered decks overnight. These are expected to be short-lived, \ntherefore they were not mentioned in the official TAF. Lower chance \nfor gusty onshore winds Sunday afternoon as winds shift southwest to \nsoutherly post-sunset. Medium confidence on the exact timing of wind \nshifts.\n\nSFO Bridge Approach...Similar to SFO.\n\nMonterey Bay Terminals...MVFR conditions at MRY are expected to \nimprove by Sunday morning. Low to medium confidence on exactly when \nMVFR ceilings impact SNS as they can roll in earlier than \nadvertised. Overall, VFR prevails late Sunday morning as onshore \nwinds increase to around 10-12 kt. Low confidence on whether MVFR \nstratus develops Sunday evening. If anything, it may be borderline \nMVFR-VFR. \n\n&&\n\n.MARINE...\n(Tonight through next Friday)\nIssued at 1000 PM PDT Sat Oct 10 2026\n\nHazardous marine conditions persist through early next week. Fresh\nto strong northwest breezes are supporting rough to very rough\nseas  across the coastal waters. Expect frequent gale force gusts\nnorth of  Pigeon Point and near gale force gusts to the south. A\nlow long  period southerly swell and a moderate long period\nwesterly swell  combined with strong winds are contributing to a\nconfused sea state.\n\n&&\n\n.BEACHES...\nIssued at 1055 AM PDT Sat Oct 10 2026\n\nHeading to the beach this weekend? The sun will be out, but\nbeaches conditions will be less than ideal. A cold front will\nbring gusty winds over the coastal waters and nearby beaches. \nMore importantly, the surf zone will remain very energetic. Long \nperiod southerly swell from distant Tropical Storm Rachel will \nbuild in height through the weekend, bringing an increased risk of\nsneaker waves and strong rip currents. Long period westerly swell\nfrom a gale force low in the Central North Pacific will arrive \nSunday, bringing breaking waves 13-16 feet. The large tidal swings\nwill also result in coastal erosion as water and waves are \nbrought farther up the beach than normal, especially during high \ntide. Remain off jetties, piers, rocks, and other waterside \ninfrastructure as waves can sweep across the shoreline without \nwarning, pulling people into the sea. Remain out of the water to \navoid hazardous surf and strong rip currents and never turn your \nback on the ocean!\n\nMM\n\n&&\n\n.MTR WATCHES/WARNINGS/ADVISORIES...\nCA...Beach Hazards Statement through Monday evening for CAZ006-505-\n     509-529-530.\n\n     Coastal Flood Advisory until 3 PM PDT Tuesday for CAZ006-508-529-\n     530.\n\n     Coastal Flood Advisory until 4 PM PDT Wednesday for CAZ506.\n\nPZ...Small Craft Advisory until 9 AM PDT Sunday for Mry Bay-Pt Reyes \n     to Pigeon Pt 0-10 nm.\n\n     Small Craft Advisory until 9 PM PDT Sunday for Pt Arena to Pt \n     Reyes 0-10 nm.\n\n     Small Craft Advisory until 3 PM PDT Sunday for Pigeon Pt to Pt \n     Pinos 0-10 nm-Pt Pinos to Pt Piedras Blancas 0-10 nm.\n\n     Gale Warning until 3 PM PDT Sunday for Pt Arena to Pt Reyes 10-\n     60 NM.\n\n     Small Craft Advisory until 3 AM PDT Monday for Pigeon Pt to Pt \n     Pinos 10-60 NM.\n\n&&\n\n$$\n\nSHORT TERM...KR\nLONG TERM....KR\nAVIATION...Navarrete\nMARINE...Navarrete\n\nVisit us at www.weather.gov/sanfrancisco\n\nFollow us on Facebook, X, and YouTube at:\nwww.facebook.com/nwsbayarea\nx.com/nwsbayarea\nwww.youtube.com/nwsbayarea\n"
   },
   "ILN": {
    "id": "6766b8a0-9ac2-4e37-9698-68ee8a95ccc0",
