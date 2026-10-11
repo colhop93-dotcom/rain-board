@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-10-11T04:59:06.499177+00:00",
+ "checked_utc": "2026-10-11T05:04:06.529628+00:00",
  "files": [],
  "stations": {
   "KABQ": {
@@ -16,8 +16,14 @@
    "discrepancies": []
   },
   "KBOS": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 99% but the board's OWN calibrated physics says 0%"
+    }
+   ]
   },
   "KORD": {
    "ok": true,
@@ -36,24 +42,42 @@
    "discrepancies": []
   },
   "KDCA": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 100% but the board's OWN calibrated physics says 19%"
+    }
+   ]
   },
   "KDEN": {
    "ok": true,
    "discrepancies": []
   },
   "KEWR": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 100% but the board's OWN calibrated physics says 0%"
+    }
+   ]
   },
   "KHOU": {
    "ok": true,
    "discrepancies": []
   },
   "KIND": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 42% but the board's OWN calibrated physics says 100%"
+    }
+   ]
   },
   "KLAX": {
    "ok": false,
@@ -85,7 +109,7 @@
     {
      "check": "gauge",
      "severity": "med",
-     "detail": "weather.com reports 0.02 in today while the board gauge line reads 0.00, and the ASOS hourly groups show no precip. Source conflict, unresolved: this is not yet a settled YES"
+     "detail": "weather.com reports 0.02 in today but the station's own ASOS logged only a TRACE, and a trace settles NO. Board gauge line reads 0.00. Source conflict, NOT a settled YES"
     }
    ]
   },
@@ -112,16 +136,28 @@
    ]
   },
   "KNYC": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 100% but the board's OWN calibrated physics says 0%"
+    }
+   ]
   },
   "KOKC": {
    "ok": true,
    "discrepancies": []
   },
   "KPHL": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 100% but the board's OWN calibrated physics says 0%"
+    }
+   ]
   },
   "KPHX": {
    "ok": true,
@@ -132,8 +168,14 @@
    "discrepancies": []
   },
   "KPVD": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 100% but the board's OWN calibrated physics says 0%"
+    }
+   ]
   },
   "KSAT": {
    "ok": true,
@@ -156,13 +198,19 @@
    "discrepancies": []
   },
   "KTTN": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 99% but the board's OWN calibrated physics says 0%"
+    }
+   ]
   }
  },
  "summary": {
-  "n_open": 5,
-  "n_stations_bad": 3,
+  "n_open": 13,
+  "n_stations_bad": 11,
   "worst": null,
   "files_stale": 0
  }

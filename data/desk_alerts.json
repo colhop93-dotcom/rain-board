@@ -1,7 +1,31 @@
 {
 "schema": "019a.desk_alerts/1",
-"generated_utc": "2026-10-11T05:02:37.730671+00:00",
+"generated_utc": "2026-10-11T05:03:37.829368+00:00",
 "pages": [
+{
+"ts_ct": "2026-10-11T00:03:35.210028-05:00",
+"title": "RAINING AT PIT GAUGE: -RA BR",
+"priority": "high",
+"kind": "019_RAIN_GAUGE",
+"source": "board",
+"station": "PIT"
+},
+{
+"ts_ct": "2026-10-11T00:03:14.194003-05:00",
+"title": "Pittsburgh cell tracking OVER the gauge in 1 min",
+"priority": "high",
+"kind": "cellin",
+"source": "collector",
+"station": "PIT"
+},
+{
+"ts_ct": "2026-10-11T00:03:14.036075-05:00",
+"title": "Pittsburgh rain moving OVER the gauge",
+"priority": "high",
+"kind": "overhead",
+"source": "collector",
+"station": "PIT"
+},
 {
 "ts_ct": "2026-10-11T00:01:02.124500-05:00",
 "title": "ARMED 2026-10-11: HALTED, not armed",
@@ -457,35 +481,11 @@
 "kind": "twctoday",
 "source": "collector",
 "station": "LAX"
-},
-{
-"ts_ct": "2026-10-10T15:29:07.602537-05:00",
-"title": "board disagrees with the source: 1 issue across 1 station",
-"priority": "high",
-"kind": "truth",
-"source": "collector",
-"station": null
-},
-{
-"ts_ct": "2026-10-10T15:27:35.010447-05:00",
-"title": "THUNDER AT PHX GAUGE: TS",
-"priority": "high",
-"kind": "019_TS_GAUGE",
-"source": "board",
-"station": "PHX"
-},
-{
-"ts_ct": "2026-10-10T15:21:34.602114-05:00",
-"title": "RAINING AT LAX GAUGE: -RA",
-"priority": "high",
-"kind": "019_RAIN_GAUGE",
-"source": "board",
-"station": "LAX"
 }
 ],
 "counts_24h": {
-"sent": 161,
-"suppressed_duplicate": 2500,
+"sent": 163,
+"suppressed_duplicate": 2499,
 "failed": 2
 },
 "health": [
@@ -493,8 +493,8 @@
 "name": "lock bot",
 "bot_or_feed": "rain lock bot",
 "ok": true,
-"detail": "alive, 57 s ago",
-"age_s": 57.0,
+"detail": "alive, 117 s ago",
+"age_s": 117.1,
 "checked_utc": "2026-10-11T05:01:40.716348+00:00",
 "alive_s": 120
 },
@@ -529,9 +529,9 @@
 "name": "prices",
 "bot_or_feed": "price moves pager",
 "ok": true,
-"detail": "alive, 36 s ago, sampled 9, paged 0, failed 0, queued 0",
-"age_s": 35.8,
-"checked_utc": "2026-10-11T05:02:01.964829+00:00",
+"detail": "alive, 36 s ago, sampled 11, paged 0, failed 0, queued 0",
+"age_s": 36.0,
+"checked_utc": "2026-10-11T05:03:01.838769+00:00",
 "alive_s": 120
 },
 {
@@ -540,16 +540,16 @@
 "ok": true,
 "detail": "written this run (the mirror runs inside board_alerts.py), alive, 0 s ago",
 "age_s": 0.2,
-"checked_utc": "2026-10-11T05:02:37.563262+00:00",
+"checked_utc": "2026-10-11T05:03:37.653992+00:00",
 "alive_s": 180
 },
 {
 "name": "book",
 "bot_or_feed": "websocket book",
 "ok": true,
-"detail": "alive, 0 s ago, feed LIVE",
-"age_s": 0.5,
-"checked_utc": "2026-10-11T05:02:37.236605+00:00",
+"detail": "alive, 1 s ago, feed LIVE",
+"age_s": 0.6,
+"checked_utc": "2026-10-11T05:03:37.189670+00:00",
 "alive_s": 45.0
 },
 {
@@ -557,8 +557,8 @@
 "bot_or_feed": "pulse file",
 "ok": true,
 "detail": "alive, 5 s ago, 228 stations",
-"age_s": 4.8,
-"checked_utc": "2026-10-11T05:02:32.938142+00:00",
+"age_s": 5.0,
+"checked_utc": "2026-10-11T05:03:32.847261+00:00",
 "alive_s": 600
 },
 {
@@ -566,25 +566,25 @@
 "bot_or_feed": "collector",
 "ok": true,
 "detail": "alive, 96 s ago",
-"age_s": 95.9,
-"checked_utc": "2026-10-11T05:01:01.831955+00:00",
+"age_s": 95.8,
+"checked_utc": "2026-10-11T05:02:02.008100+00:00",
 "alive_s": 600
 },
 {
 "name": "rings",
 "bot_or_feed": "ring archive",
 "ok": true,
-"detail": "alive, 6 min ago, last row KTTN",
-"age_s": 336.0,
-"checked_utc": "2026-10-11T04:57:01.768447+00:00",
+"detail": "alive, 96 s ago, last row KTTN",
+"age_s": 95.8,
+"checked_utc": "2026-10-11T05:02:02.008100+00:00",
 "alive_s": 900
 },
 {
 "name": "sentinel",
 "bot_or_feed": "Sentinel",
 "ok": true,
-"detail": "alive, 2 min ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
-"age_s": 146.6,
+"detail": "alive, 3 min ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
+"age_s": 206.7,
 "checked_utc": "2026-10-11T05:00:11.101968+00:00",
 "alive_s": 900
 }
