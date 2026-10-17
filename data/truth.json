@@ -1,0 +1,192 @@
+{
+ "schema": "019a.truth/1",
+ "checked_utc": "2026-10-17T22:34:06.342821+00:00",
+ "files": [],
+ "stations": {
+  "KABQ": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KATL": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KAUS": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KBOS": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 24% but the board's OWN calibrated physics says 77%"
+    },
+    {
+     "check": "gauge",
+     "severity": "med",
+     "detail": "weather.com reports 0.02 in today; the station's only precipitation group STRADDLES local-standard midnight (the 00:5x report covers 23:5x to 00:5x) and cannot be assigned to either day. Board gauge line reads 0.00. AMBIGUOUS, not settled and not dry"
+    }
+   ]
+  },
+  "KORD": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KCLL": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KCMH": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 78% but the board's OWN calibrated physics says 1%"
+    },
+    {
+     "check": "radar",
+     "severity": "med",
+     "detail": "site radar ILN is DOWN (newest scan 2026-10-15T20:09:42Z); no close-up radar for this gauge, the composite below still reads"
+    }
+   ]
+  },
+  "KDFW": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KDCA": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KDEN": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KEWR": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "gauge",
+     "severity": "med",
+     "detail": "weather.com reports 0.17 in today; the station's only precipitation group STRADDLES local-standard midnight (the 00:5x report covers 23:5x to 00:5x) and cannot be assigned to either day. Board gauge line reads 0.00. AMBIGUOUS, not settled and not dry"
+    }
+   ]
+  },
+  "KHOU": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KIND": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLAX": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLEX": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KLAS": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "high",
+     "detail": "board headline 9% but weather.com, the settlement source, says 38%, a gap of 29 points"
+    }
+   ]
+  },
+  "KMIA": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMSP": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMKE": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KMSY": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KNYC": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KOKC": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KPHL": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KPHX": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 36% but the board's OWN calibrated physics says 0%"
+    }
+   ]
+  },
+  "KPIT": {
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 78% but the board's OWN calibrated physics says 3%"
+    },
+    {
+     "check": "gauge",
+     "severity": "med",
+     "detail": "weather.com reports 0.01 in today; the station's only precipitation group STRADDLES local-standard midnight (the 00:5x report covers 23:5x to 00:5x) and cannot be assigned to either day. Board gauge line reads 0.00. AMBIGUOUS, not settled and not dry"
+    }
+   ]
+  },
+  "KPVD": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSAT": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSEA": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSFO": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSGF": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KSTL": {
+   "ok": true,
+   "discrepancies": []
+  },
+  "KTTN": {
+   "ok": true,
+   "discrepancies": []
+  }
+ },
+ "summary": {
+  "n_open": 9,
+  "n_stations_bad": 6,
+  "worst": "Las Vegas: board headline 9% but weather.com, the settlement source, says 38%, a gap of 29 points",
+  "files_stale": 0
+ }
+}
