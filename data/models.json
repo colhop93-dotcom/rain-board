@@ -1,6 +1,6 @@
 {
  "schema": "019a.models/1",
- "generated_utc": "2026-10-24T15:29:53.572948+00:00",
+ "generated_utc": "2026-10-24T15:44:53.612525+00:00",
  "stations": {
   "KABQ": {
    "day": "2026-10-24",
@@ -13,7 +13,7 @@
     },
     "gfs": {
      "pct": 47,
-     "in": 0.075,
+     "in": 0.114,
      "wet": true,
      "hours": 24
     },
@@ -43,7 +43,7 @@
     },
     "jma": {
      "pct": null,
-     "in": 0.378,
+     "in": 0.354,
      "wet": true,
      "hours": 24
     }
@@ -526,7 +526,7 @@
     },
     "gfs": {
      "pct": 47,
-     "in": 0.055,
+     "in": 0.016,
      "wet": true,
      "hours": 24
     },
@@ -556,7 +556,7 @@
     },
     "jma": {
      "pct": null,
-     "in": 0.213,
+     "in": 0.118,
      "wet": true,
      "hours": 24
     }
@@ -982,8 +982,8 @@
     },
     "gfs": {
      "pct": 46,
-     "in": 0.311,
-     "wet": true,
+     "in": 0.0,
+     "wet": false,
      "hours": 24
     },
     "icon": {
@@ -1012,7 +1012,7 @@
     },
     "jma": {
      "pct": null,
-     "in": 0.256,
+     "in": 0.079,
      "wet": true,
      "hours": 24
     }
@@ -1022,7 +1022,7 @@
     "min_pct": 44,
     "max_pct": 69,
     "n_pct": 5,
-    "n_wet": 7,
+    "n_wet": 6,
     "n_models": 7
    },
    "error": null,
@@ -1324,8 +1324,8 @@
     },
     "gfs": {
      "pct": 2,
-     "in": 0.0,
-     "wet": false,
+     "in": 0.028,
+     "wet": true,
      "hours": 24
     },
     "icon": {
@@ -1364,7 +1364,7 @@
     "min_pct": 2,
     "max_pct": 22,
     "n_pct": 5,
-    "n_wet": 0,
+    "n_wet": 1,
     "n_models": 7
    },
    "error": null,
@@ -1486,60 +1486,16 @@
   },
   "KSAT": {
    "day": "2026-10-24",
-   "models": {
-    "ecmwf": {
-     "pct": 63,
-     "in": 0.047,
-     "wet": true,
-     "hours": 24
-    },
-    "gfs": {
-     "pct": 7,
-     "in": 0.173,
-     "wet": true,
-     "hours": 24
-    },
-    "icon": {
-     "pct": 10,
-     "in": 0.0,
-     "wet": false,
-     "hours": 24
-    },
-    "ukmo": {
-     "pct": 6,
-     "in": 0.004,
-     "wet": false,
-     "hours": 24
-    },
-    "gem": {
-     "pct": 14,
-     "in": 0.0,
-     "wet": false,
-     "hours": 24
-    },
-    "meteofrance": {
-     "pct": null,
-     "in": 0.126,
-     "wet": true,
-     "hours": 24
-    },
-    "jma": {
-     "pct": null,
-     "in": 0.0,
-     "wet": false,
-     "hours": 24
-    }
-   },
+   "models": {},
    "consensus": {
-    "median_pct": 10,
-    "min_pct": 6,
-    "max_pct": 63,
-    "n_pct": 5,
-    "n_wet": 3,
-    "n_models": 7
+    "median_pct": null,
+    "min_pct": null,
+    "max_pct": null,
+    "n_pct": 0,
+    "n_wet": 0,
+    "n_models": 0
    },
-   "error": null,
-   "hours_in_day": 24
+   "error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
   },
   "KSEA": {
    "day": "2026-10-24",
