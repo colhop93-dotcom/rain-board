@@ -1,7 +1,15 @@
 {
 "schema": "019a.desk_alerts/1",
-"generated_utc": "2026-10-24T16:15:37.938474+00:00",
+"generated_utc": "2026-10-24T16:16:37.961961+00:00",
 "pages": [
+{
+"ts_ct": "2026-10-24T11:16:25.733561-05:00",
+"title": "Albuquerque rain moving OVER the gauge",
+"priority": "high",
+"kind": "overhead",
+"source": "collector",
+"station": "ABQ"
+},
 {
 "ts_ct": "2026-10-24T11:00:03.191180-05:00",
 "title": "MIN Oct 24 NO moved 32c to 42c",
@@ -473,18 +481,10 @@
 "kind": "019_RAIN_GAUGE",
 "source": "board",
 "station": "SEA"
-},
-{
-"ts_ct": "2026-10-22T21:44:02.203904-05:00",
-"title": "LAX YES fell 62c to 22c in 51 min",
-"priority": "high",
-"kind": "pxmove",
-"source": "board",
-"station": "LAX"
 }
 ],
 "counts_24h": {
-"sent": 38,
+"sent": 39,
 "suppressed_duplicate": 39,
 "failed": 0,
 "desk_only": 1,
@@ -519,7 +519,7 @@
 "bot_or_feed": "rain lock bot",
 "ok": false,
 "detail": "STALE, 193.6 h ago",
-"age_s": 696837.4,
+"age_s": 696897.4,
 "checked_utc": "2026-10-16T14:41:40.518002+00:00",
 "alive_s": 120
 },
@@ -555,8 +555,8 @@
 "bot_or_feed": "price moves pager",
 "ok": true,
 "detail": "alive, 36 s ago, sampled 11, paged 0, failed 0, queued 0",
-"age_s": 35.6,
-"checked_utc": "2026-10-24T16:15:02.359258+00:00",
+"age_s": 36.1,
+"checked_utc": "2026-10-24T16:16:01.820393+00:00",
 "alive_s": 120
 },
 {
@@ -565,16 +565,16 @@
 "ok": true,
 "detail": "written this run (the mirror runs inside board_alerts.py), alive, 0 s ago",
 "age_s": 0.2,
-"checked_utc": "2026-10-24T16:15:37.775843+00:00",
+"checked_utc": "2026-10-24T16:16:37.781178+00:00",
 "alive_s": 180
 },
 {
 "name": "book",
 "bot_or_feed": "websocket book",
 "ok": true,
-"detail": "alive, 1 s ago, feed LIVE",
-"age_s": 0.6,
-"checked_utc": "2026-10-24T16:15:37.355835+00:00",
+"detail": "alive, 0 s ago, feed LIVE",
+"age_s": 0.4,
+"checked_utc": "2026-10-24T16:16:37.526642+00:00",
 "alive_s": 45.0
 },
 {
@@ -583,7 +583,7 @@
 "ok": true,
 "detail": "alive, 65 s ago, 232 stations",
 "age_s": 65.0,
-"checked_utc": "2026-10-24T16:14:32.981638+00:00",
+"checked_utc": "2026-10-24T16:15:32.992826+00:00",
 "alive_s": 600
 },
 {
@@ -591,26 +591,26 @@
 "bot_or_feed": "collector",
 "ok": true,
 "detail": "alive, 96 s ago",
-"age_s": 96.0,
-"checked_utc": "2026-10-24T16:14:01.952380+00:00",
+"age_s": 95.6,
+"checked_utc": "2026-10-24T16:15:02.368144+00:00",
 "alive_s": 600
 },
 {
 "name": "rings",
 "bot_or_feed": "ring archive",
 "ok": true,
-"detail": "alive, 6 min ago, last row KTTN",
-"age_s": 336.0,
-"checked_utc": "2026-10-24T16:10:01.955328+00:00",
+"detail": "alive, 96 s ago, last row KTTN",
+"age_s": 95.6,
+"checked_utc": "2026-10-24T16:15:02.368144+00:00",
 "alive_s": 900
 },
 {
 "name": "sentinel",
 "bot_or_feed": "Sentinel",
 "ok": true,
-"detail": "alive, 3 min ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
-"age_s": 206.4,
-"checked_utc": "2026-10-24T16:12:11.512497+00:00",
+"detail": "alive, 18 s ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
+"age_s": 18.3,
+"checked_utc": "2026-10-24T16:16:19.678916+00:00",
 "alive_s": 900
 }
 ],
