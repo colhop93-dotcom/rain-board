@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-10-24T15:39:06.783152+00:00",
+ "checked_utc": "2026-10-24T15:44:06.795999+00:00",
  "files": [],
  "stations": {
   "KABQ": {
@@ -9,7 +9,7 @@
     {
      "check": "forecast",
      "severity": "med",
-     "detail": "board headline 97% but the board's OWN calibrated physics says 1%"
+     "detail": "board headline 97% but the board's OWN calibrated physics says 3%"
     }
    ]
   },
@@ -84,8 +84,14 @@
    "discrepancies": []
   },
   "KMSP": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 50% but the board's OWN calibrated physics says 20%"
+    }
+   ]
   },
   "KMKE": {
    "ok": true,
@@ -145,8 +151,8 @@
   }
  },
  "summary": {
-  "n_open": 2,
-  "n_stations_bad": 2,
+  "n_open": 3,
+  "n_stations_bad": 3,
   "worst": null,
   "files_stale": 0
  }
