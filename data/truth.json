@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-10-24T16:24:06.862346+00:00",
+ "checked_utc": "2026-10-24T16:29:06.876279+00:00",
  "files": [],
  "stations": {
   "KABQ": {
@@ -22,8 +22,14 @@
    "discrepancies": []
   },
   "KBOS": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "stale",
+     "severity": "med",
+     "detail": "the station's own report is 95 min old"
+    }
+   ]
   },
   "KORD": {
    "ok": true,
@@ -151,8 +157,8 @@
   }
  },
  "summary": {
-  "n_open": 3,
-  "n_stations_bad": 3,
+  "n_open": 4,
+  "n_stations_bad": 4,
   "worst": null,
   "files_stale": 0
  }
