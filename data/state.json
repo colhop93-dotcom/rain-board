@@ -1,6 +1,6 @@
 {
  "schema": "019a.state/3",
- "generated_utc": "2026-11-07T15:35:30.746997+00:00",
+ "generated_utc": "2026-11-07T15:38:30.522602+00:00",
  "interval_s": 300,
  "hrrr_init_utc": "2026-11-07T13:00:00Z",
  "stations": [
@@ -105,7 +105,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -232,7 +232,7 @@
     "volume": 13436.07,
     "open_interest": 10965.45,
     "close_time": "2026-11-08T07:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:45.759955+00:00",
+    "fetched_utc": "2026-11-07T15:39:30.012513+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
@@ -245,10 +245,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:32:30.488002+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KABQ",
+    "time_utc": "2026-11-07T14:52:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KABQ 071452Z 36009KT 10SM FEW003 FEW060 BKN090 06/03 A3026 RMK AO2 SLP225 T00610028 53009 $"
+   },
    "metar_day": {
     "n_reports": 34,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:52:00Z",
     "pno_reports_utc": [],
@@ -260,19 +270,53 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KAEG",
+     "dist_km": 20.2,
+     "bearing": "NW",
+     "lat": 35.15,
+     "lon": -106.7929,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:50:00Z"
+    },
+    {
+     "id": "KBRG",
+     "dist_km": 48.1,
+     "bearing": "SW",
+     "lat": 34.6477,
+     "lon": -106.8331,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "K0E0",
+     "dist_km": 56.7,
+     "bearing": "E",
+     "lat": 34.9837,
+     "lon": -105.9958,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    }
+   ],
    "radar": {
-    "near10_pct": 6.0,
-    "near30_pct": 11.3,
-    "near60_pct": 4.7,
-    "nearest_km": 3.2,
+    "near10_pct": 7.0,
+    "near30_pct": 8.9,
+    "near60_pct": 3.5,
+    "nearest_km": 4.1,
     "nearest_dir": "NW",
-    "_n": 416,
+    "_n": 309,
     "site": "ABX",
     "motion": {
-     "dir": "NW",
-     "kmh": 20,
-     "toward_gauge": true
+     "dir": "SW",
+     "kmh": 8,
+     "toward_gauge": false
     }
    },
    "radar_down": null,
@@ -360,16 +404,12 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "nearest echo 3.2 km NW, moving NW at 20 km/h, ETA about 10 min [site radar, 5 min]"
+    "nearest echo 4.1 km NW, moving SW at 8 km/h [site radar, 5 min]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": -1,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      36
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       36
@@ -1517,6 +1557,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       1
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      1
      ]
     ]
    }
@@ -1612,7 +1656,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -1736,7 +1780,7 @@
     "volume": 1775.84,
     "open_interest": 1775.84,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.512685+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.191511+00:00",
     "gap": 1,
     "momentum": {
      "now": null,
@@ -1749,10 +1793,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KATL",
+    "time_utc": "2026-11-07T14:52:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KATL 071452Z 33009KT 10SM BKN250 13/07 A3005 RMK AO2 SLP175 T01330072 51010 $"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:52:00Z",
     "pno_reports_utc": [],
@@ -1764,14 +1818,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KFTY",
+     "dist_km": 18.1,
+     "bearing": "NW",
+     "lat": 33.7776,
+     "lon": -84.5246,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KHMP",
+     "dist_km": 28.4,
+     "bearing": "S",
+     "lat": 33.3916,
+     "lon": -84.3312,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KPDK",
+     "dist_km": 30.7,
+     "bearing": "NE",
+     "lat": 33.8783,
+     "lon": -84.298,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KFFC",
+     "dist_km": 32.8,
+     "bearing": "S",
+     "lat": 33.3543,
+     "lon": -84.5689,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KMGE",
+     "dist_km": 33.1,
+     "bearing": "N",
+     "lat": 33.9189,
+     "lon": -84.5267,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KRYY",
+     "dist_km": 45.1,
+     "bearing": "N",
+     "lat": 34.0146,
+     "lon": -84.5964,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:50:00Z"
+    },
+    {
+     "id": "KCCO",
+     "dist_km": 46.8,
+     "bearing": "SW",
+     "lat": 33.3107,
+     "lon": -84.7713,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "K6A2",
+     "dist_km": 47.4,
+     "bearing": "S",
+     "lat": 33.227,
+     "lon": -84.275,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 1.0,
-    "near60_pct": 0.8,
-    "nearest_km": 17.0,
-    "nearest_dir": "S",
-    "_n": 65,
+    "near30_pct": 0.7,
+    "near60_pct": 0.6,
+    "nearest_km": 13.0,
+    "nearest_dir": "SE",
+    "_n": 51,
     "site": "FFC",
     "motion": null
    },
@@ -1874,10 +2017,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -3025,6 +3164,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -3135,7 +3278,7 @@
      "hours": 3
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -3254,28 +3397,38 @@
     "yes_bid": 0.64,
     "yes_ask": 0.66,
     "last": 0.66,
-    "yes_bid_size": 104.04,
-    "yes_ask_size": 437.45,
+    "yes_bid_size": 99.04,
+    "yes_ask_size": 425.45,
     "volume": 7696.84,
     "open_interest": 5067.33,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.502540+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.127603+00:00",
     "gap": 26,
     "momentum": {
      "now": 66,
      "delta_15m": 2,
      "delta_60m": 1,
-     "vol_15m": 156,
-     "last_trade_utc": "2026-11-07T15:32:00+00:00"
+     "vol_15m": 163,
+     "last_trade_utc": "2026-11-07T15:36:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KAUS",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KAUS 071453Z COR 03010KT 10SM FEW200 OVC250 16/12 A3015 RMK AO2 SLP207 T01560122 51020 $"
+   },
    "metar_day": {
     "n_reports": 33,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -3287,14 +3440,81 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KATT",
+     "dist_km": 17.2,
+     "bearing": "NW",
+     "lat": 30.3208,
+     "lon": -97.7604,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KEDC",
+     "dist_km": 25.9,
+     "bearing": "NE",
+     "lat": 30.3926,
+     "lon": -97.5622,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KHYI",
+     "dist_km": 36.6,
+     "bearing": "SW",
+     "lat": 29.8958,
+     "lon": -97.8664,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "KRYW",
+     "dist_km": 44.7,
+     "bearing": "NW",
+     "lat": 30.498,
+     "lon": -97.969,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KT74",
+     "dist_km": 48.6,
+     "bearing": "NE",
+     "lat": 30.5704,
+     "lon": -97.4447,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KGTU",
+     "dist_km": 55.4,
+     "bearing": "N",
+     "lat": 30.6809,
+     "lon": -97.6767,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.0,
-    "near60_pct": 0.1,
-    "nearest_km": 33.2,
-    "nearest_dir": "S",
-    "_n": 7,
+    "near60_pct": 0.0,
+    "nearest_km": null,
+    "nearest_dir": null,
+    "_n": 0,
     "site": "EWX",
     "motion": null
    },
@@ -3393,17 +3613,14 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
+    "no echoes within 60 km [site radar, 5 min]",
     "model: echoes over the gauge at 2pm, 3pm, 5pm, 6pm, 7pm [HRRR run]",
-    "price +2 in 15 min, +1 in 1 h, 156 contracts in 15 min [Kalshi]"
+    "price +2 in 15 min, +1 in 1 h, 163 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": -2,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -4550,6 +4767,10 @@
      ],
      [
       "2026-11-07T15:35:30.746997+00:00",
+      40
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
       40
      ]
     ]
@@ -4651,7 +4872,7 @@
      "hours": 1
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -4753,8 +4974,8 @@
     ]
    },
    "observed": {
-    "mm_today": 18.03,
-    "in_today": 0.71,
+    "mm_today": 18.54,
+    "in_today": 0.73,
     "locked": true,
     "wx_now": [
      "rain",
@@ -4773,7 +4994,8 @@
      5,
      7,
      8,
-     9
+     9,
+     10
     ],
     "precip_known": true,
     "lock_src": "airport report 11:54Z",
@@ -4790,23 +5012,33 @@
     "volume": 2027.17,
     "open_interest": 1503.95,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.512685+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.161352+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
-     "delta_15m": null,
+     "delta_15m": 0,
      "delta_60m": null,
-     "vol_15m": 94,
+     "vol_15m": 0,
      "last_trade_utc": "2026-11-07T15:22:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KBOS",
+    "time_utc": "2026-11-07T15:34:00Z",
+    "report_time_utc": "2026-11-07T15:34:00.000Z",
+    "wx": "-RA BR",
+    "raining": true,
+    "precip_in": 0.02,
+    "trace": false,
+    "pno": false,
+    "raw": "SPECI KBOS 071534Z 34008KT 2 1/2SM -RA BR BKN007 OVC010 13/13 A2973 RMK AO2 P0002 T01330128 $"
+   },
    "metar_day": {
-    "n_reports": 75,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "n_reports": 76,
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:42:00Z",
     "pno_reports_utc": [],
@@ -4818,16 +5050,109 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KOWD",
+     "dist_km": 23.1,
+     "bearing": "SW",
+     "lat": 42.1912,
+     "lon": -71.1732,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.01,
+     "time_utc": "2026-11-07T15:09:00Z"
+    },
+    {
+     "id": "KBVY",
+     "dist_km": 26.1,
+     "bearing": "N",
+     "lat": 42.5841,
+     "lon": -70.9153,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.005,
+     "time_utc": "2026-11-07T15:06:00Z"
+    },
+    {
+     "id": "KBED",
+     "dist_km": 26.2,
+     "bearing": "NW",
+     "lat": 42.4681,
+     "lon": -71.2946,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.005,
+     "time_utc": "2026-11-07T15:10:00Z"
+    },
+    {
+     "id": "KLWM",
+     "dist_km": 40.2,
+     "bearing": "N",
+     "lat": 42.7125,
+     "lon": -71.1256,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.04,
+     "time_utc": "2026-11-07T15:30:00Z"
+    },
+    {
+     "id": "K1B9",
+     "dist_km": 42.9,
+     "bearing": "S",
+     "lat": 42,
+     "lon": -71.197,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.01,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KTAN",
+     "dist_km": 53.9,
+     "bearing": "S",
+     "lat": 41.8756,
+     "lon": -71.0208,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.005,
+     "time_utc": "2026-11-07T15:34:00Z"
+    },
+    {
+     "id": "KGHG",
+     "dist_km": 40.2,
+     "bearing": "SE",
+     "lat": 42.0961,
+     "lon": -70.6769,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KPYM",
+     "dist_km": 55.4,
+     "bearing": "SE",
+     "lat": 41.9085,
+     "lon": -70.7278,
+     "wx": "",
+     "raining": false,
+     "precip_in": 0.03,
+     "time_utc": "2026-11-07T14:52:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 3.5,
-    "near60_pct": 3.5,
-    "nearest_km": 10.2,
-    "nearest_dir": "S",
-    "_n": 303,
+    "near30_pct": 2.7,
+    "near60_pct": 2.3,
+    "nearest_km": 10.6,
+    "nearest_dir": "NW",
+    "_n": 203,
     "site": "BOX",
-    "motion": null
+    "motion": {
+     "dir": "W",
+     "kmh": 93,
+     "toward_gauge": true
+    }
    },
    "radar_down": null,
    "hrrr_hours": [
@@ -4924,17 +5249,14 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "nearest echo 10.2 km S [site radar, 5 min]",
+    "RAINING AT THE GAUGE now (-RA BR), reported 15:34Z [the gauge's own report]",
+    "rain at KOWD (23 km SW), KBVY (26 km N), KBED (26 km NW), KLWM (40 km N) [neighbour airport reports]",
     "model: echoes over the gauge at 9am, 10am, 11am, 12pm, 1pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": -9,
     "delta_3h": -36,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      91
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       91
@@ -6082,6 +6404,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       44
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      44
      ]
     ]
    }
@@ -6182,7 +6508,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -6306,7 +6632,7 @@
     "volume": 1820.92,
     "open_interest": 1770.88,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.512685+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.109072+00:00",
     "gap": 1,
     "momentum": {
      "now": null,
@@ -6319,10 +6645,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KORD",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KORD 071451Z 28003KT 10SM FEW036 SCT250 06/M01 A3020 RMK AO2 SLP231 T00561011 52009 $"
+   },
    "metar_day": {
     "n_reports": 33,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -6334,19 +6670,108 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "K06C",
+     "dist_km": 15.1,
+     "bearing": "W",
+     "lat": 41.9924,
+     "lon": -88.1091,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KPWK",
+     "dist_km": 18.0,
+     "bearing": "N",
+     "lat": 42.1208,
+     "lon": -87.9048,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:52:00Z"
+    },
+    {
+     "id": "KMDW",
+     "dist_km": 24.4,
+     "bearing": "SE",
+     "lat": 41.7841,
+     "lon": -87.7552,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KDPA",
+     "dist_km": 27.4,
+     "bearing": "W",
+     "lat": 41.8964,
+     "lon": -88.2512,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:52:00Z"
+    },
+    {
+     "id": "KLOT",
+     "dist_km": 42.1,
+     "bearing": "S",
+     "lat": 41.6031,
+     "lon": -88.1017,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:45:00Z"
+    },
+    {
+     "id": "KARR",
+     "dist_km": 50.1,
+     "bearing": "SW",
+     "lat": 41.7713,
+     "lon": -88.4815,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:52:00Z"
+    },
+    {
+     "id": "KUGN",
+     "dist_km": 52.0,
+     "bearing": "N",
+     "lat": 42.4255,
+     "lon": -87.8634,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KJOT",
+     "dist_km": 53.3,
+     "bearing": "SW",
+     "lat": 41.5175,
+     "lon": -88.179,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.5,
+    "near30_pct": 0.6,
     "near60_pct": 1.5,
     "nearest_km": 19.2,
     "nearest_dir": "S",
-    "_n": 131,
+    "_n": 133,
     "site": "LOT",
     "motion": {
-     "dir": "N",
-     "kmh": 10,
-     "toward_gauge": true
+     "dir": "SW",
+     "kmh": 17,
+     "toward_gauge": false
     }
    },
    "radar_down": null,
@@ -6448,10 +6873,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      2
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       2
@@ -7599,6 +8020,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -7704,7 +8129,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -7823,28 +8248,38 @@
     "yes_bid": 0.39,
     "yes_ask": 0.4,
     "last": 0.39,
-    "yes_bid_size": 303.69,
+    "yes_bid_size": 304.1,
     "yes_ask_size": 68.0,
-    "volume": 14402.52,
-    "open_interest": 7571.37,
+    "volume": 14404.11,
+    "open_interest": 7572.96,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:45.194419+00:00",
+    "fetched_utc": "2026-11-07T15:39:27.861777+00:00",
     "gap": 9,
     "momentum": {
-     "now": 40,
-     "delta_15m": -1,
-     "delta_60m": -3,
-     "vol_15m": 34,
-     "last_trade_utc": "2026-11-07T15:30:00+00:00"
+     "now": 39,
+     "delta_15m": -3,
+     "delta_60m": -1,
+     "vol_15m": 24,
+     "last_trade_utc": "2026-11-07T15:36:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KCLL",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KCLL 071453Z 03007KT 10SM SCT050 BKN060 18/14 A3013 RMK AO2 SLP200 T01830144 53019"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -7856,13 +8291,69 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KCFD",
+     "dist_km": 15.2,
+     "bearing": "N",
+     "lat": 30.7171,
+     "lon": -96.3347,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "K60R",
+     "dist_km": 33.7,
+     "bearing": "SE",
+     "lat": 30.368,
+     "lon": -96.113,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KRWV",
+     "dist_km": 33.7,
+     "bearing": "W",
+     "lat": 30.5161,
+     "lon": -96.7051,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "K11R",
+     "dist_km": 39.9,
+     "bearing": "S",
+     "lat": 30.2232,
+     "lon": -96.3734,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KLHB",
+     "dist_km": 40.4,
+     "bearing": "NW",
+     "lat": 30.8693,
+     "lon": -96.6207,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:16:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.0,
     "near60_pct": 0.0,
-    "nearest_km": null,
-    "nearest_dir": null,
+    "nearest_km": 64.8,
+    "nearest_dir": "W",
     "_n": 0,
     "site": "GRK",
     "motion": null
@@ -7954,16 +8445,12 @@
    "situation": [
     "no echoes within 60 km [site radar, 5 min]",
     "model: echoes over the gauge at 12am, 1am [HRRR run]",
-    "price -1 in 15 min, -3 in 1 h, 34 contracts in 15 min [Kalshi]"
+    "price -3 in 15 min, -1 in 1 h, 24 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -9111,6 +9598,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       31
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      31
      ]
     ]
    }
@@ -9211,7 +9702,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -9330,19 +9821,19 @@
     "yes_bid": 0.01,
     "yes_ask": 0.02,
     "last": 0.02,
-    "yes_bid_size": 525.27,
-    "yes_ask_size": 195.84,
-    "volume": 4150.9,
-    "open_interest": 3540.43,
+    "yes_bid_size": 495.17,
+    "yes_ask_size": 62.0,
+    "volume": 4162.59,
+    "open_interest": 3552.12,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:42.598687+00:00",
+    "fetched_utc": "2026-11-07T15:39:26.153227+00:00",
     "gap": 1,
     "momentum": {
      "now": 2,
-     "delta_15m": 1,
+     "delta_15m": 0,
      "delta_60m": null,
-     "vol_15m": 211,
-     "last_trade_utc": "2026-11-07T15:26:00+00:00"
+     "vol_15m": 199,
+     "last_trade_utc": "2026-11-07T15:38:00+00:00"
     }
    },
    "nws_alerts": [
@@ -9355,10 +9846,20 @@
    ],
    "nws_alerts_at": "2026-11-07T15:32:30.488002+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KCMH",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KCMH 071451Z 30013KT 10SM OVC023 07/02 A3012 RMK AO2 SLP201 60000 T00720022 51013"
+   },
    "metar_day": {
     "n_reports": 40,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -9370,7 +9871,96 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KLCK",
+     "dist_km": 18.2,
+     "bearing": "S",
+     "lat": 39.83,
+     "lon": -82.919,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KOSU",
+     "dist_km": 19.7,
+     "bearing": "NW",
+     "lat": 40.0784,
+     "lon": -83.0782,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KTZR",
+     "dist_km": 24.3,
+     "bearing": "SW",
+     "lat": 39.8988,
+     "lon": -83.1357,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:47:00Z"
+    },
+    {
+     "id": "KLHQ",
+     "dist_km": 31.7,
+     "bearing": "SE",
+     "lat": 39.7572,
+     "lon": -82.6633,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KVTA",
+     "dist_km": 35.4,
+     "bearing": "E",
+     "lat": 40.0264,
+     "lon": -82.4635,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KDLZ",
+     "dist_km": 38.1,
+     "bearing": "NW",
+     "lat": 40.281,
+     "lon": -83.114,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KMRT",
+     "dist_km": 47.7,
+     "bearing": "NW",
+     "lat": 40.2237,
+     "lon": -83.3474,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "K4I3",
+     "dist_km": 48.1,
+     "bearing": "NE",
+     "lat": 40.3268,
+     "lon": -82.5201,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.0,
@@ -9477,17 +10067,12 @@
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
     "no echoes within 60 km [site radar, 5 min]",
-    "model: echoes over the gauge at 12pm, 1pm [HRRR run]",
-    "price +1 in 15 min, +0 in 1 h, 211 contracts in 15 min [Kalshi]"
+    "model: echoes over the gauge at 12pm, 1pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      1
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       1
@@ -10635,6 +11220,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       1
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      1
      ]
     ]
    }
@@ -10735,7 +11324,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -10853,29 +11442,39 @@
     "status": "active",
     "yes_bid": 0.11,
     "yes_ask": 0.12,
-    "last": 0.12,
-    "yes_bid_size": 20.0,
+    "last": 0.11,
+    "yes_bid_size": 21.0,
     "yes_ask_size": 58.0,
-    "volume": 7921.82,
+    "volume": 7925.28,
     "open_interest": 5396.31,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.481214+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.187932+00:00",
     "gap": 3,
     "momentum": {
-     "now": 12,
-     "delta_15m": 1,
-     "delta_60m": 5,
-     "vol_15m": 181,
-     "last_trade_utc": "2026-11-07T15:34:00+00:00"
+     "now": 11,
+     "delta_15m": 0,
+     "delta_60m": 4,
+     "vol_15m": 197,
+     "last_trade_utc": "2026-11-07T15:38:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KDFW",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KDFW 071453Z 02009KT 10SM FEW009 SCT060 BKN080 BKN250 12/09 A3020 RMK AO2 SLP223 T01170089 53015"
+   },
    "metar_day": {
     "n_reports": 34,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -10887,14 +11486,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KDAL",
+     "dist_km": 18.6,
+     "bearing": "E",
+     "lat": 32.8384,
+     "lon": -96.8358,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KADS",
+     "dist_km": 18.9,
+     "bearing": "NE",
+     "lat": 32.9634,
+     "lon": -96.8354,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KGPM",
+     "dist_km": 22.9,
+     "bearing": "S",
+     "lat": 32.6928,
+     "lon": -97.0485,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KGKY",
+     "dist_km": 27.5,
+     "bearing": "S",
+     "lat": 32.6583,
+     "lon": -97.0951,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KRBD",
+     "dist_km": 28.3,
+     "bearing": "SE",
+     "lat": 32.6782,
+     "lon": -96.8677,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KAFW",
+     "dist_km": 29.7,
+     "bearing": "W",
+     "lat": 32.99,
+     "lon": -97.32,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KFTW",
+     "dist_km": 32.9,
+     "bearing": "W",
+     "lat": 32.8248,
+     "lon": -97.364,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:31:00Z"
+    },
+    {
+     "id": "KDTO",
+     "dist_km": 38.4,
+     "bearing": "NW",
+     "lat": 33.2088,
+     "lon": -97.1992,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.2,
-    "near60_pct": 0.4,
-    "nearest_km": 12.4,
-    "nearest_dir": "SE",
-    "_n": 32,
+    "near30_pct": 0.1,
+    "near60_pct": 0.1,
+    "nearest_km": 18.5,
+    "nearest_dir": "S",
+    "_n": 6,
     "site": "FWS",
     "motion": null
    },
@@ -10993,17 +11681,12 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "model: echoes over the gauge at 6pm, 7pm, 8pm, 9pm, 11pm [HRRR run]",
-    "price +1 in 15 min, +5 in 1 h, 181 contracts in 15 min [Kalshi]"
+    "model: echoes over the gauge at 6pm, 7pm, 8pm, 9pm, 11pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": -1,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -12151,6 +12834,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       9
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      9
      ]
     ]
    }
@@ -12246,7 +12933,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -12370,12 +13057,12 @@
     "volume": 2838.19,
     "open_interest": 1922.25,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.512685+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.234218+00:00",
     "gap": 0,
     "momentum": {
      "now": 1,
      "delta_15m": 0,
-     "delta_60m": null,
+     "delta_60m": 0,
      "vol_15m": 0,
      "last_trade_utc": "2026-11-07T15:18:00+00:00"
     }
@@ -12383,10 +13070,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KDCA",
+    "time_utc": "2026-11-07T14:52:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KDCA 071452Z 34012G23KT 10SM FEW060 13/02 A2999 RMK AO2 SLP154 T01280017 50004 $"
+   },
    "metar_day": {
     "n_reports": 36,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:52:00Z",
     "pno_reports_utc": [],
@@ -12398,14 +13095,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KADW",
+     "dist_km": 14.9,
+     "bearing": "E",
+     "lat": 38.8215,
+     "lon": -76.8654,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KCGS",
+     "dist_km": 17.5,
+     "bearing": "NE",
+     "lat": 38.9806,
+     "lon": -76.9251,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KDAA",
+     "dist_km": 19.5,
+     "bearing": "SW",
+     "lat": 38.714,
+     "lon": -77.178,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KFME",
+     "dist_km": 35.7,
+     "bearing": "NE",
+     "lat": 39.086,
+     "lon": -76.757,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KIAD",
+     "dist_km": 37.0,
+     "bearing": "W",
+     "lat": 38.9348,
+     "lon": -77.4473,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:52:00Z"
+    },
+    {
+     "id": "KGAI",
+     "dist_km": 37.5,
+     "bearing": "N",
+     "lat": 39.1696,
+     "lon": -77.1653,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "KHEF",
+     "dist_km": 44.1,
+     "bearing": "W",
+     "lat": 38.724,
+     "lon": -77.5175,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "KNYG",
+     "dist_km": 44.8,
+     "bearing": "SW",
+     "lat": 38.503,
+     "lon": -77.301,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:56:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.0,
-    "near60_pct": 1.1,
-    "nearest_km": 30.5,
+    "near30_pct": 0.4,
+    "near60_pct": 1.2,
+    "nearest_km": 21.9,
     "nearest_dir": "NW",
-    "_n": 94,
+    "_n": 97,
     "site": "LWX",
     "motion": null
    },
@@ -12508,10 +13294,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      9
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       9
@@ -13659,6 +14441,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       1
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      1
      ]
     ]
    }
@@ -13764,7 +14550,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -13888,7 +14674,7 @@
     "volume": 926.17,
     "open_interest": 926.17,
     "close_time": "2026-11-08T07:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.491796+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.242385+00:00",
     "gap": 1,
     "momentum": {
      "now": null,
@@ -13901,10 +14687,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KDEN",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KDEN 071453Z 22009KT 10SM FEW220 07/M03 A3021 RMK AO2 SLP202 T00721028 53002"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -13916,18 +14712,96 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KCFO",
+     "dist_km": 11.4,
+     "bearing": "SE",
+     "lat": 39.7948,
+     "lon": -104.5405,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T13:35:00Z"
+    },
+    {
+     "id": "KBKF",
+     "dist_km": 17.2,
+     "bearing": "SW",
+     "lat": 39.713,
+     "lon": -104.758,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:58:00Z"
+    },
+    {
+     "id": "KAPA",
+     "dist_km": 35.9,
+     "bearing": "SW",
+     "lat": 39.5599,
+     "lon": -104.8484,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KEIK",
+     "dist_km": 38.3,
+     "bearing": "NW",
+     "lat": 40.0117,
+     "lon": -105.0503,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KBJC",
+     "dist_km": 38.7,
+     "bearing": "W",
+     "lat": 39.9008,
+     "lon": -105.1042,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T12:35:00Z"
+    },
+    {
+     "id": "KBDU",
+     "dist_km": 53.1,
+     "bearing": "NW",
+     "lat": 40.0377,
+     "lon": -105.2274,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KLMO",
+     "dist_km": 55.4,
+     "bearing": "NW",
+     "lat": 40.1612,
+     "lon": -105.1605,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    }
+   ],
    "radar": {
-    "near10_pct": 17.6,
-    "near30_pct": 10.8,
-    "near60_pct": 4.4,
-    "nearest_km": 2.0,
-    "nearest_dir": "E",
-    "_n": 392,
+    "near10_pct": 16.5,
+    "near30_pct": 10.1,
+    "near60_pct": 4.1,
+    "nearest_km": 0.5,
+    "nearest_dir": "N",
+    "_n": 365,
     "site": "FTG",
     "motion": {
-     "dir": "NE",
-     "kmh": 11,
+     "dir": "E",
+     "kmh": 16,
      "toward_gauge": true
     }
    },
@@ -14026,16 +14900,12 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "echoes over the gauge, 17.6% of the 10 km ring [site radar, 5 min]"
+    "echoes over the gauge, 16.5% of the 10 km ring [site radar, 5 min]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -15183,6 +16053,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -15278,7 +16152,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -15398,27 +16272,37 @@
     "yes_ask": 0.08,
     "last": 0.07,
     "yes_bid_size": 99.66,
-    "yes_ask_size": 481.07,
+    "yes_ask_size": 427.07,
     "volume": 5121.46,
     "open_interest": 3584.91,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:29.512685+00:00",
+    "fetched_utc": "2026-11-07T15:38:53.139949+00:00",
     "gap": -2,
     "momentum": {
-     "now": 6,
-     "delta_15m": 1,
-     "delta_60m": 0,
-     "vol_15m": 4,
-     "last_trade_utc": "2026-11-07T15:32:00+00:00"
+     "now": 7,
+     "delta_15m": 2,
+     "delta_60m": null,
+     "vol_15m": 139,
+     "last_trade_utc": "2026-11-07T15:36:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KEWR",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KEWR 071451Z 28008KT 10SM SCT030 BKN090 BKN250 16/11 A2980 RMK AO2 SLP092 T01610106 58000"
+   },
    "metar_day": {
     "n_reports": 47,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -15430,14 +16314,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KJRB",
+     "dist_km": 13.7,
+     "bearing": "E",
+     "lat": 40.701,
+     "lon": -74.009,
+     "wx": "",
+     "raining": false,
+     "precip_in": 0.01,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "KNYC",
+     "dist_km": 20.0,
+     "bearing": "NE",
+     "lat": 40.779,
+     "lon": -73.9692,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KTEB",
+     "dist_km": 21.8,
+     "bearing": "NE",
+     "lat": 40.859,
+     "lon": -74.0562,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KCDW",
+     "dist_km": 23.6,
+     "bearing": "NW",
+     "lat": 40.8764,
+     "lon": -74.2828,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:28:00Z"
+    },
+    {
+     "id": "KMMU",
+     "dist_km": 24.5,
+     "bearing": "NW",
+     "lat": 40.7989,
+     "lon": -74.4164,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:45:00Z"
+    },
+    {
+     "id": "KLGA",
+     "dist_km": 26.6,
+     "bearing": "NE",
+     "lat": 40.7794,
+     "lon": -73.8803,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KJFK",
+     "dist_km": 34.5,
+     "bearing": "E",
+     "lat": 40.6392,
+     "lon": -73.7639,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KSMQ",
+     "dist_km": 42.6,
+     "bearing": "W",
+     "lat": 40.6241,
+     "lon": -74.669,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:12:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.0,
+    "near30_pct": 0.1,
     "near60_pct": 0.0,
-    "nearest_km": null,
-    "nearest_dir": null,
-    "_n": 0,
+    "nearest_km": 15.6,
+    "nearest_dir": "NW",
+    "_n": 4,
     "site": "OKX",
     "motion": null
    },
@@ -15538,16 +16511,12 @@
    "situation": [
     "no echoes within 60 km [site radar, 5 min]",
     "model: echoes over the gauge at 11am, 12pm [HRRR run]",
-    "price +1 in 15 min, +0 in 1 h, 4 contracts in 15 min [Kalshi]"
+    "price +2 in 15 min, +0 in 1 h, 139 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      25
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       25
@@ -16695,6 +17664,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       10
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      10
      ]
     ]
    }
@@ -16800,7 +17773,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -16920,27 +17893,37 @@
     "yes_ask": 0.03,
     "last": 0.03,
     "yes_bid_size": 70.0,
-    "yes_ask_size": 178.7,
-    "volume": 5510.83,
-    "open_interest": 4808.49,
+    "yes_ask_size": 170.9,
+    "volume": 5518.63,
+    "open_interest": 4816.29,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:31.650973+00:00",
+    "fetched_utc": "2026-11-07T15:39:14.744108+00:00",
     "gap": -11,
     "momentum": {
      "now": 3,
      "delta_15m": 1,
      "delta_60m": 0,
-     "vol_15m": 134,
-     "last_trade_utc": "2026-11-07T15:29:00+00:00"
+     "vol_15m": 142,
+     "last_trade_utc": "2026-11-07T15:37:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KHOU",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KHOU 071453Z 09010KT 10SM SCT075 BKN250 21/16 A3012 RMK AO2 SLP202 T02110161 53023"
+   },
    "metar_day": {
     "n_reports": 31,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -16952,14 +17935,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KEFD",
+     "dist_km": 12.6,
+     "bearing": "E",
+     "lat": 29.606,
+     "lon": -95.16,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KMCJ",
+     "dist_km": 13.4,
+     "bearing": "NW",
+     "lat": 29.7139,
+     "lon": -95.3967,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KLVJ",
+     "dist_km": 14.6,
+     "bearing": "S",
+     "lat": 29.5192,
+     "lon": -95.2423,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KT41",
+     "dist_km": 21.2,
+     "bearing": "E",
+     "lat": 29.6709,
+     "lon": -95.0644,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KAXH",
+     "dist_km": 24.4,
+     "bearing": "SW",
+     "lat": 29.505,
+     "lon": -95.476,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KSGR",
+     "dist_km": 36.4,
+     "bearing": "W",
+     "lat": 29.6197,
+     "lon": -95.6575,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KIAH",
+     "dist_km": 38.4,
+     "bearing": "N",
+     "lat": 29.9844,
+     "lon": -95.3607,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KDWH",
+     "dist_km": 53.9,
+     "bearing": "NW",
+     "lat": 30.068,
+     "lon": -95.5563,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.4,
     "near30_pct": 2.4,
     "near60_pct": 1.6,
     "nearest_km": 6.2,
     "nearest_dir": "E",
-    "_n": 120,
+    "_n": 122,
     "site": "HGX",
     "motion": null
    },
@@ -17058,16 +18130,12 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "price +1 in 15 min, +0 in 1 h, 134 contracts in 15 min [Kalshi]"
+    "price +1 in 15 min, +0 in 1 h, 142 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -18215,6 +19283,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       14
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      14
      ]
     ]
    }
@@ -18315,7 +19387,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -18439,7 +19511,7 @@
     "volume": 1735.53,
     "open_interest": 1681.51,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:47.215901+00:00",
+    "fetched_utc": "2026-11-07T15:39:30.603907+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -18450,12 +19522,22 @@
     }
    },
    "nws_alerts": [],
-   "nws_alerts_at": "2026-11-07T15:05:30.831815+00:00",
+   "nws_alerts_at": "2026-11-07T15:38:30.522602+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KIND",
+    "time_utc": "2026-11-07T14:54:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KIND 071454Z 31008KT 10SM FEW250 07/01 A3021 RMK AO2 SLP233 T00720011 51012"
+   },
    "metar_day": {
     "n_reports": 40,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:50:00Z",
     "pno_reports_utc": [],
@@ -18467,7 +19549,96 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KEYE",
+     "dist_km": 11.1,
+     "bearing": "N",
+     "lat": 39.8248,
+     "lon": -86.2958,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "K2R2",
+     "dist_km": 16.6,
+     "bearing": "W",
+     "lat": 39.7511,
+     "lon": -86.4732,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KHFY",
+     "dist_km": 19.8,
+     "bearing": "SE",
+     "lat": 39.628,
+     "lon": -86.088,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KUMP",
+     "dist_km": 30.8,
+     "bearing": "NE",
+     "lat": 39.936,
+     "lon": -86.0478,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KTYQ",
+     "dist_km": 34.5,
+     "bearing": "N",
+     "lat": 40.0345,
+     "lon": -86.2488,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KMQJ",
+     "dist_km": 35.5,
+     "bearing": "E",
+     "lat": 39.8402,
+     "lon": -85.894,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KGEZ",
+     "dist_km": 44.1,
+     "bearing": "E",
+     "lat": 39.5855,
+     "lon": -85.7998,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KGPC",
+     "dist_km": 46.8,
+     "bearing": "W",
+     "lat": 39.635,
+     "lon": -86.816,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 7.3,
     "near30_pct": 3.4,
@@ -18579,10 +19750,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -19730,6 +20897,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -19840,7 +21011,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -19964,7 +21135,7 @@
     "volume": 361.84,
     "open_interest": 361.84,
     "close_time": "2026-11-08T08:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:31.650973+00:00",
+    "fetched_utc": "2026-11-07T15:39:14.707680+00:00",
     "gap": 1,
     "momentum": {
      "now": null,
@@ -19984,10 +21155,20 @@
    ],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KLAX",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KLAX 071453Z 00000KT 10SM CLR 17/06 A3003 RMK AO2 SLP167 T01670061 53012 $"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -19999,14 +21180,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KHHR",
+     "dist_km": 5.4,
+     "bearing": "E",
+     "lat": 33.9235,
+     "lon": -118.3329,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KSMO",
+     "dist_km": 10.7,
+     "bearing": "NW",
+     "lat": 34.021,
+     "lon": -118.4471,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KTOA",
+     "dist_km": 15.8,
+     "bearing": "S",
+     "lat": 33.803,
+     "lon": -118.336,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KFHM",
+     "dist_km": 19.8,
+     "bearing": "NE",
+     "lat": 34.0677,
+     "lon": -118.2417,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:30:00Z"
+    },
+    {
+     "id": "KLGB",
+     "dist_km": 26.4,
+     "bearing": "SE",
+     "lat": 33.8118,
+     "lon": -118.1472,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KBUR",
+     "dist_km": 29.2,
+     "bearing": "N",
+     "lat": 34.1996,
+     "lon": -118.3654,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KVNY",
+     "dist_km": 31.9,
+     "bearing": "N",
+     "lat": 34.2121,
+     "lon": -118.4915,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KSLI",
+     "dist_km": 35.7,
+     "bearing": "SE",
+     "lat": 33.796,
+     "lon": -118.042,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 2.3,
-    "near60_pct": 2.4,
+    "near30_pct": 2.1,
+    "near60_pct": 2.2,
     "nearest_km": 14.8,
     "nearest_dir": "NW",
-    "_n": 205,
+    "_n": 190,
     "site": "VTX",
     "motion": null
    },
@@ -20109,10 +21379,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -21260,6 +22526,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -21355,7 +22625,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -21479,7 +22749,7 @@
     "volume": 1808.13,
     "open_interest": 1808.13,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:44.238136+00:00",
+    "fetched_utc": "2026-11-07T15:39:26.704302+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -21499,10 +22769,20 @@
    ],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KLEX",
+    "time_utc": "2026-11-07T14:54:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KLEX 071454Z 01006KT 10SM CLR 07/03 A3020 RMK AO2 SLP230 T00720028 51013 $"
+   },
    "metar_day": {
     "n_reports": 36,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:54:00Z",
     "pno_reports_utc": [],
@@ -21514,7 +22794,63 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "K27K",
+     "dist_km": 27.6,
+     "bearing": "NE",
+     "lat": 38.239,
+     "lon": -84.4336,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KFFT",
+     "dist_km": 30.6,
+     "bearing": "NW",
+     "lat": 38.1846,
+     "lon": -84.9039,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KRGA",
+     "dist_km": 51.3,
+     "bearing": "SE",
+     "lat": 37.6305,
+     "lon": -84.329,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KDVK",
+     "dist_km": 52.6,
+     "bearing": "S",
+     "lat": 37.5764,
+     "lon": -84.7641,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KIOB",
+     "dist_km": 55.1,
+     "bearing": "E",
+     "lat": 38.0575,
+     "lon": -83.9829,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.0,
@@ -21626,10 +22962,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -22777,6 +24109,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -22892,7 +24228,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -23012,11 +24348,11 @@
     "yes_ask": 0.01,
     "last": 0.01,
     "yes_bid_size": 0.0,
-    "yes_ask_size": 4604.38,
+    "yes_ask_size": 4613.38,
     "volume": 209.4,
     "open_interest": 209.4,
     "close_time": "2026-11-08T08:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:31.725776+00:00",
+    "fetched_utc": "2026-11-07T15:39:14.769805+00:00",
     "gap": 1,
     "momentum": {
      "now": null,
@@ -23029,10 +24365,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KLAS",
+    "time_utc": "2026-11-07T14:56:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KLAS 071456Z 24004KT 10SM CLR 13/01 A3022 RMK AO2 SLP223 T01280011 53008"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:56:00Z",
     "pno_reports_utc": [],
@@ -23044,14 +24390,59 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KHND",
+     "dist_km": 12.1,
+     "bearing": "S",
+     "lat": 35.9657,
+     "lon": -115.1343,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "KVGT",
+     "dist_km": 15.8,
+     "bearing": "N",
+     "lat": 36.212,
+     "lon": -115.194,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KLSV",
+     "dist_km": 21.6,
+     "bearing": "NE",
+     "lat": 36.236,
+     "lon": -115.034,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KBVU",
+     "dist_km": 30.3,
+     "bearing": "SE",
+     "lat": 35.9489,
+     "lon": -114.8633,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.6,
+    "near30_pct": 0.5,
     "near60_pct": 1.3,
-    "nearest_km": 19.8,
-    "nearest_dir": "W",
-    "_n": 111,
+    "nearest_km": 22.5,
+    "nearest_dir": "SE",
+    "_n": 109,
     "site": "ESX",
     "motion": null
    },
@@ -23154,10 +24545,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -24305,6 +25692,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -24400,7 +25791,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -24516,31 +25907,41 @@
    "market": {
     "ticker": "KXRAIN-26NOV07-MIA",
     "status": "active",
-    "yes_bid": 0.35,
-    "yes_ask": 0.36,
-    "last": 0.35,
-    "yes_bid_size": 131.0,
-    "yes_ask_size": 2.0,
-    "volume": 10875.68,
-    "open_interest": 6597.4,
+    "yes_bid": 0.36,
+    "yes_ask": 0.37,
+    "last": 0.36,
+    "yes_bid_size": 47.0,
+    "yes_ask_size": 10.0,
+    "volume": 10877.68,
+    "open_interest": 6599.4,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:37.134175+00:00",
-    "gap": 15,
+    "fetched_utc": "2026-11-07T15:39:18.156908+00:00",
+    "gap": 16,
     "momentum": {
-     "now": 37,
-     "delta_15m": 2,
-     "delta_60m": 3,
-     "vol_15m": 102,
-     "last_trade_utc": "2026-11-07T15:33:00+00:00"
+     "now": 36,
+     "delta_15m": 1,
+     "delta_60m": 0,
+     "vol_15m": 78,
+     "last_trade_utc": "2026-11-07T15:37:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KMIA",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KMIA 071453Z 00000KT 10SM FEW025 28/21 A2993 RMK AO2 SLP137 T02780211 51005 $"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -24552,20 +25953,94 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KHST",
+     "dist_km": 34.0,
+     "bearing": "S",
+     "lat": 25.49,
+     "lon": -80.379,
+     "wx": "-DZ",
+     "raining": true,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:59:00Z"
+    },
+    {
+     "id": "KOPF",
+     "dist_km": 13.7,
+     "bearing": "N",
+     "lat": 25.9102,
+     "lon": -80.2828,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KHWO",
+     "dist_km": 24.4,
+     "bearing": "N",
+     "lat": 25.9996,
+     "lon": -80.2412,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KFLL",
+     "dist_km": 35.6,
+     "bearing": "NE",
+     "lat": 26.0787,
+     "lon": -80.1622,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KFXE",
+     "dist_km": 47.5,
+     "bearing": "N",
+     "lat": 26.199,
+     "lon": -80.1776,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KK70",
+     "dist_km": 52.3,
+     "bearing": "S",
+     "lat": 25.322,
+     "lon": -80.277,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KPMP",
+     "dist_km": 54.7,
+     "bearing": "N",
+     "lat": 26.2464,
+     "lon": -80.111,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 19.1,
-    "near30_pct": 21.9,
+    "near30_pct": 22.1,
     "near60_pct": 18.9,
     "nearest_km": 3.6,
     "nearest_dir": "NW",
-    "_n": 1436,
+    "_n": 1433,
     "site": "AMX",
-    "motion": {
-     "dir": "S",
-     "kmh": 30,
-     "toward_gauge": true
-    }
+    "motion": null
    },
    "radar_down": null,
    "hrrr_hours": [
@@ -24662,18 +26137,15 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "nearest echo 3.6 km NW, moving S at 30 km/h, ETA about 7 min [site radar, 5 min]",
+    "rain at KHST (34 km S) [neighbour airport reports]",
+    "nearest echo 3.6 km NW [site radar, 5 min]",
     "model: echoes over the gauge at 3pm, 5pm, 6pm, 7pm, 8pm [HRRR run]",
-    "price +2 in 15 min, +3 in 1 h, 102 contracts in 15 min [Kalshi]"
+    "price +1 in 15 min, +0 in 1 h, 78 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      1
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       1
@@ -25821,6 +27293,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       21
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      21
      ]
     ]
    }
@@ -25921,7 +27397,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -26045,7 +27521,7 @@
     "volume": 3146.35,
     "open_interest": 3146.35,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:36.734072+00:00",
+    "fetched_utc": "2026-11-07T15:39:18.594445+00:00",
     "gap": -1,
     "momentum": {
      "now": null,
@@ -26058,10 +27534,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:32:30.488002+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KMSP",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KMSP 071453Z 22005KT 9SM FEW150 FEW250 03/01 A3011 RMK AO2 SLP203 T00330006 58001"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -26073,18 +27559,107 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KSTP",
+     "dist_km": 14.7,
+     "bearing": "E",
+     "lat": 44.9323,
+     "lon": -93.0559,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KSGS",
+     "dist_km": 15.7,
+     "bearing": "E",
+     "lat": 44.8601,
+     "lon": -93.032,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KFCM",
+     "dist_km": 19.9,
+     "bearing": "W",
+     "lat": 44.8321,
+     "lon": -93.4705,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KMIC",
+     "dist_km": 22.1,
+     "bearing": "NW",
+     "lat": 45.0623,
+     "lon": -93.3511,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KLVN",
+     "dist_km": 28.7,
+     "bearing": "S",
+     "lat": 44.6252,
+     "lon": -93.2273,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KANE",
+     "dist_km": 28.9,
+     "bearing": "N",
+     "lat": 45.1426,
+     "lon": -93.2127,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:45:00Z"
+    },
+    {
+     "id": "K21D",
+     "dist_km": 32.2,
+     "bearing": "NE",
+     "lat": 45.0002,
+     "lon": -92.8549,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KSYN",
+     "dist_km": 48.6,
+     "bearing": "S",
+     "lat": 44.474,
+     "lon": -93.014,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 2.1,
-    "near60_pct": 2.2,
+    "near30_pct": 2.0,
+    "near60_pct": 1.5,
     "nearest_km": 13.8,
     "nearest_dir": "NW",
-    "_n": 196,
+    "_n": 131,
     "site": "MPX",
     "motion": {
      "dir": "SW",
-     "kmh": 22,
+     "kmh": 6,
      "toward_gauge": false
     }
    },
@@ -26187,10 +27762,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -27338,6 +28909,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       2
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      2
      ]
     ]
    }
@@ -27438,7 +29013,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -27562,7 +29137,7 @@
     "volume": 2160.33,
     "open_interest": 1835.93,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:43.663880+00:00",
+    "fetched_utc": "2026-11-07T15:39:26.787309+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -27575,10 +29150,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:05:30.831815+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KMKE",
+    "time_utc": "2026-11-07T14:52:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KMKE 071452Z 30006KT 10SM FEW020 SCT250 05/M01 A3018 RMK AO2 SLP227 T00501011 50007 $"
+   },
    "metar_day": {
     "n_reports": 35,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:52:00Z",
     "pno_reports_utc": [],
@@ -27590,19 +29175,108 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KMWC",
+     "dist_km": 20.2,
+     "bearing": "NW",
+     "lat": 43.1095,
+     "lon": -88.0343,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KRAC",
+     "dist_km": 23.0,
+     "bearing": "S",
+     "lat": 42.7586,
+     "lon": -87.8178,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KUES",
+     "dist_km": 29.5,
+     "bearing": "W",
+     "lat": 43.0425,
+     "lon": -88.2465,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:45:00Z"
+    },
+    {
+     "id": "KENW",
+     "dist_km": 40.1,
+     "bearing": "S",
+     "lat": 42.5953,
+     "lon": -87.9383,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "K57C",
+     "dist_km": 41.5,
+     "bearing": "SW",
+     "lat": 42.7972,
+     "lon": -88.3655,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KBUU",
+     "dist_km": 44.1,
+     "bearing": "SW",
+     "lat": 42.6908,
+     "lon": -88.308,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KETB",
+     "dist_km": 55.2,
+     "bearing": "N",
+     "lat": 43.4225,
+     "lon": -88.1326,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KUGN",
+     "dist_km": 59.0,
+     "bearing": "S",
+     "lat": 42.4255,
+     "lon": -87.8634,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.0,
-    "near60_pct": 1.9,
+    "near60_pct": 1.8,
     "nearest_km": 32.5,
     "nearest_dir": "W",
-    "_n": 171,
+    "_n": 162,
     "site": "MKX",
     "motion": {
-     "dir": null,
-     "kmh": 0,
-     "toward_gauge": null
+     "dir": "NW",
+     "kmh": 22,
+     "toward_gauge": false
     }
    },
    "radar_down": null,
@@ -27704,10 +29378,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      2
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       2
@@ -28855,6 +30525,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -28955,7 +30629,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -29079,7 +30753,7 @@
     "volume": 1757.79,
     "open_interest": 1757.79,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:37.024989+00:00",
+    "fetched_utc": "2026-11-07T15:39:18.733278+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -29092,10 +30766,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KMSY",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KMSY 071453Z 05010G17KT 10SM BKN250 17/12 A3014 RMK AO2 SLP209 T01720117 51020"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -29107,14 +30791,59 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KNEW",
+     "dist_km": 24.6,
+     "bearing": "E",
+     "lat": 30.0494,
+     "lon": -90.029,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KNBG",
+     "dist_km": 30.3,
+     "bearing": "SE",
+     "lat": 29.837,
+     "lon": -90.024,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KAPS",
+     "dist_km": 31.1,
+     "bearing": "W",
+     "lat": 30.086,
+     "lon": -90.584,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KASD",
+     "dist_km": 58.3,
+     "bearing": "NE",
+     "lat": 30.3436,
+     "lon": -89.8224,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.4,
-    "near60_pct": 2.6,
-    "nearest_km": 27.6,
-    "nearest_dir": "NW",
-    "_n": 219,
+    "near30_pct": 0.3,
+    "near60_pct": 2.2,
+    "nearest_km": 18.8,
+    "nearest_dir": "W",
+    "_n": 188,
     "site": "HDC",
     "motion": null
    },
@@ -29217,10 +30946,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -30368,6 +32093,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -30463,7 +32192,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -30589,23 +32318,33 @@
     "volume": 26210.69,
     "open_interest": 11989.13,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:36.925761+00:00",
+    "fetched_utc": "2026-11-07T15:39:19.287117+00:00",
     "gap": null,
     "momentum": {
-     "now": 5,
+     "now": 10,
      "delta_15m": 0,
-     "delta_60m": -3,
-     "vol_15m": 196,
-     "last_trade_utc": "2026-11-07T15:27:00+00:00"
+     "delta_60m": 2,
+     "vol_15m": 123,
+     "last_trade_utc": "2026-11-07T15:37:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KNYC",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KNYC 071451Z AUTO VRB06KT 10SM BKN090 15/10 A2983 RMK AO2 SLP092 T01500100 50002"
+   },
    "metar_day": {
     "n_reports": 52,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -30617,14 +32356,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KLGA",
+     "dist_km": 7.3,
+     "bearing": "E",
+     "lat": 40.7794,
+     "lon": -73.8803,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KJRB",
+     "dist_km": 9.8,
+     "bearing": "S",
+     "lat": 40.701,
+     "lon": -74.009,
+     "wx": "",
+     "raining": false,
+     "precip_in": 0.01,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "KTEB",
+     "dist_km": 11.3,
+     "bearing": "NW",
+     "lat": 40.859,
+     "lon": -74.0562,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KEWR",
+     "dist_km": 20.4,
+     "bearing": "SW",
+     "lat": 40.6828,
+     "lon": -74.1692,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KJFK",
+     "dist_km": 23.4,
+     "bearing": "SE",
+     "lat": 40.6392,
+     "lon": -73.7639,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KCDW",
+     "dist_km": 28.5,
+     "bearing": "W",
+     "lat": 40.8764,
+     "lon": -74.2828,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:28:00Z"
+    },
+    {
+     "id": "KLDJ",
+     "dist_km": 29.9,
+     "bearing": "SW",
+     "lat": 40.6162,
+     "lon": -74.2451,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KMMU",
+     "dist_km": 37.9,
+     "bearing": "W",
+     "lat": 40.7989,
+     "lon": -74.4164,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:45:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.0,
+    "near30_pct": 0.1,
     "near60_pct": 0.0,
-    "nearest_km": null,
-    "nearest_dir": null,
-    "_n": 0,
+    "nearest_km": 28.1,
+    "nearest_dir": "W",
+    "_n": 4,
     "site": "OKX",
     "motion": null
    },
@@ -30730,10 +32558,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      20
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       20
@@ -31881,6 +33705,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       9
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      9
      ]
     ]
    }
@@ -31981,7 +33809,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -32105,7 +33933,7 @@
     "volume": 4467.27,
     "open_interest": 3626.0,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:37.562424+00:00",
+    "fetched_utc": "2026-11-07T15:39:19.424800+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -32125,10 +33953,20 @@
    ],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KOKC",
+    "time_utc": "2026-11-07T14:52:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KOKC 071452Z 08003KT 10SM SCT250 06/04 A3027 RMK AO2 SLP254 T00560044 51012"
+   },
    "metar_day": {
     "n_reports": 46,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:52:00Z",
     "pno_reports_utc": [],
@@ -32140,14 +33978,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KPWA",
+     "dist_km": 17.5,
+     "bearing": "N",
+     "lat": 35.5411,
+     "lon": -97.6472,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KTIK",
+     "dist_km": 19.6,
+     "bearing": "E",
+     "lat": 35.415,
+     "lon": -97.386,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KOUN",
+     "dist_km": 19.9,
+     "bearing": "SE",
+     "lat": 35.2436,
+     "lon": -97.4713,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:45:00Z"
+    },
+    {
+     "id": "KRCE",
+     "dist_km": 23.7,
+     "bearing": "NW",
+     "lat": 35.4971,
+     "lon": -97.8255,
+     "wx": "FG",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KHSD",
+     "dist_km": 25.7,
+     "bearing": "NW",
+     "lat": 35.6018,
+     "lon": -97.7093,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:10:00Z"
+    },
+    {
+     "id": "KCHK",
+     "dist_km": 47.1,
+     "bearing": "SW",
+     "lat": 35.0927,
+     "lon": -97.9709,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KGOK",
+     "dist_km": 54.2,
+     "bearing": "N",
+     "lat": 35.8517,
+     "lon": -97.4142,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KSNL",
+     "dist_km": 59.5,
+     "bearing": "E",
+     "lat": 35.3611,
+     "lon": -96.9445,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 1.7,
-    "near60_pct": 1.4,
-    "nearest_km": 11.3,
-    "nearest_dir": "NE",
-    "_n": 126,
+    "near30_pct": 1.2,
+    "near60_pct": 1.3,
+    "nearest_km": 14.2,
+    "nearest_dir": "SE",
+    "_n": 114,
     "site": "TLX",
     "motion": null
    },
@@ -32250,10 +34177,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -33401,6 +35324,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -33496,7 +35423,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -33625,18 +35552,29 @@
     "momentum": {
      "now": 1,
      "delta_15m": 0,
-     "delta_60m": -1,
+     "delta_60m": null,
      "vol_15m": 0,
      "last_trade_utc": "2026-11-07T14:41:00+00:00"
-    }
+    },
+    "error": "URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host'"
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:32:30.488002+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KPHL",
+    "time_utc": "2026-11-07T14:54:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KPHL 071454Z 29013KT 10SM FEW070 12/02 A2990 RMK AO2 SLP126 T01220022 50006 $"
+   },
    "metar_day": {
     "n_reports": 60,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:50:00Z",
     "pno_reports_utc": [],
@@ -33648,14 +35586,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KPNE",
+     "dist_km": 29.2,
+     "bearing": "NE",
+     "lat": 40.0789,
+     "lon": -75.0133,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KLOM",
+     "dist_km": 29.6,
+     "bearing": "N",
+     "lat": 40.1376,
+     "lon": -75.2684,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KOQN",
+     "dist_km": 32.8,
+     "bearing": "NW",
+     "lat": 39.9889,
+     "lon": -75.5803,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KVAY",
+     "dist_km": 33.8,
+     "bearing": "E",
+     "lat": 39.9408,
+     "lon": -74.8407,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KILG",
+     "dist_km": 39.2,
+     "bearing": "SW",
+     "lat": 39.6744,
+     "lon": -75.6057,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KPTW",
+     "dist_km": 49.2,
+     "bearing": "NW",
+     "lat": 40.238,
+     "lon": -75.5549,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KDYL",
+     "dist_km": 51.6,
+     "bearing": "N",
+     "lat": 40.3302,
+     "lon": -75.1228,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KWRI",
+     "dist_km": 56.5,
+     "bearing": "E",
+     "lat": 40.016,
+     "lon": -74.591,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.1,
-    "near60_pct": 1.8,
+    "near60_pct": 1.7,
     "nearest_km": 25.5,
     "nearest_dir": "E",
-    "_n": 153,
+    "_n": 148,
     "site": "DIX",
     "motion": null
    },
@@ -33758,10 +35785,6 @@
     "delta_1h": 0,
     "delta_3h": 1,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      17
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       17
@@ -34909,6 +36932,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       2
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      2
      ]
     ]
    }
@@ -35014,7 +37041,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -35152,10 +37179,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KPHX",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KPHX 071451Z 00000KT 10SM FEW130 FEW170 18/11 A2999 RMK AO2 SLP146 T01780111 53012 $"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -35167,14 +37204,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KSDL",
+     "dist_km": 21.8,
+     "bearing": "N",
+     "lat": 33.6123,
+     "lon": -111.9232,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KCHD",
+     "dist_km": 25.5,
+     "bearing": "SE",
+     "lat": 33.2669,
+     "lon": -111.8086,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T13:47:00Z"
+    },
+    {
+     "id": "KFFZ",
+     "dist_km": 26.5,
+     "bearing": "E",
+     "lat": 33.4659,
+     "lon": -111.7212,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KDVT",
+     "dist_km": 29.8,
+     "bearing": "N",
+     "lat": 33.6902,
+     "lon": -112.0662,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KIWA",
+     "dist_km": 36.3,
+     "bearing": "SE",
+     "lat": 33.3008,
+     "lon": -111.6437,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KLUF",
+     "dist_km": 37.0,
+     "bearing": "W",
+     "lat": 33.538,
+     "lon": -112.38,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KA39",
+     "dist_km": 49.5,
+     "bearing": "S",
+     "lat": 32.9875,
+     "lon": -111.9216,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KCGZ",
+     "dist_km": 57.0,
+     "bearing": "S",
+     "lat": 32.9531,
+     "lon": -111.7725,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:56:00Z"
+    }
+   ],
    "radar": {
-    "near10_pct": 0.7,
-    "near30_pct": 2.0,
+    "near10_pct": 0.0,
+    "near30_pct": 1.8,
     "near60_pct": 3.4,
-    "nearest_km": 4.9,
-    "nearest_dir": "E",
-    "_n": 275,
+    "nearest_km": 11.3,
+    "nearest_dir": "N",
+    "_n": 271,
     "site": "IWA",
     "motion": null
    },
@@ -35273,16 +37399,12 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "nearest echo 4.9 km E [site radar, 5 min]"
+    "nearest echo 11.3 km N [site radar, 5 min]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      8
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       8
@@ -36430,6 +38552,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       1
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      1
      ]
     ]
    }
@@ -36525,7 +38651,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -36641,31 +38767,41 @@
    "market": {
     "ticker": "KXRAIN-26NOV07-PIT",
     "status": "active",
-    "yes_bid": 0.25,
-    "yes_ask": 0.27,
-    "last": 0.27,
-    "yes_bid_size": 1.0,
-    "yes_ask_size": 27.95,
-    "volume": 13740.7,
-    "open_interest": 6079.03,
+    "yes_bid": 0.23,
+    "yes_ask": 0.25,
+    "last": 0.26,
+    "yes_bid_size": 80.0,
+    "yes_ask_size": 20.0,
+    "volume": 13790.78,
+    "open_interest": 6098.84,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:45.232629+00:00",
-    "gap": -1,
+    "fetched_utc": "2026-11-07T15:39:29.983300+00:00",
+    "gap": -3,
     "momentum": {
-     "now": 24,
-     "delta_15m": 3,
-     "delta_60m": -6,
-     "vol_15m": 602,
-     "last_trade_utc": "2026-11-07T15:35:00+00:00"
+     "now": 26,
+     "delta_15m": 5,
+     "delta_60m": -3,
+     "vol_15m": 633,
+     "last_trade_utc": "2026-11-07T15:38:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KPIT",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KPIT 071451Z 25008KT 10SM OVC023 07/02 A3002 RMK AO2 SLP179 T00670017 51007 $"
+   },
    "metar_day": {
     "n_reports": 39,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -36677,14 +38813,92 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KAGC",
+     "dist_km": 28.7,
+     "bearing": "SE",
+     "lat": 40.3551,
+     "lon": -79.9215,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:04:00Z"
+    },
+    {
+     "id": "KBVI",
+     "dist_km": 35.1,
+     "bearing": "NW",
+     "lat": 40.7735,
+     "lon": -80.3825,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KPJC",
+     "dist_km": 35.4,
+     "bearing": "N",
+     "lat": 40.8009,
+     "lon": -80.1624,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KBTP",
+     "dist_km": 39.1,
+     "bearing": "NE",
+     "lat": 40.7765,
+     "lon": -79.9568,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "KAFJ",
+     "dist_km": 39.2,
+     "bearing": "S",
+     "lat": 40.1362,
+     "lon": -80.2851,
+     "wx": "",
+     "raining": false,
+     "precip_in": 0.005,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "K2G2",
+     "dist_km": 43.4,
+     "bearing": "W",
+     "lat": 40.359,
+     "lon": -80.7,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KHLG",
+     "dist_km": 50.5,
+     "bearing": "SW",
+     "lat": 40.1699,
+     "lon": -80.6441,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 10.4,
     "near30_pct": 8.8,
-    "near60_pct": 3.5,
+    "near60_pct": 3.4,
     "nearest_km": 0.5,
     "nearest_dir": "SE",
-    "_n": 302,
+    "_n": 296,
     "site": "PBZ",
     "motion": null
    },
@@ -36785,16 +38999,12 @@
    "situation": [
     "echoes over the gauge, 10.4% of the 10 km ring [site radar, 5 min]",
     "model: echoes over the gauge at 5pm, 6pm [HRRR run]",
-    "price +3 in 15 min, -6 in 1 h, 602 contracts in 15 min [Kalshi]"
+    "price +5 in 15 min, -3 in 1 h, 633 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 1,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      6
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       6
@@ -37942,6 +40152,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       28
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      28
      ]
     ]
    }
@@ -38037,7 +40251,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -38176,12 +40390,12 @@
     "volume": 2039.51,
     "open_interest": 1754.72,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:44.829300+00:00",
+    "fetched_utc": "2026-11-07T15:39:28.961750+00:00",
     "gap": null,
     "momentum": {
      "now": 99,
      "delta_15m": 0,
-     "delta_60m": 0,
+     "delta_60m": null,
      "vol_15m": 0,
      "last_trade_utc": "2026-11-07T15:05:00+00:00"
     }
@@ -38189,12 +40403,22 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:32:30.488002+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KPVD",
+    "time_utc": "2026-11-07T15:12:00Z",
+    "report_time_utc": "2026-11-07T15:12:00.000Z",
+    "wx": "-RA BR",
+    "raining": true,
+    "precip_in": 0.01,
+    "trace": false,
+    "pno": false,
+    "raw": "SPECI KPVD 071512Z 35008KT 2SM -RA BR BKN008 OVC013 14/14 A2974 RMK AO2 P0001 T01440139 $"
+   },
    "metar_day": {
-    "n_reports": 91,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "n_reports": 90,
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
-    "window_from_utc": "2026-11-06T09:37:00Z",
+    "window_from_utc": "2026-11-06T09:45:00Z",
     "pno_reports_utc": [],
     "pno_reports_today": 0,
     "pno_first_utc": null,
@@ -38204,7 +40428,85 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KSFZ",
+     "dist_km": 22.3,
+     "bearing": "N",
+     "lat": 41.9168,
+     "lon": -71.4924,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.02,
+     "time_utc": "2026-11-07T14:56:00Z"
+    },
+    {
+     "id": "K1B9",
+     "dist_km": 36.3,
+     "bearing": "NE",
+     "lat": 42,
+     "lon": -71.197,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.01,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KTAN",
+     "dist_km": 37.8,
+     "bearing": "NE",
+     "lat": 41.8756,
+     "lon": -71.0208,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.005,
+     "time_utc": "2026-11-07T15:34:00Z"
+    },
+    {
+     "id": "KOWD",
+     "dist_km": 56.2,
+     "bearing": "N",
+     "lat": 42.1912,
+     "lon": -71.1732,
+     "wx": "-RA BR",
+     "raining": true,
+     "precip_in": 0.01,
+     "time_utc": "2026-11-07T15:09:00Z"
+    },
+    {
+     "id": "KOQU",
+     "dist_km": 13.7,
+     "bearing": "S",
+     "lat": 41.5995,
+     "lon": -71.4111,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T13:51:00Z"
+    },
+    {
+     "id": "KEWB",
+     "dist_km": 39.2,
+     "bearing": "E",
+     "lat": 41.6791,
+     "lon": -70.9591,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:24:00Z"
+    },
+    {
+     "id": "KWST",
+     "dist_km": 51.9,
+     "bearing": "SW",
+     "lat": 41.3509,
+     "lon": -71.8055,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:34:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.3,
@@ -38300,16 +40602,14 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
+    "RAINING AT THE GAUGE now (-RA BR), reported 15:12Z [the gauge's own report]",
+    "rain at KSFZ (22 km N), K1B9 (36 km NE), KTAN (38 km NE), KOWD (56 km N) [neighbour airport reports]",
     "model: echoes over the gauge at 9am, 10am, 11am, 6pm, 7pm [HRRR run]"
    ],
    "trend": {
     "delta_1h": -29,
     "delta_3h": -63,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      88
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       88
@@ -39457,6 +41757,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       26
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      26
      ]
     ]
    }
@@ -39562,7 +41866,7 @@
      "hours": 6
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -39681,28 +41985,38 @@
     "yes_bid": 0.69,
     "yes_ask": 0.71,
     "last": 0.71,
-    "yes_bid_size": 106.0,
-    "yes_ask_size": 18.91,
-    "volume": 6386.57,
-    "open_interest": 3295.26,
+    "yes_bid_size": 81.0,
+    "yes_ask_size": 7.15,
+    "volume": 6399.33,
+    "open_interest": 3308.02,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:39.418175+00:00",
+    "fetched_utc": "2026-11-07T15:39:22.294305+00:00",
     "gap": 20,
     "momentum": {
      "now": 71,
      "delta_15m": 6,
-     "delta_60m": -1,
-     "vol_15m": 34,
-     "last_trade_utc": "2026-11-07T15:32:00+00:00"
+     "delta_60m": 5,
+     "vol_15m": 40,
+     "last_trade_utc": "2026-11-07T15:38:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KSAT",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KSAT 071451Z 36010G16KT 10SM SCT060 BKN080 OVC250 17/12 A3014 RMK AO2 SLP194 T01670122 53021 $"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -39714,7 +42028,85 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KSKF",
+     "dist_km": 19.4,
+     "bearing": "SW",
+     "lat": 29.392,
+     "lon": -98.581,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KRND",
+     "dist_km": 20.9,
+     "bearing": "E",
+     "lat": 29.537,
+     "lon": -98.268,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KSSF",
+     "dist_km": 22.9,
+     "bearing": "S",
+     "lat": 29.339,
+     "lon": -98.472,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "K5C1",
+     "dist_km": 28.9,
+     "bearing": "NW",
+     "lat": 29.7267,
+     "lon": -98.6964,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KCVB",
+     "dist_km": 41.9,
+     "bearing": "SW",
+     "lat": 29.343,
+     "lon": -98.8497,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KBAZ",
+     "dist_km": 46.1,
+     "bearing": "NE",
+     "lat": 29.7089,
+     "lon": -98.0459,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:51:00Z"
+    },
+    {
+     "id": "KSEQ",
+     "dist_km": 55.8,
+     "bearing": "E",
+     "lat": 29.566,
+     "lon": -97.908,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:25:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.0,
@@ -39821,16 +42213,12 @@
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
     "model: echoes over the gauge at 10am, 11am, 12pm, 1pm, 4pm [HRRR run]",
-    "price +6 in 15 min, -1 in 1 h, 34 contracts in 15 min [Kalshi]"
+    "price +6 in 15 min, +5 in 1 h, 40 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": -1,
     "delta_3h": -1,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -40978,6 +43366,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       51
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      51
      ]
     ]
    }
@@ -41093,7 +43485,7 @@
      "hours": 4
     },
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -41213,11 +43605,11 @@
     "yes_ask": 0.95,
     "last": 0.94,
     "yes_bid_size": 874.07,
-    "yes_ask_size": 61.0,
+    "yes_ask_size": 57.0,
     "volume": 3486.31,
     "open_interest": 2306.58,
     "close_time": "2026-11-08T08:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:39.766541+00:00",
+    "fetched_utc": "2026-11-07T15:39:22.258300+00:00",
     "gap": -5,
     "momentum": {
      "now": 94,
@@ -41237,10 +43629,20 @@
    ],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KSEA",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KSEA 071453Z 00000KT 10SM BKN100 BKN200 09/09 A3002 RMK AO2 SLP172 T00890089 56025"
+   },
    "metar_day": {
     "n_reports": 45,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -41252,14 +43654,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KPLU",
+     "dist_km": 38.3,
+     "bearing": "S",
+     "lat": 47.1005,
+     "lon": -122.2853,
+     "wx": "-RA",
+     "raining": true,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KRNT",
+     "dist_km": 9.3,
+     "bearing": "NE",
+     "lat": 47.4951,
+     "lon": -122.2144,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KBFI",
+     "dist_km": 11.2,
+     "bearing": "N",
+     "lat": 47.5455,
+     "lon": -122.3148,
+     "wx": "FG",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:20:00Z"
+    },
+    {
+     "id": "KTIW",
+     "dist_km": 27.9,
+     "bearing": "SW",
+     "lat": 47.2674,
+     "lon": -122.5762,
+     "wx": "FG",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:20:00Z"
+    },
+    {
+     "id": "KPWT",
+     "dist_km": 34.0,
+     "bearing": "W",
+     "lat": 47.4942,
+     "lon": -122.7594,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:28:00Z"
+    },
+    {
+     "id": "KTCM",
+     "dist_km": 35.1,
+     "bearing": "S",
+     "lat": 47.149,
+     "lon": -122.475,
+     "wx": "FG",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:05:00Z"
+    },
+    {
+     "id": "KGRF",
+     "dist_km": 45.4,
+     "bearing": "SW",
+     "lat": 47.079,
+     "lon": -122.58,
+     "wx": "FG",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KPAE",
+     "dist_km": 53.3,
+     "bearing": "N",
+     "lat": 47.9232,
+     "lon": -122.2831,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 0.1,
-    "near60_pct": 0.2,
+    "near60_pct": 0.1,
     "nearest_km": 23.0,
     "nearest_dir": "S",
-    "_n": 16,
+    "_n": 8,
     "site": "ATX",
     "motion": null
    },
@@ -41353,6 +43844,7 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
+    "rain at KPLU (38 km S) [neighbour airport reports]",
     "model: echoes over the gauge at 8pm, 9pm, 10pm, 11pm [HRRR run]",
     "price -2 in 15 min, -3 in 1 h, 320 contracts in 15 min [Kalshi]"
    ],
@@ -41360,10 +43852,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      79
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       79
@@ -42511,6 +44999,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       100
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      100
      ]
     ]
    }
@@ -42621,7 +45113,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -42745,7 +45237,7 @@
     "volume": 762.51,
     "open_interest": 762.51,
     "close_time": "2026-11-08T08:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:42.270583+00:00",
+    "fetched_utc": "2026-11-07T15:39:25.524046+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -42765,10 +45257,20 @@
    ],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KSFO",
+    "time_utc": "2026-11-07T14:56:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KSFO 071456Z 00000KT 10SM FEW200 11/09 A3008 RMK AO2 SLP185 T01110089 53005 $"
+   },
    "metar_day": {
     "n_reports": 30,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:56:00Z",
     "pno_reports_utc": [],
@@ -42780,14 +45282,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KSQL",
+     "dist_km": 15.8,
+     "bearing": "SE",
+     "lat": 37.5119,
+     "lon": -122.2483,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KOAK",
+     "dist_km": 16.0,
+     "bearing": "NE",
+     "lat": 37.7178,
+     "lon": -122.233,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KHAF",
+     "dist_km": 16.7,
+     "bearing": "SW",
+     "lat": 37.5136,
+     "lon": -122.4996,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    },
+    {
+     "id": "KHWD",
+     "dist_km": 22.0,
+     "bearing": "E",
+     "lat": 37.6589,
+     "lon": -122.1212,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KNUQ",
+     "dist_km": 36.7,
+     "bearing": "SE",
+     "lat": 37.4059,
+     "lon": -122.0491,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KSJC",
+     "dist_km": 48.5,
+     "bearing": "SE",
+     "lat": 37.3594,
+     "lon": -121.9244,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KLVK",
+     "dist_km": 49.2,
+     "bearing": "E",
+     "lat": 37.6931,
+     "lon": -121.8149,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KCCR",
+     "dist_km": 49.7,
+     "bearing": "NE",
+     "lat": 37.9916,
+     "lon": -122.0527,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
-    "near30_pct": 0.0,
+    "near30_pct": 0.1,
     "near60_pct": 0.1,
-    "nearest_km": 47.0,
-    "nearest_dir": "SE",
-    "_n": 9,
+    "nearest_km": 21.1,
+    "nearest_dir": "N",
+    "_n": 12,
     "site": "MUX",
     "motion": null
    },
@@ -42890,10 +45481,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -44041,6 +46628,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -44146,7 +46737,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -44264,29 +46855,39 @@
     "status": "active",
     "yes_bid": 0.01,
     "yes_ask": 0.02,
-    "last": 0.02,
-    "yes_bid_size": 43.69,
-    "yes_ask_size": 383.39,
-    "volume": 1950.29,
+    "last": 0.01,
+    "yes_bid_size": 20.0,
+    "yes_ask_size": 433.39,
+    "volume": 1950.94,
     "open_interest": 1704.2,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:46.657425+00:00",
+    "fetched_utc": "2026-11-07T15:39:30.345073+00:00",
     "gap": 2,
     "momentum": {
      "now": 2,
      "delta_15m": 0,
      "delta_60m": null,
-     "vol_15m": 0,
-     "last_trade_utc": "2026-11-07T14:39:00+00:00"
+     "vol_15m": 5,
+     "last_trade_utc": "2026-11-07T15:36:00+00:00"
     }
    },
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:14:30.451451+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KSGF",
+    "time_utc": "2026-11-07T15:10:00Z",
+    "report_time_utc": "2026-11-07T15:10:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "SPECI KSGF 071510Z 13005KT 10SM OVC015 06/02 A3025 RMK AO2 T00610022"
+   },
    "metar_day": {
     "n_reports": 36,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:52:00Z",
     "pno_reports_utc": [],
@@ -44301,11 +46902,11 @@
    "neighbors": [],
    "radar": {
     "near10_pct": 11.5,
-    "near30_pct": 14.3,
-    "near60_pct": 13.3,
+    "near30_pct": 13.0,
+    "near60_pct": 11.5,
     "nearest_km": 2.6,
     "nearest_dir": "E",
-    "_n": 1179,
+    "_n": 1022,
     "site": "SGF",
     "motion": null
    },
@@ -44410,10 +47011,6 @@
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      1
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       1
@@ -45561,6 +48158,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -45661,7 +48262,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -45785,7 +48386,7 @@
     "volume": 2601.3,
     "open_interest": 2030.57,
     "close_time": "2026-11-08T06:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:48.060353+00:00",
+    "fetched_utc": "2026-11-07T15:39:31.455673+00:00",
     "gap": 1,
     "momentum": {
      "now": 1,
@@ -45798,10 +48399,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KSTL",
+    "time_utc": "2026-11-07T14:51:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KSTL 071451Z COR 26003KT 10SM FEW150 BKN250 06/03 A3028 RMK AO2 SLP257 T00560028 53012"
+   },
    "metar_day": {
     "n_reports": 50,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:51:00Z",
     "pno_reports_utc": [],
@@ -45813,19 +48424,86 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KSET",
+     "dist_km": 20.4,
+     "bearing": "N",
+     "lat": 38.9304,
+     "lon": -90.4329,
+     "wx": "BR",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:30:00Z"
+    },
+    {
+     "id": "KSUS",
+     "dist_km": 26.7,
+     "bearing": "SW",
+     "lat": 38.6575,
+     "lon": -90.6557,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:20:00Z"
+    },
+    {
+     "id": "KCPS",
+     "dist_km": 27.7,
+     "bearing": "SE",
+     "lat": 38.57,
+     "lon": -90.156,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:53:00Z"
+    },
+    {
+     "id": "KALN",
+     "dist_km": 33.3,
+     "bearing": "NE",
+     "lat": 38.8897,
+     "lon": -90.0316,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:50:00Z"
+    },
+    {
+     "id": "KBLV",
+     "dist_km": 51.6,
+     "bearing": "SE",
+     "lat": 38.54,
+     "lon": -89.845,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KFYG",
+     "dist_km": 56.7,
+     "bearing": "W",
+     "lat": 38.5877,
+     "lon": -90.9915,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    }
+   ],
    "radar": {
-    "near10_pct": 13.3,
-    "near30_pct": 16.6,
-    "near60_pct": 11.0,
+    "near10_pct": 15.1,
+    "near30_pct": 15.1,
+    "near60_pct": 10.0,
     "nearest_km": 1.1,
     "nearest_dir": "N",
-    "_n": 940,
+    "_n": 857,
     "site": "LSX",
     "motion": {
-     "dir": null,
-     "kmh": 0,
-     "toward_gauge": null
+     "dir": "S",
+     "kmh": 11,
+     "toward_gauge": true
     }
    },
    "radar_down": null,
@@ -45923,17 +48601,13 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "echoes over the gauge, 13.3% of the 10 km ring [site radar, 5 min]",
+    "echoes over the gauge, 15.1% of the 10 km ring [site radar, 5 min]",
     "price -1 in 15 min, +0 in 1 h, 70 contracts in 15 min [Kalshi]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      0
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       0
@@ -47081,6 +49755,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       0
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      0
      ]
     ]
    }
@@ -47176,7 +49854,7 @@
     ],
     "window": null,
     "source": "NWS api.weather.gov hourly",
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "error": null,
     "hourly_seen": [
      [
@@ -47300,12 +49978,12 @@
     "volume": 2092.0,
     "open_interest": 1919.7,
     "close_time": "2026-11-08T05:00:00Z",
-    "fetched_utc": "2026-11-07T15:36:42.445707+00:00",
+    "fetched_utc": "2026-11-07T15:39:25.581460+00:00",
     "gap": -2,
     "momentum": {
      "now": 1,
-     "delta_15m": -1,
-     "delta_60m": -1,
+     "delta_15m": null,
+     "delta_60m": null,
      "vol_15m": 20,
      "last_trade_utc": "2026-11-07T15:32:00+00:00"
     }
@@ -47313,10 +49991,20 @@
    "nws_alerts": [],
    "nws_alerts_at": "2026-11-07T15:17:30.456938+00:00",
    "overdue": false,
-   "metar": null,
+   "metar": {
+    "id": "KTTN",
+    "time_utc": "2026-11-07T14:53:00Z",
+    "report_time_utc": "2026-11-07T15:00:00.000Z",
+    "wx": "",
+    "raining": false,
+    "precip_in": null,
+    "trace": false,
+    "pno": false,
+    "raw": "METAR KTTN 071453Z 29010G21KT 10SM BKN075 12/04 A2985 RMK AO2 SLP104 T01170039 50006"
+   },
    "metar_day": {
     "n_reports": 64,
-    "fetched_utc": "2026-11-07T15:35:30.746997+00:00",
+    "fetched_utc": "2026-11-07T15:38:30.522602+00:00",
     "day": "2026-11-07",
     "window_from_utc": "2026-11-06T09:53:00Z",
     "pno_reports_utc": [],
@@ -47328,14 +50016,103 @@
     "sensor": "ok",
     "note": null
    },
-   "neighbors": [],
+   "neighbors": [
+    {
+     "id": "KDYL",
+     "dist_km": 26.7,
+     "bearing": "W",
+     "lat": 40.3302,
+     "lon": -75.1228,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KPNE",
+     "dist_km": 27.6,
+     "bearing": "SW",
+     "lat": 40.0789,
+     "lon": -75.0133,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KWRI",
+     "dist_km": 34.7,
+     "bearing": "SE",
+     "lat": 40.016,
+     "lon": -74.591,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:55:00Z"
+    },
+    {
+     "id": "KVAY",
+     "dist_km": 37.4,
+     "bearing": "S",
+     "lat": 39.9408,
+     "lon": -74.8407,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T14:54:00Z"
+    },
+    {
+     "id": "KSMQ",
+     "dist_km": 40.6,
+     "bearing": "N",
+     "lat": 40.6241,
+     "lon": -74.669,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:12:00Z"
+    },
+    {
+     "id": "KLOM",
+     "dist_km": 41.4,
+     "bearing": "W",
+     "lat": 40.1376,
+     "lon": -75.2684,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KCKZ",
+     "dist_km": 42.4,
+     "bearing": "W",
+     "lat": 40.3864,
+     "lon": -75.2953,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:15:00Z"
+    },
+    {
+     "id": "KUKT",
+     "dist_km": 51.0,
+     "bearing": "W",
+     "lat": 40.4368,
+     "lon": -75.3802,
+     "wx": "",
+     "raining": false,
+     "precip_in": null,
+     "time_utc": "2026-11-07T15:35:00Z"
+    }
+   ],
    "radar": {
     "near10_pct": 0.0,
     "near30_pct": 1.7,
-    "near60_pct": 3.7,
+    "near60_pct": 4.4,
     "nearest_km": 11.5,
     "nearest_dir": "S",
-    "_n": 333,
+    "_n": 391,
     "site": "DIX",
     "motion": null
    },
@@ -47434,17 +50211,12 @@
    ],
    "hrrr_init": "2026-11-07T13:00:00Z",
    "situation": [
-    "nearest echo 11.5 km S [site radar, 5 min]",
-    "price -1 in 15 min, -1 in 1 h, 20 contracts in 15 min [Kalshi]"
+    "nearest echo 11.5 km S [site radar, 5 min]"
    ],
    "trend": {
     "delta_1h": 0,
     "delta_3h": 0,
     "history": [
-     [
-      "2026-11-07T01:14:31.191554+00:00",
-      12
-     ],
      [
       "2026-11-07T01:17:31.187643+00:00",
       12
@@ -48592,6 +51364,10 @@
      [
       "2026-11-07T15:35:30.746997+00:00",
       4
+     ],
+     [
+      "2026-11-07T15:38:30.522602+00:00",
+      4
      ]
     ]
    }
@@ -48619,12 +51395,16 @@
    "BOS"
   ],
   "overdue": [],
-  "raining_at_gauge": [],
+  "raining_at_gauge": [
+   "BOS",
+   "PVD"
+  ],
   "rain_nearby": [
    "DEN",
    "IND",
    "MIA",
    "PIT",
+   "SEA",
    "SGF",
    "STL"
   ],
@@ -48635,23 +51415,23 @@
    ],
    [
     "PIT",
-    3
+    5
+   ],
+   [
+    "CLL",
+    -3
    ],
    [
     "AUS",
     2
    ],
    [
-    "MIA",
+    "EWR",
     2
    ],
    [
     "SEA",
     -2
-   ],
-   [
-    "CLL",
-    -1
    ]
   ],
   "weather_alerts": [
@@ -48713,7 +51493,7 @@
    ],
    [
     "MIA",
-    15
+    16
    ],
    [
     "HOU",
