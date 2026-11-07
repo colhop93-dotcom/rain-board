@@ -1,6 +1,6 @@
 {
  "schema": "019a.briefing/1",
- "generated_utc": "2026-11-07T15:17:47Z",
+ "generated_utc": "2026-11-07T15:32:47Z",
  "n": 32,
  "errors": 0,
  "method": "deterministic: templates over the NWS point forecast, the TAF and active alerts, plus verbatim keyword-selected sentences from the office's AFD; no generated prose",
@@ -38,7 +38,16 @@
      "wording": "Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KABQ (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:26:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KABQ 071126Z 0712/0812 36007KT P6SM SCT010 OVC050 FM071500 36005KT P6SM SCT100 SCT200 FM071800 VRB04KT P6SM FEW100",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KABQ"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS ABQ Area Forecast Discussion",
@@ -76,7 +85,8 @@
    "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 1% around 9:00 AM CT (mostly sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
+    "The TAF for KABQ (issued 5:26 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -88,6 +98,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -102,13 +113,10 @@
     ]
    },
    "uncertainty": [],
-   "unavailable": [
-    "TAF: no row for KABQ in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "425bfc5ee5a8995d",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "e32c11b0f87a6c59",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KATL": {
    "city": "ATL",
@@ -143,7 +151,16 @@
      "wording": "Mostly Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KATL (aviationweather.gov)",
+    "issued_utc": "2026-11-07T13:34:00Z",
+    "valid_from_utc": "2026-11-07T14:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KATL 071334Z 0714/0818 31010KT P6SM FEW250 FM080400 34004KT P6SM FEW250 FM081100 03004KT P6SM FEW250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KATL"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS FFC Area Forecast Discussion",
@@ -185,7 +202,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT.",
+    "The TAF for KATL (issued 7:34 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -197,6 +215,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -216,13 +235,10 @@
     "As surface high pressure approaches the Southeast, a tight pressure gradient will lead to breezy NW winds in portions of north and west Georgia, which could be between 10-15 mph with gusts up to 25 mph.",
     "Rain chances may return late next week into next weekend with broad troughing over much of the eastern CONUS potentially bringing in moisture from the west as an area of low pressure pushes into the gulf."
    ],
-   "unavailable": [
-    "TAF: no row for KATL in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "3a91efd967ddbe11",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "d815718e2807e7cb",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KAUS": {
    "city": "AUS",
@@ -257,7 +273,56 @@
      "wording": "Light Rain"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KAUS (aviationweather.gov)",
+    "issued_utc": "2026-11-07T15:30:00Z",
+    "valid_from_utc": "2026-11-07T16:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KAUS 071530Z 0716/0818 02009KT P6SM BKN040 OVC250 FM080200 02008KT 5SM -RA BR SCT015 BKN025 OVC040 FM081000 05007KT 5SM -RA BR BKN015 OVC025 FM081500 06007KT 4SM -RA BR BKN007 OVC015",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-08T02:00:00Z",
+      "to_utc": "2026-11-08T10:00:00Z",
+      "wx": "-RA BR",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 20.0,
+      "to_local_hour": 28.0,
+      "before_cutoff": true,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": true
+     },
+     {
+      "from_utc": "2026-11-08T10:00:00Z",
+      "to_utc": "2026-11-08T15:00:00Z",
+      "wx": "-RA BR",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 28.0,
+      "to_local_hour": 33.0,
+      "before_cutoff": false,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": false
+     },
+     {
+      "from_utc": "2026-11-08T15:00:00Z",
+      "to_utc": "2026-11-08T18:00:00Z",
+      "wx": "-RA BR",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 33.0,
+      "to_local_hour": 36.0,
+      "before_cutoff": false,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": false
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KAUS"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS EWX Area Forecast Discussion",
@@ -292,14 +357,16 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain possible before the cutoff: the point forecast peaks at 40% around 6:00 PM CT.",
+   "headline": "Rain possible before the cutoff: the point forecast peaks at 40% around 6:00 PM CT. The TAF carries -RA BR from 8:00 PM CT to 12:00 AM CT.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 40% around 6:00 PM CT (chance light rain); the first hour at 30% or more is 6:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 96% around 9:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 96% around 9:00 AM CT.",
+    "The TAF for KAUS (issued 9:30 AM CT) carries -RA BR 8:00 PM CT to 4:00 AM CT (FM); -RA BR 4:00 AM CT to 9:00 AM CT (FM), after the cutoff; -RA BR 9:00 AM CT to 12:00 PM CT (FM), after the cutoff."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 40% before the cutoff"
+     "NWS point forecast reaches 40% before the cutoff",
+     "TAF carries -RA BR before the cutoff"
     ],
     "discussion": [
      "(Today through Sunday) Issued at 1223 AM CST Sat Nov 7 2026 As has been previously mentioned, a shortwave is forecast to eventually amplify and move southward as a nearly cut-off low while it approaches Texas.",
@@ -322,13 +389,10 @@
     "The combination of these two moisture streams overriding atop cool air (isentropic lift) will support a rather broad rain event that may start as early as this morning along the Rio Grande and Edwards Plateau.",
     "There is however the possibility that some of the embedded cells could include thunderstorms, which would then enhance locally heavier rain rates, which could reach upwards to the 1 to 2 inch per hour range."
    ],
-   "unavailable": [
-    "TAF: no row for KAUS in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "9ad23b777ddd8514",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "119826dadf5a6d60",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KBOS": {
    "city": "BOS",
@@ -363,7 +427,43 @@
      "wording": "Rain Showers Likely"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KBOS (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:50:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KBOS 071450Z 0715/0818 02007KT 3SM SHRA OVC008 TEMPO 0715/0716 3SM SHRA FM071600 02006KT 3SM BR OVC003 FM080200 28005KT P6SM OVC005 FM080500 26007KT P6SM BKN008 FM081000 28012G20KT 4SM BR OVC010 FM081300 29014G24KT P6SM SCT020",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-07T15:00:00Z",
+      "to_utc": "2026-11-07T16:00:00Z",
+      "wx": "SHRA",
+      "change": null,
+      "prob": null,
+      "from_local_hour": 10.0,
+      "to_local_hour": 11.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
+      "elapsed": false,
+      "still_before_cutoff": true
+     },
+     {
+      "from_utc": "2026-11-07T15:00:00Z",
+      "to_utc": "2026-11-07T16:00:00Z",
+      "wx": "SHRA",
+      "change": "TEMPO",
+      "prob": null,
+      "from_local_hour": 10.0,
+      "to_local_hour": 11.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
+      "elapsed": false,
+      "still_before_cutoff": true
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KBOS"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS BOX Area Forecast Discussion",
@@ -403,11 +503,13 @@
    "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 44% around 9:00 AM CT (chance rain showers); the first hour at 30% or more is 9:00 AM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 72% around 2:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 72% around 2:00 AM CT.",
+    "The TAF for KBOS (issued 8:50 AM CT) carries SHRA 9:00 AM CT to 10:00 AM CT; SHRA 9:00 AM CT to 10:00 AM CT (TEMPO)."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 44% before the cutoff"
+     "NWS point forecast reaches 44% before the cutoff",
+     "TAF carries SHRA before the cutoff"
     ],
     "discussion": [
      "Another round of lighter showers this afternoon into Sunday.",
@@ -432,13 +534,10 @@
     "Cooler and drier conditions arrive next week, though it could turn unsettled once more towards the second half of the week.",
     "The greatest coverage of showers should be towards northern MA."
    ],
-   "unavailable": [
-    "TAF: no row for KBOS in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "76927c530e05f1a4",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "38d731fec777b333",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KORD": {
    "city": "CHI",
@@ -473,7 +572,16 @@
      "wording": "Partly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KORD (aviationweather.gov)",
+    "issued_utc": "2026-11-07T15:01:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KORD 071501Z 0715/0818 26009KT P6SM FEW035 SCT250 FM080000 23008KT P6SM SCT250 FM081000 26012G22KT P6SM FEW005 SCT015 BKN250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KORD"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS LOT Area Forecast Discussion",
@@ -506,7 +614,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (mostly sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KORD (issued 9:01 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -518,6 +627,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": []
@@ -530,13 +640,10 @@
     "Low temperatures will also generally trend upward from this morning's widespread freezing/near-freezing conditions, though additional near to slightly below freezing lows could be observed in some spots again Sunday morning and once more Monday morning.",
     "Clear nocturnal skies and light/calm winds may lead to some localized patchy fog development this morning in a few locations, but this isn't expected to become a widespread issue."
    ],
-   "unavailable": [
-    "TAF: no row for KORD in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "12c138942e94a233",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "b071fed7f209625e",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KCLL": {
    "city": "CLL",
@@ -571,7 +678,30 @@
      "wording": "Chance Rain Showers"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KCLL (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:20:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KCLL 071120Z 0712/0812 VRB05KT P6SM OVC060 FM071400 06008KT P6SM OVC060 FM080000 VRB05KT P6SM SCT060 BKN100 PROB30 0803/0809 -SHRA",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-08T03:00:00Z",
+      "to_utc": "2026-11-08T09:00:00Z",
+      "wx": "-SHRA",
+      "change": "PROB",
+      "prob": 30,
+      "from_local_hour": 21.0,
+      "to_local_hour": 27.0,
+      "before_cutoff": true,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": true
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KCLL"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS HGX Area Forecast Discussion",
@@ -609,14 +739,16 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain possible before the cutoff: the point forecast peaks at 31% around 9:00 PM CT.",
+   "headline": "Rain possible before the cutoff: the point forecast peaks at 31% around 9:00 PM CT. The TAF carries -SHRA from 9:00 PM CT to 12:00 AM CT.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 31% around 9:00 PM CT (chance rain showers); the first hour at 30% or more is 9:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 39% around 6:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 39% around 6:00 AM CT.",
+    "The TAF for KCLL (issued 5:20 AM CT) carries -SHRA 9:00 PM CT to 3:00 AM CT (PROB)."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 31% before the cutoff"
+     "NWS point forecast reaches 31% before the cutoff",
+     "TAF carries -SHRA before the cutoff"
     ],
     "discussion": [
      "Issued at 1234 AM CST Sat Nov 7 2026 The next western trough/cut-off low is currently dipping southward across AZ and will slowly track eastward across northern Mexico this weekend.",
@@ -642,13 +774,10 @@
     "We may see some cooler weather filter in later next week.",
     "Moisture feeding up and over this trough in combination with approaching large scale lift and a series of disturbances moving overhead...should generate increasing rain coverage across the Big Bend area and south Texas later tonight and Sunday."
    ],
-   "unavailable": [
-    "TAF: no row for KCLL in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "59fdb8419da150d0",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "9a57034673150bed",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KCMH": {
    "city": "CMH",
@@ -683,7 +812,16 @@
      "wording": "Partly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KCMH (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:31:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KCMH 071131Z 0712/0812 30012KT P6SM OVC040 TEMPO 0712/0715 OVC030 FM080200 25004KT P6SM SKC",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KCMH"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS ILN Area Forecast Discussion",
@@ -731,6 +869,7 @@
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 1% around 9:00 AM CT (mostly cloudy).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT.",
+    "The TAF for KCMH (issued 5:31 AM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Freeze Warning. A watch is a watch, not a gauge hit."
    ],
    "supports": {
@@ -743,6 +882,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -761,13 +901,10 @@
    "uncertainty": [
     "Even if temperatures do not reach 32 in some urban locations - expect frost to develop."
    ],
-   "unavailable": [
-    "TAF: no row for KCMH in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "c148d4ae4be7f0f9",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "0944a54f25e628cc",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KDFW": {
    "city": "DAL",
@@ -802,7 +939,16 @@
      "wording": "Mostly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KDFW (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:57:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KDFW 071457Z 0715/0818 02008KT P6SM BKN060 BKN200",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KDFW"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS FWD Area Forecast Discussion",
@@ -843,7 +989,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 9%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 9% around 6:00 PM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 11% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 11% around 12:00 AM CT.",
+    "The TAF for KDFW (issued 8:57 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -855,6 +1002,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": []
@@ -872,13 +1020,10 @@
     "Most areas will see rainfall amounts of a tenth of an inch or less, but parts of western Central Texas could see over a half inch of rain.",
     "Weak lift ahead of this feature will begin spreading into our CWA this morning as the system shifts eastward, which could result in a few sprinkles breaking out areawide."
    ],
-   "unavailable": [
-    "TAF: no row for KDFW in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "cb4fb138cac94c9d",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "5cab369278fd3be6",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KDCA": {
    "city": "DC",
@@ -913,7 +1058,16 @@
      "wording": "Mostly Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KDCA (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:52:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KDCA 071452Z 0715/0818 30014G23KT P6SM FEW060 FM071800 30015G26KT P6SM FEW050 FM072300 30013G22KT P6SM FEW050 FM080300 30010G18KT P6SM FEW050",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KDCA"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS LWX Area Forecast Discussion",
@@ -953,7 +1107,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 1%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 1% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT.",
+    "The TAF for KDCA (issued 8:52 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -965,6 +1120,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -982,13 +1138,10 @@
     "If this happens, near freezing temperatures would result.",
     "May consider frost/freeze headlines for Fauquier, Culpeper, Stafford, Spotsylvania, Prince William, Orange, Greene, Madison, Rappahannock, Nelson, and Albemarle Counties from late this evening through Sunday morning."
    ],
-   "unavailable": [
-    "TAF: no row for KDCA in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "fb22652a111c79c4",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "fd6bb72fcd272a92",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KDEN": {
    "city": "DEN",
@@ -1023,7 +1176,16 @@
      "wording": "Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KDEN (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:48:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KDEN 071448Z 0715/0818 21009KT P6SM SKC FM071800 VRB05KT P6SM FEW220 FM072000 05007KT P6SM SCT220 FM080000 09006KT P6SM BKN200 FM080200 15007KT P6SM BKN200 FM080500 21010KT P6SM FEW200",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KDEN"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS BOU Area Forecast Discussion",
@@ -1059,7 +1221,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 1:00 AM CT.",
+    "The TAF for KDEN (issued 8:48 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -1067,6 +1230,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -1086,13 +1250,10 @@
     "There could be some slight fluctuations in high temperatures during this period depending on if we can get some cold air advection as well as less of an influence from the upper-level ridge.",
     "A trough looks to pass off to our northeast on Wednesday, but could bring some breezier conditions for the eastern plains."
    ],
-   "unavailable": [
-    "TAF: no row for KDEN in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "fc950fbe38faedec",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "6d8ed2ceae9e2e1c",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KEWR": {
    "city": "EWR",
@@ -1127,7 +1288,16 @@
      "wording": "Partly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KEWR (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:30:00Z",
+    "valid_from_utc": "2026-11-07T14:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KEWR 071430Z 0714/0818 29008KT P6SM FEW030 SCT100 FM071800 28012G20KT P6SM SCT050 FM072200 28016G24KT P6SM SCT050 TEMPO 0806/0810 BKN035 FM081400 30016G24KT P6SM SCT045",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KEWR"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS OKX Area Forecast Discussion",
@@ -1176,7 +1346,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 10%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 10% around 9:00 PM CT (partly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 10% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 10% around 11:00 PM CT.",
+    "The TAF for KEWR (issued 8:30 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -1188,6 +1359,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -1209,13 +1381,10 @@
    "uncertainty": [
     "The cyclonic flow aloft will keep extra clouds and perhaps a brief isolated to scattered rain shower could occur within the region today into tonight, mainly across the northern half of the region which will have relatively colder air aloft."
    ],
-   "unavailable": [
-    "TAF: no row for KEWR in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "3fd597b1605122ad",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "a9b6635072550075",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KHOU": {
    "city": "HOU",
@@ -1250,7 +1419,16 @@
      "wording": "Slight Chance Rain Showers"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KHOU (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:59:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KHOU 071459Z 0715/0812 09009KT P6SM OVC060 FM080000 VRB05KT P6SM FEW060 BKN100",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KHOU"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS HGX Area Forecast Discussion",
@@ -1291,7 +1469,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 14%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 14% around 9:00 PM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 20% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 20% around 12:00 AM CT.",
+    "The TAF for KHOU (issued 8:59 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -1302,6 +1481,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -1321,13 +1501,10 @@
     "We may see some cooler weather filter in later next week.",
     "Moisture feeding up and over this trough in combination with approaching large scale lift and a series of disturbances moving overhead...should generate increasing rain coverage across the Big Bend area and south Texas later tonight and Sunday."
    ],
-   "unavailable": [
-    "TAF: no row for KHOU in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "6e6653b682837033",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "30828ed29c794d23",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KIND": {
    "city": "IND",
@@ -1362,7 +1539,16 @@
      "wording": "Mostly Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KIND (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:23:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KIND 071123Z 0712/0818 29006KT P6SM FEW250 FM071600 30009KT P6SM BKN250 FM080100 25005KT P6SM FEW200 FM081500 23013G22KT P6SM SCT250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KIND"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS IND Area Forecast Discussion",
@@ -1393,7 +1579,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT.",
+    "The TAF for KIND (issued 5:23 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -1404,6 +1591,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -1416,13 +1604,10 @@
     "aviation": []
    },
    "uncertainty": [],
-   "unavailable": [
-    "TAF: no row for KIND in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "5fc157f35c5d25fb",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "31eaa7bed2bb3bd5",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KLAX": {
    "city": "LAX",
@@ -1457,7 +1642,16 @@
      "wording": "Mostly Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KLAX (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:32:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KLAX 071432Z 0715/0818 03005KT P6SM SKC FM072100 26010KT P6SM SKC FM080400 26005KT P6SM SKC FM080600 VRB03KT P6SM SKC",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KLAX"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS LOX Area Forecast Discussion",
@@ -1496,6 +1690,7 @@
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 2:00 AM CT.",
+    "The TAF for KLAX (issued 8:32 AM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Beach Hazards Statement. A watch is a watch, not a gauge hit."
    ],
    "supports": {
@@ -1504,6 +1699,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": []
@@ -1517,13 +1713,10 @@
     ]
    },
    "uncertainty": [],
-   "unavailable": [
-    "TAF: no row for KLAX in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "43eeaf66a8ef7b1a",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "a2b04bc3ea4befa7",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KLEX": {
    "city": "LEX",
@@ -1558,7 +1751,16 @@
      "wording": "Patchy Frost"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KLEX (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:20:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KLEX 071120Z 0712/0812 33003KT P6SM SKC FM071700 31007KT P6SM SKC FM080000 33003KT P6SM FEW250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KLEX"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS LMK Area Forecast Discussion",
@@ -1605,6 +1807,7 @@
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT.",
+    "The TAF for KLEX (issued 5:20 AM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Freeze Warning. A watch is a watch, not a gauge hit."
    ],
    "supports": {
@@ -1617,6 +1820,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -1635,13 +1839,10 @@
     "After the dissipation of any fog that does develop, it will be a mostly clear Saturday across the region, save for some upper-level clouds that may form in the afternoon.",
     "For us, guidance is having a shortwave trough swing over the region, though the exact timing is still uncertain."
    ],
-   "unavailable": [
-    "TAF: no row for KLEX in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "26cf631947bbccab",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "3b81f218f0517134",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KLAS": {
    "city": "LV",
@@ -1676,7 +1877,16 @@
      "wording": "Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KLAS (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:36:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KLAS 071436Z 0715/0818 VRB05KT P6SM SKC FM071800 04008KT P6SM SKC FM080300 25006KT P6SM SKC FM081200 VRB05KT P6SM SKC",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KLAS"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS VEF Area Forecast Discussion",
@@ -1709,7 +1919,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 2:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 2:00 AM CT.",
+    "The TAF for KLAS (issued 8:36 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -1719,6 +1930,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -1733,13 +1945,10 @@
    "uncertainty": [
     "At this range, specifics are quite limited and uncertain, but there is good agreement on the presence of a trough near the Pacific coast."
    ],
-   "unavailable": [
-    "TAF: no row for KLAS in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "577eff8e86a42b46",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "6e9ac9516a7d4e62",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KMIA": {
    "city": "MIA",
@@ -1774,7 +1983,30 @@
      "wording": "Slight Chance Rain Showers"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KMIA (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:57:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KMIA 071457Z 0715/0818 32004KT P6SM FEW030 FM071600 03007KT P6SM SCT050 FM071900 04007KT P6SM VCSH BKN050 FM080200 35004KT P6SM FEW050",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-07T19:00:00Z",
+      "to_utc": "2026-11-08T02:00:00Z",
+      "wx": "VCSH",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 14.0,
+      "to_local_hour": 21.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
+      "elapsed": false,
+      "still_before_cutoff": true
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KMIA"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS MFL Area Forecast Discussion",
@@ -1814,13 +2046,16 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "A low chance before the cutoff: the point forecast peaks at 21% around 4:00 PM CT.",
+   "headline": "A low chance before the cutoff: the point forecast peaks at 21% around 4:00 PM CT. The TAF carries VCSH from 1:00 PM CT to 8:00 PM CT.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 21% around 4:00 PM CT (slight chance rain showers).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 21% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 21% around 11:00 PM CT.",
+    "The TAF for KMIA (issued 8:57 AM CT) carries VCSH 1:00 PM CT to 8:00 PM CT (FM)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "TAF carries VCSH before the cutoff"
+    ],
     "discussion": [
      "(Today through Sunday) Issued at 159 AM EST Sat Nov 7 2026 A rather potent mid level low/trough complex will push through a good portion of the Eastern Seaboard today into tonight before gradually pushing off into the western Atlantic on Sunday.",
      "While the trough axis will remain well to the north of the region, it will suppress the mid level ridging to the southeast which will result in mostly zonal flow over South Florida this afternoon and through the rest of the weekend.",
@@ -1845,13 +2080,10 @@
     "A weakening frontal boundary could bring scattered showers to portions of the region this afternoon and tonight.",
     "The weakening frontal boundary moving into the region combined with an increase in lower level moisture could be enough to spark off some scattered shower activity this afternoon out ahead of the front."
    ],
-   "unavailable": [
-    "TAF: no row for KMIA in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "c2676a83130cf59c",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "bc44bdfac27f43ce",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KMSP": {
    "city": "MIN",
@@ -1863,9 +2095,9 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-07T15:02:53+00:00",
+    "generated_utc": "2026-11-07T15:32:52+00:00",
     "updated_utc": "2026-11-07T14:41:57+00:00",
-    "url": "https://api.weather.gov/gridpoints/MPX/115,68/forecast/hourly",
+    "url": "https://api.weather.gov/gridpoints/MPX/116,68/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 15,
@@ -1886,7 +2118,16 @@
      "wording": "Partly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KMSP (aviationweather.gov)",
+    "issued_utc": "2026-11-07T15:06:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KMSP 071506Z 0715/0818 20006KT P6SM SKC FM071800 22008KT P6SM SCT250 FM080600 27009KT P6SM FEW250 FM081200 30010KT P6SM FEW250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KMSP"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS MPX Area Forecast Discussion",
@@ -1927,7 +2168,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 2%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 2% around 8:00 PM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KMSP (issued 9:06 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -1939,6 +2181,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -1959,13 +2202,10 @@
     "Alongside this ridge, a lack of precipitation is expected due to continued dry air and subsidence from the ridge suppressing any omega that may try to form.",
     "Overall this quiet and above normal weather pattern looks to continue into the middle of the month, and we will have to see if it continues to hold on towards the later parts of the month as we approach the Thanksgiving holiday."
    ],
-   "unavailable": [
-    "TAF: no row for KMSP in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "833070a2e73550be",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "024eac2da2483d07",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KMKE": {
    "city": "MKE",
@@ -2000,7 +2240,16 @@
      "wording": "Mostly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KMKE (aviationweather.gov)",
+    "issued_utc": "2026-11-07T15:05:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KMKE 071505Z 0715/0818 29005KT P6SM FEW020 SCT250 FM071800 26007KT P6SM SCT250 FM080800 25010KT P6SM SCT250 FM081600 28013G22KT P6SM FEW250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KMKE"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS MKX Area Forecast Discussion",
@@ -2039,7 +2288,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KMKE (issued 9:05 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -2051,6 +2301,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -2066,13 +2317,10 @@
     "A colder airmass may return to the region later next week.",
     "Some lake effect rain showers may occur along the lakeshore on Thursday (15 to 30% chances) as favorable fetch and delta-T's will induce lake driven convection."
    ],
-   "unavailable": [
-    "TAF: no row for KMKE in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "1d637947ca4ffb7d",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "b93a859502b804b7",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KMSY": {
    "city": "NOLA",
@@ -2084,9 +2332,9 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-07T15:18:21+00:00",
+    "generated_utc": "2026-11-07T15:32:53+00:00",
     "updated_utc": "2026-11-07T06:57:28+00:00",
-    "url": "https://api.weather.gov/gridpoints/LIX/66,90/forecast/hourly",
+    "url": "https://api.weather.gov/gridpoints/LIX/67,90/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 15,
@@ -2107,7 +2355,16 @@
      "wording": "Mostly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KMSY (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:20:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KMSY 071120Z 0712/0818 04007KT P6SM SKC FM071700 36010KT P6SM FEW070 BKN250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KMSY"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS LIX Area Forecast Discussion",
@@ -2145,7 +2402,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (mostly sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KMSY (issued 5:20 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -2157,6 +2415,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -2172,13 +2431,10 @@
     "If there's any precipitation with that shortwave passage, it may not be much more than sprinkles out of a mid level cloud deck Tuesday afternoon.",
     "High temperatures likely to be in the 70s for most or all of the area through Monday, with a few areas possibly touching 80 on Tuesday if cloud cover isn't too extensive."
    ],
-   "unavailable": [
-    "TAF: no row for KMSY in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "36db7c67d7ec2c35",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "38e38d456d8c9eb1",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KNYC": {
    "city": "NYC",
@@ -2296,12 +2552,11 @@
     "The cyclonic flow aloft will keep extra clouds and perhaps a brief isolated to scattered rain shower could occur within the region today into tonight, mainly across the northern half of the region which will have relatively colder air aloft."
    ],
    "unavailable": [
-    "TAF: no row for KNYC in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
+    "TAF: no row for KNYC in this run"
    ],
    "inputs_hash": "92c9c9093d2f1461",
    "text_generated_utc": "2026-11-07T14:47:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KOKC": {
    "city": "OKC",
@@ -2336,7 +2591,16 @@
      "wording": "Patchy Fog"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KOKC (aviationweather.gov)",
+    "issued_utc": "2026-11-07T15:16:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KOKC 071516Z 0715/0812 VRB03KT P6SM SCT250 FM071600 VRB03KT P6SM BKN250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KOKC"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS OUN Area Forecast Discussion",
@@ -2385,6 +2649,7 @@
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (mostly cloudy).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KOKC (issued 9:16 AM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Dense Fog Advisory. A watch is a watch, not a gauge hit."
    ],
    "supports": {
@@ -2397,6 +2662,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -2414,13 +2680,10 @@
     "The coverage of high clouds should shift southward on Sunday with a bit more solar insolation/sunshine expected.",
     "Bias-corrected probabilistic guidance indicates little spread during these two days, which indicates high confidence that the relatively warm weather will continue."
    ],
-   "unavailable": [
-    "TAF: no row for KOKC in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "15d61763ad4f25d2",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "7cdc082ef4a2af3f",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KPHL": {
    "city": "PHIL",
@@ -2455,7 +2718,16 @@
      "wording": "Mostly Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KPHL (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:47:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KPHL 071447Z 0715/0818 30015G25KT P6SM FEW080 FM072300 29014G23KT P6SM SCT250 FM080200 28012KT P6SM SCT250 FM080800 28012G18KT P6SM BKN050 FM081300 28015G22KT P6SM BKN250",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KPHL"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS PHI Area Forecast Discussion",
@@ -2492,7 +2764,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 2%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 2% around 6:00 PM CT (clear).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 2% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 2% around 11:00 PM CT.",
+    "The TAF for KPHL (issued 8:47 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -2504,6 +2777,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -2518,13 +2792,10 @@
     ]
    },
    "uncertainty": [],
-   "unavailable": [
-    "TAF: no row for KPHL in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "b18d614be0e566dd",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "b7ecb0cd1ea6b0fe",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KPHX": {
    "city": "PHX",
@@ -2559,7 +2830,16 @@
      "wording": "Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KPHX (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:49:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KPHX 071449Z 0715/0818 07007KT P6SM FEW070 FEW100",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KPHX"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS PSR Area Forecast Discussion",
@@ -2598,7 +2878,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 1%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 1% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 1% around 1:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 1% around 1:00 AM CT.",
+    "The TAF for KPHX (issued 8:49 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -2608,6 +2889,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -2626,13 +2908,10 @@
     "Numerical guidance spreads are rather narrow yielding excellent forecast confidence of high temperatures within a few degrees of the daily normals while overnight lows warm several degrees above normal.",
     "As a result, subsident ridging with nearly steady midtropospheric heights will define the pattern over the SW Conus yielding high confidence of a very tranquil, near persistence forecast carrying on from early in the week."
    ],
-   "unavailable": [
-    "TAF: no row for KPHX in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "8407c68f972c65fe",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "25f28bd46266d8f2",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KPIT": {
    "city": "PIT",
@@ -2667,7 +2946,30 @@
      "wording": "Mostly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KPIT (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:50:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KPIT 071450Z 0715/0818 27008G20KT P6SM OVC022 TEMPO 0717/0721 5SM -SHRA BKN015 FM072100 28010G22KT P6SM BKN022 FM080400 27006KT P6SM BKN022 FM081300 25007KT P6SM SCT080",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-07T17:00:00Z",
+      "to_utc": "2026-11-07T21:00:00Z",
+      "wx": "-SHRA",
+      "change": "TEMPO",
+      "prob": null,
+      "from_local_hour": 12.0,
+      "to_local_hour": 16.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
+      "elapsed": false,
+      "still_before_cutoff": true
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KPIT"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS PBZ Area Forecast Discussion",
@@ -2701,13 +3003,16 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "A low chance before the cutoff: the point forecast peaks at 28% around 12:00 PM CT.",
+   "headline": "A low chance before the cutoff: the point forecast peaks at 28% around 12:00 PM CT. The TAF carries -SHRA from 11:00 AM CT to 3:00 PM CT.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 28% around 12:00 PM CT (chance light rain).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 1% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 1% around 11:00 PM CT.",
+    "The TAF for KPIT (issued 8:50 AM CT) carries -SHRA 11:00 AM CT to 3:00 PM CT (TEMPO)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "TAF carries -SHRA before the cutoff"
+    ],
     "discussion": [
      "Dropped the Friday portion of the showers.",
      "1) Scattered showers Saturday.",
@@ -2729,13 +3034,10 @@
     "The morning may feature a flake of snow or two in Forest County with the coldest temperatures there.",
     "Dependent on inversion height, exact direction, and potential mixing, Sunday could be gusty across the area and especially in the WV ridges."
    ],
-   "unavailable": [
-    "TAF: no row for KPIT in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "7fe17e67ae2c2793",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "8e8054e7758d9937",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KPVD": {
    "city": "PVD",
@@ -2770,7 +3072,43 @@
      "wording": "Chance Rain Showers"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KPVD (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:50:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KPVD 071450Z 0715/0812 35006KT 5SM -SHRA BR SCT004 BKN018 OVC045 TEMPO 0715/0716 3SM SHRA BKN005 OVC015 FM071600 32005KT P6SM BKN008 FM080200 27007KT 4SM BR BKN008 FM080600 26009KT 5SM BR BKN015",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-07T15:00:00Z",
+      "to_utc": "2026-11-07T16:00:00Z",
+      "wx": "-SHRA BR",
+      "change": null,
+      "prob": null,
+      "from_local_hour": 10.0,
+      "to_local_hour": 11.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
+      "elapsed": false,
+      "still_before_cutoff": true
+     },
+     {
+      "from_utc": "2026-11-07T15:00:00Z",
+      "to_utc": "2026-11-07T16:00:00Z",
+      "wx": "SHRA",
+      "change": "TEMPO",
+      "prob": null,
+      "from_local_hour": 10.0,
+      "to_local_hour": 11.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
+      "elapsed": false,
+      "still_before_cutoff": true
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KPVD"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS BOX Area Forecast Discussion",
@@ -2808,10 +3146,13 @@
    "headline": "Rain has already been reported at the gauge; the briefing is about what more could fall.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 26% around 9:00 AM CT (chance rain showers).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 49% around 2:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 49% around 2:00 AM CT.",
+    "The TAF for KPVD (issued 8:50 AM CT) carries -SHRA BR 9:00 AM CT to 10:00 AM CT; SHRA 9:00 AM CT to 10:00 AM CT (TEMPO)."
    ],
    "supports": {
-    "data": [],
+    "data": [
+     "TAF carries -SHRA BR before the cutoff"
+    ],
     "discussion": [
      "Another round of lighter showers this afternoon into Sunday.",
      "Broad low pressure along a stalled front across eastern MA and RI will slowly move offshore this afternoon and evening.",
@@ -2833,13 +3174,10 @@
     "Cooler and drier conditions arrive next week, though it could turn unsettled once more towards the second half of the week.",
     "The greatest coverage of showers should be towards northern MA."
    ],
-   "unavailable": [
-    "TAF: no row for KPVD in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "3cad06660020df66",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "5b5c8c2487a8be28",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KSAT": {
    "city": "SATX",
@@ -2874,7 +3212,69 @@
      "wording": "Showers And Thunderstorms"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KSAT (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:33:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KSAT 071133Z 0712/0818 01009KT P6SM BKN070 BKN250 FM080000 02010KT P6SM -RA BKN025 OVC040 FM080300 03013KT 5SM -RA BR BKN015 OVC025 FM080900 05015G25KT 3SM RA BR BKN009 OVC015 FM081500 06016G26KT 3SM RA BR BKN005 OVC015",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-08T00:00:00Z",
+      "to_utc": "2026-11-08T03:00:00Z",
+      "wx": "-RA",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 18.0,
+      "to_local_hour": 21.0,
+      "before_cutoff": true,
+      "after_cutoff": false,
+      "elapsed": false,
+      "still_before_cutoff": true
+     },
+     {
+      "from_utc": "2026-11-08T03:00:00Z",
+      "to_utc": "2026-11-08T09:00:00Z",
+      "wx": "-RA BR",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 21.0,
+      "to_local_hour": 27.0,
+      "before_cutoff": true,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": true
+     },
+     {
+      "from_utc": "2026-11-08T09:00:00Z",
+      "to_utc": "2026-11-08T15:00:00Z",
+      "wx": "RA BR",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 27.0,
+      "to_local_hour": 33.0,
+      "before_cutoff": false,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": false
+     },
+     {
+      "from_utc": "2026-11-08T15:00:00Z",
+      "to_utc": "2026-11-08T18:00:00Z",
+      "wx": "RA BR",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 33.0,
+      "to_local_hour": 36.0,
+      "before_cutoff": false,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": false
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KSAT"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS EWX Area Forecast Discussion",
@@ -2911,14 +3311,16 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "Rain possible before the cutoff: the point forecast peaks at 51% around 6:00 PM CT.",
+   "headline": "Rain possible before the cutoff: the point forecast peaks at 51% around 6:00 PM CT. The TAF carries -RA from 6:00 PM CT to 9:00 PM CT.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 51% around 6:00 PM CT (chance light rain); the first hour at 30% or more is 3:00 PM CT.",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 99% around 9:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 99% around 9:00 AM CT.",
+    "The TAF for KSAT (issued 5:33 AM CT) carries -RA 6:00 PM CT to 9:00 PM CT (FM); -RA BR 9:00 PM CT to 3:00 AM CT (FM); RA BR 3:00 AM CT to 9:00 AM CT (FM), after the cutoff."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 51% before the cutoff"
+     "NWS point forecast reaches 51% before the cutoff",
+     "TAF carries -RA before the cutoff"
     ],
     "discussion": [
      "(Today through Sunday) Issued at 1223 AM CST Sat Nov 7 2026 As has been previously mentioned, a shortwave is forecast to eventually amplify and move southward as a nearly cut-off low while it approaches Texas.",
@@ -2943,13 +3345,10 @@
     "The combination of these two moisture streams overriding atop cool air (isentropic lift) will support a rather broad rain event that may start as early as this morning along the Rio Grande and Edwards Plateau.",
     "There is however the possibility that some of the embedded cells could include thunderstorms, which would then enhance locally heavier rain rates, which could reach upwards to the 1 to 2 inch per hour range."
    ],
-   "unavailable": [
-    "TAF: no row for KSAT in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "b6890b94fb491bf1",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "cc02dec040a4ce62",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KSEA": {
    "city": "SEA",
@@ -2984,7 +3383,56 @@
      "wording": "Rain Showers"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KSEA (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:02:00Z",
+    "valid_from_utc": "2026-11-07T14:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KSEA 071402Z 0714/0818 08004KT 6SM BR BCFG SCT015 BKN120 BKN200 FM071800 12006KT P6SM SCT035 BKN100 FM080000 15012G18KT P6SM BKN090 OVC120 FM080400 19018G30KT P6SM -RA SCT020 OVC035 WS020/20045KT FM080900 20022G35KT P6SM -SHRA SCT025 OVC040 FM081500 20016G22KT P6SM VCSH BKN035",
+    "precip_groups": [
+     {
+      "from_utc": "2026-11-08T04:00:00Z",
+      "to_utc": "2026-11-08T09:00:00Z",
+      "wx": "-RA",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 20.0,
+      "to_local_hour": 25.0,
+      "before_cutoff": true,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": true
+     },
+     {
+      "from_utc": "2026-11-08T09:00:00Z",
+      "to_utc": "2026-11-08T15:00:00Z",
+      "wx": "-SHRA",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 25.0,
+      "to_local_hour": 31.0,
+      "before_cutoff": false,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": false
+     },
+     {
+      "from_utc": "2026-11-08T15:00:00Z",
+      "to_utc": "2026-11-08T18:00:00Z",
+      "wx": "VCSH",
+      "change": "FM",
+      "prob": null,
+      "from_local_hour": 31.0,
+      "to_local_hour": 34.0,
+      "before_cutoff": false,
+      "after_cutoff": true,
+      "elapsed": false,
+      "still_before_cutoff": false
+     }
+    ],
+    "url": "https://aviationweather.gov/data/taf/?id=KSEA"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS SEW Area Forecast Discussion",
@@ -3026,15 +3474,17 @@
      "severity": "Moderate"
     }
    ],
-   "headline": "Rain likely before the cutoff: the point forecast peaks at 100% around 11:00 PM CT.",
+   "headline": "Rain likely before the cutoff: the point forecast peaks at 100% around 11:00 PM CT. The TAF carries -RA from 10:00 PM CT to 2:00 AM CT.",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 100% around 11:00 PM CT (rain); the first hour at 30% or more is 9:00 PM CT.",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 75% around 9:00 AM CT.",
+    "The TAF for KSEA (issued 8:02 AM CT) carries -RA 10:00 PM CT to 3:00 AM CT (FM); -SHRA 3:00 AM CT to 9:00 AM CT (FM), after the cutoff; VCSH 9:00 AM CT to 12:00 PM CT (FM), after the cutoff.",
     "Active alert: Wind Advisory. A watch is a watch, not a gauge hit."
    ],
    "supports": {
     "data": [
-     "NWS point forecast reaches 100% before the cutoff"
+     "NWS point forecast reaches 100% before the cutoff",
+     "TAF carries -RA before the cutoff"
     ],
     "discussion": [
      "Mild day today with a warm front to the north and a cold front still offshore.",
@@ -3056,13 +3506,10 @@
     ]
    },
    "uncertainty": [],
-   "unavailable": [
-    "TAF: no row for KSEA in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "90e8b4de16e9be36",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "71ef3552756db869",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KSFO": {
    "city": "SFO",
@@ -3097,7 +3544,16 @@
      "wording": "Partly Cloudy"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KSFO (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:50:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KSFO 071450Z 0715/0818 22003KT P6SM SKC FM072100 29010KT P6SM SKC FM081500 27006KT P6SM SCT015",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KSFO"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS MTR Area Forecast Discussion",
@@ -3147,6 +3603,7 @@
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 2:00 AM CT.",
+    "The TAF for KSFO (issued 8:50 AM CT) carries no precipitation group still ahead in its period.",
     "Active alert: Coastal Flood Advisory. A watch is a watch, not a gauge hit."
    ],
    "supports": {
@@ -3159,6 +3616,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -3177,13 +3635,10 @@
    "uncertainty": [
     "However, there is still a fair amount of uncertainty regarding the exact trajectory of this system as well as its moisture content."
    ],
-   "unavailable": [
-    "TAF: no row for KSFO in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "32c6288a9f3e6151",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "46862e4ea3d634cc",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KSGF": {
    "city": "SGF",
@@ -3218,7 +3673,16 @@
      "wording": "Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KSGF (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:20:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KSGF 071120Z 0712/0812 00000KT P6SM OVC013 FM071800 00000KT P6SM BKN025 FM072000 00000KT P6SM BKN060",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KSGF"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS SGF Area Forecast Discussion",
@@ -3259,7 +3723,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (mostly cloudy).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KSGF (issued 5:20 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -3271,6 +3736,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -3290,13 +3756,10 @@
     "With the persistent cloud cover, confidence in widespread frost/freeze is low.",
     "We'll continue to monitor how/if these clouds can begin to clear, however climatology would suggest they stick around through much of the remainder of the early morning hours."
    ],
-   "unavailable": [
-    "TAF: no row for KSGF in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "2f7e25aa391e62cd",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "259536dca37b9889",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KSTL": {
    "city": "STL",
@@ -3331,7 +3794,16 @@
      "wording": "Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KSTL (aviationweather.gov)",
+    "issued_utc": "2026-11-07T14:57:00Z",
+    "valid_from_utc": "2026-11-07T15:00:00Z",
+    "valid_to_utc": "2026-11-08T18:00:00Z",
+    "raw": "TAF KSTL 071457Z 0715/0818 VRB04KT P6SM SCT150",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KSTL"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS LSX Area Forecast Discussion",
@@ -3370,7 +3842,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (mostly sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 12:00 AM CT.",
+    "The TAF for KSTL (issued 8:57 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -3382,6 +3855,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -3399,13 +3873,10 @@
     "The late night/early morning time of high clouds over the northwestern portion of the CWA could be enough to inhibit lows from making it to freezing, while upper 20s and low-30s are spread across southeast Missouri and southwest Illinois Sunday morning.",
     "LREF ensembles show the greatest spread in the upper level pressure pattern extending from the Dakotas through Oklahoma, indicating uncertainty in the depth or breadth of its influence."
    ],
-   "unavailable": [
-    "TAF: no row for KSTL in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "7153fc19576208c2",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "7bba6c0d74b8e384",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   },
   "KTTN": {
    "city": "TTN",
@@ -3440,7 +3911,16 @@
      "wording": "Mostly Clear"
     }
    },
-   "taf": null,
+   "taf": {
+    "kind": "airport forecast",
+    "source": "TAF KTTN (aviationweather.gov)",
+    "issued_utc": "2026-11-07T11:21:00Z",
+    "valid_from_utc": "2026-11-07T12:00:00Z",
+    "valid_to_utc": "2026-11-08T12:00:00Z",
+    "raw": "TAF KTTN 071121Z 0712/0812 28010G18KT P6SM BKN090 FM071700 29014G23KT P6SM BKN050 FM072300 29010G18KT P6SM BKN050 FM080200 28008KT P6SM BKN050 FM080700 28010G18KT P6SM BKN035",
+    "precip_groups": [],
+    "url": "https://aviationweather.gov/data/taf/?id=KTTN"
+   },
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS PHI Area Forecast Discussion",
@@ -3477,7 +3957,8 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 4%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 4% around 6:00 PM CT (mostly clear).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 7% around 11:00 PM CT."
+    "After the cutoff, which does not count for this contract, the same forecast peaks at 7% around 11:00 PM CT.",
+    "The TAF for KTTN (issued 5:21 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -3489,6 +3970,7 @@
    },
    "prevents": {
     "data": [
+     "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
     "discussion": [
@@ -3503,13 +3985,10 @@
     ]
    },
    "uncertainty": [],
-   "unavailable": [
-    "TAF: no row for KTTN in this run",
-    "TAF: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"
-   ],
-   "inputs_hash": "856f505ab4b6cdba",
-   "text_generated_utc": "2026-11-07T15:17:47Z",
-   "checked_utc": "2026-11-07T15:17:47Z"
+   "unavailable": [],
+   "inputs_hash": "8c4ee6e45d030389",
+   "text_generated_utc": "2026-11-07T15:32:47Z",
+   "checked_utc": "2026-11-07T15:32:47Z"
   }
  },
  "points": {
