@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-11-09T14:44:06.560112+00:00",
+ "checked_utc": "2026-11-09T14:49:06.512559+00:00",
  "files": [],
  "stations": {
   "KABQ": {
@@ -100,8 +100,14 @@
    "discrepancies": []
   },
   "KOKC": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "radar",
+     "severity": "med",
+     "detail": "site radar TLX is DOWN (newest scan 2026-11-08T16:11:48Z); no close-up radar for this gauge, the composite below still reads"
+    }
+   ]
   },
   "KPHL": {
    "ok": true,
@@ -151,8 +157,8 @@
   }
  },
  "summary": {
-  "n_open": 3,
-  "n_stations_bad": 3,
+  "n_open": 4,
+  "n_stations_bad": 4,
   "worst": null,
   "files_stale": 0
  }
