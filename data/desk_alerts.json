@@ -1,7 +1,23 @@
 {
 "schema": "019a.desk_alerts/1",
-"generated_utc": "2026-11-09T15:10:37.935356+00:00",
+"generated_utc": "2026-11-09T15:11:37.933304+00:00",
 "pages": [
+{
+"ts_ct": "2026-11-09T09:11:35.444558-06:00",
+"title": "RAINING AT PVD GAUGE: -RA",
+"priority": "high",
+"kind": "019_RAIN_GAUGE",
+"source": "board",
+"station": "PVD"
+},
+{
+"ts_ct": "2026-11-09T09:11:35.318118-06:00",
+"title": "RAINING AT CLL GAUGE: -RA",
+"priority": "high",
+"kind": "019_RAIN_GAUGE",
+"source": "board",
+"station": "CLL"
+},
 {
 "ts_ct": "2026-11-09T09:05:02.854995-06:00",
 "title": "TPA Nov 10 NO moved 82c to 93c",
@@ -465,27 +481,11 @@
 "kind": "pw",
 "source": "board",
 "station": null
-},
-{
-"ts_ct": "2026-11-08T06:40:03.686599-06:00",
-"title": "BOS Nov 9 NO moved 71c to 81c",
-"priority": "high",
-"kind": "pw",
-"source": "board",
-"station": null
-},
-{
-"ts_ct": "2026-11-08T06:35:03.843911-06:00",
-"title": "SETTLED: WPB Nov 7 +$4.40",
-"priority": "high",
-"kind": "pw",
-"source": "board",
-"station": null
 }
 ],
 "counts_24h": {
-"sent": 55,
-"suppressed_duplicate": 156,
+"sent": 57,
+"suppressed_duplicate": 157,
 "failed": 0,
 "desk_only": 2,
 "filtered": 12
@@ -519,7 +519,7 @@
 "bot_or_feed": "rain lock bot",
 "ok": false,
 "detail": "STALE, 576.5 h ago",
-"age_s": 2075337.4,
+"age_s": 2075397.4,
 "checked_utc": "2026-10-16T14:41:40.518002+00:00",
 "alive_s": 120
 },
@@ -556,7 +556,7 @@
 "ok": true,
 "detail": "alive, 36 s ago, sampled 14, paged 0, failed 0, queued 0",
 "age_s": 36.1,
-"checked_utc": "2026-11-09T15:10:01.796632+00:00",
+"checked_utc": "2026-11-09T15:11:01.803664+00:00",
 "alive_s": 120
 },
 {
@@ -565,25 +565,25 @@
 "ok": true,
 "detail": "written this run (the mirror runs inside board_alerts.py), alive, 0 s ago",
 "age_s": 0.1,
-"checked_utc": "2026-11-09T15:10:37.828384+00:00",
+"checked_utc": "2026-11-09T15:11:37.826761+00:00",
 "alive_s": 180
 },
 {
 "name": "book",
 "bot_or_feed": "websocket book",
 "ok": true,
-"detail": "alive, 1 s ago, feed LIVE",
-"age_s": 1.1,
-"checked_utc": "2026-11-09T15:10:36.822399+00:00",
+"detail": "alive, 2 s ago, feed LIVE",
+"age_s": 1.9,
+"checked_utc": "2026-11-09T15:11:36.047016+00:00",
 "alive_s": 45.0
 },
 {
 "name": "metars",
 "bot_or_feed": "pulse file",
 "ok": true,
-"detail": "alive, 65 s ago, 32 stations",
-"age_s": 65.1,
-"checked_utc": "2026-11-09T15:09:32.849863+00:00",
+"detail": "alive, 5 s ago, 234 stations",
+"age_s": 5.1,
+"checked_utc": "2026-11-09T15:11:32.859486+00:00",
 "alive_s": 600
 },
 {
@@ -592,15 +592,15 @@
 "ok": true,
 "detail": "alive, 36 s ago",
 "age_s": 36.0,
-"checked_utc": "2026-11-09T15:10:01.925213+00:00",
+"checked_utc": "2026-11-09T15:11:01.936701+00:00",
 "alive_s": 600
 },
 {
 "name": "rings",
 "bot_or_feed": "ring archive",
 "ok": true,
-"detail": "alive, 4 min ago, last row KTTN",
-"age_s": 216.0,
+"detail": "alive, 5 min ago, last row KTTN",
+"age_s": 276.0,
 "checked_utc": "2026-11-09T15:07:01.945740+00:00",
 "alive_s": 900
 },
@@ -608,8 +608,8 @@
 "name": "sentinel",
 "bot_or_feed": "Sentinel",
 "ok": true,
-"detail": "alive, 24 s ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
-"age_s": 23.8,
+"detail": "alive, 84 s ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
+"age_s": 83.8,
 "checked_utc": "2026-11-09T15:10:14.177736+00:00",
 "alive_s": 900
 }
