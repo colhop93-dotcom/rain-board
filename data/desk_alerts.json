@@ -1,7 +1,15 @@
 {
 "schema": "019a.desk_alerts/1",
-"generated_utc": "2026-11-09T15:14:37.950197+00:00",
+"generated_utc": "2026-11-09T15:15:37.974322+00:00",
 "pages": [
+{
+"ts_ct": "2026-11-09T09:15:02.976948-06:00",
+"title": "RAIN AT THE GAUGE: CLL Nov 9 (you hold NO, open tier)",
+"priority": "urgent",
+"kind": "pw",
+"source": "board",
+"station": null
+},
 {
 "ts_ct": "2026-11-09T09:11:35.444558-06:00",
 "title": "RAINING AT PVD GAUGE: -RA",
@@ -473,18 +481,10 @@
 "kind": "pw",
 "source": "board",
 "station": null
-},
-{
-"ts_ct": "2026-11-08T08:00:02.732634-06:00",
-"title": "Morning digest: 4 positions +$2.54",
-"priority": "default",
-"kind": "pw",
-"source": "board",
-"station": null
 }
 ],
 "counts_24h": {
-"sent": 57,
+"sent": 58,
 "suppressed_duplicate": 159,
 "failed": 0,
 "desk_only": 2,
@@ -518,8 +518,8 @@
 "name": "lock bot",
 "bot_or_feed": "rain lock bot",
 "ok": false,
-"detail": "STALE, 576.5 h ago",
-"age_s": 2075577.4,
+"detail": "STALE, 576.6 h ago",
+"age_s": 2075637.5,
 "checked_utc": "2026-10-16T14:41:40.518002+00:00",
 "alive_s": 120
 },
@@ -555,8 +555,8 @@
 "bot_or_feed": "price moves pager",
 "ok": true,
 "detail": "alive, 36 s ago, sampled 14, paged 0, failed 0, queued 0",
-"age_s": 36.1,
-"checked_utc": "2026-11-09T15:14:01.807824+00:00",
+"age_s": 36.2,
+"checked_utc": "2026-11-09T15:15:01.822941+00:00",
 "alive_s": 120
 },
 {
@@ -565,7 +565,7 @@
 "ok": true,
 "detail": "written this run (the mirror runs inside board_alerts.py), alive, 0 s ago",
 "age_s": 0.1,
-"checked_utc": "2026-11-09T15:14:37.841951+00:00",
+"checked_utc": "2026-11-09T15:15:37.860264+00:00",
 "alive_s": 180
 },
 {
@@ -573,16 +573,16 @@
 "bot_or_feed": "websocket book",
 "ok": true,
 "detail": "alive, 1 s ago, feed LIVE",
-"age_s": 1.2,
-"checked_utc": "2026-11-09T15:14:36.713659+00:00",
+"age_s": 0.6,
+"checked_utc": "2026-11-09T15:15:37.417571+00:00",
 "alive_s": 45.0
 },
 {
 "name": "metars",
 "bot_or_feed": "pulse file",
 "ok": true,
-"detail": "alive, 5 s ago, 234 stations",
-"age_s": 5.1,
+"detail": "alive, 65 s ago, 234 stations",
+"age_s": 65.1,
 "checked_utc": "2026-11-09T15:14:32.895523+00:00",
 "alive_s": 600
 },
@@ -590,17 +590,17 @@
 "name": "settle",
 "bot_or_feed": "collector",
 "ok": true,
-"detail": "alive, 96 s ago",
-"age_s": 96.0,
-"checked_utc": "2026-11-09T15:13:01.945637+00:00",
+"detail": "alive, 36 s ago",
+"age_s": 36.0,
+"checked_utc": "2026-11-09T15:15:01.948601+00:00",
 "alive_s": 600
 },
 {
 "name": "rings",
 "bot_or_feed": "ring archive",
 "ok": true,
-"detail": "alive, 96 s ago, last row KTTN",
-"age_s": 96.0,
+"detail": "alive, 3 min ago, last row KTTN",
+"age_s": 156.0,
 "checked_utc": "2026-11-09T15:13:01.945637+00:00",
 "alive_s": 900
 },
@@ -608,8 +608,8 @@
 "name": "sentinel",
 "bot_or_feed": "Sentinel",
 "ok": true,
-"detail": "alive, 2 min ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
-"age_s": 150.0,
+"detail": "alive, 4 min ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
+"age_s": 210.0,
 "checked_utc": "2026-11-09T15:12:07.967273+00:00",
 "alive_s": 900
 }
