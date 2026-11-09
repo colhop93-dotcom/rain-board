@@ -1,0 +1,938 @@
+{
+ "generated_utc": "2026-11-09T14:39:19.856876+00:00",
+ "settled_rows": 1469,
+ "days": 58,
+ "sources": {
+  "v2": {
+   "n": 1457,
+   "brier": 0.085,
+   "buckets": {
+    "10": {
+     "lo": 10,
+     "hi": 19,
+     "n": 132,
+     "yes": 28,
+     "actual_pct": 21.2
+    },
+    "50": {
+     "lo": 50,
+     "hi": 59,
+     "n": 37,
+     "yes": 17,
+     "actual_pct": 45.9
+    },
+    "30": {
+     "lo": 30,
+     "hi": 39,
+     "n": 55,
+     "yes": 9,
+     "actual_pct": 16.4
+    },
+    "0": {
+     "lo": 0,
+     "hi": 9,
+     "n": 1026,
+     "yes": 35,
+     "actual_pct": 3.4
+    },
+    "80": {
+     "lo": 80,
+     "hi": 89,
+     "n": 22,
+     "yes": 9,
+     "actual_pct": 40.9
+    },
+    "20": {
+     "lo": 20,
+     "hi": 29,
+     "n": 71,
+     "yes": 15,
+     "actual_pct": 21.1
+    },
+    "40": {
+     "lo": 40,
+     "hi": 49,
+     "n": 38,
+     "yes": 12,
+     "actual_pct": 31.6
+    },
+    "60": {
+     "lo": 60,
+     "hi": 69,
+     "n": 30,
+     "yes": 15,
+     "actual_pct": 50.0
+    },
+    "70": {
+     "lo": 70,
+     "hi": 79,
+     "n": 21,
+     "yes": 14,
+     "actual_pct": 66.7
+    },
+    "90": {
+     "lo": 90,
+     "hi": 99,
+     "n": 25,
+     "yes": 18,
+     "actual_pct": 72.0
+    }
+   }
+  },
+  "v3 shadow": {
+   "n": 1364,
+   "brier": 0.0555,
+   "buckets": {
+    "0": {
+     "lo": 0,
+     "hi": 9,
+     "n": 1112,
+     "yes": 27,
+     "actual_pct": 2.4
+    },
+    "90": {
+     "lo": 90,
+     "hi": 99,
+     "n": 44,
+     "yes": 40,
+     "actual_pct": 90.9
+    },
+    "50": {
+     "lo": 50,
+     "hi": 59,
+     "n": 25,
+     "yes": 12,
+     "actual_pct": 48.0
+    },
+    "10": {
+     "lo": 10,
+     "hi": 19,
+     "n": 54,
+     "yes": 12,
+     "actual_pct": 22.2
+    },
+    "40": {
+     "lo": 40,
+     "hi": 49,
+     "n": 22,
+     "yes": 10,
+     "actual_pct": 45.5
+    },
+    "30": {
+     "lo": 30,
+     "hi": 39,
+     "n": 26,
+     "yes": 15,
+     "actual_pct": 57.7
+    },
+    "80": {
+     "lo": 80,
+     "hi": 89,
+     "n": 21,
+     "yes": 14,
+     "actual_pct": 66.7
+    },
+    "60": {
+     "lo": 60,
+     "hi": 69,
+     "n": 15,
+     "yes": 13,
+     "actual_pct": 86.7
+    },
+    "70": {
+     "lo": 70,
+     "hi": 79,
+     "n": 16,
+     "yes": 9,
+     "actual_pct": 56.2
+    },
+    "20": {
+     "lo": 20,
+     "hi": 29,
+     "n": 29,
+     "yes": 9,
+     "actual_pct": 31.0
+    }
+   }
+  },
+  "nws": {
+   "n": 1469,
+   "brier": 0.0522,
+   "buckets": {
+    "0": {
+     "lo": 0,
+     "hi": 9,
+     "n": 1042,
+     "yes": 8,
+     "actual_pct": 0.8
+    },
+    "70": {
+     "lo": 70,
+     "hi": 79,
+     "n": 20,
+     "yes": 19,
+     "actual_pct": 95.0
+    },
+    "40": {
+     "lo": 40,
+     "hi": 49,
+     "n": 55,
+     "yes": 28,
+     "actual_pct": 50.9
+    },
+    "30": {
+     "lo": 30,
+     "hi": 39,
+     "n": 46,
+     "yes": 18,
+     "actual_pct": 39.1
+    },
+    "20": {
+     "lo": 20,
+     "hi": 29,
+     "n": 75,
+     "yes": 19,
+     "actual_pct": 25.3
+    },
+    "10": {
+     "lo": 10,
+     "hi": 19,
+     "n": 140,
+     "yes": 14,
+     "actual_pct": 10.0
+    },
+    "50": {
+     "lo": 50,
+     "hi": 59,
+     "n": 32,
+     "yes": 17,
+     "actual_pct": 53.1
+    },
+    "60": {
+     "lo": 60,
+     "hi": 69,
+     "n": 17,
+     "yes": 11,
+     "actual_pct": 64.7
+    },
+    "80": {
+     "lo": 80,
+     "hi": 89,
+     "n": 19,
+     "yes": 16,
+     "actual_pct": 84.2
+    },
+    "90": {
+     "lo": 90,
+     "hi": 99,
+     "n": 23,
+     "yes": 22,
+     "actual_pct": 95.7
+    }
+   }
+  },
+  "weather.com day": {
+   "n": 969,
+   "brier": 0.0737,
+   "buckets": {
+    "20": {
+     "lo": 20,
+     "hi": 29,
+     "n": 39,
+     "yes": 12,
+     "actual_pct": 30.8
+    },
+    "50": {
+     "lo": 50,
+     "hi": 59,
+     "n": 20,
+     "yes": 8,
+     "actual_pct": 40.0
+    },
+    "0": {
+     "lo": 0,
+     "hi": 9,
+     "n": 644,
+     "yes": 13,
+     "actual_pct": 2.0
+    },
+    "10": {
+     "lo": 10,
+     "hi": 19,
+     "n": 150,
+     "yes": 20,
+     "actual_pct": 13.3
+    },
+    "30": {
+     "lo": 30,
+     "hi": 39,
+     "n": 44,
+     "yes": 24,
+     "actual_pct": 54.5
+    },
+    "40": {
+     "lo": 40,
+     "hi": 49,
+     "n": 24,
+     "yes": 13,
+     "actual_pct": 54.2
+    },
+    "80": {
+     "lo": 80,
+     "hi": 89,
+     "n": 13,
+     "yes": 10,
+     "actual_pct": 76.9
+    },
+    "60": {
+     "lo": 60,
+     "hi": 69,
+     "n": 12,
+     "yes": 7,
+     "actual_pct": 58.3
+    },
+    "90": {
+     "lo": 90,
+     "hi": 99,
+     "n": 11,
+     "yes": 10,
+     "actual_pct": 90.9
+    },
+    "70": {
+     "lo": 70,
+     "hi": 79,
+     "n": 12,
+     "yes": 8,
+     "actual_pct": 66.7
+    }
+   }
+  },
+  "weather.com best hour": {
+   "n": 974,
+   "brier": 0.0653,
+   "buckets": {
+    "20": {
+     "lo": 20,
+     "hi": 29,
+     "n": 63,
+     "yes": 10,
+     "actual_pct": 15.9
+    },
+    "30": {
+     "lo": 30,
+     "hi": 39,
+     "n": 58,
+     "yes": 25,
+     "actual_pct": 43.1
+    },
+    "50": {
+     "lo": 50,
+     "hi": 59,
+     "n": 29,
+     "yes": 15,
+     "actual_pct": 51.7
+    },
+    "10": {
+     "lo": 10,
+     "hi": 19,
+     "n": 178,
+     "yes": 15,
+     "actual_pct": 8.4
+    },
+    "0": {
+     "lo": 0,
+     "hi": 9,
+     "n": 565,
+     "yes": 3,
+     "actual_pct": 0.5
+    },
+    "40": {
+     "lo": 40,
+     "hi": 49,
+     "n": 22,
+     "yes": 11,
+     "actual_pct": 50.0
+    },
+    "60": {
+     "lo": 60,
+     "hi": 69,
+     "n": 17,
+     "yes": 12,
+     "actual_pct": 70.6
+    },
+    "70": {
+     "lo": 70,
+     "hi": 79,
+     "n": 14,
+     "yes": 8,
+     "actual_pct": 57.1
+    },
+    "90": {
+     "lo": 90,
+     "hi": 99,
+     "n": 18,
+     "yes": 16,
+     "actual_pct": 88.9
+    },
+    "80": {
+     "lo": 80,
+     "hi": 89,
+     "n": 10,
+     "yes": 10,
+     "actual_pct": 100.0
+    }
+   }
+  },
+  "models median": {
+   "n": 1438,
+   "brier": 0.0535,
+   "buckets": {
+    "10": {
+     "lo": 10,
+     "hi": 19,
+     "n": 118,
+     "yes": 12,
+     "actual_pct": 10.2
+    },
+    "20": {
+     "lo": 20,
+     "hi": 29,
+     "n": 70,
+     "yes": 12,
+     "actual_pct": 17.1
+    },
+    "50": {
+     "lo": 50,
+     "hi": 59,
+     "n": 43,
+     "yes": 26,
+     "actual_pct": 60.5
+    },
+    "30": {
+     "lo": 30,
+     "hi": 39,
+     "n": 52,
+     "yes": 20,
+     "actual_pct": 38.5
+    },
+    "0": {
+     "lo": 0,
+     "hi": 9,
+     "n": 1015,
+     "yes": 4,
+     "actual_pct": 0.4
+    },
+    "60": {
+     "lo": 60,
+     "hi": 69,
+     "n": 31,
+     "yes": 18,
+     "actual_pct": 58.1
+    },
+    "70": {
+     "lo": 70,
+     "hi": 79,
+     "n": 30,
+     "yes": 19,
+     "actual_pct": 63.3
+    },
+    "40": {
+     "lo": 40,
+     "hi": 49,
+     "n": 31,
+     "yes": 14,
+     "actual_pct": 45.2
+    },
+    "90": {
+     "lo": 90,
+     "hi": 99,
+     "n": 31,
+     "yes": 28,
+     "actual_pct": 90.3
+    },
+    "80": {
+     "lo": 80,
+     "hi": 89,
+     "n": 17,
+     "yes": 12,
+     "actual_pct": 70.6
+    }
+   }
+  },
+  "market": {
+   "n": 1469,
+   "brier": 0.046,
+   "buckets": {
+    "10": {
+     "lo": 10,
+     "hi": 19,
+     "n": 78,
+     "yes": 9,
+     "actual_pct": 11.5
+    },
+    "60": {
+     "lo": 60,
+     "hi": 69,
+     "n": 29,
+     "yes": 18,
+     "actual_pct": 62.1
+    },
+    "70": {
+     "lo": 70,
+     "hi": 79,
+     "n": 33,
+     "yes": 22,
+     "actual_pct": 66.7
+    },
+    "0": {
+     "lo": 0,
+     "hi": 9,
+     "n": 1105,
+     "yes": 9,
+     "actual_pct": 0.8
+    },
+    "30": {
+     "lo": 30,
+     "hi": 39,
+     "n": 31,
+     "yes": 9,
+     "actual_pct": 29.0
+    },
+    "80": {
+     "lo": 80,
+     "hi": 89,
+     "n": 29,
+     "yes": 24,
+     "actual_pct": 82.8
+    },
+    "20": {
+     "lo": 20,
+     "hi": 29,
+     "n": 51,
+     "yes": 7,
+     "actual_pct": 13.7
+    },
+    "50": {
+     "lo": 50,
+     "hi": 59,
+     "n": 31,
+     "yes": 16,
+     "actual_pct": 51.6
+    },
+    "90": {
+     "lo": 90,
+     "hi": 99,
+     "n": 39,
+     "yes": 38,
+     "actual_pct": 97.4
+    },
+    "40": {
+     "lo": 40,
+     "hi": 49,
+     "n": 43,
+     "yes": 20,
+     "actual_pct": 46.5
+    }
+   }
+  }
+ },
+ "v2_model_ids": [
+  {
+   "model_id": null,
+   "time_fix": false,
+   "n": 39
+  },
+  {
+   "model_id": "c55e83388cd6",
+   "time_fix": false,
+   "n": 21
+  },
+  {
+   "model_id": "c55e83388cd6",
+   "time_fix": true,
+   "n": 1397
+  }
+ ],
+ "v2_single_model": false,
+ "v3_model_ids": [
+  {
+   "model_id": "e1e438192fcd",
+   "n": 1364
+  }
+ ],
+ "v3_single_model": true,
+ "models_wet_count": {
+  "3": {
+   "n": 61,
+   "yes": 11,
+   "actual_pct": 18.0
+  },
+  "5": {
+   "n": 63,
+   "yes": 24,
+   "actual_pct": 38.1
+  },
+  "1": {
+   "n": 112,
+   "yes": 5,
+   "actual_pct": 4.5
+  },
+  "0": {
+   "n": 956,
+   "yes": 9,
+   "actual_pct": 0.9
+  },
+  "2": {
+   "n": 83,
+   "yes": 8,
+   "actual_pct": 9.6
+  },
+  "7": {
+   "n": 77,
+   "yes": 61,
+   "actual_pct": 79.2
+  },
+  "6": {
+   "n": 60,
+   "yes": 40,
+   "actual_pct": 66.7
+  },
+  "4": {
+   "n": 57,
+   "yes": 14,
+   "actual_pct": 24.6
+  }
+ },
+ "market_bands": {
+  "day": "2026-11-09",
+  "under_10": {
+   "label": "YES ask under 10c",
+   "lo": null,
+   "hi": 0.1,
+   "record": {
+    "n": 1105,
+    "wet": 9,
+    "actual_pct": 0.8
+   },
+   "today": [
+    {
+     "day": "2026-11-09",
+     "icao": "KATL",
+     "city": "ATL",
+     "yes_ask": 0.01,
+     "yes_bid": 0.0,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 1,
+     "nws_peak_pct": 0,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KCMH",
+     "city": "CMH",
+     "yes_ask": 0.01,
+     "yes_bid": 0.0,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 2,
+     "nws_peak_pct": 0,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KDCA",
+     "city": "DC",
+     "yes_ask": 0.01,
+     "yes_bid": 0.0,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 1,
+     "nws_peak_pct": 0,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KIND",
+     "city": "IND",
+     "yes_ask": 0.01,
+     "yes_bid": 0.0,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 0,
+     "nws_peak_pct": 0,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KLEX",
+     "city": "LEX",
+     "yes_ask": 0.01,
+     "yes_bid": 0.0,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 0,
+     "nws_peak_pct": 0,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KPIT",
+     "city": "PIT",
+     "yes_ask": 0.01,
+     "yes_bid": 0.0,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 2,
+     "nws_peak_pct": 0,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KPHL",
+     "city": "PHIL",
+     "yes_ask": 0.03,
+     "yes_bid": 0.02,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 1,
+     "nws_peak_pct": 8,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KTTN",
+     "city": "TTN",
+     "yes_ask": 0.04,
+     "yes_bid": 0.03,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 2,
+     "nws_peak_pct": 7,
+     "twc_day_pct": null,
+     "models_wet": 1,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    },
+    {
+     "day": "2026-11-09",
+     "icao": "KEWR",
+     "city": "EWR",
+     "yes_ask": 0.08,
+     "yes_bid": 0.06,
+     "gauge_at_snap_in": 0.0,
+     "locked_at_snap": false,
+     "v3_pct": 4,
+     "nws_peak_pct": 4,
+     "twc_day_pct": null,
+     "models_wet": 0,
+     "models_n": 7,
+     "snap_utc": "2026-11-09T14:09:19.291155+00:00"
+    }
+   ]
+  },
+  "over_90": {
+   "label": "YES ask 90c and up",
+   "lo": 0.9,
+   "hi": null,
+   "record": {
+    "n": 39,
+    "wet": 38,
+    "actual_pct": 97.4
+   },
+   "today": []
+  }
+ },
+ "open_rows": [
+  {
+   "day": "2026-11-09",
+   "icao": "KATL",
+   "city": "ATL",
+   "v2_pct": 0,
+   "nws_peak_pct": 0,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.01,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KBOS",
+   "city": "BOS",
+   "v2_pct": 2,
+   "nws_peak_pct": 21,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 3,
+   "models_n": 7,
+   "yes_ask": 0.41,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KCMH",
+   "city": "CMH",
+   "v2_pct": 0,
+   "nws_peak_pct": 0,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.01,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KDCA",
+   "city": "DC",
+   "v2_pct": 0,
+   "nws_peak_pct": 0,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.01,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KEWR",
+   "city": "EWR",
+   "v2_pct": 1,
+   "nws_peak_pct": 4,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.08,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KIND",
+   "city": "IND",
+   "v2_pct": 0,
+   "nws_peak_pct": 0,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.01,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KLEX",
+   "city": "LEX",
+   "v2_pct": 0,
+   "nws_peak_pct": 0,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.01,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KMIA",
+   "city": "MIA",
+   "v2_pct": 72,
+   "nws_peak_pct": 27,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 3,
+   "models_n": 7,
+   "yes_ask": 0.37,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KNYC",
+   "city": "NYC",
+   "v2_pct": 1,
+   "nws_peak_pct": 5,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 1,
+   "models_n": 7,
+   "yes_ask": 0.12,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KPHL",
+   "city": "PHIL",
+   "v2_pct": 1,
+   "nws_peak_pct": 8,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.03,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KPIT",
+   "city": "PIT",
+   "v2_pct": 0,
+   "nws_peak_pct": 0,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 0,
+   "models_n": 7,
+   "yes_ask": 0.01,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KPVD",
+   "city": "PVD",
+   "v2_pct": 2,
+   "nws_peak_pct": 20,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 2,
+   "models_n": 7,
+   "yes_ask": 0.17,
+   "gauge_at_snap_in": 0.0
+  },
+  {
+   "day": "2026-11-09",
+   "icao": "KTTN",
+   "city": "TTN",
+   "v2_pct": 1,
+   "nws_peak_pct": 7,
+   "twc_day_pct": null,
+   "twc_best_hour_pct": null,
+   "models_wet": 1,
+   "models_n": 7,
+   "yes_ask": 0.04,
+   "gauge_at_snap_in": 0.0
+  }
+ ]
+}
