@@ -1,7 +1,15 @@
 {
 "schema": "019a.desk_alerts/1",
-"generated_utc": "2026-11-09T15:04:37.882457+00:00",
+"generated_utc": "2026-11-09T15:05:37.895165+00:00",
 "pages": [
+{
+"ts_ct": "2026-11-09T09:05:02.854995-06:00",
+"title": "TPA Nov 10 NO moved 82c to 93c",
+"priority": "high",
+"kind": "pw",
+"source": "board",
+"station": null
+},
 {
 "ts_ct": "2026-11-09T09:02:52.714200-06:00",
 "title": "College Station cell tracking OVER the gauge in 42 min",
@@ -473,19 +481,11 @@
 "kind": "pw",
 "source": "board",
 "station": null
-},
-{
-"ts_ct": "2026-11-08T06:07:57.685818-06:00",
-"title": "Pittsburgh rain moving OVER the gauge",
-"priority": "high",
-"kind": "overhead",
-"source": "collector",
-"station": "PIT"
 }
 ],
 "counts_24h": {
-"sent": 55,
-"suppressed_duplicate": 149,
+"sent": 56,
+"suppressed_duplicate": 151,
 "failed": 0,
 "desk_only": 2,
 "filtered": 12
@@ -519,7 +519,7 @@
 "bot_or_feed": "rain lock bot",
 "ok": false,
 "detail": "STALE, 576.4 h ago",
-"age_s": 2074977.4,
+"age_s": 2075037.4,
 "checked_utc": "2026-10-16T14:41:40.518002+00:00",
 "alive_s": 120
 },
@@ -556,7 +556,7 @@
 "ok": true,
 "detail": "alive, 36 s ago, sampled 14, paged 0, failed 0, queued 0",
 "age_s": 36.1,
-"checked_utc": "2026-11-09T15:04:01.745668+00:00",
+"checked_utc": "2026-11-09T15:05:01.751312+00:00",
 "alive_s": 120
 },
 {
@@ -565,7 +565,7 @@
 "ok": true,
 "detail": "written this run (the mirror runs inside board_alerts.py), alive, 0 s ago",
 "age_s": 0.1,
-"checked_utc": "2026-11-09T15:04:37.787567+00:00",
+"checked_utc": "2026-11-09T15:05:37.790502+00:00",
 "alive_s": 180
 },
 {
@@ -573,16 +573,16 @@
 "bot_or_feed": "websocket book",
 "ok": true,
 "detail": "alive, 1 s ago, feed LIVE",
-"age_s": 1.3,
-"checked_utc": "2026-11-09T15:04:36.595521+00:00",
+"age_s": 0.9,
+"checked_utc": "2026-11-09T15:05:36.954484+00:00",
 "alive_s": 45.0
 },
 {
 "name": "metars",
 "bot_or_feed": "pulse file",
 "ok": true,
-"detail": "alive, 5 s ago, 234 stations",
-"age_s": 5.1,
+"detail": "alive, 65 s ago, 234 stations",
+"age_s": 65.1,
 "checked_utc": "2026-11-09T15:04:32.813419+00:00",
 "alive_s": 600
 },
@@ -592,15 +592,15 @@
 "ok": true,
 "detail": "alive, 36 s ago",
 "age_s": 36.0,
-"checked_utc": "2026-11-09T15:04:01.872060+00:00",
+"checked_utc": "2026-11-09T15:05:01.859682+00:00",
 "alive_s": 600
 },
 {
 "name": "rings",
 "bot_or_feed": "ring archive",
 "ok": true,
-"detail": "alive, 3 min ago, last row KTTN",
-"age_s": 156.0,
+"detail": "alive, 4 min ago, last row KTTN",
+"age_s": 216.0,
 "checked_utc": "2026-11-09T15:02:01.852147+00:00",
 "alive_s": 900
 },
@@ -608,8 +608,8 @@
 "name": "sentinel",
 "bot_or_feed": "Sentinel",
 "ok": true,
-"detail": "alive, 24 s ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
-"age_s": 23.9,
+"detail": "alive, 84 s ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
+"age_s": 83.9,
 "checked_utc": "2026-11-09T15:04:13.984862+00:00",
 "alive_s": 900
 }
