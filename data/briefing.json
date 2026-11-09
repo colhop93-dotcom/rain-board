@@ -1,6 +1,6 @@
 {
  "schema": "019a.briefing/1",
- "generated_utc": "2026-11-09T15:02:46Z",
+ "generated_utc": "2026-11-09T15:17:46Z",
  "n": 32,
  "errors": 0,
  "method": "deterministic: templates over the NWS point forecast, the TAF and active alerts, plus verbatim keyword-selected sentences from the office's AFD; no generated prose",
@@ -118,7 +118,7 @@
    "unavailable": [],
    "inputs_hash": "879a54b928c514b9",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KATL": {
    "city": "ATL",
@@ -130,10 +130,10 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:32:53+00:00",
-    "updated_utc": "2026-11-09T06:26:20+00:00",
+    "generated_utc": "2026-11-09T15:14:30.853573+00:00",
+    "updated_utc": null,
     "url": "https://api.weather.gov/gridpoints/FFC/49,81/forecast/hourly",
-    "note": null,
+    "note": "collector copy, today only",
     "before_cutoff": {
      "hours": 14,
      "peak_pct": 0,
@@ -144,13 +144,13 @@
      "wording": "Sunny"
     },
     "after_cutoff": {
-     "hours": 12,
-     "peak_pct": 0,
-     "peak_local_hour": 24.0,
-     "peak_utc": "2026-11-10T05:00:00Z",
+     "hours": 0,
+     "peak_pct": null,
+     "peak_local_hour": null,
+     "peak_utc": null,
      "qpf_in": null,
      "first_30_local_hour": null,
-     "wording": "Partly Cloudy"
+     "wording": null
     }
    },
    "taf": {
@@ -203,7 +203,6 @@
    "headline": "Little rain signal before the cutoff (point forecast peak 0%).",
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (sunny).",
-    "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT.",
     "The TAF for KATL (issued 7:52 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
@@ -235,10 +234,12 @@
     "Areas of frost could develop across portions of far north and northwest Georgia early Monday morning.",
     "Seasonal temperatures continue this week, with increasing confidence that the coldest temperatures of the season so far will arrive next weekend."
    ],
-   "unavailable": [],
-   "inputs_hash": "6006df33920e67e4",
-   "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "unavailable": [
+    "NWS point forecast: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+   ],
+   "inputs_hash": "209405a3fd9abf80",
+   "text_generated_utc": "2026-11-09T15:17:46Z",
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KAUS": {
    "city": "AUS",
@@ -392,7 +393,7 @@
    "unavailable": [],
    "inputs_hash": "34631050e5ceb7a2",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KBOS": {
    "city": "BOS",
@@ -404,18 +405,18 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:14:36+00:00",
-    "updated_utc": "2026-11-09T13:39:38+00:00",
+    "generated_utc": "2026-11-09T15:17:49+00:00",
+    "updated_utc": "2026-11-09T15:11:23+00:00",
     "url": "https://api.weather.gov/gridpoints/BOX/73,101/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 14,
-     "peak_pct": 21,
-     "peak_local_hour": 16.0,
-     "peak_utc": "2026-11-09T21:00:00Z",
+     "peak_pct": 33,
+     "peak_local_hour": 13.0,
+     "peak_utc": "2026-11-09T18:00:00Z",
      "qpf_in": null,
-     "first_30_local_hour": null,
-     "wording": "Isolated Rain Showers"
+     "first_30_local_hour": 12.0,
+     "wording": "Scattered Rain Showers"
     },
     "after_cutoff": {
      "hours": 12,
@@ -503,14 +504,15 @@
     "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
    },
    "alerts": [],
-   "headline": "A low chance before the cutoff: the point forecast peaks at 21% around 3:00 PM CT. The TAF carries -SHRA from 9:00 AM CT to 1:00 PM CT.",
+   "headline": "Rain possible before the cutoff: the point forecast peaks at 33% around 12:00 PM CT. The TAF carries -SHRA from 9:00 AM CT to 1:00 PM CT.",
    "summary": [
-    "Before the cutoff the NWS point forecast peaks at 21% around 3:00 PM CT (isolated rain showers).",
+    "Before the cutoff the NWS point forecast peaks at 33% around 12:00 PM CT (scattered rain showers); the first hour at 30% or more is 11:00 AM CT.",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 2% around 11:00 PM CT.",
     "The TAF for KBOS (issued 8:18 AM CT) carries -SHRA 9:00 AM CT to 1:00 PM CT (TEMPO); VCSH 1:00 PM CT to 6:00 PM CT (FM)."
    ],
    "supports": {
     "data": [
+     "NWS point forecast reaches 33% before the cutoff",
      "TAF carries -SHRA before the cutoff"
     ],
     "discussion": [
@@ -540,9 +542,9 @@
     "KEY MESSAGE 3...Unsettled weather may return late this week."
    ],
    "unavailable": [],
-   "inputs_hash": "4a9f00b391f5fec7",
-   "text_generated_utc": "2026-11-09T14:32:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "inputs_hash": "a9bb84f21e2502e8",
+   "text_generated_utc": "2026-11-09T15:17:46Z",
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KORD": {
    "city": "CHI",
@@ -654,7 +656,7 @@
    "unavailable": [],
    "inputs_hash": "38d44bb3422f1e9c",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KCLL": {
    "city": "CLL",
@@ -784,7 +786,7 @@
    "unavailable": [],
    "inputs_hash": "0d2ee37f0c93606c",
    "text_generated_utc": "2026-11-09T12:47:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KCMH": {
    "city": "CMH",
@@ -889,7 +891,7 @@
    "unavailable": [],
    "inputs_hash": "0ec141479266c144",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KDFW": {
    "city": "DAL",
@@ -927,10 +929,10 @@
    "taf": {
     "kind": "airport forecast",
     "source": "TAF KDFW (aviationweather.gov)",
-    "issued_utc": "2026-11-09T11:20:00Z",
-    "valid_from_utc": "2026-11-09T12:00:00Z",
+    "issued_utc": "2026-11-09T15:07:00Z",
+    "valid_from_utc": "2026-11-09T15:00:00Z",
     "valid_to_utc": "2026-11-10T18:00:00Z",
-    "raw": "TAF KDFW 091120Z 0912/1018 36003KT P6SM FEW090 BKN200 FM091500 18006KT P6SM FEW040 SCT060 BKN250 FM100600 22005KT P6SM VCSH FEW010 SCT025 BKN050",
+    "raw": "TAF KDFW 091507Z 0915/1018 18006KT P6SM SCT060 BKN250 FM100600 22005KT P6SM VCSH FEW010 SCT025 BKN050",
     "precip_groups": [
      {
       "from_utc": "2026-11-10T06:00:00Z",
@@ -992,7 +994,7 @@
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 16% around 9:00 PM CT (slight chance rain showers).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 15% around 12:00 AM CT.",
-    "The TAF for KDFW (issued 5:20 AM CT) carries VCSH 12:00 AM CT to 12:00 PM CT (FM), after the cutoff."
+    "The TAF for KDFW (issued 9:07 AM CT) carries VCSH 12:00 AM CT to 12:00 PM CT (FM), after the cutoff."
    ],
    "supports": {
     "data": [],
@@ -1025,9 +1027,9 @@
     "Although still 5 days away and uncertain, current forecast indicates our potential first round of frost across our northeast counties on Saturday morning."
    ],
    "unavailable": [],
-   "inputs_hash": "a28b9d489959020e",
-   "text_generated_utc": "2026-11-09T12:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "inputs_hash": "dfa1aa56900e5136",
+   "text_generated_utc": "2026-11-09T15:17:46Z",
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KDCA": {
    "city": "DC",
@@ -1065,10 +1067,10 @@
    "taf": {
     "kind": "airport forecast",
     "source": "TAF KDCA (aviationweather.gov)",
-    "issued_utc": "2026-11-09T11:22:00Z",
-    "valid_from_utc": "2026-11-09T12:00:00Z",
+    "issued_utc": "2026-11-09T15:05:00Z",
+    "valid_from_utc": "2026-11-09T15:00:00Z",
     "valid_to_utc": "2026-11-10T18:00:00Z",
-    "raw": "TAF KDCA 091122Z 0912/1018 25008KT P6SM SKC FM091400 29020G30KT P6SM SCT045 FM092200 31009KT P6SM FEW240 FM100500 00000KT P6SM FEW190 FM101700 23006KT P6SM FEW250",
+    "raw": "TAF KDCA 091505Z 0915/1018 29020G30KT P6SM BKN050 FM092200 31009KT P6SM SCT050 FM100500 24004KT P6SM FEW190 FM101400 23006KT P6SM FEW250",
     "precip_groups": [],
     "url": "https://aviationweather.gov/data/taf/?id=KDCA"
    },
@@ -1107,7 +1109,7 @@
    "summary": [
     "Before the cutoff the NWS point forecast peaks at 0% around 9:00 AM CT (mostly sunny).",
     "After the cutoff, which does not count for this contract, the same forecast peaks at 0% around 11:00 PM CT.",
-    "The TAF for KDCA (issued 5:22 AM CT) carries no precipitation group still ahead in its period."
+    "The TAF for KDCA (issued 9:05 AM CT) carries no precipitation group still ahead in its period."
    ],
    "supports": {
     "data": [],
@@ -1133,9 +1135,9 @@
     "There is also the biggest question of if cold air will be in place ahead of this system, or will it lag behind."
    ],
    "unavailable": [],
-   "inputs_hash": "901eac51f047ae3e",
-   "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "inputs_hash": "d7e63a86d2a12bad",
+   "text_generated_utc": "2026-11-09T15:17:46Z",
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KDEN": {
    "city": "DEN",
@@ -1249,7 +1251,7 @@
    "unavailable": [],
    "inputs_hash": "25b3953ab70bc94d",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KEWR": {
    "city": "EWR",
@@ -1297,9 +1299,9 @@
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS OKX Area Forecast Discussion",
-    "issued_utc": "2026-11-09T11:55:00+00:00",
-    "url": "https://api.weather.gov/products/9f975270-181a-4b90-9724-791f56b9617f",
-    "product_id": "9f975270-181a-4b90-9724-791f56b9617f",
+    "issued_utc": "2026-11-09T15:01:00+00:00",
+    "url": "https://api.weather.gov/products/e90e511c-6077-4bef-868d-f041cc6c72b9",
+    "product_id": "e90e511c-6077-4bef-868d-f041cc6c72b9",
     "sections": [
      "WHAT HAS CHANGED",
      "KEY MESSAGES",
@@ -1314,8 +1316,8 @@
     "quotes": {
      "support": [
       "1) A series of weak cold fronts push through over the next couple of days.",
-      "The difference among the NWP and AI guidance increases Friday into early Saturday with regard to whether the upper level energy catches up to sfc low pressure and lower level moisture.",
-      "The second scenario would involve a less progressive storm system with consolidated redevelopment off the Northern Mid Atlantic coast just south of Long Island with rain redeveloping later Friday and Friday night and potentially lasting into Saturday morning."
+      "Updated the near term forecast to account for the scattered showers, particularly in the eastern CWA.",
+      "SHowers will clear the area by the afternoon."
      ],
      "prevent": [
       "Low pressure across Eastern Canada persists, with the region between the low to the north and high pressure to the southwest.",
@@ -1345,8 +1347,8 @@
     "data": [],
     "discussion": [
      "1) A series of weak cold fronts push through over the next couple of days.",
-     "The difference among the NWP and AI guidance increases Friday into early Saturday with regard to whether the upper level energy catches up to sfc low pressure and lower level moisture.",
-     "The second scenario would involve a less progressive storm system with consolidated redevelopment off the Northern Mid Atlantic coast just south of Long Island with rain redeveloping later Friday and Friday night and potentially lasting into Saturday morning."
+     "Updated the near term forecast to account for the scattered showers, particularly in the eastern CWA.",
+     "SHowers will clear the area by the afternoon."
     ]
    },
    "prevents": {
@@ -1372,9 +1374,9 @@
     "Impacts, if any, at this time remain uncertain."
    ],
    "unavailable": [],
-   "inputs_hash": "a7b295d9ade332c9",
-   "text_generated_utc": "2026-11-09T14:47:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "inputs_hash": "e52e11b8e48c82f8",
+   "text_generated_utc": "2026-11-09T15:17:46Z",
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KHOU": {
    "city": "HOU",
@@ -1517,7 +1519,7 @@
    "unavailable": [],
    "inputs_hash": "eeda69706cc15d7d",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KIND": {
    "city": "IND",
@@ -1618,7 +1620,7 @@
    "unavailable": [],
    "inputs_hash": "0f55c3880cdd38aa",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KLAX": {
    "city": "LAX",
@@ -1727,7 +1729,7 @@
    "unavailable": [],
    "inputs_hash": "8085f8b26230c66f",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KLEX": {
    "city": "LEX",
@@ -1843,7 +1845,7 @@
    "unavailable": [],
    "inputs_hash": "1877fba95413acee",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KLAS": {
    "city": "LV",
@@ -1959,7 +1961,7 @@
    "unavailable": [],
    "inputs_hash": "9377b18fac321ad4",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KMIA": {
    "city": "MIA",
@@ -2078,7 +2080,7 @@
    "unavailable": [],
    "inputs_hash": "1bccf376b7b470f5",
    "text_generated_utc": "2026-11-09T12:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KMSP": {
    "city": "MIN",
@@ -2188,7 +2190,7 @@
    "unavailable": [],
    "inputs_hash": "ceebfa450d3c5750",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KMKE": {
    "city": "MKE",
@@ -2307,7 +2309,7 @@
    "unavailable": [],
    "inputs_hash": "ffad18cc15a1533f",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KMSY": {
    "city": "NOLA",
@@ -2319,8 +2321,8 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:17:54+00:00",
-    "updated_utc": "2026-11-09T13:42:37+00:00",
+    "generated_utc": "2026-11-09T15:17:54+00:00",
+    "updated_utc": "2026-11-09T14:32:52+00:00",
     "url": "https://api.weather.gov/gridpoints/LIX/64,90/forecast/hourly",
     "note": null,
     "before_cutoff": {
@@ -2421,7 +2423,7 @@
    "unavailable": [],
    "inputs_hash": "2ac6e2d2d0605ffd",
    "text_generated_utc": "2026-11-09T12:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KNYC": {
    "city": "NYC",
@@ -2460,9 +2462,9 @@
    "discussion": {
     "kind": "regional discussion",
     "source": "NWS OKX Area Forecast Discussion",
-    "issued_utc": "2026-11-09T11:55:00+00:00",
-    "url": "https://api.weather.gov/products/9f975270-181a-4b90-9724-791f56b9617f",
-    "product_id": "9f975270-181a-4b90-9724-791f56b9617f",
+    "issued_utc": "2026-11-09T15:01:00+00:00",
+    "url": "https://api.weather.gov/products/e90e511c-6077-4bef-868d-f041cc6c72b9",
+    "product_id": "e90e511c-6077-4bef-868d-f041cc6c72b9",
     "sections": [
      "WHAT HAS CHANGED",
      "KEY MESSAGES",
@@ -2477,8 +2479,8 @@
     "quotes": {
      "support": [
       "1) A series of weak cold fronts push through over the next couple of days.",
-      "The difference among the NWP and AI guidance increases Friday into early Saturday with regard to whether the upper level energy catches up to sfc low pressure and lower level moisture.",
-      "The second scenario would involve a less progressive storm system with consolidated redevelopment off the Northern Mid Atlantic coast just south of Long Island with rain redeveloping later Friday and Friday night and potentially lasting into Saturday morning."
+      "Updated the near term forecast to account for the scattered showers, particularly in the eastern CWA.",
+      "SHowers will clear the area by the afternoon."
      ],
      "prevent": [
       "Low pressure across Eastern Canada persists, with the region between the low to the north and high pressure to the southwest.",
@@ -2507,8 +2509,8 @@
     "data": [],
     "discussion": [
      "1) A series of weak cold fronts push through over the next couple of days.",
-     "The difference among the NWP and AI guidance increases Friday into early Saturday with regard to whether the upper level energy catches up to sfc low pressure and lower level moisture.",
-     "The second scenario would involve a less progressive storm system with consolidated redevelopment off the Northern Mid Atlantic coast just south of Long Island with rain redeveloping later Friday and Friday night and potentially lasting into Saturday morning."
+     "Updated the near term forecast to account for the scattered showers, particularly in the eastern CWA.",
+     "SHowers will clear the area by the afternoon."
     ]
    },
    "prevents": {
@@ -2533,9 +2535,9 @@
    "unavailable": [
     "TAF: no row for KNYC in this run"
    ],
-   "inputs_hash": "3973f47c13b1aca2",
-   "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "inputs_hash": "ea222ac794ed3266",
+   "text_generated_utc": "2026-11-09T15:17:46Z",
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KOKC": {
    "city": "OKC",
@@ -2547,7 +2549,7 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:02:56+00:00",
+    "generated_utc": "2026-11-09T15:02:55+00:00",
     "updated_utc": "2026-11-09T06:26:56+00:00",
     "url": "https://api.weather.gov/gridpoints/OUN/96,90/forecast/hourly",
     "note": null,
@@ -2580,36 +2582,7 @@
     "precip_groups": [],
     "url": "https://aviationweather.gov/data/taf/?id=KOKC"
    },
-   "discussion": {
-    "kind": "regional discussion",
-    "source": "NWS OUN Area Forecast Discussion",
-    "issued_utc": "2026-11-09T11:10:00+00:00",
-    "url": "https://api.weather.gov/products/a360121b-7e08-48c4-9c29-e902c7ef2371",
-    "product_id": "a360121b-7e08-48c4-9c29-e902c7ef2371",
-    "sections": [
-     "KEY MESSAGES",
-     "NEAR TERM",
-     "SHORT TERM",
-     "LONG TERM",
-     "AVIATION",
-     "PRELIMINARY POINT TEMPS",
-     "OUN WATCHES"
-    ],
-    "quotes": {
-     "support": [
-      "An upper-level low will move across Texas today, which will result in an increase in mid to high level clouds across western north Texas into the southern half of Oklahoma (~15,000 to 25,000 ft ceilings).",
-      "(Monday night through Wednesday night) Issued at 205 AM CST Mon Nov 9 2026 Overnight lows tonight will be higher than recent days as southerly winds return, advecting higher dew points northward into Oklahoma and north Texas.",
-      "With higher moisture advecting northward, patchy fog is possible once again tonight."
-     ],
-     "prevent": [
-      "Any fog should dissipate by mid-morning."
-     ],
-     "timing": [],
-     "uncertainty": [],
-     "aviation": []
-    },
-    "caveat": "regional prose for the whole forecast area; it does not state an airport probability and none is derived from it"
-   },
+   "discussion": null,
    "alerts": [],
    "headline": "Little rain signal before the cutoff (point forecast peak 1%).",
    "summary": [
@@ -2619,30 +2592,26 @@
    ],
    "supports": {
     "data": [],
-    "discussion": [
-     "An upper-level low will move across Texas today, which will result in an increase in mid to high level clouds across western north Texas into the southern half of Oklahoma (~15,000 to 25,000 ft ceilings).",
-     "(Monday night through Wednesday night) Issued at 205 AM CST Mon Nov 9 2026 Overnight lows tonight will be higher than recent days as southerly winds return, advecting higher dew points northward into Oklahoma and north Texas.",
-     "With higher moisture advecting northward, patchy fog is possible once again tonight."
-    ]
+    "discussion": []
    },
    "prevents": {
     "data": [
      "no precipitation group still ahead in the TAF before the cutoff",
      "point forecast stays under 15%% for the rest of the contract day"
     ],
-    "discussion": [
-     "Any fog should dissipate by mid-morning."
-    ]
+    "discussion": []
    },
    "timing": {
     "discussion": [],
     "aviation": []
    },
    "uncertainty": [],
-   "unavailable": [],
-   "inputs_hash": "eae5704460ee2d96",
-   "text_generated_utc": "2026-11-09T12:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "unavailable": [
+    "AFD: URLError(ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+   ],
+   "inputs_hash": "282e819a60e140eb",
+   "text_generated_utc": "2026-11-09T15:17:46Z",
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KPHL": {
    "city": "PHIL",
@@ -2654,7 +2623,7 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:02:56+00:00",
+    "generated_utc": "2026-11-09T15:02:56+00:00",
     "updated_utc": "2026-11-09T11:04:17+00:00",
     "url": "https://api.weather.gov/gridpoints/PHI/49,75/forecast/hourly",
     "note": null,
@@ -2758,7 +2727,7 @@
    "unavailable": [],
    "inputs_hash": "fd4c96546c97fe77",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KPHX": {
    "city": "PHX",
@@ -2770,9 +2739,9 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:33:06+00:00",
+    "generated_utc": "2026-11-09T15:17:56+00:00",
     "updated_utc": "2026-11-09T06:32:44+00:00",
-    "url": "https://api.weather.gov/gridpoints/PSR/161,57/forecast/hourly",
+    "url": "https://api.weather.gov/gridpoints/PSR/162,57/forecast/hourly",
     "note": null,
     "before_cutoff": {
      "hours": 16,
@@ -2876,7 +2845,7 @@
    "unavailable": [],
    "inputs_hash": "45ce2cc9ce63c084",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KPIT": {
    "city": "PIT",
@@ -2888,7 +2857,7 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:17:56+00:00",
+    "generated_utc": "2026-11-09T15:17:56+00:00",
     "updated_utc": "2026-11-09T13:01:51+00:00",
     "url": "https://api.weather.gov/gridpoints/PBZ/70,67/forecast/hourly",
     "note": null,
@@ -2991,7 +2960,7 @@
    "unavailable": [],
    "inputs_hash": "bcc97a30f0de7d4f",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KPVD": {
    "city": "PVD",
@@ -3129,7 +3098,7 @@
    "unavailable": [],
    "inputs_hash": "1e4dec7dbf91d597",
    "text_generated_utc": "2026-11-09T14:47:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KSAT": {
    "city": "SATX",
@@ -3141,7 +3110,7 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:17:56+00:00",
+    "generated_utc": "2026-11-09T15:17:57+00:00",
     "updated_utc": "2026-11-09T11:44:28+00:00",
     "url": "https://api.weather.gov/gridpoints/EWX/128,60/forecast/hourly",
     "note": null,
@@ -3283,7 +3252,7 @@
    "unavailable": [],
    "inputs_hash": "f6d24c080833aa46",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KSEA": {
    "city": "SEA",
@@ -3431,7 +3400,7 @@
    "unavailable": [],
    "inputs_hash": "ef965272daa9466e",
    "text_generated_utc": "2026-11-09T12:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KSFO": {
    "city": "SFO",
@@ -3443,7 +3412,7 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:03:00+00:00",
+    "generated_utc": "2026-11-09T15:02:57+00:00",
     "updated_utc": "2026-11-09T09:26:37+00:00",
     "url": "https://api.weather.gov/gridpoints/MTR/84,98/forecast/hourly",
     "note": null,
@@ -3560,7 +3529,7 @@
    "unavailable": [],
    "inputs_hash": "973b22df1ef5ab29",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KSGF": {
    "city": "SGF",
@@ -3675,7 +3644,7 @@
    "unavailable": [],
    "inputs_hash": "fc0ead5e95dbe297",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KSTL": {
    "city": "STL",
@@ -3687,7 +3656,7 @@
    "point_forecast": {
     "kind": "airport forecast",
     "source": "NWS point forecast (api.weather.gov hourly, the gauge's grid cell)",
-    "generated_utc": "2026-11-09T14:17:58+00:00",
+    "generated_utc": "2026-11-09T15:17:58+00:00",
     "updated_utc": "2026-11-09T11:21:04+00:00",
     "url": "https://api.weather.gov/gridpoints/LSX/90,80/forecast/hourly",
     "note": null,
@@ -3792,7 +3761,7 @@
    "unavailable": [],
    "inputs_hash": "66c9c908fe53e151",
    "text_generated_utc": "2026-11-09T15:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   },
   "KTTN": {
    "city": "TTN",
@@ -3908,7 +3877,7 @@
    "unavailable": [],
    "inputs_hash": "3ab7ab007e5a41d4",
    "text_generated_utc": "2026-11-09T12:02:46Z",
-   "checked_utc": "2026-11-09T15:02:46Z"
+   "checked_utc": "2026-11-09T15:17:46Z"
   }
  },
  "points": {
@@ -4202,12 +4171,12 @@
    "text": "\n000\nFXUS65 KBOU 091122\nAFDBOU\n\nArea Forecast Discussion\nNational Weather Service Denver/Boulder CO\n422 AM MST Mon Nov 9 2026\n\n.KEY MESSAGES...\n \n- Above normal temperatures and dry conditions will continue for\n  atleast the next seven days.\n\n&&\n\n.DISCUSSION /Through Sunday/...\nIssued at 1043 PM MST Sun Nov 8 2026\n\nWarm and quiet weather will continue on Monday. Mostly sunny \nconditions are expected with the exception of a few high\nclouds in the mid to late afternoon for the northern plains and \nhigher terrain. Highs will be in the mid 60s to around 70 degrees,\nwhich is 10 to 15 degrees above normal for this time of year. \n\nModels are in better agreement on the positioning of the upper level \nshortwave Tuesday into Wednesday. The GFS has trended more \nnortheast, with the other models trending more southeast, meeting in \nthe middle of what they've been showing the past couple of days. \nAlthough there will be some lift associated with the shortwave, \nmoisture is too low when it moves through for precipitation \ndevelopment. At the surface, a cold front will move through mid \nTuesday into early Wednesday. Winds behind the front will be breezy \nfrom the west/northwest which will allow for decent downsloping and \nwarm temperatures Tuesday afternoon. This could lead to elevated \nfire weather conditions across portions of the northern plains \nTuesday afternoon. Cooler (but still above-normal temperatures) will \nexist for Wednesday. However, these slightly cooler temperatures\nwill be short- live as our next upper level ridge starts to build\nbehind the shortwave.\n\nUpper level ridging will develop over the western U.S. Wednesday \nand Thursday. An upper level low will approach the southwest coast\nof California Friday and Saturday, pushing the ridge axis over \nthe area. Temperatures will remain above normal and dry Thursday \nthrough the weekend, with our next hope for precipitation early \nnext week as the upper highs gets ushered out of our area.\n\n&&\n\n.AVIATION /12Z TAFS through 12Z Tuesday/...\nIssued at 422 AM MST Mon Nov 9 2026\n\nVFR will persist through the TAF period with only SCT high clouds\nabove 20,000 ft AGL and no visibility restrictions. Fairly normal\ndiurnal wind patterns will persist. There was a weak surge noted\nacross the Northern High Plains, which means a slight enhancement\nof easterlies is expected toward 19Z with sustained speeds of\n9-12 kts with a few gusts to 15-17 kts possible til about 23Z. \nThen winds will transition back to their normal SE-S-SW \nprogression 02Z-06Z-09Z, and hold SW til about 18Z Tuesday. \n\n&&\n\n.BOU WATCHES/WARNINGS/ADVISORIES...\nNone.\n\n&&\n\n$$\n\nDISCUSSION...AP\nAVIATION...20\n"
   },
   "OKX": {
-   "id": "9f975270-181a-4b90-9724-791f56b9617f",
-   "issued_utc": "2026-11-09T11:55:00+00:00",
-   "url": "https://api.weather.gov/products/9f975270-181a-4b90-9724-791f56b9617f",
+   "id": "e90e511c-6077-4bef-868d-f041cc6c72b9",
+   "issued_utc": "2026-11-09T15:01:00+00:00",
+   "url": "https://api.weather.gov/products/e90e511c-6077-4bef-868d-f041cc6c72b9",
    "office": "OKX",
-   "fetched_utc": "2026-11-09T12:02:50Z",
-   "text": "\n000\nFXUS61 KOKX 091155\nAFDOKX\n\nArea Forecast Discussion\nNational Weather Service New York NY\n655 AM EST Mon Nov 9 2026\n\n.WHAT HAS CHANGED...\nAviation section updated.\n\n&&\n\n.KEY MESSAGES...\n1) A series of weak cold fronts push through over the next couple of \ndays. Despite this it remains predominantly dry and seasonably mild. \n\n2) Low pressure may impact the region late Thursday into Friday \nnight, bringing potential of widespread rain and gusty winds. \nImpacts, if any, at this time remain uncertain.\n\n&&\n\n.DISCUSSION...\n.KEY MESSAGE 1...\nPredominantly dry with temperatures averaging a bit above \nnormal through the first half of the week. Low pressure across \nEastern Canada persists, with the region between the low to the \nnorth and high pressure to the southwest. This results in a \npressure gradient in place with breezy conditions much of the \ntime, especially for today into this early this evening. The \nwinds should subside briefly late tonight before breezy \nconditions return during Tuesday. With regard to temperatures \nlook for comfortably mild and breezy conditions the next couple \nof days, with cool night time temperatures. \n\n\n.KEY MESSAGE 2...\nThe medium range global and AI guidance continue to wrestle with \ndifferent details / scenarios with regard to low pressure emerging \nout of the Ohio Valley during Wednesday night into Thursday. The \ndifference among the NWP and AI guidance increases Friday into early \nSaturday with regard to whether the upper level energy catches up to \nsfc low pressure and lower level moisture. This scenario would stall \nlow pressure and give it another means to deepen later Friday into \nearly Saturday. Thus there are two solutions. The first being a \nflatter wave which brings light rain Thursday into Friday morning, \nwith low pressure strengthening well offshore with clearing to begin \nthe weekend. The second scenario would involve a less progressive \nstorm system with consolidated redevelopment off the Northern Mid \nAtlantic coast just south of Long Island with rain redeveloping \nlater Friday and Friday night and potentially lasting into Saturday \nmorning. At this time impacts appear limited with rain being more \nstratiform in nature and the winds likely having enough of a \nnortherly component which would limit any coastal flood concerns. It \nis possible that some wet snow could mix in with any rain in the \nhigher elevations well inland as the region gets on the back side of \nthe storm system Friday night / early Saturday morning. Confidence \nin this occurring is rather low at this time with the lack of a low \nlevel cold air source, with any impacts appearing to be negligible \nbased on the latest NWP consensus forecast. Some gusty winds may \ndevelop closer to the coast during this time frame, with gusty winds \npossible region wide as the system departs Friday night into \nSaturday. Latest guidance is not indicating wind advisory \nconditions, but this may be subject to change if stronger \ndevelopment occurs closer to the coast later Friday and Friday\nnight.\n\n&&\n\n.AVIATION /12Z MONDAY THROUGH FRIDAY/...\nHigh pressure stays well south and west of the region with a\ncold front moving across this morning into this afternoon. \n\nVFR prevails through the TAF period. A brief very light shower,\nis possible this morning into this afternoon but no reductions\nin visibility are expected.\n\nWesterly winds near 10 kts pick up this morning and become more\nWNW, increasing to near 15-20 kts with gusts developing near\n25-30 kt. Isolated peak gusts up to 35 kt are possible.\n\nWinds will gradually lower tonight from near 15 kt to near 10\nkt. Gusts near 20-25 kt persist into this evening before \nsubsiding late evening into overnight. Wind direction remains \nWNW to W.\n\n\n ...NY Metro (KEWR/KLGA/KJFK/KTEB) TAF Uncertainty...\n\nEnd time of wind gusts could be off by 1-3 hours compared to\nTAF.\n\nIsolated gusts up to 35 kt possible.\n\n.OUTLOOK FOR 12Z TUESDAY THROUGH FRIDAY... \n\nTuesday: VFR. W winds near 10-15 kt with gusts near 20 kt late\nmorning into afternoon.\n\nWednesday: VFR. W winds 5-10 kt. \n\nThursday and Friday: MVFR or lower possible at times in rain. NE \nwind gusts developing late Thursday through Friday near 20-25\nkt.\n\nDetailed information, including hourly TAF wind component forecasts, \ncan be found at: https:/www.weather.gov/zny/n90\n\n&&\n\n.MARINE...\nA pressure gradient remains in place through the first half of the \nweek with small craft conditions and marginal small craft conditions \nmuch of the time through at least Tuesday. Will continue small \ncraft conditions for most of the non-ocean through today, with \nfar eastern LI Sound likely maintaining small craft conditions \ninto a good portion of the evening. Otherwise small crafts \ncontinue on the western ocean until midnight, and further east \non the ocean until sunrise Tuesday morning. There is likely \ngoing to be a period of brief relaxation through the first half \nof Tuesday, before marginal small craft conditions can develop \nagain late Tuesday into much of Tuesday night. The pressure \ngradient relaxes enough on Wednesday for sub advisory conditions\nto return.\n\nTowards Thursday evening small craft conditions will return across \nall waters and will likely continue into at least the first half of \nthe weekend. A period of gales is possible on the ocean and \npotentially a portion of the non-ocean waters later in this time \nframe depending on the development of low pressure along and off the \ncoast.\n\n&&\n\n.OKX WATCHES/WARNINGS/ADVISORIES...\nCT...None.\nNY...None.\nNJ...None.\nMARINE...Small Craft Advisory until 6 PM EST this evening for ANZ331-\n     335-338-340-345.\n     Small Craft Advisory until 11 PM EST this evening for ANZ332-\n     355.\n     Small Craft Advisory until 6 AM EST Tuesday for ANZ350-353.\n\n&&\n\n$$\n\nDISCUSSION...JE\nAVIATION...JM\nMARINE...JE\n"
+   "fetched_utc": "2026-11-09T15:17:51Z",
+   "text": "\n000\nFXUS61 KOKX 091501\nAFDOKX\n\nArea Forecast Discussion\nNational Weather Service New York NY\n1001 AM EST Mon Nov 9 2026\n\n.WHAT HAS CHANGED...\nNo significant changes to the forecast.\n\n&&\n\n.KEY MESSAGES...\n1) A series of weak cold fronts push through over the next couple of \ndays. Despite this it remains predominantly dry and seasonably mild. \n\n2) Low pressure may impact the region late Thursday into Friday \nnight, bringing potential of widespread rain and gusty winds. \nImpacts, if any, at this time remain uncertain.\n\n&&\n\n.DISCUSSION...\n.KEY MESSAGE 1...\nUpdated the near term forecast to account for the scattered\nshowers, particularly in the eastern CWA. SHowers will clear the\narea by the afternoon.\n\nOtherwise, predominantly dry with temperatures averaging a bit \nabove normal through the first half of the week. Low pressure \nacross Eastern Canada persists, with the region between the low \nto the north and high pressure to the southwest. This results in\na pressure gradient in place with breezy conditions much of the\ntime, especially for today into this early this evening. The \nwinds should subside briefly late tonight before breezy \nconditions return during Tuesday. With regard to temperatures \nlook for comfortably mild and breezy conditions the next couple \nof days, with cool night time temperatures. \n\n\n.KEY MESSAGE 2...\nThe medium range global and AI guidance continue to wrestle with \ndifferent details / scenarios with regard to low pressure emerging \nout of the Ohio Valley during Wednesday night into Thursday. The \ndifference among the NWP and AI guidance increases Friday into early \nSaturday with regard to whether the upper level energy catches up to \nsfc low pressure and lower level moisture. This scenario would stall \nlow pressure and give it another means to deepen later Friday into \nearly Saturday. Thus there are two solutions. The first being a \nflatter wave which brings light rain Thursday into Friday morning, \nwith low pressure strengthening well offshore with clearing to begin \nthe weekend. The second scenario would involve a less progressive \nstorm system with consolidated redevelopment off the Northern Mid \nAtlantic coast just south of Long Island with rain redeveloping \nlater Friday and Friday night and potentially lasting into Saturday \nmorning. At this time impacts appear limited with rain being more \nstratiform in nature and the winds likely having enough of a \nnortherly component which would limit any coastal flood concerns. It \nis possible that some wet snow could mix in with any rain in the \nhigher elevations well inland as the region gets on the back side of \nthe storm system Friday night / early Saturday morning. Confidence \nin this occurring is rather low at this time with the lack of a low \nlevel cold air source, with any impacts appearing to be negligible \nbased on the latest NWP consensus forecast. Some gusty winds may \ndevelop closer to the coast during this time frame, with gusty winds \npossible region wide as the system departs Friday night into \nSaturday. Latest guidance is not indicating wind advisory \nconditions, but this may be subject to change if stronger \ndevelopment occurs closer to the coast later Friday and Friday\nnight.\n\n&&\n\n.AVIATION /15Z MONDAY THROUGH FRIDAY/...\nHigh pressure remains centered well south and west of the \nregion with a cold front moving across this morning into early \nthis afternoon. \n\nVFR prevails through the TAF period. A brief very light shower,\nis possible this morning into this afternoon but no reductions\nin visibility are expected.\n\nWesterly winds 10-15kt pick up this morning and become more \nWNW, increasing to near 15-20 kt with gusts developing near \n25-30 kt. Isolated peak gusts up to 35 kt are possible, mainly\nduring the earlier afternoon hours.\n\nWinds will gradually lower tonight from near 15 kt to near 10\nkt. Gusts near 20-25 kt persist into this evening before \nsubsiding late evening into overnight. Wind direction remains \nWNW to W.\n\n\n ...NY Metro (KEWR/KLGA/KJFK/KTEB) TAF Uncertainty...\n\nEnd time of wind gusts could be off by 1-3 hours compared to\nTAF.\n\nIsolated gusts up to 35 kt possible from approx 17-20z.\n\n.OUTLOOK FOR 12Z TUESDAY THROUGH FRIDAY... \n\nTuesday: VFR. W winds near 10-15 kt with gusts near 20 kt late\nmorning into afternoon.\n\nWednesday: VFR. W winds 5-10 kt. \n\nThursday and Friday: MVFR or lower possible at times in rain. NE \nwind gusts developing late Thursday through Friday near 20-25\nkt.\n\nDetailed information, including hourly TAF wind component forecasts, \ncan be found at: https:/www.weather.gov/zny/n90\n\n&&\n\n.MARINE...\nA pressure gradient remains in place through the first half of the \nweek with small craft conditions and marginal small craft conditions \nmuch of the time through at least Tuesday. Will continue small \ncraft conditions for most of the non-ocean through today, with \nfar eastern LI Sound likely maintaining small craft conditions \ninto a good portion of the evening. Otherwise small crafts \ncontinue on the western ocean until midnight, and further east \non the ocean until sunrise Tuesday morning. There is likely \ngoing to be a period of brief relaxation through the first half \nof Tuesday, before marginal small craft conditions can develop \nagain late Tuesday into much of Tuesday night. The pressure \ngradient relaxes enough on Wednesday for sub advisory conditions\nto return.\n\nTowards Thursday evening small craft conditions will return across \nall waters and will likely continue into at least the first half of \nthe weekend. A period of gales is possible on the ocean and \npotentially a portion of the non-ocean waters later in this time \nframe depending on the development of low pressure along and off the \ncoast.\n\n&&\n\n.OKX WATCHES/WARNINGS/ADVISORIES...\nCT...None.\nNY...None.\nNJ...None.\nMARINE...Small Craft Advisory until 6 PM EST this evening for ANZ331-\n     335-338-340-345.\n     Small Craft Advisory until 11 PM EST this evening for ANZ332-\n     355.\n     Small Craft Advisory until 6 AM EST Tuesday for ANZ350-353.\n\n&&\n\n$$\n\nDISCUSSION...JE/MW\nAVIATION...JM\nMARINE...JE\n"
   },
   "HGX": {
    "id": "4fcaec28-ea6d-47e2-853d-c93fe2682a7c",
