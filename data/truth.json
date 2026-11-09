@@ -1,11 +1,17 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-11-09T15:14:06.565088+00:00",
+ "checked_utc": "2026-11-09T15:19:06.581595+00:00",
  "files": [],
  "stations": {
   "KABQ": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "radar",
+     "severity": "med",
+     "detail": "site radar ABX is DOWN (newest scan 2026-11-09T14:43:22Z); no close-up radar for this gauge, the composite below still reads"
+    }
+   ]
   },
   "KATL": {
    "ok": true,
@@ -76,8 +82,14 @@
    "discrepancies": []
   },
   "KLAS": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "radar",
+     "severity": "med",
+     "detail": "site radar ESX is DOWN (newest scan 2026-11-09T14:46:26Z); no close-up radar for this gauge, the composite below still reads"
+    }
+   ]
   },
   "KMIA": {
    "ok": false,
@@ -163,8 +175,8 @@
   }
  },
  "summary": {
-  "n_open": 5,
-  "n_stations_bad": 5,
+  "n_open": 7,
+  "n_stations_bad": 7,
   "worst": null,
   "files_stale": 0
  }
