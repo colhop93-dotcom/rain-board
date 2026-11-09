@@ -1,7 +1,23 @@
 {
 "schema": "019a.desk_alerts/1",
-"generated_utc": "2026-11-09T15:02:37.872582+00:00",
+"generated_utc": "2026-11-09T15:03:37.881765+00:00",
 "pages": [
+{
+"ts_ct": "2026-11-09T09:02:52.714200-06:00",
+"title": "College Station cell tracking OVER the gauge in 42 min",
+"priority": "high",
+"kind": "cellin",
+"source": "collector",
+"station": "CLL"
+},
+{
+"ts_ct": "2026-11-09T09:02:52.569951-06:00",
+"title": "Houston cell tracking OVER the gauge in 34 min",
+"priority": "high",
+"kind": "cellin",
+"source": "collector",
+"station": "HOU"
+},
 {
 "ts_ct": "2026-11-09T08:30:51.686675-06:00",
 "title": "College Station rain moving OVER the gauge",
@@ -465,27 +481,11 @@
 "kind": "overhead",
 "source": "collector",
 "station": "PIT"
-},
-{
-"ts_ct": "2026-11-08T06:05:29.837342-06:00",
-"title": "OPEN TIER LIVE SETTLE: WPB NO WON",
-"priority": "default",
-"kind": "opentier",
-"source": "rain lock bot",
-"station": null
-},
-{
-"ts_ct": "2026-11-08T05:42:27.532071-06:00",
-"title": "Seattle rain moving OVER the gauge",
-"priority": "high",
-"kind": "overhead",
-"source": "collector",
-"station": "SEA"
 }
 ],
 "counts_24h": {
-"sent": 53,
-"suppressed_duplicate": 144,
+"sent": 55,
+"suppressed_duplicate": 147,
 "failed": 0,
 "desk_only": 2,
 "filtered": 12
@@ -518,8 +518,8 @@
 "name": "lock bot",
 "bot_or_feed": "rain lock bot",
 "ok": false,
-"detail": "STALE, 576.3 h ago",
-"age_s": 2074857.4,
+"detail": "STALE, 576.4 h ago",
+"age_s": 2074917.4,
 "checked_utc": "2026-10-16T14:41:40.518002+00:00",
 "alive_s": 120
 },
@@ -556,7 +556,7 @@
 "ok": true,
 "detail": "alive, 36 s ago, sampled 14, paged 0, failed 0, queued 0",
 "age_s": 36.1,
-"checked_utc": "2026-11-09T15:02:01.737378+00:00",
+"checked_utc": "2026-11-09T15:03:01.739152+00:00",
 "alive_s": 120
 },
 {
@@ -565,16 +565,16 @@
 "ok": true,
 "detail": "written this run (the mirror runs inside board_alerts.py), alive, 0 s ago",
 "age_s": 0.1,
-"checked_utc": "2026-11-09T15:02:37.764818+00:00",
+"checked_utc": "2026-11-09T15:03:37.772217+00:00",
 "alive_s": 180
 },
 {
 "name": "book",
 "bot_or_feed": "websocket book",
 "ok": true,
-"detail": "alive, 1 s ago, feed LIVE",
-"age_s": 0.8,
-"checked_utc": "2026-11-09T15:02:37.054593+00:00",
+"detail": "alive, 0 s ago, feed LIVE",
+"age_s": 0.2,
+"checked_utc": "2026-11-09T15:03:37.717473+00:00",
 "alive_s": 45.0
 },
 {
@@ -583,33 +583,33 @@
 "ok": true,
 "detail": "alive, 5 s ago, 234 stations",
 "age_s": 5.1,
-"checked_utc": "2026-11-09T15:02:32.791295+00:00",
+"checked_utc": "2026-11-09T15:03:32.811991+00:00",
 "alive_s": 600
 },
 {
 "name": "settle",
 "bot_or_feed": "collector",
 "ok": true,
-"detail": "alive, 96 s ago",
-"age_s": 96.0,
-"checked_utc": "2026-11-09T15:01:01.846464+00:00",
+"detail": "alive, 36 s ago",
+"age_s": 36.0,
+"checked_utc": "2026-11-09T15:03:01.849826+00:00",
 "alive_s": 600
 },
 {
 "name": "rings",
 "bot_or_feed": "ring archive",
 "ok": true,
-"detail": "alive, 6 min ago, last row KTTN",
-"age_s": 336.1,
-"checked_utc": "2026-11-09T14:57:01.800868+00:00",
+"detail": "alive, 96 s ago, last row KTTN",
+"age_s": 96.0,
+"checked_utc": "2026-11-09T15:02:01.852147+00:00",
 "alive_s": 900
 },
 {
 "name": "sentinel",
 "bot_or_feed": "Sentinel",
 "ok": true,
-"detail": "alive, 2 min ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
-"age_s": 148.9,
+"detail": "alive, 3 min ago, Sentinel: parked 2026-10-02 (no trained model; 16-day archive kept)",
+"age_s": 208.9,
 "checked_utc": "2026-11-09T15:00:08.980599+00:00",
 "alive_s": 900
 }

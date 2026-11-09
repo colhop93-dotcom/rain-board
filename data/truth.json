@@ -1,6 +1,6 @@
 {
  "schema": "019a.truth/1",
- "checked_utc": "2026-11-09T14:59:06.516237+00:00",
+ "checked_utc": "2026-11-09T15:04:06.536989+00:00",
  "files": [],
  "stations": {
   "KABQ": {
@@ -16,8 +16,14 @@
    "discrepancies": []
   },
   "KBOS": {
-   "ok": true,
-   "discrepancies": []
+   "ok": false,
+   "discrepancies": [
+    {
+     "check": "forecast",
+     "severity": "med",
+     "detail": "board headline 33% but the board's OWN calibrated physics says 3%"
+    }
+   ]
   },
   "KORD": {
    "ok": true,
@@ -53,7 +59,7 @@
     {
      "check": "forecast",
      "severity": "med",
-     "detail": "board headline 62% but the board's OWN calibrated physics says 15%"
+     "detail": "board headline 63% but the board's OWN calibrated physics says 15%"
     }
    ]
   },
@@ -157,8 +163,8 @@
   }
  },
  "summary": {
-  "n_open": 4,
-  "n_stations_bad": 4,
+  "n_open": 5,
+  "n_stations_bad": 5,
   "worst": null,
   "files_stale": 0
  }
